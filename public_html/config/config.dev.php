@@ -18,10 +18,10 @@ $db_debug 			= 'n'; # y/n
 ## DATABASE INFO
 ## ------------------------------------------------------------
 
-$db_hostname = '192.168.75.2';
-$db_username = 'eh22484';
-$db_password = 'bvn.ereR4';
-$db_database = 'eh22484b';
+$db_hostname = '';
+$db_username = '';
+$db_password = '';
+$db_database = '';
 
 ## ------------------------------------------------------------
 ## GLOBAL VARIABLES - For this environment
