@@ -19,10 +19,10 @@ $db_debug 			= 'n'; # y/n
 ## DATABASE INFO
 ## ------------------------------------------------------------
 
-$db_hostname = '';
-$db_username = '';
-$db_password = '';
-$db_database = '';
+$db_hostname = '127.0.0.1';
+$db_username = 'chekinlive';
+$db_password = 'f18%3vs)0';
+$db_database = 'chekin_live';
 
 
 ## ------------------------------------------------------------

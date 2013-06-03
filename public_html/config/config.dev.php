@@ -18,10 +18,10 @@ $db_debug 			= 'n'; # y/n
 ## DATABASE INFO
 ## ------------------------------------------------------------
 
-$db_hostname = '';
-$db_username = '';
-$db_password = '';
-$db_database = '';
+$db_hostname = '127.0.0.1';
+$db_username = 'chekindev';
+$db_password = 'g6!8nd)6e';
+$db_database = 'chekin_dev';
 
 ## ------------------------------------------------------------
 ## GLOBAL VARIABLES - For this environment
