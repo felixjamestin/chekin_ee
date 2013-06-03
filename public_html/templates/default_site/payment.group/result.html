@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+	<script src='//use.typekit.net/ebi8xqq.js' type='text/javascript'></script>
+	<script type='text/javascript'>try{Typekit.load();}catch(e){}</script>
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Sue+Ellen+Francisco|Amatic+SC" media="all" />
+	<title>Chekin: Payment to confirm your reservation</title>
+	<style type="text/css">
+		/* General settings */
+		header, footer, article, section, hgroup, nav, figure, aside{display:block;}
+		figure{
+			margin:0;
+			padding:0;
+		}
+		body{
+			margin:0;
+			color:#000;
+			background:#fff;
+			min-width:1134px;
+			font:14px Arial,Helvetica,sans-serif;
+		}
+		h1{
+			font-size:24px;
+		}
+		img{border-style:none;}
+		a{
+			text-decoration:none;
+			-webkit-transition-property:color;
+			-moz-transition-property:color;
+			-ms-transition-property:color;
+			-o-transition-property:color;
+			transition-property:color;
+			-webkit-transition-duration:0.2s;
+			-moz-transition-duration:0.2s;
+			-ms-transition-duration:0.2s;
+			-o-transition-duration:0.2s;
+			transition-duration:0.2s;
+			-webkit-transition-timing-function:ease-in;
+			-moz-transition-timing-function:ease-in;
+			-ms-transition-timing-function:ease-in;
+			-o-transition-timing-function:ease-in;
+			transition-timing-function:ease-in;
+		}
+		a:hover{text-decoration:none;}
+
+
+		#header{
+			padding:15px 0 0 3px;
+			width:1080px;
+			margin:0 auto;
+			position:relative;
+			z-index:99;
+		}
+		#header:after{
+			clear:both;
+			display:block;
+			content:'';
+		}
+		.logo{
+			margin:0 110px -25px 0;
+			width:202px;
+			height:88px;
+			float:left;
+			color:#666;
+			font-family: "myriad-pro","proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+			font-weight:700;
+			font-size:32px;
+			line-height:88px;
+		}
+		.logo a{
+			display:block;
+			height:100%;
+			color:#666;
+		}
+		.logo a:hover{text-decoration:none;}
+		.logo a img{
+			float:left;
+			margin:0 1px 0 0;
+		}
+		.logo a img:hover{
+			-webkit-animation:wiggle 1s 1 normal both ease-in;
+			-moz-animation:wiggle 1s 1 normal both ease-in;
+			-o-animation:wiggle 1s 1 normal both ease-in;
+			animation:wiggle 1s 1 normal both ease-in;
+		}
+		/* wrapper */
+		.wrapper{
+			width:1000px;
+			margin:0 auto;
+		}
+		/* main */
+		#main{
+			padding:30px 0 107px 50px;
+			position: relative;
+		}
+		/* footer */
+		#footer-content{
+			font:14px  "proxima-nova", Arial, Helvetica, sans-serif;
+			background-color: white;
+			border-top:2px solid #87cfe1;
+			padding:0 0 20px;
+			width:100%;
+			overflow:hidden;
+			color:#535350;
+			margin:0 0 75px;
+			position: relative;
+			z-index: 999;
+		}
+		#footer-content a{color:#666666;}
+		/* frame */
+		#footer-content .frame{
+			margin:0 0 10px;
+			padding:12px 0;	
+			overflow:hidden;
+			width:101%;
+			font-weight: 100;
+			color: #666666;
+		}
+		#footer-content .box{
+			float:left;
+			padding:0 13px;
+		}
+		#footer-content h3{
+			text-transform:uppercase;
+			font:14px/16px "kulturista-web";
+			margin:0 0 11px;
+		}
+		#footer-content ul.list{
+			margin:0;
+			padding:5px 0 0 7px;
+			list-style:none;
+			line-height:21px;
+		}
+		#footer-content ul.list li{
+			padding:0 0 11px 28px;
+			vertical-align:top;
+			height:1%;
+			font-weight:100;
+		}
+		#footer-content ul.list a:hover{
+			color:#d8715a;
+			border-bottom:1px #d8715a dotted;
+		}
+		#footer-content ul.list .phone{background:url('/uploads/static/phone.gif') no-repeat 3px 0;}
+		#footer-content ul.list .email{background:url('/uploads/static/email.gif') no-repeat;}
+
+		#payment #footer-content .frame{
+			background:none;
+		}
+		#payment #footer-content ul.list li{
+			float:left;
+			padding-right:15px;
+		}
+		#payment #footer-content .box{
+			width:100%;
+		}
+		.copy {
+			color: #4CA6BE;
+			font-size: 12px;
+			margin: 0;
+			text-align: center;
+		}
+		.hotel-details{
+			float:left;
+			height:200px;
+		}
+		.hotel-details table{
+			background:#e7f1fe;
+			padding:10px 0px;	
+		}
+		.contact-details{
+			float:left;
+			margin-left:30px;
+		}	
+		.hotel-details p,.contact-details p{
+			padding:0px;
+			color:#666666;
+			font-size:12px;
+			font-weight:bold;
+			margin:0px;
+		}
+		td,th{
+			padding:9px;
+		}
+		th{
+			text-align:right;
+			color:#000;
+			width:175px;
+		}
+		.customer-info{
+			background:#f3f3f3;
+			padding:10px 40px 10px 15px;
+			height:142px;
+			line-height:22px;
+		}
+		.borderb{
+			border-bottom:2px solid #afc2d7;
+		}
+		input[type="submit"] {
+			background:#009e0f;
+			border:3px solid #d0e5c7;
+			padding:10px 50px;
+			color:#fff;
+			font-size:16px;
+			font-weight:bold;
+		}
+    .success{
+      background: #c0e7c3;
+      color: #295015;
+      padding: 5px 15px;
+      width: 665px;
+    }
+		
+    .failure{
+      background: #f8d9d9;
+      color: #990000;
+      padding: 5px 15px;
+      width: 665px;
+    }
+    .failure p{
+      padding: 5px 0px 5px 30px;
+      background: url('/uploads/static/pg_error.png') no-repeat 0 0px;
+    }
+	</style>
+<body>
+	<header id="header">
+		<h1 class="logo"><a href="{site_url}"><img src="{site_url}uploads/static/logo.png" width="87" height="87" alt="Chekin" />Chekin</a></h1>
+	</header><!-- header -->
+	<section class="wrapper" id="payment">
+		<section id="main">
+			{exp:freeform:entries
+        form_id="2"
+        search:secret_hash="={segment_3}"
+        limit="1"
+        dynamic="no"
+      }
+      {if no_results}
+      <p>Invalid request</p>
+      {/if}
+      
+      {if freeform:field:payment_status == "Transaction Successful"}
+      <div class="success">
+        <p>&#10004;&nbsp; Your reservation has been made.</p>
+      </div>  
+      <p>&nbsp;</p>
+      {if:else}
+      <div class="failure">
+        <p>There was an error in making the payment.</p> 
+      </div>
+      <br><a href="{site_url}payment/{segment_3}">Try making the payment again</a> or <a href="mailto:reservations@chekin.com">contact us</a>
+      <p>&nbsp;</p>
+      {/if}
+      <div class="reservation-details">
+				<div class="hotel-details">
+					<p>Your reservation details:</p>
+					<table border="0" cellspacing="0">
+            <tr>
+							<th>Property:</th>
+							{exp:channel:entries channel="hideaway" entry_id="{freeform:field:hideaway-id}"}
+              <td>{title} ({hideaway_location}, {hideaway_state}{title}{/hideaway_state})</td>
+              {/exp:channel:entries}
+						</tr>
+						<tr>
+							<th>Reservation from:</th>
+							<td>{freeform:field:checkin} to {freeform:field:checkout}</td>
+						</tr>
+						<tr>
+							<th class="borderb">Number of Travellers:</th>
+							<td class="borderb">Adults: {freeform:field:adults}, Children:{freeform:field:children}</td>
+						</tr>
+						<tr>
+							<th>Total Cost:</th>
+							<td>Rs. {freeform:field:total_amount} 
+                {if freeform:field:amount_and_basis}
+                  ({freeform:field:amount_and_basis})
+                {/if}  
+              </td>
+						</tr>
+					</table>
+				</div>
+				<div class="contact-details">
+					<p>Your contact details:</p>
+					<div class="customer-info">
+						<span>
+							<strong>{freeform:field:name}</strong><br>
+							{freeform:field:email}<br>
+							{freeform:field:countrycode} {freeform:field:mobile}
+						</span>
+					</div>
+				</div>
+			</div>
+      			<div style="clear:both;padding: 10px 0px 0px;"></div>
+			{/exp:freeform:entries}
+		</section><!-- main -->
+
+		<footer>
+			<div id="footer-content">
+				<section class="frame">
+					<div class="box">
+						<h3>Speak to us</h3>
+						<ul class="list">
+							<li class="phone">+91 9167041258</li>
+							<li class="email"><a href="mailto:reservations@chekin.in">reservations@chekin.in</a></li>
+						</ul>
+					</div><!-- box -->
+				</section><!-- frame -->
+				<p class="copy">&copy; Chekin {current_time format="%Y"}.  All rights reserved. Live free, stay curious.</p>
+				
+			</div>
+
+		</footer><!-- footer -->
+
+	</section><!-- wrapper -->
+
+{!-- Google Analytics --}
+{embed="modules/google-analytics"}
+
+</body>
+</html>

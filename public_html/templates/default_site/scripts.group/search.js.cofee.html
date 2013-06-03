@@ -1,0 +1,24 @@
+
+jQuery ->
+	  
+	$(".accordion-menu-wide").AccordionImageMenu
+		'closeDim': 210,
+		'openDim': 300,
+		'width':200,
+		'height': 260,
+		'effect': 'swing',
+		'duration': 400,
+		'openItem': 0,
+		'border' : 2,
+		'color' : '#FFFFFF',
+		'position' : 'horizontal', 
+		'fadeInTitle': true
+
+	$('.aim').hover ->
+		$(this).parent().find('.hideaway-details').toggleClass 'hideaway-details-hover'
+
+	$('.hideaway-details').hover ->
+		$(this).toggleClass 'hideaway-details-hover'
+
+	# $('.places-list-small').hover ->
+	#	$('.places-list-small').toggleClass 'hideaway-details-hover'

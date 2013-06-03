@@ -1,0 +1,48 @@
+.search-box,
+.search-link,
+.form01 .text,
+.form01 .submit,
+.box-heading,
+.green-box,
+.green-box .hold,
+a.tag,
+.booking-box,
+.booking-form .text,
+.booking-form .submit{
+	behavior: url(/uploads/static/PIE.htc);
+	position:relative;
+	box-shadow:none;
+}
+*+html .search-box p{
+	display:inline;
+	zoom:1;
+}
+*+html .search-link{
+	display:inline;
+	zoom:1;
+}
+*+html .search-box form{
+	display: inline;
+	zoom:1;
+}
+.main-photo .description,
+#ui-datepicker-div,
+.select-area,
+.select-options,
+.select-options .drop-holder,
+.popup .popup-holder,
+.popup .head,
+.popup .ttl .num,
+.popup .text,
+.popup textarea,
+.popup .btn-submit,
+.popup .msg {behavior: url(/uploads/static/PIE.htc);}
+.popup .head,
+.popup .entity,
+.popup .group,
+.popup .row,
+.popup .ttl,
+.popup .textarea,
+.popup .check-row,
+.popup .btn-holder,
+.clearfix {zoom:1;}

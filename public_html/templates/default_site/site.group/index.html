@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	{embed="modules/head"}
+<body>
+	{if segment_1 == ""}
+		{embed="site/home-content"}
+	{/if}
+
+	{if segment_1 != ""}
+		{if segment_2=="" || segment_2 == "page"}
+			{embed="site/listing-content"}
+		{/if}
+	{/if}
+
+	{if segment_2 != "" && segment_2 != "page"}
+		{embed="site/details-content"}
+	{/if}	
+</body>
+</html>

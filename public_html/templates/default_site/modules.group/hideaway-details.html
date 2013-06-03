@@ -1,0 +1,347 @@
+<?
+  session_start();
+  if(!isset($_SESSION['cur_to'])) {
+    $_SESSION['cur_to'] = 'INR';
+  }
+  if(!isset($_SESSION['cur_name'])) {
+    $_SESSION['cur_name'] = 'Indian Rupee';
+  }
+  $_SESSION['cur_to'] = isset($_POST['cur_to']) ? $_POST['cur_to'] : $_SESSION['cur_to'];
+  $_SESSION['cur_name'] = isset($_POST['cur_name']) ? $_POST['cur_name'] : $_SESSION['cur_name'];
+  $cur_to = isset($_SESSION['cur_to'])? $_SESSION['cur_to'] :"Rs." ;
+?>
+
+{exp:channel:entries disable="pagination" url_title="{segment_2}" dynamic="no"}
+{if no_results}
+	{redirect="404"}
+{/if}
+<div id="container">
+	<section class="content">
+		<div class="green-box">
+			<div class="hold">
+				<h2 class="great-title">GREAT FOR</h2>
+				<ul>
+					{hideaway_great_for}
+				</ul>
+			</div>
+		</div><!-- green-box -->
+		<ul class="tabset">
+			<li><a href="#tab-1" class="tab active">Our take</a></li>
+			<li><a href="#tab-2" class="tab">Amenities</a></li>
+			<li><a href="#tab-3" class="tab">Rates</a></li>
+		</ul><!-- tabset -->
+		<article class="tab-content" id="tab-1">
+			<div class="box">
+				<h2 class="love">What we love</h2>
+				{hideaway_what_we_love}
+			</div>
+			<div class="box right">
+				<h2 class="know">What to know</h2>
+				{hideaway_what_to_know}
+			</div>
+		</article><!-- our take -->
+		
+		<article class="tab-content" id="tab-2">
+			<div class="amenities">
+				<div class="amenity-item amenity-property">
+					<h2>
+						<img src="/uploads/static/property.png" />	
+						<span>Property</span>
+					</h2>
+					<ul>
+						{embed="modules/fetch_cats" cat_group="3" entry_id="{entry_id}"}
+					</ul>
+				</div>
+				
+				<div class="amenity-item amenity-room">
+					<h2>
+						<img src="/uploads/static/home.png" />	
+						<span>Room</span>
+					</h2>	
+					<ul>
+						{embed="modules/fetch_cats" cat_group="4" entry_id="{entry_id}"}
+					</ul>
+				</div>
+				
+				<div class="amenity-item amenity-food">
+					<h2>
+						<img src="/uploads/static/food.png" />	
+						<span>Food</span>
+					</h2>
+					<ul>
+						{embed="modules/fetch_cats" cat_group="5" entry_id="{entry_id}"}
+					</ul>							
+				</div>
+			</div>
+		</article><!-- amenities -->
+		
+		<article class="tab-content" id="tab-3">
+		
+			<div class="currency">
+	        <span>Show rates in</span>
+	        <span class="help-hover"> <?=$_SESSION['cur_name']?>
+	        <div id="currency-dropdown">
+	          <ul>
+	            <li><a href="#" id="INR">Indian Rupee (INR)</a></li>
+	            <li><a href="#" id="USD">United States Dollar (USD)</a></li>
+	            <li><a href="#" id="GBP">British Pound (GBP)</a></li>
+	            <li id="currency-common"><a href="#" id="EUR">Euro (EUR)</a></li>
+	            <li><a href="#" id="AED">Arab Emirates Dirham (AED)</a></li>	            
+	            <li><a href="#" id="ARS">Argentine Peso (ARS)</a></li>
+	            <li><a href="#" id="AUD">Australian Dollar (AUD)</a></li>
+	            <li><a href="#" id="BRL">Brazilian Real (BRL)</a></li>
+	            <li><a href="#" id="HKD">Hong Kong Dollar (HKD)</a></li>
+	            <li><a href="#" id="MYR">Malaysian Ringitt (MYR)</a></li>
+	            <li><a href="#" id="SGD">Singapore Dollar (SGD)</a></li>
+	            <li><a href="#" id="ZAR">South African Rand (ZAR)</a></li>
+	            <li><a href="#" id="LKR">Sri Lankan Rupee (LKR)</a></li>
+	            <li><a href="#" id="THB">Thai Baht (THB)</a></li>
+	            
+	          </ul>
+	        </div>
+	        </span>
+	      </div>
+	      
+	      <form action="" method="post" id="currency_form">
+	        <input type="hidden" value="" name="cur_to" id="cur_to" />
+	        <input type="hidden" value="" name="cur_name" id="cur_name" />
+	      </form>
+      
+		
+			<table border="0" cellpadding="6" cellspacing="0">
+				<tr>
+					<th><strong>Room Type</strong></th>
+				{hideaway_seasons}	
+					{if hideaway_season1}<th class="vtop">{hideaway_season1}</th>{/if}
+					{if hideaway_season2}<th class="vtop">{hideaway_season2}</th>{/if}
+					{if hideaway_season3}<th class="vtop">{hideaway_season3}</th>{/if}
+					{if hideaway_season4}<th class="vtop">{hideaway_season4}</th>{/if}
+					{if hideaway_season5}<th class="vtop">{hideaway_season5}</th>{/if}
+				{/hideaway_seasons}	
+				{if "{hideaway_seasons:total_rows}" == 0}
+					<th>Rates</th>
+				{/if}
+				</tr>
+				
+				{hideaway_rates}
+				<tr>
+					<td class="room-type">{hideaway_room_type} <p>{if hideaway_rate_basis}{hideaway_rate_basis}{if:else}per night{/if}</p></td>
+					{if hideaway_season_rate}
+						<td><span><?=$cur_to?></span> {embed="modules/currency-converter" price="<?=str_replace(',', '', '{hideaway_season_rate}')?>"}</td>
+					{if:else}
+						{if hideaway_season1_rate}<td><span><?=$cur_to?></span> {embed="modules/currency-converter" price="<?=str_replace(',', '', '{hideaway_season1_rate}')?>"}</td>{/if}
+						{if hideaway_season2_rate}<td><span><?=$cur_to?></span> {embed="modules/currency-converter" price="<?=str_replace(',', '', '{hideaway_season2_rate}')?>"}</td>{/if}
+						{if hideaway_season3_rate}<td><span><?=$cur_to?></span> {embed="modules/currency-converter" price="<?=str_replace(',', '', '{hideaway_season3_rate}')?>"}</td>{/if}
+						{if hideaway_season4_rate}<td><span><?=$cur_to?></span> {embed="modules/currency-converter" price="<?=str_replace(',', '', '{hideaway_season4_rate}')?>"}</td>{/if}
+						{if hideaway_season5_rate}<td><span><?=$cur_to?></span> {embed="modules/currency-converter" price="<?=str_replace(',', '', '{hideaway_season5_rate}')?>"}</td>{/if}
+					{/if}
+				</tr>
+				{/hideaway_rates}
+				
+			</table>
+
+			{if hideaway_rates_include}
+				<div class="rate-details" id="rate-includes">
+					<h3>Rate Includes</h3>
+					<div>{hideaway_rates_include}</div>
+				</div>
+			{/if}
+			
+			{if hideaway_additional_information}
+				<div class="rate-details" id="additional-details">
+					<h3>Additional Details</h3>
+					<div>{hideaway_additional_information}</div>
+				</div>
+			{/if}
+			
+		</article><!-- rates -->
+		<div class="inform">
+			<h2>Awesome Things to do nearby</h2>
+			<div class="hold">
+				{hideaway_things_to_do}
+				<div class="column column-l">
+						<article>
+							<span class="number">{count}</span>
+							<div class="title">
+								<h3>{title}</h3>
+							</div><!-- title -->
+							{things_description}
+						</article>
+				</div><!-- column -->
+				<div class="column right column-r">
+					<article>
+						{exp:channel_images:images entry_id="{entry_id}"}
+							<figure>
+								<div>
+									<img src="{image:url:web}" width="{image:width:web}" height="{image:height:web}" alt="{image:description}" />
+								</div>
+								<figcaption>{image:description}</figcaption>
+							</figure>
+						{/exp:channel_images:images}	
+					</article>
+				</div><!-- column -->
+				{/hideaway_things_to_do}
+			</div>
+		</div><!-- inform -->
+	</section><!-- content -->
+	<aside id="sidebar">
+		<div class="booking-box">
+			<h2>Make a reservation</h2>
+			<form action="#" class="booking-form">
+				<fieldset>
+					<!--<p class="price">Rs. {embed="modules/minimum-price" entryid="{entry_id}"} <span class="from">from</span><span class="per">per night</span></p>-->
+					{embed="modules/price" entryid="{entry_id}"}
+					<div class="row">
+						<label for="txt1">Check-in</label>
+						<input id="check-in" type="text" value="" readonly placeholder="Pick a date" class="text datepicker" id="txt1" />
+					</div>
+					<div class="row">
+						<label for="txt2">Check-out</label>
+						<input id="check-out" type="text" value="" readonly placeholder="Pick a date" class="text datepicker" id="txt2" />
+					</div>
+					<div class="submit-holder">
+						<input id="btn-1" href="#popup-1" type="submit" value="Book Now!" class="submit" />
+					</div><!-- end submit-holder -->
+				</fieldset>
+			</form>
+      {if hideaway_freebies}
+      <div class="freebie-details">
+        <h4>FREE GIFT ON CHECKING IN</h4>
+        {hideaway_freebies}
+          <p>{hideaway_freebie_text}</p>
+        {/hideaway_freebies}  
+      </div>
+      {/if}
+		</div><!-- booking-box -->
+		<div class="location-box">
+			<h3>Getting there</h3>
+			
+		<div class="location-map">	
+			
+			{hideaway_location_on_map}
+			
+			<a href="https://maps.google.com/maps?q={latitude},{longitude}&ll={latitude},{longitude}&z=17">
+				<div class="hideaway-map" id="hideaway-map"></div>
+			</a>
+			
+			<a href="https://maps.google.com/maps?q={latitude},{longitude}&ll={latitude},{longitude}&z=17" class="external-link" target="_blank"></a>
+			
+			<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+			
+			<script>
+				var map;
+				function initialize() {
+				  var myLatlng = new google.maps.LatLng({latitude}, {longitude});
+				  var mapOptions = {
+				    zoom: 8,
+				    center: myLatlng,
+				    mapTypeId: google.maps.MapTypeId.ROADMAP,
+				    disableDefaultUI: true
+				  };
+				  map = new google.maps.Map(document.getElementById('hideaway-map'),mapOptions);
+				  var marker = new google.maps.Marker({
+				    position: myLatlng,
+				    map: map,
+				    title: 'Hello World!'
+				  });    
+				}
+				google.maps.event.addDomListener(window, 'load', initialize);
+			</script>
+			
+			{/hideaway_location_on_map}
+			
+		</div>
+			
+      <div class="info">
+				<ul class="items-list">
+					<li class="metro">
+						<h4>CLOSEST METRO</h4>
+						{hideaway_nearest_metro}
+							<p><span>{hideaway_metro}{title}{/hideaway_metro}</span></p>
+							<p>{hideaway_metro_distance}</p>
+						{/hideaway_nearest_metro}	
+					</li>
+					<li class="airport">
+						<h4>CLOSEST AIRPORT</h4>
+						{hideaway_nearest_airport}
+						<p><span>{hideaway_airport}{title}{/hideaway_airport}</span></p>
+						<p>{hideaway_airport_distance}</p>
+						{/hideaway_nearest_airport}
+					</li>
+					<li class="station">
+						<h4>CLOSEST STATION</h4>
+						{hideaway_nearest_station}
+						<p><span>{hideaway_station}{title}{/hideaway_station}</span></p>
+						<p>{hideaway_state_distance}</p>
+						{/hideaway_nearest_station}
+					</li>
+				</ul><!-- items-list -->
+				<h4>GETTING AROUND</h4>
+				<div>
+				{hideaway_getting_around}
+				{if hideaway_from_beach}
+					<p>
+						<span>Distance from beach</span>
+						<span class="nudgespace">:</span><br>
+						<span>{hideaway_from_beach}</span>
+					</p>
+				{/if}
+				{if hideaway_from_city_center}
+					<p>
+						<span>Distance from city center</span>
+						<span class="nudgespace">:</span><br>
+						<span>{hideaway_from_city_center}</span>
+					</p>
+				{/if}
+				{if hideaway_tip}
+					<p>
+						<span>Tip to reach city center</span>
+						<span class="nudgespace">:</span><br>
+						<span>{hideaway_tip}</span>
+					</p>
+				{/if}
+        
+        </div>
+			</div><!-- info -->
+		</div><!-- location-box -->
+	</aside><!-- sidebar -->
+</div><!-- container -->
+
+<div class="hidden">
+		<div class="popup" id="popup-1">
+			<div class="popup-holder">
+				<div class="head">
+					<div class="in">
+						<h3>{title}</h3>
+						<p><strong>{hideaway_location}, {hideaway_state}{title}{/hideaway_state}</strong></p>
+					</div>
+				</div>
+				<div class="entity">
+					{embed="modules/booking-form"}
+				</div>
+			</div>
+		</div><!-- popup -->
+		<div class="popup" id="popup-2">
+			<div class="popup-holder">
+				<div class="head">
+					<div class="in">
+						<h3>{title}</h3>
+						<p><strong>{hideaway_location}, {hideaway_state}{title}{/hideaway_state}</strong></p>
+					</div>
+				</div>
+				<div class="entity">
+					<div class="msg">
+						<h4><span class="ico">&nbsp;</span>Awesome!</h4>
+						<p>We've received your request, and will get back to you within 24 hours.</p>
+					</div>
+					<div class="btn-holder">
+						<div class="clearfix">
+							<a href="#" class="btn-submit btn-close">Close</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- popup -->
+	</div><!-- hidden -->
+	
+{/exp:channel:entries}

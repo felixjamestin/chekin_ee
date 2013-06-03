@@ -1,0 +1,184 @@
+{exp:channel:entries url_title="{segment_2}" disable="pagination|categories" dynamic="no"}
+{if no_results}
+	{redirect="404"}
+{/if}
+<section class="main-photo">
+	<div class="main-img-holder" id="carousel">
+    
+    {exp:channel_images:images channel="hideaway" entry_id="{entry_id}"}
+      
+      <div>
+         
+         <img src="{image:url:details_page_1}" {if image:field:1 != ''}id="white"{/if} alt="{image:description}" class="main-img" />
+         
+         {if image:count == 1}
+	         <div id="title">
+		         <h2>{title} <span>{hideaway_location}, {hideaway_state}{title}{/hideaway_state}</span></h2>
+		         <p>{hideaway_one_line}</p>
+	         </div>
+	         <div id="title_bg"></div>
+	        
+	     {/if}
+
+	     {if image:count != 1}
+	     	<div class="description">	      
+		     	<span>
+		     		 {image:description} 
+		     	</span>
+	     	</div>
+		 {/if}
+      
+      </div>
+      
+	{/exp:channel_images:images}
+    
+	</div>
+  <a title="Show previous" id="prev" href="#" style="display: block;" class=""> </a>
+  <a title="Show next" id="next" href="#" style="display: block;" class=""> </a>
+	
+	<div class="hold">
+		
+		<!-- <a class="backlink" href="javascript:history.go(-1)">&lt; Back</a> -->
+		
+		<!--
+<div class="title">
+			<h2>{title} <span>{hideaway_location}, {hideaway_state}{title}{/hideaway_state}</span></h2>
+			<p>{hideaway_one_line}</p>
+		</div>
+--><!-- title -->
+		
+    <div class="gallery-section">
+			<a href="#" class="btn-prev" id="btn-prev" style="display: block;">prev</a>
+			<a href="#" class="btn-next" id="btn-next" style="display: block;">next</a>
+			<div class="gmask">
+				<ul class="gallery" id="thumbnails">
+					{exp:channel_images:images channel="hideaway" entry_id="{entry_id}"}
+						<li>
+							<a href="#" {if image:field:1 != ''}id="white"{/if} title="{image:description}"><img src="{image:url:thumb_66}" width="{image:width:thumb_66}" height="{image:width:thumb_66}" alt="{image:description}" /></a>
+						</li>
+						{if image:count == image:total}
+						<?php 
+							$total = {image:total}; 
+							for($i = $total; $i < 14; $i++) {
+								echo '<li></li>';
+							}
+						?>
+						{/if}
+					{/exp:channel_images:images}
+				</ul>
+			</div>
+		</div><!-- gallery-section -->
+		
+	</div>
+
+</section><!-- main-photo -->
+
+{/exp:channel:entries}
+
+<script type="text/javascript" language="javascript">
+
+	function beforeHighlight( items ) {
+						
+		items.removeClass('main-img-active');
+		items.filter(':eq(1)').addClass('main-img-active');
+		
+		items.find('.description').removeClass('active');
+		$('.main-img-active').find('.description').css('opacity','0');
+		
+		return items;
+	}
+	
+	function afterHighlight( items ){
+			
+			$('.main-img-active').find('.description').css('opacity','1').addClass('active');	
+			
+	}
+	
+
+  $(function() {
+  
+  
+  	$('#thumbnails img').each(function(i) {
+  	
+        $(this).addClass( 'thumb'+i );
+        $(this).attr('id', 'thumb'+i );
+        
+        $(this).click(function() {
+        
+            $('#carousel').trigger( 'slideTo', [i, -1, true] );
+            
+            return false;
+            
+        });
+        
+    });
+    
+  
+    $('#carousel').carouFredSel({
+	  circular: true,
+      width: '100%',
+      auto: false,
+      swipe: {
+      	onTouch: true,
+        onMouse: true
+      },
+      items: {
+        visible: 3,
+        start: -1
+      },
+      scroll: {
+        items: 1,
+        duration: 1000,
+        timeoutDuration: 3000,
+        onBefore: function( data ) {
+        	beforeHighlight( data.items.visible );
+        },
+        onAfter: function( data ) {
+            afterHighlight( data.items.visible );
+        }
+
+      },
+      prev: {
+      	button: '#prev',
+      	key: 'left'
+      },
+      next: {
+      	button: '#next',
+      	key: 'right'
+      }
+      
+    });
+    
+    $('#thumbnails').carouFredSel({
+	  circular: true,
+      auto: false,
+      swipe: {
+      	onTouch: true,
+        onMouse: true
+      },
+      items: {
+        visible: 14,
+        start: 0
+      },
+	  scroll: {
+	 	items: 3,
+		fx: "scroll",
+		easing: "swing"
+	  },
+      prev: {
+      	button: '#btn-prev',
+      	key: null
+      },
+      next: {
+      	button: '#btn-next',
+      	key: null
+      }
+    });
+    
+    
+    $('#carousel > div').filter(':eq(1)').addClass('main-img-active');
+    
+    
+  });
+  
+</script>

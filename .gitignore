@@ -13,3 +13,11 @@ sized/
 thumbs/
 _thumbs/
 */expressionengine/cache/*
+
+## local config settings
+/public_html/config/config.local.php
+
+## Cache folders
+/public_html/ee-framework/expressionengine/cache/*
+/public_html/ee-framework/expressionengine/cache/.htaccess
+/public_html/ee-framework/expressionengine/cache/index.html

@@ -1,0 +1,27 @@
+<?php 
+	$price_range = array();
+	$prices = array(); 
+?>
+{exp:channel:entries entry_id="{embed:entryid}" limit="1" dynamic="no"}
+{hideaway_rates}
+<?php
+	$fullrate = intval(str_replace(",", "",'{hideaway_season_rate}'));
+	$season1 = intval(str_replace(",", "",'{hideaway_season1_rate}')); 
+	$season2 = intval(str_replace(",", "",'{hideaway_season2_rate}')); 
+	$season3 = intval(str_replace(",", "",'{hideaway_season3_rate}')); 
+	$season4 = intval(str_replace(",", "",'{hideaway_season4_rate}')); 
+	$season5 = intval(str_replace(",", "",'{hideaway_season5_rate}')); 
+	
+	$prices = array_merge($prices, array($fullrate,$season1,$season2,$season3,$season4,$season5));
+?>	
+{/hideaway_rates}
+<?php
+	$price_range = array_unique($prices);
+	$min = 0;
+	if(count($price_range) > 0)
+		$min = number_format(min(array_filter($price_range)));
+		
+	unset($price_range);
+?>
+{/exp:channel:entries}
+<?=$min?>

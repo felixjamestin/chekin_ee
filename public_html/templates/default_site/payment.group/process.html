@@ -1,0 +1,41 @@
+<?
+$account_id = 12567;
+$secret = 'e2163d7fc1fd1b6f2f73cad23ee9d663';
+$return_url = '{site_url}payment/response/'.$_POST['url_hash'].'?DR={DR}';
+//$mode = "LIVE";
+$mode = "TEST";
+$hash = $secret."|".$account_id."|".$_POST['amount']."|".$_POST['reference_no']."|".$return_url."|".$mode;
+$secure_hash = md5($hash);
+
+?>
+<html>
+  <body onload="document.frmTransaction.submit();">
+    <form  method="post" action="https://secure.ebs.in/pg/ma/sale/pay" name="frmTransaction" id="frmTransaction" onSubmit="return validate()">
+
+     <input name="account_id" type="hidden" value="<?echo $account_id ?>">
+     <input name="return_url" type="hidden" size="60" value="<? echo $return_url ?>" />
+     <input name="mode" type="hidden" size="60" value="<? echo $mode ?>" />
+     <input name="reference_no" type="hidden" value="<? echo  $_POST['reference_no'] ?>" />
+     <input name="amount" type="hidden" value="<? echo $_POST['amount']?>"/>
+     <input name="description" type="hidden" value="<? echo $_POST['description'] ?>" /> 
+     <input name="name" type="hidden" maxlength="255" value="<? echo $_POST['name'] ?>" />
+     <input name="address" type="hidden" maxlength="255" value="<? echo $_POST['address'] ?>" />
+     <input name="city" type="hidden" maxlength="255" value="<? echo $_POST['city'] ?>" />
+     <input name="state" type="hidden" maxlength="255" value="<? echo $_POST['state'] ?>" />
+     <input name="postal_code" type="hidden" maxlength="255" value="<? echo $_POST['postal_code'] ?>" />
+     <input name="country" type="hidden" maxlength="255" value="<? echo $_POST['country'] ?>" />
+     <input name="phone" type="hidden" maxlength="255" value="<? echo $_POST['phone'] ?>" />
+     <input name="email" type="hidden" size="60" value="<? echo $_POST['email']?>" />
+     <input name="secure_hash" type="hidden" size="60" value="<? echo $secure_hash;?>" />
+     <!--<input name="submitted" value="Submit" type="submit" />-->
+
+    </form>
+    <div>
+      <p style="margin:200px auto;width: 250px;"><strong>Processing request, please wait...</strong></p>
+    </div>
+
+{!-- Google Analytics --}
+{embed="modules/google-analytics"}
+
+  </body>
+</html>

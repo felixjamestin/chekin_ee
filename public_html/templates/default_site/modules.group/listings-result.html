@@ -1,0 +1,72 @@
+{exp:channel:entries channel="hideaway" dynamic="no" search:hideaway_state="{segment_1}" <?=$_SESSION['sort_string']?> limit="7" paginate="both" paginate_base="/{segment_1}/page/"}
+{if no_results}
+<section class="block">
+	<p>No results found!</p>
+</section>
+{/if}
+<section class="block">
+<!-- 	<span class="bg"></span> -->
+	<ul class="accordion-menu-wide">
+		{exp:channel_images:images category="Listings page|Home page" limit="4" entry_id="{entry_id}"}
+			{if image:no_images}{/if}
+			<li>
+				<a href="{site_url}{hideaway_state}{url_title}{/hideaway_state}/{url_title}/">
+					{if image:description}
+						<span>{image:description}</span>
+					{/if}
+					<img src="{image:url:listings_page}" width="{image:width:listings_page}" height="{image:height:listings_page}" alt="image description" />
+				</a>
+				
+			</li>
+		{/exp:channel_images:images}
+	</ul><!-- accordion -->
+	<a href="{site_url}{hideaway_state}{url_title}{/hideaway_state}/{url_title}/">
+	<div class="box-heading noise">
+		<!--<div class="price">
+			
+			from
+			<p>Rs. <span class="alt">{embed="modules/minimum-price" entryid="{entry_id}"}</span></p>
+			<span class="alt right">per night</span>	
+		</div>-->
+    {embed="modules/price" entryid="{entry_id}"}
+		<div class="hold">
+			<h2>{title}<span class="location">{hideaway_location}, {hideaway_state}{title}{/hideaway_state}</span></h2>
+			<p>{hideaway_one_line}</p>
+		</div>
+    {if hideaway_freebies}
+    <div class="freebie">
+      <span>Free gift included
+      <div class="freebie-dropdown">
+        <div class="freebie-dd-content">
+        {hideaway_freebies}
+          <p>{hideaway_freebie_text}</p>
+        {/hideaway_freebies}
+        </div>
+      </div>
+      </span>
+    </div>
+    {/if}
+	</div></a><!-- box-heading -->
+</section><!-- block -->
+{paginate}
+	<div class="pagination">
+    <span>Page</span>
+    {pagination_links}
+        <ul>
+            {previous_page}
+                    <li><a href="{pagination_url}" class="page-previous"><</a></li>
+            {/previous_page}
+
+            {page}
+                    <li class="{if current_page}active{/if}"><a href="{if pagination_page_number == 1} {site_url}{segment_1}{if:else}{pagination_url}{/if}" class="page-{pagination_page_number}">{pagination_page_number}</a></li>
+            {/page}
+
+            {next_page}
+                    <li><a href="{pagination_url}" class="page-next">></a></li>
+            {/next_page}
+
+        </ul>
+  {/pagination_links}
+  </div>
+{/paginate}
+{/exp:channel:entries}

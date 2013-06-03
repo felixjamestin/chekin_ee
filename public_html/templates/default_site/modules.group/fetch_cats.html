@@ -1,0 +1,14 @@
+<?php
+// get all categories in the specified group
+$all_cats = $this->EE->db->query ( "SELECT cat_id, cat_name FROM exp_categories WHERE group_id = '{embed:cat_group}' ORDER BY cat_name" );
+
+// loop through each cat returned, marking a box checked if the current entry is in that cat
+foreach ( $all_cats->result() as $row ) {
+   $venue_cats = $this->EE->db->query ( "SELECT cat_id AS venue_cat_id FROM exp_category_posts WHERE entry_id='{embed:entry_id}' AND cat_id = '" . $row->cat_id . "'" );
+   if ( $venue_cats->num_rows() ) {
+      echo '<li class="avail">' . $row->cat_name . '</li>';
+   } else {
+      echo '<li class="notavail">' . $row->cat_name . '</li>';
+   }
+} 
+?> 

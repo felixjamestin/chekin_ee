@@ -1,0 +1,51 @@
+<?php 
+	$price_range = array();
+	$prices = array(); 
+	$all = array();
+  $cur_to = isset($_SESSION['cur_to'])? $_SESSION['cur_to'] :"Rs." ;
+?>
+{exp:channel:entries entry_id="{embed:entryid}" limit="1" dynamic="no"}
+{hideaway_rates}
+<?php
+	$fullrate = intval(str_replace(",", "",'{hideaway_season_rate}'));
+	$season1 = intval(str_replace(",", "",'{hideaway_season1_rate}')); 
+	$season2 = intval(str_replace(",", "",'{hideaway_season2_rate}')); 
+	$season3 = intval(str_replace(",", "",'{hideaway_season3_rate}')); 
+	$season4 = intval(str_replace(",", "",'{hideaway_season4_rate}')); 
+	$season5 = intval(str_replace(",", "",'{hideaway_season5_rate}')); 
+	$prices = array($fullrate,$season1,$season2,$season3,$season4,$season5);
+	$all[] = array('basis' => '{hideaway_rate_basis}', 'prices' => $prices);
+?>	
+{/hideaway_rates}
+<?php
+	$rates = array();
+	$final = array();
+	foreach ($all as $season) {
+		$price_range = array_unique($season['prices']);
+		if($season['basis'] == '') $season['basis'] = 'per night';
+		if (array_key_exists($season['basis'], $rates)) {
+			$rates[$season['basis']] = array_merge($rates[$season['basis']], array_filter($price_range));
+		} else {
+			$rates[$season['basis']] = array_filter($price_range);
+		}
+	}
+	foreach ($rates as $key => $rate) {
+		if(count($rate) > 0)
+			$final[$key] = min($rate);
+	}
+	if(count($final) == 0) $final['per night'] = 0;
+	$minrate = min($final);
+	$ratebasis = array_search(min($final), $final);
+?>
+{/exp:channel:entries}
+
+{if segment_2 != '' && segment_2 != "page"}
+	<p class="price"><?=$cur_to?> {embed="modules/currency-converter" price="<?=$minrate?>"}
+		 <span class="from">from</span><span class="per"><?=$ratebasis?></span></p>
+{if:else}
+	<div class="price">
+		from
+		<p><?=$cur_to?> <span class="alt">{embed="modules/currency-converter" price="<?=$minrate?>"}</span></p>
+		<span class="alt right"><?=$ratebasis?></span>	
+	</div>
+{/if}

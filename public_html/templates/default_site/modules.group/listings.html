@@ -1,0 +1,62 @@
+<?
+  session_start();
+  if(!isset($_SESSION['cur_to'])) {
+    $_SESSION['cur_to'] = 'INR';
+  }
+  if(!isset($_SESSION['cur_name'])) {
+    $_SESSION['cur_name'] = 'Indian Rupee';
+  }
+  if(!isset($_SESSION['order_by'])) {
+    $_SESSION['order_by'] = 'magic';
+  }
+  if(!isset($_SESSION['order_name'])) {
+    $_SESSION['order_name'] = 'Magic';
+  }
+  if(!isset($_SESSION['fixed_order'])) {
+    $_SESSION['fixed_order'] = '';
+  }
+  $_SESSION['cur_to'] = isset($_POST['cur_to']) ? $_POST['cur_to'] : $_SESSION['cur_to'];
+  $_SESSION['cur_name'] = isset($_POST['cur_name']) ? $_POST['cur_name'] : $_SESSION['cur_name'];
+  
+  $_SESSION['order_by'] = isset($_POST['order_by']) ? $_POST['order_by'] : $_SESSION['order_by'];
+  $_SESSION['order_name'] = isset($_POST['order_name']) ? $_POST['order_name'] : $_SESSION['order_name'];
+  
+  $sort_order = ($_SESSION['order_by'] == "title" || $_SESSION['order_by'] == "hideaway_minimum_price") ? "asc" : "desc";
+  
+  if(isset($_POST['order_by']) && $_POST['order_by'] == "magic") { 
+    $fixed_order = '{exp:channel:entries channel="hideaway" dynamic="no" orderby="random"}{entry_id}|{/exp:channel:entries}';
+    $_SESSION['fixed_order'] = $fixed_order;
+  }
+  $fixed_order = $_SESSION['fixed_order'];
+  $sort_string = ($_SESSION['order_by'] == "magic") ? 'fixed_order="'.$fixed_order.'"' : 'orderby="'.$_SESSION['order_by'].'" sort="'.$sort_order.'"'; 
+?>
+<div class="help-links">
+  
+  <div class="listings-sort">
+    <span>Sort by</span>
+    <span class="help-hover"> <?=$_SESSION['order_name']?>
+    <div class="sort-dropdown">
+      <ul>
+        <li class="magic"><a href="#" id="magic">Magic</a></li>
+        <li><a href="#" id="title">Name</a></li>
+        <li><a href="#" id="date">Newly Added</a></li>
+        <li><a href="#" id="hideaway_minimum_price">Price</a></li>
+      </ul>
+    </div>
+    </span>  
+  </div>
+  
+  <form action="" method="post" id="orderby_form">
+    <input type="hidden" value="" name="order_by" id="order_by" />
+    <input type="hidden" value="" name="order_name" id="order_name" />
+  </form>
+  
+
+{currency_dropdown}
+
+</div>
+<?
+  $_SESSION['sort_string'] = $sort_string;
+?>
+{embed="modules/listings-result"}
+					

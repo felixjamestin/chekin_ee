@@ -1,0 +1,38 @@
+{exp:channel:entries url_title="{segment_1}" channel="state" dynamic="no"}
+{if no_results}
+	{redirect="404"}
+{/if}
+<section class="search-block" id="search-block">
+	<div class="frame">
+		<div class="hold">
+			<a href="javascript:history.go(-1)">&lt;&lt; Back</a>
+			<div class="info">
+				<div id="search-list" class="places-list-small">
+					<span>
+					<h1>{title}</h1>
+					{embed="modules/states-dropdown"}
+					</span>
+				</div><!-- search-list -->
+				<div class="text">
+					{state_about}
+				</div><!-- text -->
+			</div><!-- info -->
+		</div>
+	</div>
+</section><!-- search-block -->
+
+<section id="search-minibar">
+	<div class="hold">
+			<!-- <a href="javascript:history.go(-1)">&lt;&lt; Back</a> -->
+			<div class="info">
+				<div id="search-list" class="places-list-small">
+					<span>
+					<h1 id="search-place-title">{title}</h1>
+					{embed="modules/states-dropdown"}
+					</span>
+				</div><!-- search-list -->
+			</div><!-- info -->
+		</div>
+</section>
+
+{/exp:channel:entries}
