@@ -24,7 +24,7 @@ if(!defined('ENV')) {
 
 		case 'dev.chekin.in' :
 			define('ENV', 'dev');
-			define('THIS_WEB_ROOT', 'public_html');
+			define('THIS_WEB_ROOT', 'public_dev_html');
 			break;
 
 		default :
