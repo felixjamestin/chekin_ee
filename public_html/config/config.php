@@ -72,7 +72,7 @@ if(isset($config)) {
 	$config['reserved_category_word'] 		= 'categories';
 
 	// Template preferences
-	$config['strict_urls']					= 'y';
+	$config['strict_urls']					= 'n';
 	$config['save_tmpl_files'] 				= 'y';
 	$config['save_tmpl_revisions'] 			= 'y';
 
