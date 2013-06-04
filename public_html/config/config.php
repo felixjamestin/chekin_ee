@@ -139,16 +139,7 @@ if(isset($config)) {
 
 	// Paths & URLs - MSM Adjustable
 	$config['tmpl_file_basepath'] 			= THIS_BASEPATH 	. '/templates/';
-
-	// ??
-	$config['prv_msg_upload_path'] 			= THIS_MEMBER_PATH 	. '/pm_attachments';
-	$config['avatar_path'] 					= THIS_MEMBER_PATH 	. '/avatars/';
-	$config['avatar_url'] 					= THIS_MEMBER_URL 	. '/avatars/';
-	$config['photo_path'] 					= THIS_MEMBER_PATH 	. '/photos/';
-	$config['photo_url'] 					= THIS_MEMBER_URL 	. '/photos/';
-	$config['sig_img_path'] 				= THIS_MEMBER_PATH 	. '/signature_attachments/';
-	$config['sig_img_url'] 					= THIS_MEMBER_URL 	. '/signature_attachments/';
-
+	
 } // end if $config
 
 /**************************************************
