@@ -45,15 +45,6 @@ require 'config.' . ENV . '.php';
 
 
 /**************************************************
-	Customize these paths to fit your needs
-***************************************************/
-define('THIS_UPLOAD_PATH', 	THIS_BASEPATH . '/content');
-define('THIS_UPLOAD_URL', 	THIS_SITE_URL . '/content');
-
-define('THIS_MEMBER_PATH', 	THIS_BASEPATH . '/content/members');
-define('THIS_MEMBER_URL', 	THIS_SITE_URL . '/content/members');
-
-/**************************************************
  SET DEFAULT CONFIG VALUES
  Check to make sure we have processed the default EE config.php
  If we have, set as many config values as we can in this file.
