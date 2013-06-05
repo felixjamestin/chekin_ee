@@ -988,8 +988,8 @@ animation-name: fadeInDown;
 
 #pitch #places #places-list .places-dd-footer {
 	padding: 6px 80px 13px 3px;
-	background: white url("white_noise.png") 50% 50%;
-	background: white url("white_noise.png") 50% 50%;
+	background: white url("/uploads/static/white_noise.png") 50% 50%;
+	background: white url("/uploads/static/white_noise.png") 50% 50%;
 	color: #999999;
 	margin-top: 0px;
 	position: relative;
@@ -3414,7 +3414,7 @@ margin:0px 0px 0px 18px;}
 .places-list-small .places-dd-footer {
     padding: 5px 13px 0px 7px;
     background-color: #00d9f3;
-    background: #fff url("white_noise.png") 50% 50%;
+    background: #fff url("/uploads/static/white_noise.png") 50% 50%;
     color: #999;
     margin-top: 0px;
     position: relative;
