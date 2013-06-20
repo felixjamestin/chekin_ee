@@ -64,7 +64,7 @@ if(isset($config)) {
 
 	$config['uri_protocol'] 				= 'AUTO';
 	// Encryption / Session key
-	$config['encryption_key'] 				= '';
+	$config['encryption_key'] 				= '=p%;nR|lx|M\“vLKh^u$*S46\b';
 
 	// Channel preferences
 	$config['use_category_name'] 			= 'y';
