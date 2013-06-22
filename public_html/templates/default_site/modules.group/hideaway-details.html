@@ -141,7 +141,7 @@
 			</table>
 
 			{if hideaway_rates_include}
-				<div class="rate-details" id="rate-includes">
+				<div class="rate-details {if hideaway_additional_information}rate-details-multiple{/if}" id="rate-includes">
 					<h3>Rate Includes</h3>
 					<div>{hideaway_rates_include}</div>
 				</div>
@@ -171,12 +171,12 @@
 				<div class="column right column-r">
 					<article>
 						{exp:channel_images:images entry_id="{entry_id}"}
-							<figure>
-								<div>
-									<img src="{image:url:web}" width="{image:width:web}" height="{image:height:web}" alt="{image:description}" />
-								</div>
-								<figcaption>{image:description}</figcaption>
-							</figure>
+						                            	<figure>
+						                            		<div>
+						                            			<img src="{image:url:web}" width="{image:width:web}" height="{image:height:web}" alt="{image:description}" />
+						                            		</div>
+						                            		<figcaption>{image:description}</figcaption>
+						                            	</figure>
 						{/exp:channel_images:images}	
 					</article>
 				</div><!-- column -->
