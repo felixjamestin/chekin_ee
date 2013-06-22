@@ -2921,6 +2921,7 @@ font-weight: 400;}
 	margin-top: 10px;
 }
 .rate-details  div{padding: 15px 10px 15px 30px;}
+.rate-details  div p{padding: 15px 10px 0px 30px;}
 .rate-details  ul li{font-size:14px;padding:3px 0px 3px 0px;line-height:18px;background:none; list-style:disc; margin-bottom: 5px;}
 
 .amenities h2{margin-left: 12px; margin-bottom: 45px;}
