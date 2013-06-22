@@ -214,18 +214,16 @@
       {/if}
 		</div><!-- booking-box -->
 		<div class="location-box">
-			<h3>Getting there</h3>
-			
+		                          	<h3>Getting there</h3>
+		                          	
 		<div class="location-map">	
+		                          	
+		{hideaway_location_on_map}
 			
-			{hideaway_location_on_map}
-			
-			<a href="https://maps.google.com/maps?q={latitude},{longitude}&ll={latitude},{longitude}&z=17">
-				<div class="hideaway-map" id="hideaway-map"></div>
-			</a>
-			
+			<div class="hideaway-map" id="hideaway-map"></div>
+				
 			<a href="https://maps.google.com/maps?q={latitude},{longitude}&ll={latitude},{longitude}&z=17" class="external-link" target="_blank"></a>
-			
+				
 			<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 			
 			<script>
@@ -248,17 +246,18 @@
 				google.maps.event.addDomListener(window, 'load', initialize);
 			</script>
 			
-			{/hideaway_location_on_map}
-			
+		{/hideaway_location_on_map}
+		
 		</div>
-			
+				
+	
       <div class="info">
 				<ul class="items-list">
 					<li class="metro">
 						<h4>CLOSEST METRO</h4>
 						{hideaway_nearest_metro}
-							<p><span>{hideaway_metro}{title}{/hideaway_metro}</span></p>
-							<p>{hideaway_metro_distance}</p>
+						                         	<p><span>{hideaway_metro}{title}{/hideaway_metro}</span></p>
+						                         	<p>{hideaway_metro_distance}</p>
 						{/hideaway_nearest_metro}	
 					</li>
 					<li class="airport">
