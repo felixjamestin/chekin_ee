@@ -54,7 +54,7 @@ require 'config.' . ENV . '.php';
 if(isset($config)) {
 
 	// General preferences
-	$config['is_system_on'] 				= 'y';
+	$config['is_system_on'] 				= 'n';
 	$config['license_number'] 				= '3062-4966-5957-7147';
 	$config['site_index']	 				= '';
 	$config['admin_session_type']		 	= 'cs';
@@ -64,7 +64,7 @@ if(isset($config)) {
 
 	$config['uri_protocol'] 				= 'AUTO';
 	// Encryption / Session key
-	$config['encryption_key'] 				= '=p%;nR|lx|M\“vLKh^u$*S46\b';
+	$config['encryption_key'] 				= '=p%;nR|lx|M\ï¿½vLKh^u$*S46\b';
 
 	// Channel preferences
 	$config['use_category_name'] 			= 'y';
