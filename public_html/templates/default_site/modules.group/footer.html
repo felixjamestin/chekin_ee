@@ -102,9 +102,17 @@
 
 
 <script>
-$.getJSON("https://api.twitter.com/1/statuses/user_timeline/ChekinTeam.json?callback=?", function(data) {
-     $("#twitter").html(data[0].text);
-});
+$.getJSON("{site_url}twitter-oauth.php")
+  .done(function(data) {
+     if(!data.errors) {
+       $("#twitter").html(data[0].text);
+     } else {
+       $("#twitter").html("Oops! Twitter not availabe at the moment");
+     }
+  })
+  .fail(function( jqxhr, textStatus, error ) {
+     $("#twitter").html("Oops! Twitter not availabe at the moment");
+  });  
 </script>
 
 {!-- Google Analytics --}
