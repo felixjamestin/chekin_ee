@@ -10,7 +10,7 @@
 # 2 = errors shown to everyone in the world
 $debug 				= '1'; 
 $show_profiler 		= 'n'; # y/n
-$template_debugging = 'n'; # y/n
+$template_debugging = 'y'; # y/n
 $email_debug 		= 'n'; # y/n
 $db_debug 			= 'n'; # y/n
 
