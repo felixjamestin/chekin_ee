@@ -696,6 +696,7 @@ animation-name: fadeInDown;
 	margin-top: 30px;
 	border-radius:50%;
 	top: 123px;
+  display: none;
 	
 	-webkit-animation: round_squiggle 30s infinite linear;
 	-moz-animation: round_squiggle 30s infinite linear;
