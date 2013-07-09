@@ -386,13 +386,13 @@ function initCarousel() {
 			items: 3,
 			auto: false,
 			swipe: {
-		      	onTouch: true,
-		      	onMouse: true
+			onTouch: true,
+			onMouse: true
 		    },
 			scroll: {
 				items: 3,
-				easing: "easeInOutExpo",
-				duration: 800
+				easing: "ease",
+				duration: 600
 			},
 			auto: !1,
 			prev: {

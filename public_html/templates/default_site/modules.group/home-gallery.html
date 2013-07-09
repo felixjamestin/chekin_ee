@@ -3,7 +3,7 @@
 	<a href="#" class="btn-next">next</a>
 	<div class="gmask" id="home-scroller">
 		<ul class="gallery">
-			{exp:channel:entries channel="hideaway" disable="pagination" orderby="hideaway_featured" limit="9" dynamic="no"}
+			{exp:channel:entries channel="hideaway" disable="categories|member_data|pagination" orderby="random" limit="9" dynamic="no"}
 			<li>
 				<div class="box">
 					{exp:channel_images:images category="Home page|Listings page" limit="1" entry_id="{entry_id}"}
@@ -13,7 +13,7 @@
 					{if no_images}
 						
 					{/if}
-    				{/exp:channel_images:images}
+				{/exp:channel_images:images}
 					<h2>{title} <br/><span class="location">{hideaway_location}, {hideaway_state}{title}{/hideaway_state}</span></h2>
 					<p><span>{hideaway_one_line}</span></p>	
 					</a>

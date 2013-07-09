@@ -21,3 +21,8 @@ _thumbs/
 /public_html/ee-framework/expressionengine/cache/*
 /public_html/ee-framework/expressionengine/cache/.htaccess
 /public_html/ee-framework/expressionengine/cache/index.html
+
+##Uploads ignore
+/public_html/uploads/*
+
+/public_html/deploy.php
