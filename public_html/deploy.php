@@ -25,7 +25,7 @@ define('SECRET_ACCESS_TOKEN', '6a1f414214319ab1e03b729be756f971');
  *
  * @var string
  */
-define('REMOTE_REPOSITORY', 'git@github.com:felixjamestin/chekin_ee.git');
+define('REMOTE_REPOSITORY', 'git@github.com:srikanthgh/chekin_ee.git');
 
 /**
  * Which branch are we going to use for deployment.
@@ -71,7 +71,7 @@ define('EXCLUDE', serialize(array(
  *
  * @var string Full path including the trailing slash
  */
-define('TMP_DIR', '/tmp/spgd-'.md5(REMOTE_REPOSITORY).'-'.time().'/');
+define('TMP_DIR', '/tmp/gitdeploy/spgd-'.md5(REMOTE_REPOSITORY).'-'.time().'/');
 
 /**
  * Output the version of the deployed code.
