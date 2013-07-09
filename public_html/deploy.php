@@ -203,7 +203,7 @@ foreach (unserialize(EXCLUDE) as $exc) {
 }
 // Deployment command
 $commands[] = sprintf(
-	'%s -rltgoDzv %s %s %s %s'
+	'%s -rltgoDzvO %s %s %s %s'
 	, $binaries['rsync']
 	, TMP_DIR
 	, TARGET_DIR
