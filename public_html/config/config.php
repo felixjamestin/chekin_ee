@@ -22,6 +22,12 @@ if(!defined('ENV')) {
 			// define('SITE_SHORT_NAME', 'default');
 			break;
 
+    case 'www.chekin.in' :
+			define('ENV', 'live');
+			define('THIS_WEB_ROOT', 'public_html');
+			// define('SITE_SHORT_NAME', 'default');
+			break;
+    
 		case 'dev.chekin.in' :
 			define('ENV', 'dev');
 			define('THIS_WEB_ROOT', 'public_dev_html');
@@ -54,7 +60,7 @@ require 'config.' . ENV . '.php';
 if(isset($config)) {
 
 	// General preferences
-	$config['is_system_on'] 				= 'n';
+	$config['is_system_on'] 				= 'y';
 	$config['license_number'] 				= '3062-4966-5957-7147';
 	$config['site_index']	 				= '';
 	$config['admin_session_type']		 	= 'cs';
