@@ -1017,13 +1017,13 @@ animation-name: fadeInDown;
 	border-bottom: 6px solid #07263b;
 }
 
-.plan-visual{
+#plan-visual{
   padding:0 0 6px;
   margin:0 auto 67px;
   text-align:center;
 }
 
-.plan-frame{
+#plan-frame{
   
   min-height: 825px;
   background: #0f2f42 url('/uploads/static/trip_plan.jpg') repeat-x 0 0;
