@@ -2451,7 +2451,7 @@ a.tag{
 	height:1%;
 	padding:10px 0 22px 46px;
 }
-.items-list li.metro{background:url('/uploads/static/ico-02.png') no-repeat 0 4px;}
+.items-list li.metro{background:url('/uploads/static/ico-02.png') no-repeat 0 4px; display: none;}
 .items-list li.airport{background:url('/uploads/static/ico-03.png') no-repeat 0 4px;}
 .items-list li.station{background:url('/uploads/static/ico-04.png') no-repeat 0 4px;}
 .location-box h4,.items-list h4{ margin:0 0 8px; font-weight:600;}
