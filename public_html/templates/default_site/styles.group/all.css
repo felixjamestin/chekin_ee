@@ -1023,27 +1023,24 @@ animation-name: fadeInDown;
   text-align:center;
 }
 
-.plan-visual .frame{
+.plan-frame{
   
   min-height: 825px;
   background: #0f2f42 url('/uploads/static/trip_plan.jpg') repeat-x 0 0;
-  animation: none;
-  border-top: none;
-  border-bottom: none;
 }
 
-.plan-visual .frame .pitch{
+#plan-pitch{
   background: url('/uploads/static/coming_soon_badge.png') no-repeat 50% -19px;
 }
 
-.plan-visual .frame .pitch h1{
+#plan-pitch h1{
   color:#FFFFFF;
   font-size: 72px;
   font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 800;
 }
 
-.plan-visual .frame .pitch h2{
+#plan-pitch h2{
   color:#FFFFFF;
   font-size: 18px;
   font-family: "kulturista-web","proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
