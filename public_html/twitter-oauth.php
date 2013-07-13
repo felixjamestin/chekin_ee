@@ -21,12 +21,12 @@ function buildAuthorizationHeader($oauth)
     return $r; 
 }
 
-$url = "https://api.twitter.com/1.1/statuses/user_timeline/sri_kanth.json";
+$url = "https://api.twitter.com/1.1/statuses/user_timeline/ChekinTeam.json";
 
-$oauth_access_token = "31744182-o5Egk07oqPqsIconqGaplfbq33iSBjdO0bpCo5xdg";
-$oauth_access_token_secret = "W9UV66j68AjSEkvJ3zhERxwDBGCpqxuZbffgDP6KIEY";
-$consumer_key = "aGwYfAkISbAjfx7btpoWA";
-$consumer_secret = "Vk1VMJoF5sJbXtcoyQDr4W7S19uki41o1Q4d83gVs";
+$oauth_access_token = "534037133-BjVeJkrjNV3kl4L9wK6n6vxL1vRD1c9Hbf6WtFg";
+$oauth_access_token_secret = "6EZlEPmOLwVQPx0Ko8WbQtVT5RNcfTDryKzzg0aL3TU";
+$consumer_key = "HG3WEYN3iLeFh43uOhDdKg";
+$consumer_secret = "0MA2L758heSQ5OYVNh70jct32ks5NMblUFxxs97sVM";
 
 $oauth = array( 'oauth_consumer_key' => $consumer_key,
                 'oauth_nonce' => time(),

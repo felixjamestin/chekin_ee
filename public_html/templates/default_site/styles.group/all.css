@@ -1002,6 +1002,7 @@ animation-name: fadeInDown;
 	background: url('/uploads/static/bg-visual.gif') repeat-x 0 100%;
 	margin:0 auto 67px;
 }
+
 .visual .frame{
 	
 	min-height:572px;
@@ -1015,6 +1016,29 @@ animation-name: fadeInDown;
 	border-top: 6px solid #07263b;
 	border-bottom: 6px solid #07263b;
 }
+
+.plan-visual{
+  padding:0 0 6px;
+  margin:0 auto 67px;
+}
+
+.plan-visual .frame{
+  
+  min-height:572px;
+  background: #0f2f42 url('/uploads/static/trip_plan.jpg') repeat-x 0 0;
+  
+/*  -webkit-animation: scroll 300s infinite linear;
+  -moz-animation: scroll 300s infinite linear;
+  -o-animation: scroll 300s infinite linear;
+  animation: scroll 300s infinite linear;*/
+  
+  animation: none;
+
+  border-top: 6px solid #07263b;
+  border-bottom: 6px solid #07263b;
+}
+
+
 
 /* wrapper */
 .wrapper{
@@ -1845,7 +1869,7 @@ animation-name: fadeInDown;
 	color: white;
 	content: "";
 	z-index: 800;
-	border: 2px dashed white;
+	border: 2px dashed rgba(255,255,255,.3);
 	opacity: .2;
 	opacity: 1;
 }
@@ -2451,7 +2475,7 @@ a.tag{
 	height:1%;
 	padding:10px 0 22px 46px;
 }
-.items-list li.metro{background:url('/uploads/static/ico-02.png') no-repeat 0 4px;}
+.items-list li.metro{background:url('/uploads/static/ico-02.png') no-repeat 0 4px; display: none;}
 .items-list li.airport{background:url('/uploads/static/ico-03.png') no-repeat 0 4px;}
 .items-list li.station{background:url('/uploads/static/ico-04.png') no-repeat 0 4px;}
 .location-box h4,.items-list h4{ margin:0 0 8px; font-weight:600;}
