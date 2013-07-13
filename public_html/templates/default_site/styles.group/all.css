@@ -1019,7 +1019,7 @@ animation-name: fadeInDown;
 
 #plan-visual{
   padding:0 0 6px;
-  margin:0 auto 67px;
+  margin:0 auto 0px;
   text-align:center;
 }
 
@@ -1027,10 +1027,13 @@ animation-name: fadeInDown;
   
   min-height: 825px;
   background: #0f2f42 url('/uploads/static/trip_plan.jpg') repeat-x 0 0;
+  border-bottom: 1px solid black;
 }
 
 #plan-pitch{
-  background: url('/uploads/static/coming_soon_badge.png') no-repeat 50% -19px;
+  background: url('/uploads/static/coming_soon_badge.png') no-repeat 50% 465px;
+  padding-top: 270px;
+  padding-bottom: 150px;
 }
 
 #plan-pitch h1{
@@ -1038,6 +1041,8 @@ animation-name: fadeInDown;
   font-size: 72px;
   font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 800;
+  display: inline;
+  text-transform: uppercase;
 }
 
 #plan-pitch h2{
@@ -1045,6 +1050,8 @@ animation-name: fadeInDown;
   font-size: 18px;
   font-family: "kulturista-web","proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
+  width: 600px;
+  margin: 0px auto;
 }
 
 
