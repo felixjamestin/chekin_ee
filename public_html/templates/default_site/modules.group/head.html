@@ -5,14 +5,22 @@
 	<title>Chekin – Discover and travel to the most gorgeous destinations in India</title>
 	{/if}
 
-	{if segment_1 != "" AND segment_2 == ""}
-	{exp:channel:entries dynamic="no" url_title="{segment_1}" limit="1"}
-	<title>Chekin – Gorgeous destinations in {title}</title>
-	{if no_results}
-	<title>Chekin – Discover and travel to the most gorgeous destinations in India</title>
+	{if segment_1 != ""} 
+		
+		{if segment_1 == "plan"}
+			<title>Chekin – Discover and travel to the most gorgeous destinations in India</title>
+		{if:elseif segment_2 == ""}
+			{exp:channel:entries dynamic="no" url_title="{segment_1}" limit="1"}
+			                      	<title>Chekin – Gorgeous destinations in {title}</title>
+			                      	{if no_results}
+			                      	<title>Chekin – Discover and travel to the most gorgeous destinations in India</title>
+			                      	{/if}
+			{/exp:channel:entries}	
+		{/if}
+
 	{/if}
-	{/exp:channel:entries}	
-	{/if}
+
+
 
 	{if segment_2 != ""}
 	{exp:channel:entries dynamic="no" url_title="{segment_2}" limit="1"}
@@ -28,7 +36,7 @@
 	<link type="text/css" rel="stylesheet" href="{stylesheet=styles/forms}" media="all" />
 	<link type="text/css" rel="stylesheet" href="{stylesheet=styles/fancybox}" media="all" />
 	{/exp:minimee:css}
-	
+
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Sue+Ellen+Francisco|Amatic+SC" media="all" />
 
 	{exp:minimee:js}

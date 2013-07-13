@@ -1,0 +1,68 @@
+<section class="visual">
+
+	<div class="frame">
+
+		<div id="pitch">
+		
+			
+			<div id="pitch-inner"></div>
+			<div id="pitch-inner2"></div>
+			<div id="places">
+
+				<div id="pitch-line-1">Travel to the most</div>
+				<div id="pitch-line-2">gorgeous hideaways</div>
+				<div id="pitch-line-3">in</div>
+				<div id="pitch-arrow"></div>
+					
+				<div id="places-list">
+							
+					<div class="primary-button">
+								
+						<span>India</span>
+								
+						<div class="places-dropdown">
+									
+							<div class="places-dd-content">
+										
+								{exp:channel:entries channel="state" orderby="date" sort="asc"}
+									
+									{exp:channel_images:images entry_id="{entry_id}"}
+										
+										<a href="{site_url}{url_title}/">
+										
+											<div style="background:url('{image:url:state_web}') repeat scroll 50% 50% #FFFFFF;" class="places-dd-item">
+											
+												<div class="place-inner">
+
+													<h1>{title}</h1>
+													<p>{state_one_line}</p>
+
+												</div>
+
+											</div>
+
+										</a>
+
+									{/exp:channel_images:images}
+
+								{/exp:channel:entries}
+
+	    					    <div class="places-dd-footer">
+	<!--							<p> We’re scouring the country for the most charming places. Stay tuned!</p> -->
+	    					    </div>
+	    					    
+	    					</div>	
+	    					      			
+	    				</div>
+
+					</div>
+
+				</div>
+
+    	    </div>
+
+    	</div>		
+    	
+    </div>
+
+</section><!-- visual -->
