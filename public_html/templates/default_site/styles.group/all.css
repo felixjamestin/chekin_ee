@@ -1845,7 +1845,7 @@ animation-name: fadeInDown;
 	color: white;
 	content: "";
 	z-index: 800;
-	border: 2px dashed white;
+	border: 2px dashed rgba(255,255,255,.3);
 	opacity: .2;
 	opacity: 1;
 }
