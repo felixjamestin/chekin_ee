@@ -25,4 +25,4 @@ _thumbs/
 ##Uploads ignore
 /public_html/uploads/*
 
-#/public_html/deploy.php
+/public_html/deploy.php
