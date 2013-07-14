@@ -4071,45 +4071,41 @@ a.external-link:hover{
     visibility: hidden;
     line-height: 1.4;
     border-radius: 5px;
-    border: 7px solid white;
+    border: 5px solid white;
     font-size: 0.444em;
     -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
     -moz-box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
     width: 250px;
     background: #fff;
-    right:0px;
+    right: -14px;
 }
 .freebie .freebie-dd-content p{
     font:14px  "proxima-nova", Arial, Helvetica, sans-serif;
+    color: #454545;
+    margin: 12px;
 }
-.freebie .freebie-dropdown::after, .freebie .freebie-dropdown::before {
-    bottom: 97%;
-    border: solid transparent;
+
+.freebie .freebie-dropdown::after {
+    left: 82%;
+    bottom: -16%;
     content: " ";
     height: 0;
     width: 0;
     position: absolute;
     pointer-events: none;
-}
-.freebie .freebie-dropdown::after {
-    border-color: rgba(255, 255, 255, 0);
-    border-bottom-color: #ffffff;
-    border-width: 10px;
-    left: 55%;
     margin-left: -10px;
-}
-.freebie .freebie-dropdown::before {
-    border-color: rgba(255, 255, 255, 0);
-    border-bottom-color: #ffffff;
-    border-width: 16px;
-    left: 55%;
-    margin-left: -16px;
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid white;
 }
 
 .freebie span:hover {
     cursor:pointer;
 }
+
 .freebie span:hover .freebie-dropdown {
     opacity: 1;
     visibility: visible;
@@ -4117,9 +4113,10 @@ a.external-link:hover{
     -moz-animation: fadeInDown .6s;
     -o-animation: fadeInDown .6s;
     animation: fadeInDown .6s;
-    z-index: 1001;
-    top:40px;
+    z-index: 999;
+    top: -100px;
 }
+
 .freebie-details{
   padding: 15px 10px 0px 10px;
   text-align: center;
