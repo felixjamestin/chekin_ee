@@ -1028,6 +1028,7 @@ animation-name: fadeInDown;
   min-height: 825px;
   background: #0f2f42 url('/uploads/static/trip_plan.jpg') repeat-x 0 0;
   border-bottom: 1px solid black;
+  background-size: cover;
 }
 
 #plan-pitch{
