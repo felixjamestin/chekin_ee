@@ -1017,27 +1017,43 @@ animation-name: fadeInDown;
 	border-bottom: 6px solid #07263b;
 }
 
-.plan-visual{
+#plan-visual{
   padding:0 0 6px;
-  margin:0 auto 67px;
+  margin:0 auto 0px;
+  text-align:center;
 }
 
-.plan-visual .frame{
+#plan-frame{
   
-  min-height:572px;
+  min-height: 825px;
   background: #0f2f42 url('/uploads/static/trip_plan.jpg') repeat-x 0 0;
-  
-/*  -webkit-animation: scroll 300s infinite linear;
-  -moz-animation: scroll 300s infinite linear;
-  -o-animation: scroll 300s infinite linear;
-  animation: scroll 300s infinite linear;*/
-  
-  animation: none;
-
-  border-top: 6px solid #07263b;
-  border-bottom: 6px solid #07263b;
+  border-bottom: 1px solid black;
+  background-size: cover;
 }
 
+#plan-pitch{
+  background: url('/uploads/static/coming_soon_badge.png') no-repeat 50% 465px;
+  padding-top: 270px;
+  padding-bottom: 150px;
+}
+
+#plan-pitch h1{
+  color:#FFFFFF;
+  font-size: 72px;
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 800;
+  display: inline;
+  text-transform: uppercase;
+}
+
+#plan-pitch h2{
+  color:#FFFFFF;
+  font-size: 18px;
+  font-family: "kulturista-web","proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  width: 600px;
+  margin: 0px auto;
+}
 
 
 /* wrapper */
@@ -1099,6 +1115,38 @@ animation-name: fadeInDown;
 	right:-68px;
 	background:url('/uploads/static/buttons.gif') no-repeat 0 -38px;
 }
+
+#share-hook{
+  position:absolute;
+  top: 50px;
+  right: 172px;
+  z-index: 999;
+  color: white;
+  background: rgba(0,0,0,.3);
+  border-radius: 50px;
+  border: 2px solid rgba(255,255,255,.8);
+  font-family: "kulturista-web", "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 5px 17px;
+  font-weight: 200;
+  opacity: .5;
+  -webkit-transition: .4s all linear;
+  -moz-transition: .4s all linear;
+  -o-transition: .4s all linear;
+  -ms-transition: .4s all linear;
+  transition: .4s all linear;
+}
+
+#share-hook:hover{
+  opacity: 1;
+  background: rgba(0,0,0,.3);
+}
+
+#share-hook:active{
+  top: 51px;
+}
+
 .gmask{
 	width:999px;
 	margin:0 auto;
@@ -4055,45 +4103,41 @@ a.external-link:hover{
     visibility: hidden;
     line-height: 1.4;
     border-radius: 5px;
-    border: 7px solid white;
+    border: 5px solid white;
     font-size: 0.444em;
     -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
     -moz-box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
     width: 250px;
     background: #fff;
-    right:0px;
+    right: -14px;
 }
 .freebie .freebie-dd-content p{
     font:14px  "proxima-nova", Arial, Helvetica, sans-serif;
+    color: #454545;
+    margin: 12px;
 }
-.freebie .freebie-dropdown::after, .freebie .freebie-dropdown::before {
-    bottom: 97%;
-    border: solid transparent;
+
+.freebie .freebie-dropdown::after {
+    left: 82%;
+    bottom: -16%;
     content: " ";
     height: 0;
     width: 0;
     position: absolute;
     pointer-events: none;
-}
-.freebie .freebie-dropdown::after {
-    border-color: rgba(255, 255, 255, 0);
-    border-bottom-color: #ffffff;
-    border-width: 10px;
-    left: 55%;
     margin-left: -10px;
-}
-.freebie .freebie-dropdown::before {
-    border-color: rgba(255, 255, 255, 0);
-    border-bottom-color: #ffffff;
-    border-width: 16px;
-    left: 55%;
-    margin-left: -16px;
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid white;
 }
 
 .freebie span:hover {
     cursor:pointer;
 }
+
 .freebie span:hover .freebie-dropdown {
     opacity: 1;
     visibility: visible;
@@ -4101,9 +4145,10 @@ a.external-link:hover{
     -moz-animation: fadeInDown .6s;
     -o-animation: fadeInDown .6s;
     animation: fadeInDown .6s;
-    z-index: 1001;
-    top:40px;
+    z-index: 999;
+    top: -100px;
 }
+
 .freebie-details{
   padding: 15px 10px 0px 10px;
   text-align: center;

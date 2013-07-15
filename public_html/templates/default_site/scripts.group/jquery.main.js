@@ -4,6 +4,9 @@ jQuery(function(){
 	jQuery.fn.exists = function(){return this.length>0;}
 	
 	initCarousel();
+
+	$('#share-hook').shareplus();
+	
 	
 	$.fn.slideFadeToggle = function(speed, easing, callback) {
         return this.animate({opacity: 'toggle', height: 'toggle'}, speed, easing, callback);
@@ -392,7 +395,7 @@ function initCarousel() {
 			scroll: {
 				items: 3,
 				easing: "ease",
-				duration: 600
+				duration: 620
 			},
 			auto: !1,
 			prev: {
