@@ -15,25 +15,10 @@ Theme Version: 2.0
 #shareplus {
 	display: none;
 	position: fixed;
-	width: 500px;
 	z-index: 10000;
-
-
 	font-family: Arial, sans-serif;
 	font-size: 12px;
-
-	background: rgba(26, 26, 26, 0.95);
 	color: #4E4E4E;
-	border: 1px #000 solid;
-	padding: 10px;
-
-	-moz-box-shadow: 0 0 5px #555;
-	-webkit-box-shadow: 0 0 5px #555;
-	box-shadow: 0 0 5px #555;
-
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
 }
 
 /* --------------- Hide on small screens --------------- */
@@ -47,84 +32,106 @@ Theme Version: 2.0
 /* --------------- Title --------------- */
 
 #shareplus_title {
-	height: 20px !important;
-	padding: 10px;
-	border: none;
-
-	font-size: 14px;
-	font-weight: bold;
 	color: #fff;
+	font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 30px;
+	font-weight: 800;
+	text-transform: uppercase;
+	text-align: center;
+	position: relative;
+	margin-bottom: 55px;
 }
 
-#shareplus_title span#shareplus_close a {
-	float: right;
-	margin: -5px;
+#shareplus_close {
+	font-family: "kulturista-web","proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #FF8208;
+	position: absolute;
+	top: -100px;
+	right: 0px;
+}
 
-	color: #fff;
-	text-decoration: none;
-	padding: 2px 5px;
-	background: rgba(71, 71, 71, 0.5);
+#shareplus_close a{
+	color: #FF8208;
+	background: url('/uploads/static/share-close.png') no-repeat center right;
+	padding-right: 20px;
+	background-position-y: 4px;
+}
 
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
+#shareplus_close a:hover{
+	top: -1px;
+	position: relative;
+}
+
+#shareplus_close a:active{
+	top: 0px;
 }
 
 /* --------------- Icons List --------------- */
 
 #shareplus_icons {
 	overflow: auto;
-
-	background: #fff;
-	padding: 10px;
-
-	border: 1px #1a1a1a solid;
-	border-bottom: none;
-
-	-webkit-border-top-left-radius: 5px;
-	-webkit-border-top-right-radius: 5px;
-	-moz-border-radius-topleft: 5px;
-	-moz-border-radius-topright: 5px;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
+	padding-top: 5px;
 }
 
 #shareplus_icons .shareplus_icon {
 	float: left;
-	width: 67px;
-	height: 32px;
-	margin: 5px 10px;
-
-	opacity: 0.9;
+	width: 90px;
+	height: 90px;
+	margin: 0px 28px;
 }
 
 #shareplus_icons a.shareplus_icon {
-	color: #1a1a1a;
+	color: white;
 	text-decoration: none;
-	padding-left: 32px;
+	font-family: "kulturista-web", "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	text-transform: capitalize;
+	text-align: center;
 }
 
 #shareplus_icons .shareplus_icon:hover span {
-	color: red;
 	text-decoration: none;
 }
 
 #shareplus_icons .shareplus_icon:hover {
-	opacity: 1;
+	position: relative;
+	top: -2px;
+}
+
+#shareplus_icons .shareplus_icon:active {
+	top: 2px;
 }
 
 #shareplus_icons .shareplus_icon span {
-	float: left;
-	margin-top: 8px;
-	margin-left: 10px;
+	position: relative;
+	top: 100px;
+	padding-top: 20px;
 }
 
 
 /* --------------- Social Icons --------------- */
 
-#shareplus_icons .email {
-	background: url(images/icons/email.png) left center no-repeat;
+#shareplus_icons .facebook {
+	background: url('/uploads/static/share_fb.png') no-repeat center center #2c448d;
 }
+
+#shareplus_icons .twitter {
+	background: url('/uploads/static/share-twitter.png') no-repeat center center #39a0dc;
+}
+
+#shareplus_icons .google {
+	background: url('/uploads/static/share-google.png') no-repeat center center #165cb1;
+}
+
+#shareplus_icons .email {
+	background: url('/uploads/static/share_email.png') no-repeat center center #1b731f;
+}
+
+
 
 #shareplus_icons .digg {
 	background: url(images/icons/digg.png) left center no-repeat;
@@ -146,10 +153,6 @@ Theme Version: 2.0
 	background: url(images/icons/yahoo.png) left center no-repeat;
 }
 
-#shareplus_icons .google {
-	background: url(images/icons/google.png) left center no-repeat;
-}
-
 #shareplus_icons .newsvine {
 	background: url(images/icons/newsvine.png) left center no-repeat;
 }
@@ -160,14 +163,6 @@ Theme Version: 2.0
 
 #shareplus_icons .live {
 	background: url(images/icons/live.png) left center no-repeat;
-}
-
-#shareplus_icons .facebook {
-	background: url(images/icons/facebook.png) left center no-repeat;
-}
-
-#shareplus_icons .twitter {
-	background: url(images/icons/twitter.png) left center no-repeat;
 }
 
 #shareplus_icons .stumble {
@@ -273,14 +268,8 @@ body {
      height:100%;
      z-index: 1000;
 
-     background-color: rgba(26, 26, 26, 0.5);
-     background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.25, rgba(0, 0, 0, .1)), color-stop(.25, transparent), color-stop(.5, transparent), color-stop(.5, rgba(0, 0, 0, .1)), color-stop(.75, rgba(0, 0, 0, .1)), color-stop(.75, transparent), to(transparent));
-     background-image: -webkit-linear-gradient(-45deg, rgba(0, 0, 0, .1) 25%, transparent 25%, transparent 50%, rgba(0, 0, 0, .1) 50%, rgba(0, 0, 0, .1) 75%, transparent 75%, transparent);
-     background-image: -moz-linear-gradient(-45deg, rgba(0, 0, 0, .1) 25%, transparent 25%, transparent 50%, rgba(0, 0, 0, .1) 50%, rgba(0, 0, 0, .1)) 75%, transparent 75%, transparent);
-     background-image: -ms-linear-gradient(-45deg, rgba(0, 0, 0, .1) 25%, transparent 25%, transparent 50%, rgba(0, 0, 0, .1) 50%, rgba(0, 0, 0, .1) 75%, transparent 75%, transparent);
-     background-image: -o-linear-gradient(-45deg, rgba(0, 0, 0, .1) 25%, transparent 25%, transparent 50%, rgba(0, 0, 0, .1) 50%, rgba(0, 0, 0, .1) 75%, transparent 75%, transparent);
-     background-image: linear-gradient(-45deg, rgba(0, 0, 0, .1) 25%, transparent 25%, transparent 50%, rgba(0, 0, 0, .1) 50%, rgba(0, 0, 0, .1) 75%, transparent 75%, transparent);
-
+     background-color: rgba(00, 00, 00, 0.85);
+     
      -webkit-background-size: 50px 50px;
      -moz-background-size: 50px 50px;
      background-size: 50px 50px;
