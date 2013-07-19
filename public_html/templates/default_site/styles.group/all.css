@@ -948,7 +948,7 @@ animation-name: fadeInDown;
 }
 
 #plan-pitch{
-  background: url('/uploads/static/coming_soon_badge.png') no-repeat 50% 465px;
+  background: url('/uploads/static/coming_soon_badge.png') no-repeat 50% 527px;
   padding-top: 270px;
   padding-bottom: 150px;
 }
@@ -969,6 +969,11 @@ animation-name: fadeInDown;
   font-weight: 400;
   width: 600px;
   margin: 0px auto;
+  margin-top: 10px;
+}
+
+#plan-pitch h2.first-para{
+  width: 800px;
 }
 
 
@@ -1265,7 +1270,7 @@ animation-name: fadeInDown;
   color:#d8715a;
   border-bottom:1px #d8715a dotted;
 }
-#footer-content ul.list .phone{background:url('/uploads/static/phone.gif') no-repeat 3px 0;}
+#footer-content ul.list .phone{background:url('/uploads/static/phone.gif') no-repeat 3px 0; display: none;}
 #footer-content ul.list .email{background:url('/uploads/static/email.gif') no-repeat;}
 #footer-content .socials{
   margin:0;
