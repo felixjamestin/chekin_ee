@@ -948,7 +948,7 @@ animation-name: fadeInDown;
 }
 
 #plan-pitch{
-  background: url('/uploads/static/coming_soon_badge.png') no-repeat 50% 527px;
+  background: url('/uploads/static/coming_soon_badge.png') no-repeat 50% 515px;
   padding-top: 270px;
   padding-bottom: 150px;
 }
@@ -967,7 +967,7 @@ animation-name: fadeInDown;
   font-size: 18px;
   font-family: "kulturista-web","proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
-  width: 600px;
+  width: 680px;
   margin: 0px auto;
   margin-top: 10px;
 }
