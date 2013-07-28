@@ -948,7 +948,7 @@ animation-name: fadeInDown;
 }
 
 #plan-pitch{
-  background: url('/uploads/static/coming_soon_badge.png') no-repeat 50% 515px;
+  background: url('/uploads/static/coming_soon_badge.png') no-repeat 50% 553px;
   padding-top: 270px;
   padding-bottom: 150px;
 }
@@ -969,13 +969,24 @@ animation-name: fadeInDown;
   font-weight: 400;
   width: 680px;
   margin: 0px auto;
-  margin-top: 10px;
+  margin-top: 15px;
+  line-height: 1.4;
+  text-shadow: 1px 1px 200px rgba(0,0,0,.6);
+
 }
 
 #plan-pitch h2.first-para{
   width: 800px;
+  margin-top: 20px;
 }
 
+#pitch-smiley{
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-left: 5px;
+  position: relative;
+  top: -1px;
+}
 
 /* wrapper */
 .wrapper{
@@ -1506,11 +1517,11 @@ animation-name: fadeInDown;
 .search-block{
   width:100%;
   padding:59px 0 0;
-  color:#007583;
+  color:#0089A3;
   position: relative;
   z-index: 98;
   background:#00DAF3;
-  font-weight: 100;
+  font-weight: 400;
 }
 
 .search-block::before {
