@@ -646,7 +646,7 @@ animation-name: fadeInDown;
 .menu{
   float:left;
   margin:0;
-  padding:40px 0 0;
+  padding: 37px 0 0;
   list-style:none;
 }
 .menu li{
@@ -1132,7 +1132,7 @@ animation-name: fadeInDown;
 
 .gallery .box:hover p{
   opacity: 1;
-  background: rgba(0, 46, 88, 0.62) url('/uploads/static/speech-mark.png') no-repeat 50% 30px;
+  background: rgba(0, 46, 88, 0.62) url('/uploads/static/stars.png') no-repeat 50% 18px;
   
 }
 
@@ -1186,19 +1186,14 @@ animation-name: fadeInDown;
   font-weight: 100;
   color: white;
   opacity: 0;
-  background:url('/uploads/static/speech-mark.png') no-repeat 50% 50px;
+  background:url('/uploads/static/stars.png') no-repeat 50% 18px;
   
-  -webkit-transition: .2s all linear;
-  -moz-transition: .2s all linear;
-  -o-transition: .2s all linear;
-  -ms-transition: .2s all linear;
-  transition: .2s all linear;
-  
-  -webkit-transition: .2s background ease-out;
-  -moz-transition: .2s background ease-out;
-  -o-transition: .2s background ease-out;
-  -ms-transition: .2s background ease-out;
-  transition: .2s background ease-out;
+  -webkit-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  -ms-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+
   
 }
 
@@ -1206,18 +1201,50 @@ animation-name: fadeInDown;
   display: inline-block;
   text-align: center;
   position: relative;
-  top: 70px;
-  -webkit-transition: .25s all ease-out;
-  -moz-transition: .25s all ease-out;
-  -o-transition: .25s all ease-out;
-  -ms-transition: .25s all ease-out;
-  transition: .25s all ease-out;
+  top: 40px;
+  -webkit-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  -ms-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .gallery .box:hover p span{
-  top: 52px;
+  top: 23px;
 }
 
+.gallery-view {
+  background-color: #73c62a;
+  color: white;
+  text-shadow: 1px 2px 0px #73c62a;
+  border-radius: 300px;
+  padding: 3px 15px 3px 15px;
+  display: block;
+  text-align: center;
+  width: 80px;
+  margin: 10px auto 5px auto;
+  font-size: 16px;
+  font-family: "kulturista-web", "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  bottom: -53px;
+  position: absolute;
+  left: 50%;
+  margin-left: -55px;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  -webkit-transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  -ms-transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+a.gallery-view:visited {
+  color: white;
+}
+
+.gallery-view:hover {
+  background-color: #56B600;
+}
 
 /* footer */
 #footer-content{
