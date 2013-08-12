@@ -4,12 +4,10 @@ jQuery(function(){
 	jQuery.fn.exists = function(){return this.length>0;}
 	
 	initCarousel();
-
-	/*$('#share-hook').shareplus();*/
 	
 	$(document).bind('contextmenu', function(e) {
-    return false;
-  });
+		return false;
+	});
   
 	$.fn.slideFadeToggle = function(speed, easing, callback) {
         return this.animate({opacity: 'toggle', height: 'toggle'}, speed, easing, callback);
