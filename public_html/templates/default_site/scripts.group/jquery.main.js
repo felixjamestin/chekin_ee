@@ -7,7 +7,10 @@ jQuery(function(){
 
 	$('#share-hook').shareplus();
 	
-	
+	$('img').bind('contextmenu', function(e) {
+    return false;
+  });
+  
 	$.fn.slideFadeToggle = function(speed, easing, callback) {
         return this.animate({opacity: 'toggle', height: 'toggle'}, speed, easing, callback);
     };
