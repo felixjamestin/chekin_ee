@@ -7,7 +7,7 @@ jQuery(function(){
 
 	/*$('#share-hook').shareplus();*/
 	
-	$('img').bind('contextmenu', function(e) {
+	$(document).bind('contextmenu', function(e) {
     return false;
   });
   
