@@ -5,7 +5,7 @@ jQuery(function(){
 	
 	initCarousel();
 
-	$('#share-hook').shareplus();
+	/*$('#share-hook').shareplus();*/
 	
 	$('img').bind('contextmenu', function(e) {
     return false;
