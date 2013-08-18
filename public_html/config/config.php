@@ -22,6 +22,12 @@ if(!defined('ENV')) {
 			// define('SITE_SHORT_NAME', 'default');
 			break;
 
+    case 'www.chekin.in' :
+			define('ENV', 'live');
+			define('THIS_WEB_ROOT', 'public_html');
+			// define('SITE_SHORT_NAME', 'default');
+			break;
+    
 		case 'dev.chekin.in' :
 			define('ENV', 'dev');
 			define('THIS_WEB_ROOT', 'public_dev_html');
@@ -64,7 +70,7 @@ if(isset($config)) {
 
 	$config['uri_protocol'] 				= 'AUTO';
 	// Encryption / Session key
-	$config['encryption_key'] 				= '=p%;nR|lx|M\“vLKh^u$*S46\b';
+	$config['encryption_key'] 				= '=p%;nR|lx|M\ï¿½vLKh^u$*S46\b';
 
 	// Channel preferences
 	$config['use_category_name'] 			= 'y';
