@@ -2,18 +2,18 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	{!-- Page Title --}
 	{if segment_1 == ""}
-	<title>Chekin – Discover and travel to the most gorgeous destinations in India</title>
+	<title>Chekin – Discover and travel to the most gorgeous getaways in India</title>
 	{/if}
 
 	{if segment_1 != ""} 
 		
 		{if segment_1 == "plan"}
-			<title>Chekin – Discover and travel to the most gorgeous destinations in India</title>
+			<title>Chekin – Discover and travel to the most gorgeous getaways in India</title>
 		{if:elseif segment_2 == ""}
 			{exp:channel:entries dynamic="no" url_title="{segment_1}" limit="1"}
-			                      	<title>Chekin – Gorgeous destinations in {title}</title>
+			                      	<title>Chekin – Gorgeous getaways in {title}</title>
 			                      	{if no_results}
-			                      	<title>Chekin – Discover and travel to the most gorgeous destinations in India</title>
+			                      	<title>Chekin – Discover and travel to the most gorgeous getaways in India</title>
 			                      	{/if}
 			{/exp:channel:entries}	
 		{/if}
@@ -26,7 +26,7 @@
 	{exp:channel:entries dynamic="no" url_title="{segment_2}" limit="1"}
 	<title>Chekin – {title}, {hideaway_location}, {hideaway_state}{title}{/hideaway_state}</title>
 	{if no_results}
-	<title>Chekin – Discover and travel to the most gorgeous destinations in India</title>
+	<title>Chekin – Discover and travel to the most gorgeous getaways in India</title>
 	{/if}
 	{/exp:channel:entries}	
 	{/if}
