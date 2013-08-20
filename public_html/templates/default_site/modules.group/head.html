@@ -1,35 +1,44 @@
 <head>
+	
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	
 	{!-- Page Title --}
+	
 	{if segment_1 == ""}
-	<title>Chekin – Discover and travel to the most gorgeous getaways in India</title>
+	<title>The most gorgeous getaways in India – Goa, Kerala and more | Chekin.in</title>
 	{/if}
 
 	{if segment_1 != ""} 
 		
 		{if segment_1 == "plan"}
-			<title>Chekin – Discover and travel to the most gorgeous getaways in India</title>
+			<title>The most gorgeous getaways in India – Goa, Kerala and more | Chekin</title>
 		{if:elseif segment_2 == ""}
 			{exp:channel:entries dynamic="no" url_title="{segment_1}" limit="1"}
-			                      	<title>Chekin – Gorgeous getaways in {title}</title>
+			                      	<title>Gorgeous getaways in {title} | Chekin</title>
 			                      	{if no_results}
-			                      	<title>Chekin – Discover and travel to the most gorgeous getaways in India</title>
+			                      	<title>The most gorgeous getaways in India – Goa, Kerala and more | Chekin</title>
 			                      	{/if}
 			{/exp:channel:entries}	
 		{/if}
 
 	{/if}
 
-
-
 	{if segment_2 != ""}
-	{exp:channel:entries dynamic="no" url_title="{segment_2}" limit="1"}
-	<title>Chekin – {title}, {hideaway_location}, {hideaway_state}{title}{/hideaway_state}</title>
-	{if no_results}
-	<title>Chekin – Discover and travel to the most gorgeous getaways in India</title>
+		{exp:channel:entries dynamic="no" url_title="{segment_2}" limit="1"}
+		                      	<title>{title} ({hideaway_location}, {hideaway_state}{title}{/hideaway_state}) – Photos, map, activities, price  | Chekin</title>
+		                      	{if no_results}
+		                      		<title>The most gorgeous getaways in India – Goa, Kerala and more | Chekin</title>
+		                      	{/if}
+		{/exp:channel:entries}	
 	{/if}
-	{/exp:channel:entries}	
-	{/if}
+
+	<meta name="description" content="Travel to the most gorgeous getaways in India – Charming villas, forest hideouts, and lovely stays by the beach. Perfect for weekends or short breaks. Book now." />
+
+	<meta property="og:site_name" content="Chekin"/>
+	<meta property="og:title" content="Chekin | Travel to the most gorgeous getaways in India – Goa, Kerala and more"/>
+	<meta property="og:description" content="Travel to the most gorgeous getaways in India – Charming villas, forest hideouts, and lovely stays by the beach. Perfect for weekends or short breaks. Book now."/>
+	<meta property="og:url" content="http://www.chekin.in"/>
+	
 
 	{exp:minimee:css}
 	<link type="text/css" media="all" rel="stylesheet" href="{stylesheet=styles/all}" />
