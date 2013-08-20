@@ -395,7 +395,7 @@ function initCarousel() {
 		    },
 			scroll: {
 				items: 3,
-				easing: "ease",
+				easing: "swing",
 				duration: 620
 			},
 			auto: !1,
