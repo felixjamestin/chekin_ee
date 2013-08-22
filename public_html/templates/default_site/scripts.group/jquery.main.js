@@ -113,33 +113,33 @@ jQuery(function(){
 	if ($('#btn-1').exists()) {
 	
 		$("#btn-1").fancybox({
-			'titlePosition'		: 'outside',
-			'overlayColor'		: '#000000',
+			'titlePosition' 		: 'outside',
+			'overlayColor'  		: '#000000',
 			'overlayOpacity'	: 0.85,
-			'padding'			: 0,
-			'transitionIn'		: 'fade',
-			'transitionOut'		: 'fade',
-			'speedIn'			: 300, 
-			'speedOut'			: 300,
-			'easingIn'			: 'swing',
-			'onStart'			: function(){
-            			$("#freeform_checkin").val($('#check-in').val());
-            			$("#freeform_checkout").val($('#check-out').val());
-        		}
+			'padding'       			: 0,
+			'transitionIn'  		: 'fade',
+			'transitionOut' 		: 'fade',
+			'speedIn'       			: 300, 
+			'speedOut'      			: 300,
+			'easingIn'      			: 'swing',
+			'onStart'       			: function(){
+			$("#freeform_checkin").val($('#check-in').val());
+			$("#freeform_checkout").val($('#check-out').val());
+		}
 		});
 		
 	}
 	
 	$("#success-msg").fancybox({
-		'titlePosition'		: 'outside',
-		'overlayColor'		: '#000000',
+		'titlePosition' 		: 'outside',
+		'overlayColor'  		: '#000000',
 		'overlayOpacity'	: 0.85,
-		'padding'			: 0,
-		'transitionIn'	:	'fade',
-		'transitionOut'	:	'fade',
-		'speedIn'		:	300, 
-		'speedOut'		:	300,
-		'easingIn'		:	'swing'
+		'padding'       	 		: 0,
+		'transitionIn'  	:	'fade',
+		'transitionOut' 	:	'fade',
+		'speedIn'       	 	:	300, 
+		'speedOut'      	 	:	300,
+		'easingIn'      	 	:	'swing'
 	});
 	
 	$('.btn-close').click(function(){
@@ -151,15 +151,15 @@ jQuery(function(){
 	if ($('#footer-hello').exists()) {
 	
 		$("#footer-hello").fancybox({
-			'titlePosition'		: 'outside',
-			'overlayColor'		: '#000000',
+			'titlePosition' 		: 'outside',
+			'overlayColor'  		: '#000000',
 			'overlayOpacity'	: 0.85,
-			'padding'			: 0,
-			'transitionIn'	:	'fade',
-			'transitionOut'	:	'fade',
-			'speedIn'		:	300, 
-			'speedOut'		:	300,
-			'easingIn'		:	'swing'
+			'padding'       	 		: 0,
+			'transitionIn'  	:	'fade',
+			'transitionOut' 	:	'fade',
+			'speedIn'       	 	:	300, 
+			'speedOut'      	 	:	300,
+			'easingIn'      	 	:	'swing'
 		});
 		
 	}
@@ -167,15 +167,15 @@ jQuery(function(){
 	if ($('#footer-aboutus').exists()) {
 	
 		$("#footer-aboutus").fancybox({
-			'titlePosition'		: 'outside',
-			'overlayColor'		: '#000000',
+			'titlePosition' 		: 'outside',
+			'overlayColor'  		: '#000000',
 			'overlayOpacity'	: 0.85,
-			'padding'			: 0,
-			'transitionIn'	:	'fade',
-			'transitionOut'	:	'fade',
-			'speedIn'		:	300, 
-			'speedOut'		:	300,
-			'easingIn'		:	'swing'
+			'padding'       	 		: 0,
+			'transitionIn'  	:	'fade',
+			'transitionOut' 	:	'fade',
+			'speedIn'       	 	:	300, 
+			'speedOut'      	 	:	300,
+			'easingIn'      	 	:	'swing'
 		});
 		
 	}
@@ -183,15 +183,15 @@ jQuery(function(){
 	if ($('#header-aboutus').exists()) {
 	
 		$("#header-aboutus").fancybox({
-			'titlePosition'		: 'outside',
-			'overlayColor'		: '#000000',
+			'titlePosition' 		: 'outside',
+			'overlayColor'  		: '#000000',
 			'overlayOpacity'	: 0.85,
-			'padding'			: 0,
-			'transitionIn'	:	'fade',
-			'transitionOut'	:	'fade',
-			'speedIn'		:	300, 
-			'speedOut'		:	300,
-			'easingIn'		:	'swing'
+			'padding'       	 		: 0,
+			'transitionIn'  	:	'fade',
+			'transitionOut' 	:	'fade',
+			'speedIn'       	 	:	300, 
+			'speedOut'      	 	:	300,
+			'easingIn'      	 	:	'swing'
 		});
 		
 	}
@@ -209,20 +209,20 @@ jQuery(function(){
 				$('#recipient_email').val(user_email);
 				$('.form-loading').show();
 				$.post(
-					$form.attr('action'),
-					$form.serialize(),
-					function(data){
-						if (data.success == false){
-							$.each(data.errors, function(i, item){
-								$('.form-loading').hide();
-								return false;
-							});
-						}
-						else if (data.success){
-							$('.form-loading').hide();
-							$('#success-msg').trigger('click');
-						}
-					}
+				  	$form.attr('action'),
+				  	$form.serialize(),
+				  	function(data){
+				  		if (data.success == false){
+				  			$.each(data.errors, function(i, item){
+				  				$('.form-loading').hide();
+				  				return false;
+				  			});
+				  		}
+				  		else if (data.success){
+				  			$('.form-loading').hide();
+				  			$('#success-msg').trigger('click');
+				  		}
+				  	}
 				);	
 			},
 			rules: {
@@ -251,41 +251,41 @@ jQuery(function(){
 		});
 	}
 
-	jcf.customForms.replaceAll();
-	setTimeout(function(){
-		$('.hidden').hide();
-	}, 100);
-	
-/* 	Handle tabs */
-	$('.tabset a:first').addClass('active');
-	$('.tab-content').hide();
-	$('.tab-content:first').show().addClass('active');
-	 
-	$('.tabset a').click(function(){
-	
-		$('.tabset a').removeClass('active');
-		$(this).addClass('active');
-		
-		$('.tab-content').hide().removeClass('active');
-		var currentTab = $(this).attr('href');
-		$(currentTab).addClass('active')
-		$(currentTab).fadeIn('fast', 'easeInQuint');
-		
-		return false;
-		
-	});
-	
-	
-/* 	Handle sticky bar */
-	$('#search-list').waypoint(function(event, direction){
-/* 			$('#search-minibar').toggleClass('sticky', direction === "down"); */
-			$('#search-list').toggleClass('sticky', direction === "down");
-			event.stopPropagation();
-		}, 
-		{
-			offset: '-8'
-		}
-	);
+  	jcf.customForms.replaceAll();
+  	setTimeout(function(){
+  		$('.hidden').hide();
+  	}, 100);
+  	
+/*	Handle tabs */
+  	$('.tabset a:first').addClass('active');
+  	$('.tab-content').hide();
+  	$('.tab-content:first').show().addClass('active');
+  	 
+  	$('.tabset a').click(function(){
+  	
+  		$('.tabset a').removeClass('active');
+  		$(this).addClass('active');
+  		
+  		$('.tab-content').hide().removeClass('active');
+  		var currentTab = $(this).attr('href');
+  		$(currentTab).addClass('active')
+  		$(currentTab).fadeIn('fast', 'easeInQuint');
+  		
+  		return false;
+  		
+  	});
+  	
+  	
+/*	Handle sticky bar */
+  	$('#search-list').waypoint(function(event, direction){
+/*			$('#search-minibar').toggleClass('sticky', direction === "down"); */
+  			$('#search-list').toggleClass('sticky', direction === "down");
+  			event.stopPropagation();
+  		}, 
+  		{
+  			offset: '-8'
+  		}
+  	);
 
 	$('#currency-dropdown a').click(function(){
     var cur_to = $(this).attr('id');
@@ -312,12 +312,12 @@ jQuery(function(){
 function initNav() {
 	var nav = document.getElementById("search-list");
 	if(nav) {		
-		nav.onmouseover = function() {
-			this.className += " hover";
-		}
-		nav.onmouseout = function() {
-			this.className = this.className.replace(" hover", "");
-		}		
+	         	nav.onmouseover = function() {
+	         		this.className += " hover";
+	         	}
+	         	nav.onmouseout = function() {
+	         	 	this.className = this.className.replace(" hover", "");
+	         	}		
 	}
 }
 
