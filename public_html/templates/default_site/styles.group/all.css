@@ -808,7 +808,7 @@ animation-name: fadeInDown;
 }
 
 #pitch:hover #places #pitch-arrow{
-  top: 194px;
+  /*top: 194px;*/
 }
 
 #pitch:hover #places:hover #pitch-arrow {
