@@ -17,7 +17,7 @@
  *
  * @var string
  */
-define('SECRET_ACCESS_TOKEN', 'e7efc3d21d65c58f09a773455c5a162b');
+define('SECRET_ACCESS_TOKEN', '6a1f414214319ab1e03b729be756f971');
 
 /**
  * The address of the remote GIT repository that contains the code we're
@@ -32,7 +32,7 @@ define('REMOTE_REPOSITORY', 'https://github.com/felixjamestin/chekin_ee.git');
  *
  * @var string
  */
-define('BRANCH', 'master');
+define('BRANCH', 'dev');
 
 /**
  * This is where the code resides on the local machine.
@@ -40,7 +40,7 @@ define('BRANCH', 'master');
  *
  * @var string Full path including the trailing slash
  */
-define('TARGET_DIR', '/var/www/chekin.in/');
+define('TARGET_DIR', '/var/www/dev.chekin.in/');
 
 /**
  * Weather to delete the files that are not in the repository but are on the
