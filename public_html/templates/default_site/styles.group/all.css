@@ -801,14 +801,14 @@ animation-name: fadeInDown;
   -ms-transition-timing-function: linear;
   -o-transition-timing-function: linear;
   transition-timing-function: linear;
-  -webkit-animation: bounce_arrow 1.3s 0s infinite linear;
+/*  -webkit-animation: bounce_arrow 1.3s 0s infinite linear;
   -moz-animation: bounce_arrow 1.3s 0s infinite linear;
   -o-animation: bounce_arrow 1.3s 0s infinite linear;
-  animation: bounce_arrow 1.3s 0s infinite linear;
+  animation: bounce_arrow 1.3s 0s infinite linear;*/
 }
 
 #pitch:hover #places #pitch-arrow{
-  top: 194px;
+  /*top: 194px;*/
 }
 
 #pitch:hover #places:hover #pitch-arrow {

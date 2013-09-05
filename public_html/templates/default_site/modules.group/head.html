@@ -5,7 +5,7 @@
 	{!-- Page Title --}
 	
 	{if segment_1 == ""}
-	<title>The most gorgeous getaways in India – Goa, Kerala and more | Chekin.in</title>
+	<title>The most gorgeous getaways in India – Goa, Kerala and more | Chekin</title>
 	{/if}
 
 	{if segment_1 != ""} 
@@ -14,7 +14,7 @@
 			<title>The most gorgeous getaways in India – Goa, Kerala and more | Chekin</title>
 		{if:elseif segment_2 == ""}
 			{exp:channel:entries dynamic="no" url_title="{segment_1}" limit="1"}
-			                      	<title>Gorgeous getaways in {title} | Chekin</title>
+			                      	<title>The most gorgeous getaways in {title} | Chekin</title>
 			                      	{if no_results}
 			                      	<title>The most gorgeous getaways in India – Goa, Kerala and more | Chekin</title>
 			                      	{/if}
@@ -91,5 +91,10 @@
 		<link rel="stylesheet" href="{site_url}styles/ie">
 		<script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js" ></script>
 	<![endif]-->
+
 	<meta name="google-site-verification" content="RtVpP-AA0veqFmCKavG5Dpvd6BpvBqPaXyPeATzvE5M" />
+
+	{!-- Inspectlet Analytics --}
+	{embed="modules/inspectlet-analytics"}
+
 </head>
