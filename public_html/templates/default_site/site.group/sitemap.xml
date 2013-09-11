@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<!-- Home page -->
+<url>
+  <loc>{site_url}</loc>
+  <lastmod>2011-12-10T19:10:06+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<!-- States -->
+{exp:channel:entries
+  status="open"
+  channel="state"
+  dynamic="no"
+  }
+<url>
+  <loc>{site_url}{url_title}/</loc>
+  <lastmod>{edit_date format="%Y-%d-%mT%h:%i:%s"}</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+{/exp:channel:entries}
+<!-- Static pages -->
+<url>
+  <loc>{site_url}plan/</loc>
+  <lastmod>{current_time format="%Y-%d-%mT%h:%i:%s"}</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<!-- Getaways -->
+{exp:channel:entries
+  status="open"
+  channel="hideaway"
+  dynamic="no"
+  }
+<url>
+  <loc>{site_url}{hideaway_state}{url_title}{/hideaway_state}/{url_title}/</loc>
+  <lastmod>{edit_date format="%Y-%d-%mT%h:%i:%s"}</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+{/exp:channel:entries}
+</urlset>
