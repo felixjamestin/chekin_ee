@@ -4,6 +4,7 @@ jQuery(function(){
 	jQuery.fn.exists = function(){return this.length>0;}
 	
 	initCarousel();
+	initTestimonialCarousel();
 	
 	$(document).bind('contextmenu', function(e) {
 		return false;
@@ -380,7 +381,7 @@ function initTabs()
 	}
 }
 
-// scroll gallery init
+// Initialize home page getaways gallery
 function initCarousel() {
 	
 	if ($('#home-scroller .gallery').exists()) {
@@ -410,6 +411,34 @@ function initCarousel() {
 				key: 'right'
 			}
 		});
+	}
+
+}
+
+// Initialize home page testimonial gallery
+function initTestimonialCarousel() {
+	
+	if ($('#testimonials ul').exists()) {
+		
+		$("#testimonials ul").carouFredSel({
+			width: "790",
+			height: "auto",
+			items: 1,
+			auto: false,
+			swipe: {
+				onTouch: true,
+				onMouse: true
+		    },
+			scroll: {
+				items: 1,
+				fx: "crossfade",
+				easing: "linear",
+				duration: 500,
+				pauseOnHover: true
+			},
+			auto: 1
+		});
+
 	}
 
 }
