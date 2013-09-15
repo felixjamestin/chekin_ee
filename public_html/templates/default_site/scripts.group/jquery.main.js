@@ -433,10 +433,12 @@ function initTestimonialCarousel() {
 				items: 1,
 				fx: "crossfade",
 				easing: "linear",
-				duration: 500,
-				pauseOnHover: true
+				duration: 500
 			},
-			auto: 1
+			auto: {
+				timeoutDuration: 2000,
+				pauseOnHover: true
+			}
 		});
 
 	}

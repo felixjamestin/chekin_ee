@@ -1253,6 +1253,7 @@ animation-name: fadeInDown;
 #testimonials{
   background: url('/uploads/static/testimonials_seperator.png') repeat-x;
   padding-top: 35px;
+  display: none;
 }
 
 #testimonials h1{
@@ -1351,30 +1352,23 @@ animation-name: fadeInDown;
   line-height:20px;
   padding:0 0 0 31px;
 }
-#footer-content .box4 p{ margin:0 0 12px;}
+#footer-content .box4 p{ 
+  margin:0 0 12px;
+  width: 180px;
+}
+
 #footer-content h3{
   text-transform:uppercase;
   font:14px/16px "kulturista-web";
   margin:0 0 11px;
 }
-#footer-content ul.list{
-  margin:0;
-  padding:5px 0 0 7px;
-  list-style:none;
-  line-height:21px;
+
+#footer-content .phone{background:url('/uploads/static/phone.gif') no-repeat 3px 0; display: none;}
+#footer-content .email{
+  background: url('/uploads/static/email.png') no-repeat 0px 3px;
+  padding-bottom: 6px;
 }
-#footer-content ul.list li{
-  padding:0 0 11px 28px;
-  vertical-align:top;
-  height:1%;
-  font-weight:100;
-}
-#footer-content ul.list a:hover{
-  color:#d8715a;
-  border-bottom:1px #d8715a dotted;
-}
-#footer-content ul.list .phone{background:url('/uploads/static/phone.gif') no-repeat 3px 0; display: none;}
-#footer-content ul.list .email{background:url('/uploads/static/email.gif') no-repeat;}
+
 #footer-content .socials{
   margin:0;
   padding:5px 0 0 15px;
@@ -1419,6 +1413,15 @@ animation-name: fadeInDown;
 #footer-content .twitter{background:url('/uploads/static/socials.gif') no-repeat 0 -34px;}
 #footer-content .pinterest{background:url('/uploads/static/socials.gif') no-repeat 0 -67px;}
 
+#newsletter-stamp{
+  background: url("/uploads/static/newsletter_stamp.png") no-repeat;
+  width: 102px;
+  height: 116px;
+  position: absolute;
+  top: -19px;
+  right: 3px;
+}
+
 #footer-hello {
   display: block;
   background: url("/uploads/static/hello.png") no-repeat;
@@ -1448,6 +1451,22 @@ animation-name: fadeInDown;
 #footer-hello:hover{
   cursor: pointer;
   top: 3px;
+}
+
+#blog{
+  width: 177px;
+  height: 109px;
+  background:#ADF06F url('/uploads/static/whats_new.jpg') no-repeat;
+  display: block;
+   -webkit-transition: opacity .5s ease;
+  -moz-transition: opacity .5s ease;
+  -ms-transition: opacity .5s ease;
+  -o-transition: opacity .5s ease;
+  transition: opacity .5s ease;
+}
+
+#blog:hover{
+  opacity: .8;
 }
 
 
@@ -1516,8 +1535,8 @@ animation-name: fadeInDown;
 }
 .form01 .submit{
   color:#fff;
-  width:53px;
-  height:29px;
+  width:70px;
+  height:31px;
   border:none;
   float:left;
   padding:0 0 2px;
