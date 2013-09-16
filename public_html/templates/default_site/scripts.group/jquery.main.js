@@ -424,7 +424,6 @@ function initTestimonialCarousel() {
 			width: "790",
 			height: "auto",
 			items: 1,
-			auto: false,
 			swipe: {
 				onTouch: true,
 				onMouse: true

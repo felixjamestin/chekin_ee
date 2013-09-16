@@ -1253,7 +1253,6 @@ animation-name: fadeInDown;
 #testimonials{
   background: url('/uploads/static/testimonials_seperator.png') repeat-x;
   padding-top: 35px;
-  display: none;
 }
 
 #testimonials h1{
@@ -1283,6 +1282,10 @@ animation-name: fadeInDown;
   position: absolute;
   top: -17px;
   left: -29px;
+}
+
+#testimonials li{
+  float: left;
 }
 
 #testimonials h2{
