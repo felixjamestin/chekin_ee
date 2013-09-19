@@ -1,5 +1,9 @@
 {embed="modules/header"}
-{embed="modules/hideaway-gallery"}
+{if group_id == "1"}
+  {embed="modules/hideaway-gallery" preview="open|closed"}
+{if:else}
+  {embed="modules/hideaway-gallery" preview="open"}
+{/if}
 <section class="wrapper">
 	{if group_id == "1"}
     {embed="modules/hideaway-details" preview="open|closed"}

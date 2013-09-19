@@ -1,4 +1,4 @@
-{exp:channel:entries url_title="{segment_1}" channel="state" dynamic="no" status="open|closed"}
+{exp:channel:entries url_title="{segment_1}" channel="state" dynamic="no" status="{embed:preview}"}
 {if no_results}
 	{redirect="404"}
 {/if}
@@ -10,7 +10,11 @@
 				<div id="search-list" class="places-list-small">
 					<span>
 					<h1>{title}</h1>
-					{embed="modules/states-dropdown"}
+					{if group_id == "1"}
+            {embed="modules/states-dropdown" preview="open|closed"}
+          {if:else}
+            {embed="modules/states-dropdown" preview="open"}
+          {/if}
 					</span>
 				</div><!-- search-list -->
 				<div class="text">
