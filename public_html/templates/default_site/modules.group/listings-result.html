@@ -1,4 +1,4 @@
-{exp:channel:entries channel="hideaway" dynamic="no" search:hideaway_state="{segment_1}" <?=$_SESSION['sort_string']?> limit="7" paginate="both" paginate_base="/{segment_1}/page/"}
+{exp:channel:entries channel="hideaway" dynamic="no" status="open{if group_id == "1"}|closed{/if}" search:hideaway_state="{segment_1}" <?=$_SESSION['sort_string']?> limit="7" paginate="both" paginate_base="/{segment_1}/page/"}
 {if no_results}
 <section class="block">
 	<p>No results found!</p>

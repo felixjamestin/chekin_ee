@@ -1,6 +1,6 @@
 <div class='places-dropdown'>
 	<div class='places-dd-content'>
-		{exp:channel:entries channel="state" orderby="date" sort="asc" dynamic="no"}
+		{exp:channel:entries channel="state" status="open{if group_id == "1"}|closed{/if}" orderby="date" sort="asc" dynamic="no"}
 			{exp:channel_images:images entry_id="{entry_id}"}
 				<a href="{site_url}{url_title}/"><div style="background:url('{image:url:state_web}') repeat scroll 50% 50% #FFFFFF;" class="places-dd-item">
 					<div class="place-inner">
