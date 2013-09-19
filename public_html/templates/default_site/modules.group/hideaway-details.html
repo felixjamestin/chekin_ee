@@ -11,7 +11,7 @@
   $cur_to = isset($_SESSION['cur_to'])? $_SESSION['cur_to'] :"Rs." ;
 ?>
 
-{exp:channel:entries disable="pagination" url_title="{segment_2}" dynamic="no"}
+{exp:channel:entries disable="pagination" url_title="{segment_2}" dynamic="no" status="{embed:preview}"}
 {if no_results}
 	{redirect="404"}
 {/if}

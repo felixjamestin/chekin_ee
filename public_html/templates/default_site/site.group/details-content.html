@@ -1,6 +1,10 @@
 {embed="modules/header"}
 {embed="modules/hideaway-gallery"}
 <section class="wrapper">
-	{embed="modules/hideaway-details"}
+	{if group_id == "1"}
+    {embed="modules/hideaway-details" preview="open|closed"}
+  {if:else}
+    {embed="modules/hideaway-details" preview="open"}
+  {/if}
 	{embed="modules/footer"}
 </section><!-- wrapper -->

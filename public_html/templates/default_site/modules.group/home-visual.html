@@ -20,7 +20,11 @@
 								
 						<span>India</span>
 						
-						{embed="modules/states-dropdown"}
+						{if group_id == "1"}
+              {embed="modules/states-dropdown" preview="open|closed"}
+            {if:else}
+              {embed="modules/states-dropdown" preview="open"}
+            {/if}
 
 					</div>
 

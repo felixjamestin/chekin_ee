@@ -10,7 +10,11 @@
 	<ul class="menu">
 		<li class="places-list-small">
 			<span class="find">FIND A DESTINATION
-				{embed="modules/states-dropdown"}
+				{if group_id == "1"}
+          {embed="modules/states-dropdown" preview="open|closed"}
+        {if:else}
+          {embed="modules/states-dropdown" preview="open"}
+        {/if}
 			</span>
 		</li>
 		<li><a href="{site_url}plan" class="plan">PLAN YOUR TRIP</a></li>

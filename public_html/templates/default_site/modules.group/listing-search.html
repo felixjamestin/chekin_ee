@@ -28,7 +28,11 @@
 				<div id="search-list" class="places-list-small">
 					<span>
 					<h1 id="search-place-title">{title}</h1>
-					{embed="modules/states-dropdown"}
+					{if group_id == "1"}
+            {embed="modules/states-dropdown" preview="open|closed"}
+          {if:else}
+            {embed="modules/states-dropdown" preview="open"}
+          {/if}
 					</span>
 				</div><!-- search-list -->
 			</div><!-- info -->
