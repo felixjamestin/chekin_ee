@@ -1,5 +1,9 @@
 {embed="modules/header"}
-{embed="modules/listing-search"}
+{if group_id == "1"}
+  {embed="modules/listing-search" preview="open|closed"}
+{if:else}
+  {embed="modules/listing-search" preview="open"}
+{/if}
 <section class="wrapper">
 	<section id="main">
 		{embed="modules/listings"}
