@@ -903,8 +903,8 @@ class Channel_images
 		@ini_set('memory_limit', '160M');
 		@ini_set('memory_limit', '192M');
 
-		error_reporting(E_ALL);
-		@ini_set('display_errors', 1);
+		#error_reporting(E_ALL);
+		#@ini_set('display_errors', 1);
 
 		// What Entry?
 		$entry_id = $this->EE->image_helper->get_entry_id_from_param();
@@ -1279,8 +1279,8 @@ class Channel_images
 		// -----------------------------------------
 		if ($temp_dir == 'yes')
 		{
-			error_reporting(E_ALL);
-			@ini_set('display_errors', 1);
+			#error_reporting(E_ALL);
+			#@ini_set('display_errors', 1);
 
 			//Extension
 			$extension = substr( strrchr($file, '.'), 1);
@@ -1391,8 +1391,8 @@ class Channel_images
 			$loc = $LOC->get_location_prefs($location_settings['location']);
 			$server_path = $loc['server_path'];
 
-			error_reporting(E_ALL);
-			@ini_set('display_errors', 1);
+			//error_reporting(E_ALL);
+			//@ini_set('display_errors', 1);
 
 			//Extension
 			$extension = substr( strrchr($file, '.'), 1);
