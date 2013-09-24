@@ -52,8 +52,8 @@ class Channel_Images_AJAX
 		@ini_set('memory_limit', '320M');
 		@ini_set('memory_limit', '512M');
 
-		error_reporting(E_ALL);
-		@ini_set('display_errors', 1);
+		//error_reporting(E_ALL);
+    //@ini_set('display_errors', 1);
 
 		// -----------------------------------------
 		// Standard Vars
@@ -405,8 +405,8 @@ class Channel_Images_AJAX
 		@ini_set('memory_limit', '160M');
 		@ini_set('memory_limit', '192M');
 
-		error_reporting(E_ALL);
-		@ini_set('display_errors', 1);
+		//error_reporting(E_ALL);
+		//@ini_set('display_errors', 1);
 
 		// -----------------------------------------
 		// Vars
@@ -1131,8 +1131,8 @@ class Channel_Images_AJAX
 		@ini_set('memory_limit', '160M');
 		@ini_set('memory_limit', '192M');
 
-		error_reporting(E_ALL);
-		@ini_set('display_errors', 1);
+		//error_reporting(E_ALL);
+		//@ini_set('display_errors', 1);
 
 		// Grab settings
 		$settings = $this->EE->channel_images_model->get_field_settings($field_id);

@@ -714,7 +714,16 @@ class Channel_images_model
 				if ($row == FALSE) continue;
 				$temp2 = explode('|', $row);
 
-				$metadata[$temp2[0]] = array('width' => $temp2[1], 'height'=>$temp2[2], 'size'=>$temp2[3]);
+				//$metadata[$temp2[0]] = array('width' => $temp2[1], 'height'=>$temp2[2], 'size'=>$temp2[3]);
+        if(isset($temp2[1])):
+          $metadata[$temp2[0]]['width'] = $temp2[1];
+        endif;
+        if(isset($temp2[2])):
+          $metadata[$temp2[0]]['height'] = $temp2[2];
+        endif;
+        if(isset($temp2[3])):
+          $metadata[$temp2[0]]['size'] = $temp2[3];
+        endif;
 			}
 		}
 
