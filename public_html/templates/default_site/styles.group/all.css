@@ -1132,7 +1132,7 @@ animation-name: fadeInDown;
 
 .gallery .box:hover p{
   opacity: 1;
-  background: rgba(0, 46, 88, 0.62) url('/uploads/static/stars.png') no-repeat 50% 18px;
+  background: rgba(0, 46, 88, 0.62) url('/uploads/static/stars.png') no-repeat 50% 31px;
   
 }
 
@@ -1186,7 +1186,7 @@ animation-name: fadeInDown;
   font-weight: 100;
   color: white;
   opacity: 0;
-  background:url('/uploads/static/stars.png') no-repeat 50% 18px;
+  background:url('/uploads/static/stars.png') no-repeat 50% 31px;
   
   -webkit-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
   -moz-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
@@ -1201,7 +1201,7 @@ animation-name: fadeInDown;
   display: inline-block;
   text-align: center;
   position: relative;
-  top: 23px;
+  top: 40px;
   -webkit-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
   -moz-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
   -o-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
@@ -1211,7 +1211,7 @@ animation-name: fadeInDown;
 }
 
 .gallery .box:hover p span{
-  top: 23px;
+  top: 40px;
 }
 
 .gallery p span.gallery-view {
@@ -1228,7 +1228,7 @@ animation-name: fadeInDown;
   font-family: "kulturista-web", "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   text-transform: uppercase;
-  bottom: -63px;
+/*  bottom: -63px;*/
   top: initial;
   position: absolute;
   left: 50%;
@@ -1241,7 +1241,7 @@ animation-name: fadeInDown;
 }
 
 .gallery .box:hover p span.gallery-view{
-  bottom: -46px;
+/*  bottom: -46px;*/
   top: initial;
 }
 
