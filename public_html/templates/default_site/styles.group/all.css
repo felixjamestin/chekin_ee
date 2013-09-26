@@ -1255,6 +1255,17 @@ animation-name: fadeInDown;
   padding-top: 35px;
 }
 
+#testimonials .caroufredsel_wrapper{
+  float: none;
+  background: none;
+  left: 50% !important;
+  margin-left: -395px !important;
+}
+
+#testimonials .caroufredsel_wrapper{
+  
+}
+
 #testimonials h1{
   text-align: center;
   font-size: 18px;
@@ -1268,24 +1279,25 @@ animation-name: fadeInDown;
   list-style:none;
   margin-bottom: 70px;
   padding-left: 0px;
-  width: 790px;
   margin: 0px auto 70px auto;
   position: relative;
-  float: left;
-}
-
-#testimonials ul::before {
-  content: '\201C';
-  display: block;
-  color: red;
-  font-size: 92px;
-  position: absolute;
-  top: -17px;
-  left: -29px;
 }
 
 #testimonials li{
   float: left;
+  width: 760px;
+  padding: 0px 0px 0px 30px;
+  position: relative;
+}
+
+#testimonials li::before {
+  content: '\201C';
+  display: block;
+  color: #11b6d2;
+  font-size: 92px;
+  position: absolute;
+  top: -20px;
+  left: 2px;
 }
 
 #testimonials h2{
@@ -1295,7 +1307,7 @@ animation-name: fadeInDown;
   line-height: 1.4;
   text-align: center;
   margin-bottom: 0px;
-  margin-top: 20px;
+  margin-top: 0px;
 }
 
 #testimonials h3{
@@ -1309,10 +1321,6 @@ animation-name: fadeInDown;
 .testimonial-author{
   font-weight: 800;
   color: #454545;
-}
-
-#testimonials .caroufredsel_wrapper{
-  background: none;
 }
 
 /* Footer */
@@ -1356,8 +1364,8 @@ animation-name: fadeInDown;
   padding:0 0 0 31px;
 }
 #footer-content .box4 p{ 
-  margin:0 0 12px;
-  width: 180px;
+  margin:0 0 14px;
+  width: 165px;
 }
 
 #footer-content h3{
@@ -1374,7 +1382,7 @@ animation-name: fadeInDown;
 
 #footer-content .socials{
   margin:0;
-  padding:5px 0 0 15px;
+  padding:5px 0 0 0px;
   list-style:none;
   line-height:24px;
   overflow:hidden;
@@ -1421,7 +1429,7 @@ animation-name: fadeInDown;
   width: 102px;
   height: 116px;
   position: absolute;
-  top: -19px;
+  top: -14px;
   right: 3px;
 }
 
@@ -1456,9 +1464,16 @@ animation-name: fadeInDown;
   top: 3px;
 }
 
+#footer-content input.email{
+  background: none;
+  height: 23px;
+  font-weight: 100;
+}
+
 #blog{
   width: 177px;
   height: 109px;
+  margin-top: 18px;
   background:#ADF06F url('/uploads/static/whats_new.jpg') no-repeat;
   display: block;
    -webkit-transition: opacity .5s ease;
@@ -1480,6 +1495,7 @@ animation-name: fadeInDown;
   color:#3c5323;
   line-height:20px;
   position:relative;
+  margin-top: -3px;
   
 }
 .tweet-box p{ margin:0;}
@@ -1539,7 +1555,7 @@ animation-name: fadeInDown;
 .form01 .submit{
   color:#fff;
   width:70px;
-  height:31px;
+  height:36px;
   border:none;
   float:left;
   padding:0 0 2px;
