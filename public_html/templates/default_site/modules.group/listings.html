@@ -30,7 +30,7 @@
   $sort_order = ($_SESSION['order_by'] == "title" || $_SESSION['order_by'] == "hideaway_minimum_price") ? "asc" : "desc";
   
   if(!isset($_SESSION['fixed_order'])) {
-    $fixed_order = '{exp:channel:entries channel="hideaway" dynamic="no" orderby="random"}{entry_id}|{/exp:channel:entries}';
+    $fixed_order = '{exp:channel:entries channel="hideaway" dynamic="no" status="open|closed" orderby="random"}{entry_id}|{/exp:channel:entries}';
     $_SESSION['fixed_order'] = $fixed_order;
   }
   $fo = $_SESSION['fixed_order'];
