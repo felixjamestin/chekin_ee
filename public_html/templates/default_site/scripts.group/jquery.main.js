@@ -435,7 +435,7 @@ function initTestimonialCarousel() {
 				duration: 500
 			},
 			auto: {
-				timeoutDuration: 2000,
+				timeoutDuration: 8000,
 				pauseOnHover: true
 			}
 		});
