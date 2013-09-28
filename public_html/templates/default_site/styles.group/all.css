@@ -948,7 +948,6 @@ animation-name: fadeInDown;
 }
 
 #plan-pitch{
-  background: url('/uploads/static/coming_soon_badge.png') no-repeat 50% 553px;
   padding-top: 270px;
   padding-bottom: 150px;
 }
@@ -979,6 +978,34 @@ animation-name: fadeInDown;
   width: 800px;
   margin-top: 20px;
 }
+
+#plan-email {
+  color: white;
+  font-size: 18px;
+  background: url('/uploads/static/plan-ribbon-big.png') no-repeat 50% 50%;
+  padding: 16px 0px 40px 0px;
+  margin-top: 38px;
+  text-shadow: 0px 2px #c9992f;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+#plan-email a{
+
+  color: white !important;
+  text-transform: none;
+  font-size: 18px;
+}
+
+#plan-email a:hover{
+
+  color: white !important;
+  text-transform: none;
+  font-size: 18px;
+  border-bottom: 1px solid #c9992f;
+  transition: .2s all ease;
+}
+
 
 #pitch-smiley{
   font-size: 14px;
@@ -1036,7 +1063,7 @@ animation-name: fadeInDown;
   overflow:hidden;
   width:38px;
   height:38px;
-  top:137px;
+  top: 105px;
   outline:none;
 }
 .gallery-section .btn-prev{ 
@@ -1504,6 +1531,7 @@ animation-name: fadeInDown;
   line-height:20px;
   position:relative;
   margin-top: -3px;
+  min-height: 80px;
   
 }
 .tweet-box p{ margin:0;}
@@ -3338,8 +3366,14 @@ margin:0px 0px 0px 18px;}
 #success-msg{display:none;}
 
 #popup-aboutus{
+  
   width: 710px;
   overflow:hidden;
+  -webkit-animation: fadeInDown .6s;
+  -moz-animation: fadeInDown .6s;
+  -o-animation: fadeInDown .6s;
+  animation: fadeInDown .6s;
+
 }
 
 #aboutus-intro{
