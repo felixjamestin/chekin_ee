@@ -1002,7 +1002,7 @@ animation-name: fadeInDown;
   color: white !important;
   text-transform: none;
   font-size: 18px;
-  border-bottom: 1px solid #c9992f;
+  border-bottom: 2px solid white;
   transition: .2s all ease;
 }
 
