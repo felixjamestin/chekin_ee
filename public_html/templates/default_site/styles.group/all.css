@@ -948,7 +948,7 @@ animation-name: fadeInDown;
 }
 
 #plan-pitch{
-  padding-top: 270px;
+  padding-top: 230px;
   padding-bottom: 150px;
 }
 
@@ -995,6 +995,7 @@ animation-name: fadeInDown;
   color: white !important;
   text-transform: none;
   font-size: 18px;
+  border-bottom: 2px solid white;
 }
 
 #plan-email a:hover{
