@@ -11,7 +11,7 @@
   recipient_user_template="thanks_note" 
   }
                     	<fieldset>
-                    		{exp:channel:entries disable="pagination" url_title="{segment_2}" dynamic="no"}
+                    		{exp:channel:entries disable="pagination" url_title="{segment_2}" status="open|Featured|closed" dynamic="no"}
                     			<input type="hidden" name="hideaway-id" id="freeform_hideaway-id" value="{entry_id}" />
                     			<input type="hidden" name="hideaway" id="freeform_hideaway" value="{title}" />
                     			<input type="hidden" name="hideaway-email" id="freeform_hideaway-email" value="{hideaway_email}" />

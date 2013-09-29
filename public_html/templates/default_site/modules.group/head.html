@@ -19,7 +19,7 @@
 		{if segment_1 == "plan"}
 			<title>The most gorgeous getaways in India – Goa, Kerala and more | Chekin</title>
 		{if:elseif segment_2 == ""}
-			{exp:channel:entries dynamic="no" url_title="{segment_1}" limit="1"}
+			{exp:channel:entries dynamic="no" status="open|closed" url_title="{segment_1}" limit="1"}
 			                      	<title>The most gorgeous getaways in {title} | Chekin</title>
 			                      	{if no_results}
 			                      	<title>The most gorgeous getaways in India – Goa, Kerala and more | Chekin</title>
@@ -30,7 +30,7 @@
 	{/if}
 
 	{if segment_2 != ""}
-		{exp:channel:entries dynamic="no" url_title="{segment_2}" limit="1"}
+		{exp:channel:entries dynamic="no" status="open|closed|Featured" url_title="{segment_2}" limit="1"}
 		                      	<title>{title} ({hideaway_location}, {hideaway_state}{title}{/hideaway_state}) – Photos, map, activities, price  | Chekin</title>
 		                      	{if no_results}
 		                      		<title>The most gorgeous getaways in India – Goa, Kerala and more | Chekin</title>

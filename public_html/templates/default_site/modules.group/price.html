@@ -4,7 +4,7 @@
 	$all = array();
   $cur_to = isset($_SESSION['cur_to'])? $_SESSION['cur_to'] :"Rs." ;
 ?>
-{exp:channel:entries entry_id="{embed:entryid}" status="open|closed" limit="1" dynamic="no"}
+{exp:channel:entries entry_id="{embed:entryid}" status="open|closed|Featured" limit="1" dynamic="no"}
 {hideaway_rates}
 <?php
 	$fullrate = intval(str_replace(",", "",'{hideaway_season_rate}'));

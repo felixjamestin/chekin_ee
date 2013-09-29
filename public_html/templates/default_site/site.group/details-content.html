@@ -1,14 +1,14 @@
 {embed="modules/header"}
 {if group_id == "1"}
-  {embed="modules/hideaway-gallery" preview="open|closed"}
+  {embed="modules/hideaway-gallery" preview="open|Featured|closed"}
 {if:else}
-  {embed="modules/hideaway-gallery" preview="open"}
+  {embed="modules/hideaway-gallery" preview="open|Featured"}
 {/if}
 <section class="wrapper">
 	{if group_id == "1"}
-    {embed="modules/hideaway-details" preview="open|closed"}
+    {embed="modules/hideaway-details" preview="open|Featured|closed"}
   {if:else}
-    {embed="modules/hideaway-details" preview="open"}
+    {embed="modules/hideaway-details" preview="open|Featured"}
   {/if}
 	{embed="modules/footer"}
 </section><!-- wrapper -->
