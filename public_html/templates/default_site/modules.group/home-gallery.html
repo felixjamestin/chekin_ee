@@ -5,9 +5,8 @@
 
 	<div class="gmask" id="home-scroller">
 		<ul class="gallery">
-			{exp:channel:entries channel="hideaway" disable="categories|member_data|pagination" orderby="random" dynamic="no"}
-			{if hideaway_featured}
-      <li>
+			{exp:channel:entries channel="hideaway" disable="categories|member_data|pagination" status="Featured" orderby="random" dynamic="no" limit="9"}
+			<li>
 				<div class="box">
 					{exp:channel_images:images category="Home page|Listings page" limit="1" entry_id="{entry_id}"}
 					<a href="{site_url}{hideaway_state}{url_title}{/hideaway_state}/{url_title}/" title="{image:description}">
@@ -27,8 +26,7 @@
 					</a>
 				</div>
 			</li>
-      {/if}
-			{/exp:channel:entries}
+      {/exp:channel:entries}
 		</ul>
 	</div>
 </div><!-- gallery-section -->
