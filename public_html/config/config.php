@@ -28,6 +28,18 @@ if(!defined('ENV')) {
 			// define('SITE_SHORT_NAME', 'default');
 			break;
     
+    case 'www.myoki.in' :
+			define('ENV', 'live');
+			define('THIS_WEB_ROOT', 'public_html');
+			// define('SITE_SHORT_NAME', 'default');
+			break;
+    
+    case 'myoki.in' :
+			define('ENV', 'live');
+			define('THIS_WEB_ROOT', 'public_html');
+			// define('SITE_SHORT_NAME', 'default');
+			break;
+    
 		case 'dev.chekin.in' :
 			define('ENV', 'dev');
 			define('THIS_WEB_ROOT', 'public_dev_html');
