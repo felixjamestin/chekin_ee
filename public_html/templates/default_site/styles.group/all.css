@@ -3410,7 +3410,7 @@ margin:0px 0px 0px 18px;}
 #success-msg{display:none;}
 
 #popup-prices-personalized{
-  width: 710px;
+  width: 610px;
   overflow:hidden;
   -webkit-animation: fadeInDown .6s;
   -moz-animation: fadeInDown .6s;
@@ -3419,18 +3419,49 @@ margin:0px 0px 0px 18px;}
 }
 
 #popup-prices{
-  padding: 30px 50px 10px 40px;
-  font: 18px "proxima-nova-condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 100;
+  padding: 30px 50px 7px 50px;
   line-height: 1.4;
   border-radius: 5px 5px 0px 0px;
 }
 
 #popup-personalized{
-  padding: 30px 50px 30px 40px;
-  font: 15px/22px "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 100;
+  padding: 0px 50px 30px 50px;
+  line-height: 1.4;
   border-radius: 0px 0px 5px 5px;
+}
+
+#popup-prices h1, #popup-personalized h1 {
+  margin-bottom: 0px;
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+#popup-prices h1{
+  background: url('/uploads/static/badge_price.png') no-repeat right 0px;
+  padding-right: 64px;
+  width: 332px;
+}
+
+#popup-personalized h1{
+  padding-left: 100px;
+  background: url('/uploads/static/badge_personalized_fill.png') no-repeat left 0px;
+  width: 315px;
+}
+
+#popup-prices h2, #popup-personalized h2 {
+  padding: 0px;
+  margin-top: 6px;
+  line-height: 1.5;
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  width: 500px;
+}
+
+#popup-prices h2
+{
+  width: 490px;
 }
 
 #popup-aboutus{
