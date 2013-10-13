@@ -3409,6 +3409,15 @@ margin:0px 0px 0px 18px;}
 .popup .msg p {margin:0;}
 #success-msg{display:none;}
 
+#popup-prices-personalized{
+  width: 710px;
+  overflow:hidden;
+  -webkit-animation: fadeInDown .6s;
+  -moz-animation: fadeInDown .6s;
+  -o-animation: fadeInDown .6s;
+  animation: fadeInDown .6s;
+}
+
 #popup-aboutus{
   
   width: 710px;
