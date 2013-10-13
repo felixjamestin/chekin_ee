@@ -644,10 +644,16 @@ animation-name: fadeInDown;
 }
 /* menu */
 .menu{
-  float:left;
+/*  float:left;
+  padding: 37px 0 0;*/
+  position: absolute;
+  bottom: 6px;
+  left: 312px;
+  line-height: 1;
   margin:0;
-  padding: 37px 0 0;
   list-style:none;
+
+
 }
 .menu li{
   float:left;
@@ -663,8 +669,10 @@ animation-name: fadeInDown;
   color:#d8715a;
   border-bottom:1px #d8715a dotted;
 }
+
+
 /* nav */
-#nav{
+/*#nav{
   float:right;
   text-transform:uppercase;
   padding:43px 0 0;
@@ -678,7 +686,42 @@ animation-name: fadeInDown;
 #nav a:hover{
   color:#d8715a;
   border-bottom:1px #d8715a dotted;
+}*/
+
+#header-badges {
+  overflow: hidden;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  line-height: 0px;
 }
+
+#header-badges:hover{
+  opacity: .9;
+  cursor: pointer;
+  -webkit-transition: .2s all ease;
+  -moz-transition: .2s all ease;
+  -o-transition: .2s all ease;
+  -ms-transition: .2s all ease;
+  transition: .2s all ease;
+}
+
+#badge-price {
+  width: 63px;
+  height: 40px;
+  display: inline-block;
+  background: url('/uploads/static/badge_price.png') no-repeat right 0px;
+  margin-right: 5px;
+}
+
+#badge-personalized {
+  width: 82px;
+  height: 34px;
+  display: inline-block;
+  background: url('/uploads/static/badge_personalized.png') no-repeat right 0px;
+}
+
+
 /* visual */
 #pitch{
   width: 100%;

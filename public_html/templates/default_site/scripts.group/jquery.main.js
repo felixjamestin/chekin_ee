@@ -170,29 +170,61 @@ jQuery(function(){
 		$("#footer-aboutus").fancybox({
 			'titlePosition' 		: 'outside',
 			'overlayColor'  		: '#000000',
-			'overlayOpacity'	: 0.85,
-			'padding'       	 		: 0,
-			'transitionIn'  	:	'fade',
-			'transitionOut' 	:	'fade',
-			'speedIn'       	 	:	300, 
-			'speedOut'      	 	:	300,
-			'easingIn'      	 	:	'swing'
+			'overlayOpacity'		: 0.85,
+			'padding'       		: 0,
+			'transitionIn'  		:	'fade',
+			'transitionOut' 		:	'fade',
+			'speedIn'       		:	300, 
+			'speedOut'      		:	300,
+			'easingIn'      		:	'swing'
 		});
 		
 	}
 	
-	if ($('#header-aboutus').exists()) {
+	// if ($('#header-aboutus').exists()) {
 	
-		$("#header-aboutus").fancybox({
+	//	$("#header-aboutus").fancybox({
+	//		'titlePosition' 		: 'outside',
+	//		'overlayColor'  		: '#000000',
+	//		'overlayOpacity'		: 0.85,
+	//		'padding'       		: 0,
+	//		'transitionIn'  		:	'fade',
+	//		'transitionOut' 		:	'fade',
+	//		'speedIn'       		:	300, 
+	//		'speedOut'      		:	300,
+	//		'easingIn'      		:	'swing'
+	//	});
+	  	
+	// }
+
+	if ($('#badge-price').exists()) {
+	
+		$("#badge-price").fancybox({
 			'titlePosition' 		: 'outside',
 			'overlayColor'  		: '#000000',
-			'overlayOpacity'	: 0.85,
-			'padding'       	 		: 0,
-			'transitionIn'  	:	'fade',
-			'transitionOut' 	:	'fade',
-			'speedIn'       	 	:	300, 
-			'speedOut'      	 	:	300,
-			'easingIn'      	 	:	'swing'
+			'overlayOpacity'		: 0.85,
+			'padding'       		: 0,
+			'transitionIn'  		:	'fade',
+			'transitionOut' 		:	'fade',
+			'speedIn'       		:	300, 
+			'speedOut'      		:	300,
+			'easingIn'      		:	'swing'
+		});
+		
+	}
+
+	if ($('#badge-personalized').exists()) {
+	
+		$("#badge-personalized").fancybox({
+			'titlePosition' 		: 'outside',
+			'overlayColor'  		: '#000000',
+			'overlayOpacity'		: 0.85,
+			'padding'       		: 0,
+			'transitionIn'  		:	'fade',
+			'transitionOut' 		:	'fade',
+			'speedIn'       		:	300, 
+			'speedOut'      		:	300,
+			'easingIn'      		:	'swing'
 		});
 		
 	}
