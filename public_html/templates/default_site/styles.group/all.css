@@ -3418,6 +3418,21 @@ margin:0px 0px 0px 18px;}
   animation: fadeInDown .6s;
 }
 
+#popup-prices{
+  padding: 30px 50px 10px 40px;
+  font: 18px "proxima-nova-condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  line-height: 1.4;
+  border-radius: 5px 5px 0px 0px;
+}
+
+#popup-personalized{
+  padding: 30px 50px 30px 40px;
+  font: 15px/22px "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  border-radius: 0px 0px 5px 5px;
+}
+
 #popup-aboutus{
   
   width: 710px;
