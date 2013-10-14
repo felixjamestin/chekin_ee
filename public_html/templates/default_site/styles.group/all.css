@@ -1906,7 +1906,7 @@ animation-name: fadeInDown;
   border-left:1px dashed #777;
   font-family: "proxima-nova-condensed","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
-.box-heading .alt{ color:#fff;font-weight:500;text-shadow:none;}
+.box-heading .alt{ color:#fff;font-weight:500;text-shadow:none; text-transform: lowercase;}
 .box-heading .price p{
   margin:0;
   letter-spacing:-1px;
@@ -1917,7 +1917,69 @@ animation-name: fadeInDown;
 .box-heading .right{
   display:block;
   text-align:right;
+  position: relative;
+  top: 2px;
 }
+
+.lowest-prices {
+  color: white;
+  font-size: 13px;
+  margin-top: 12px;
+  position: relative;
+}
+
+.lowest-prices span{
+  font-size: 12px;
+  margin-right: 1px;
+  color: #86eb37;
+}
+
+.prices-dropdown{
+  visibility: hidden;
+  position: absolute;
+  opacity: 1;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+  width: 250px;
+  background: #fff;
+  right: -14px;
+  border-radius: 3px;
+}
+
+.prices-dropdown::after {
+  left: 82%;
+  bottom: -16%;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  margin-left: -10px;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid white;
+}
+
+.prices-dd-content{
+  color: black;
+  padding: 5px;
+}
+
+.lowest-prices:hover .prices-dropdown{
+  opacity: 1;
+  visibility: visible;
+  -webkit-animation: fadeInDown .6s;
+  -moz-animation: fadeInDown .6s;
+  -o-animation: fadeInDown .6s;
+  animation: fadeInDown .6s;
+  z-index: 999;
+  top: -100px;
+}
+
+
 .box-heading .hold{
   overflow:hidden;
   height:1%;
@@ -1925,6 +1987,7 @@ animation-name: fadeInDown;
   line-height:26px;
   color:#eeeeef;
   margin-left: 8px;
+  min-height: 78px;
 }
 .box-heading .hold p{ margin:0;font-weight:100; margin-top: 5px;}
 .box-heading h2{
@@ -3419,7 +3482,7 @@ margin:0px 0px 0px 18px;}
 }
 
 #popup-prices{
-  padding: 30px 50px 7px 50px;
+  padding: 33px 50px 7px 50px;
   line-height: 1.4;
   border-radius: 5px 5px 0px 0px;
 }
@@ -4324,7 +4387,7 @@ a.external-link:hover{
 
 .freebie .freebie-dropdown::after {
     left: 82%;
-    bottom: -16%;
+    bottom: -30%;
     content: " ";
     height: 0;
     width: 0;
@@ -4350,7 +4413,7 @@ a.external-link:hover{
     -o-animation: fadeInDown .6s;
     animation: fadeInDown .6s;
     z-index: 999;
-    top: -100px;
+    top: -66px;
 }
 
 .freebie-details{
