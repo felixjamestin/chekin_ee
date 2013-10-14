@@ -1132,7 +1132,7 @@ animation-name: fadeInDown;
   font-family: "kulturista-web", "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-size: 12px;
-  padding: 5px 17px;
+  padding: 7px 17px;
   font-weight: 200;
   opacity: .5;
   -webkit-transition: .4s all linear;
@@ -1140,6 +1140,7 @@ animation-name: fadeInDown;
   -o-transition: .4s all linear;
   -ms-transition: .4s all linear;
   transition: .4s all linear;
+  line-height: 1;
 }
 
 #share-hook:hover{
