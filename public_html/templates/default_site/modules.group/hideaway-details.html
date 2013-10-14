@@ -54,8 +54,8 @@
 				
 				<div class="amenity-item amenity-room">
 					<h2>
-						<img src="/uploads/static/home.png" />	
-						<span>Room</span>
+					     	<img src="/uploads/static/home.png" />	
+					     	<span>Room</span>
 					</h2>	
 					<ul>
 						{embed="modules/fetch_cats" cat_group="4" entry_id="{entry_id}"}
@@ -68,7 +68,7 @@
 						<span>Food</span>
 					</h2>
 					<ul>
-						{embed="modules/fetch_cats" cat_group="5" entry_id="{entry_id}"}
+					     	{embed="modules/fetch_cats" cat_group="5" entry_id="{entry_id}"}
 					</ul>							
 				</div>
 			</div>
@@ -77,28 +77,29 @@
 		<article class="tab-content" id="tab-3">
 		
 			<div class="currency">
-	        <span>Show rates in</span>
-	        <span class="help-hover"> <?=$_SESSION['cur_name']?>
-	        <div id="currency-dropdown">
-	          <ul>
-	            <li><a href="#" id="INR">Indian Rupee (INR)</a></li>
-	            <li><a href="#" id="USD">United States Dollar (USD)</a></li>
-	            <li><a href="#" id="GBP">British Pound (GBP)</a></li>
-	            <li id="currency-common"><a href="#" id="EUR">Euro (EUR)</a></li>
-	            <li><a href="#" id="AED">Arab Emirates Dirham (AED)</a></li>	            
-	            <li><a href="#" id="ARS">Argentine Peso (ARS)</a></li>
-	            <li><a href="#" id="AUD">Australian Dollar (AUD)</a></li>
-	            <li><a href="#" id="BRL">Brazilian Real (BRL)</a></li>
-	            <li><a href="#" id="HKD">Hong Kong Dollar (HKD)</a></li>
-	            <li><a href="#" id="MYR">Malaysian Ringitt (MYR)</a></li>
-	            <li><a href="#" id="SGD">Singapore Dollar (SGD)</a></li>
-	            <li><a href="#" id="ZAR">South African Rand (ZAR)</a></li>
-	            <li><a href="#" id="LKR">Sri Lankan Rupee (LKR)</a></li>
-	            <li><a href="#" id="THB">Thai Baht (THB)</a></li>
-	            
-	          </ul>
-	        </div>
-	        </span>
+				<span id="prices-disclaimer">Below rates are indicative. Send booking request for lowest rates</span>
+		        <span>Show rates in</span>
+		        <span class="help-hover"> <?=$_SESSION['cur_name']?>
+			        <div id="currency-dropdown">
+			          <ul>
+			            <li><a href="#" id="INR">Indian Rupee (INR)</a></li>
+			            <li><a href="#" id="USD">United States Dollar (USD)</a></li>
+			            <li><a href="#" id="GBP">British Pound (GBP)</a></li>
+			            <li id="currency-common"><a href="#" id="EUR">Euro (EUR)</a></li>
+			            <li><a href="#" id="AED">Arab Emirates Dirham (AED)</a></li>	            
+			            <li><a href="#" id="ARS">Argentine Peso (ARS)</a></li>
+			            <li><a href="#" id="AUD">Australian Dollar (AUD)</a></li>
+			            <li><a href="#" id="BRL">Brazilian Real (BRL)</a></li>
+			            <li><a href="#" id="HKD">Hong Kong Dollar (HKD)</a></li>
+			            <li><a href="#" id="MYR">Malaysian Ringitt (MYR)</a></li>
+			            <li><a href="#" id="SGD">Singapore Dollar (SGD)</a></li>
+			            <li><a href="#" id="ZAR">South African Rand (ZAR)</a></li>
+			            <li><a href="#" id="LKR">Sri Lankan Rupee (LKR)</a></li>
+			            <li><a href="#" id="THB">Thai Baht (THB)</a></li>
+			            
+			          </ul>
+			        </div>
+		        </span>
 	      </div>
 	      
 	      <form action="" method="post" id="currency_form">
@@ -184,7 +185,9 @@
 		</div><!-- inform -->
 	</section><!-- content -->
 	<aside id="sidebar">
+		
 		<div class="booking-box">
+			
 			<h2>Make a reservation</h2>
 			<form action="#" class="booking-form">
 				<fieldset>
@@ -203,50 +206,57 @@
 					</div><!-- end submit-holder -->
 				</fieldset>
 			</form>
-      {if hideaway_freebies}
-      <div class="freebie-details">
-        <h4>FREE GIFT ON CHECKING IN</h4>
-        {hideaway_freebies}
-          <p>{hideaway_freebie_text}</p>
-        {/hideaway_freebies}  
-      </div>
-      {/if}
-		</div><!-- booking-box -->
-		<div class="location-box">
-		                          	<h3>Getting there</h3>
-		                          	
-		{hideaway_location_on_map}
-		
+
+			<div class="booking-box-price"><span>✔</span> Lowest rates guaranteed for your booking. Send booking request to know more.
+				
+				<div class="prices-dropdown"> 
+					<div class="prices-dd-content">
+						<h2>Lowest rates guaranteed for your booking</h2>
+						<p>We handle each booking individually in order to get the lowest rates from the getaway. Our rates are often much lower than the prices indicated above as well as on other general purpose travel websites.</p>
+					</div>
+				</div>
+
+			</div>
+
+
+
+        </div><!-- booking-box -->
+                              		
+                              		<div class="location-box">
+                              			<h3>Getting there</h3>
+                              			
+                              		{hideaway_location_on_map}
+                              		
     <div class="location-map">	
-			
-			<div class="hideaway-map" id="hideaway-map"></div>
-				
-			<a href="https://maps.google.com/maps?q={latitude},{longitude}&ll={latitude},{longitude}&z=17" class="external-link" target="_blank"></a>
-				
-			<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-			
-			<script>
-				var map;
-				function initialize() {
-				  var myLatlng = new google.maps.LatLng({latitude}, {longitude});
-				  var mapOptions = {
-				    zoom: 8,
-				    center: myLatlng,
-				    mapTypeId: google.maps.MapTypeId.ROADMAP,
-				    disableDefaultUI: true
-				  };
-				  map = new google.maps.Map(document.getElementById('hideaway-map'),mapOptions);
-				  var marker = new google.maps.Marker({
-				    position: myLatlng,
-				    map: map,
-				    title: 'Hello World!'
-				  });    
-				}
-				google.maps.event.addDomListener(window, 'load', initialize);
-			</script>
-			
-		</div>
-		
+                              			
+                              			<div class="hideaway-map" id="hideaway-map"></div>
+                              				
+                              			<a href="https://maps.google.com/maps?q={latitude},{longitude}&ll={latitude},{longitude}&z=17" class="external-link" target="_blank"></a>
+                              				
+                              			<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+                              			
+                              			<script>
+                              				var map;
+                              				function initialize() {
+                              				  var myLatlng = new google.maps.LatLng({latitude}, {longitude});
+                              				  var mapOptions = {
+                              				    zoom: 8,
+                              				    center: myLatlng,
+                              				    mapTypeId: google.maps.MapTypeId.ROADMAP,
+                              				    disableDefaultUI: true
+                              				  };
+                              				  map = new google.maps.Map(document.getElementById('hideaway-map'),mapOptions);
+                              				  var marker = new google.maps.Marker({
+                              				    position: myLatlng,
+                              				    map: map,
+                              				    title: 'Hello World!'
+                              				  });    
+                              				}
+                              				google.maps.event.addDomListener(window, 'load', initialize);
+                              			</script>
+                              			
+                              		</div>
+                              		
     {/hideaway_location_on_map}
 		
       <div class="info">

@@ -5,35 +5,33 @@
 </section>
 {/if}
 <section class="block">
-<!-- 	<span class="bg"></span> -->
-	<ul class="accordion-menu-wide">
-		{exp:channel_images:images category="Listings page|Home page" limit="4" entry_id="{entry_id}"}
-			{if image:no_images}{/if}
-			<li>
-				<a href="{site_url}{hideaway_state}{url_title}{/hideaway_state}/{url_title}/">
-					{if image:description}
-						<span>{image:description}</span>
-					{/if}
-					<img src="{image:url:listings_page}" width="{image:width:listings_page}" height="{image:height:listings_page}" alt="image description" />
-				</a>
-				
-			</li>
-		{/exp:channel_images:images}
-	</ul><!-- accordion -->
+<!--	<span class="bg"></span> -->
+    	<ul class="accordion-menu-wide">
+    		{exp:channel_images:images category="Listings page|Home page" limit="4" entry_id="{entry_id}"}
+    			{if image:no_images}{/if}
+    			<li>
+    				<a href="{site_url}{hideaway_state}{url_title}{/hideaway_state}/{url_title}/">
+    					{if image:description}
+    						<span>{image:description}</span>
+    					{/if}
+    					<img src="{image:url:listings_page}" width="{image:width:listings_page}" height="{image:height:listings_page}" alt="image description" />
+    				</a>
+    				
+    			</li>
+    		{/exp:channel_images:images}
+    	</ul><!-- accordion -->
+
 	<a href="{site_url}{hideaway_state}{url_title}{/hideaway_state}/{url_title}/">
 	<div class="box-heading noise">
-		<!--<div class="price">
-			
-			from
-			<p>Rs. <span class="alt">{embed="modules/minimum-price" entryid="{entry_id}"}</span></p>
-			<span class="alt right">per night</span>	
-		</div>-->
+ 
     {embed="modules/price" entryid="{entry_id}"}
+
 		<div class="hold">
 			<h2>{title}<span class="location">{hideaway_location}, {hideaway_state}{title}{/hideaway_state}</span></h2>
 			<p>{hideaway_one_line}</p>
 		</div>
-    {if hideaway_freebies}
+
+ <!--    {if hideaway_freebies}
     <div class="freebie">
       <span>Free gift included
       <div class="freebie-dropdown">
@@ -45,9 +43,12 @@
       </div>
       </span>
     </div>
-    {/if}
+    {/if} -->
+
 	</div></a><!-- box-heading -->
+
 </section><!-- block -->
+
 {paginate}
 	<div class="pagination">
     <span>Page</span>
