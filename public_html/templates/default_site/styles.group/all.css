@@ -694,16 +694,17 @@ animation-name: fadeInDown;
   bottom: 0px;
   right: 0px;
   line-height: 0px;
+  opacity: .8;
 }
 
 #header-badges:hover{
-  opacity: .9;
+  opacity: 1;
   cursor: pointer;
-  -webkit-transition: .2s all ease;
+/*  -webkit-transition: .2s all ease;
   -moz-transition: .2s all ease;
   -o-transition: .2s all ease;
   -ms-transition: .2s all ease;
-  transition: .2s all ease;
+  transition: .2s all ease;*/
 }
 
 #badge-price {
@@ -1942,7 +1943,7 @@ animation-name: fadeInDown;
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
   -moz-box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
-  width: 250px;
+  width: 350px;
   background: #fff;
   right: -14px;
   border-radius: 3px;
@@ -1979,7 +1980,7 @@ animation-name: fadeInDown;
   top: -186px;
 }
 
-.prices-dd-content h2 {
+.box-heading .prices-dd-content h2 {
   font-size: 16px;
   font-family: "proxima-nova",Arial,Helvetica,sans-serif;
   font-weight: 600;
@@ -3495,7 +3496,7 @@ margin:0px 0px 0px 18px;}
 #success-msg{display:none;}
 
 #popup-prices-personalized{
-  width: 610px;
+  width: 590px;
   overflow:hidden;
   -webkit-animation: fadeInDown .6s;
   -moz-animation: fadeInDown .6s;
