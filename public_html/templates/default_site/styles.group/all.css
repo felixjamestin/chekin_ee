@@ -1749,7 +1749,7 @@ animation-name: fadeInDown;
   width: 100%;
   height: 102px;
   position: absolute;
-  top: 123px;
+  bottom: 0px;
   background: url('/uploads/static/wave_pattern_black.png') repeat-x 0 0;
   z-index: 500;
   opacity: .2;
