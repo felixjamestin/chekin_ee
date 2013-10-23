@@ -911,10 +911,10 @@ animation-name: fadeInDown;
   visibility: visible;
   top: 54px;
   left: -15px;
-  -webkit-animation: fadeInDown .6s;
-  -moz-animation: fadeInDown .6s;
-  -o-animation: fadeInDown .6s;
-  animation: fadeInDown .6s;
+  -webkit-animation: fadeInDown .5s;
+  -moz-animation: fadeInDown .5s;
+  -o-animation: fadeInDown .5s;
+  animation: fadeInDown .5s;
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 1px 2px 7px;
   -moz-box-shadow: rgba(0, 0, 0, 0.3) 1px 2px 7px;
   box-shadow: rgba(0, 0, 0, 0.3) 1px 2px 7px;
@@ -2120,7 +2120,7 @@ animation-name: fadeInDown;
   background: rgba(0, 0, 0, .7);
   border-radius: 100%;
   color: white;
-  z-index: 899;
+  z-index: 90;
   opacity: 1;
   
 }
@@ -3945,10 +3945,10 @@ margin:0px 0px 0px 18px;}
     visibility: visible;
     top: 40px;
     left: -15px;
-    -webkit-animation: fadeInDown .6s;
-    -moz-animation: fadeInDown .6s;
-    -o-animation: fadeInDown .6s;
-    animation: fadeInDown .6s;
+    -webkit-animation: fadeInDown .5s;
+    -moz-animation: fadeInDown .5s;
+    -o-animation: fadeInDown .5s;
+    animation: fadeInDown .5s;
 }
 #search-block .places-list-small .places-dropdown h1 {
     font-size: 20px;
