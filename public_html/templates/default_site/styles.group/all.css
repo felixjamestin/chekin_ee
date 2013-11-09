@@ -1408,6 +1408,33 @@ animation-name: fadeInDown;
   color: #454545;
 }
 
+#testimonial-photo-neha{
+  background: url('/uploads/static/neha.png')no-repeat 50%;
+  width: 43px;
+  height: 42px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 2px;
+}
+
+#testimonial-photo-priya{
+  background: url('/uploads/static/priya.png')no-repeat 50%;
+  width: 43px;
+  height: 42px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 2px;
+}
+
+#testimonial-photo-anokhi{
+  background: url('/uploads/static/anokhi.png')no-repeat 50%;
+  width: 43px;
+  height: 42px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 2px;
+}
+
 /* Footer */
 #footer-content{
   background-color: white;
