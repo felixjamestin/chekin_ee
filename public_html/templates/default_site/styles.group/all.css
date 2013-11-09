@@ -1326,7 +1326,7 @@ animation-name: fadeInDown;
 /* Testimonial section */
 #testimonials{
   background: url('/uploads/static/testimonials_seperator.png') repeat-x;
-  padding-top: 50px;
+  padding-top: 60px;
   position: relative;
 }
 
@@ -1400,7 +1400,7 @@ animation-name: fadeInDown;
   color: #666;
   font-weight: 400;
   text-align: center;
-  margin: 10px 0px 0px 0px;
+  margin: 15px 0px 0px 0px;
 }
 
 .testimonial-author{
