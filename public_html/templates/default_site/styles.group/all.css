@@ -3413,7 +3413,7 @@ margin:0px 0px 0px 18px;}
   width:100%;
 }
 
-@popup-1 .popup-holder{
+#popup-1 .popup-holder{
   height: 586px;
 }
 
@@ -3448,6 +3448,7 @@ margin:0px 0px 0px 18px;}
   width: 485px;
   float: left;
   background: white;
+  border-radius: 0px 0px 5px 5px;
 
 }
 .popup .group {padding:0 0 27px;}
@@ -3567,7 +3568,7 @@ margin:0px 0px 0px 18px;}
 .popup .btn-holder {
   border-top:1px dashed #d1d1d1;
   padding:30px 37px 0;
-  margin:0 -63px;
+  margin:0 -38px;
   overflow:hidden;
 }
 .popup .btn-submit {
@@ -3804,8 +3805,52 @@ margin:0px 0px 0px 18px;}
 #booking-reasons{
   float: right;
   background: #ede7db;
-  width: 223px;
-  padding: 10px;
+  width: 220px;
+  padding: 15px 25px 0px 20px;
+  height: 468px;
+  border-radius: 0px 0px 5px 0px;
+}
+
+#booking-reasons h3 {
+  font: 12px "kulturista-web", serif;
+  font-weight: 600;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+#booking-reasons .quote {
+  font: 14px "proxima-nova","kulturista-web", serif;
+  line-height: 1.4;
+}
+
+#booking-reasons .quote-mark {
+  margin: 2px;
+}
+
+#booking-reasons p {
+  font-size: 14px;
+  line-height: 1.4; 
+}
+
+#booking-reasons span {
+  font: 12px "kulturista-web", serif;
+  font-weight: 600;
+}
+
+#booking-reasons span.tick{
+  margin-right: 5px;
+}
+
+#booking-reasons ul {
+  list-style: none;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+#booking-reasons li {
+  font-weight: 600;
+  margin-bottom: 9px;
+  line-height: 1.4;
 }
 
 .places-list-small {
