@@ -3953,6 +3953,7 @@ margin:0px 0px 0px 18px;}
     text-transform: none;
     font-size: 16px;
     text-shadow: none;
+    clear: both;
 }
 .places-list-small .places-dd-footer p {
     font-family: "Sue Ellen Francisco";
