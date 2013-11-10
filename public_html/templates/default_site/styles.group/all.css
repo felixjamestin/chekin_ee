@@ -910,7 +910,7 @@ animation-name: fadeInDown;
   opacity: 1;
   visibility: visible;
   top: 54px;
-  left: -15px;
+  left: -165px;
   -webkit-animation: fadeInDown .5s;
   -moz-animation: fadeInDown .5s;
   -o-animation: fadeInDown .5s;
@@ -3799,7 +3799,7 @@ margin:0px 0px 0px 18px;}
     opacity: 0;
     visibility: hidden;
     top: -10px;
-    left: -2px;
+    left: -130px;
     line-height: 1.4;
     border-radius: 5px;
     border: 7px solid white;
@@ -3821,27 +3821,36 @@ margin:0px 0px 0px 18px;}
     border-color: rgba(255, 255, 255, 0);
     border-bottom-color: #ffffff;
     border-width: 10px;
-    left: 15%;
+    left: 50%;
     margin-left: -10px;
 }
 .places-list-small .places-dropdown::before {
     border-color: rgba(255, 255, 255, 0);
     border-bottom-color: #ffffff;
     border-width: 16px;
-    left: 15%;
+    left: 50%;
     margin-left: -16px;
 }
 .places-list-small .places-dd-content {
     color: #666;
     background-color: white;
     border-radius: 2px;
-    width: 230px;
+    width: 464px;
 }
+
+.places-dd-content a:hover {
+  border: none;
+}
+
 .places-list-small .places-dd-item {
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
     line-height: 1;
     background-size: cover !important;
+    float: left;
+    width: 230px;
 }
+
 .places-list-small .places-dd-item h1 {
     position: relative;
     top: 5px;
@@ -3972,7 +3981,6 @@ margin:0px 0px 0px 18px;}
     opacity: 1;
     visibility: visible;
     top: 40px;
-    left: -15px;
     -webkit-animation: fadeInDown .5s;
     -moz-animation: fadeInDown .5s;
     -o-animation: fadeInDown .5s;
