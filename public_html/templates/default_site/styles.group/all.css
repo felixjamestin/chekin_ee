@@ -3394,6 +3394,11 @@ margin:0px 0px 0px 18px;}
   line-height:17px;
   padding:20px;
 }
+
+#popup-1{
+  width: 790px;
+}
+
 .clearfix:after {
   clear:both;
   content:"";
@@ -3406,13 +3411,13 @@ margin:0px 0px 0px 18px;}
   -moz-border-radius:5px;
   border-radius:5px;
   width:100%;
-/*
-  -webkit-box-shadow:0 0 15px 0 #bbb;
-  -moz-box-shadow:0 0 15px 0 #bbb;
-  box-shadow:0 0 15px 0 #bbb;
-*/
-
 }
+
+@popup-1 .popup-holder{
+  height: 586px;
+}
+
+
 .popup .head {
   position:relative;
   padding:0 43px 0 35px;
@@ -3437,9 +3442,12 @@ margin:0px 0px 0px 18px;}
   text-shadow:0 3px 1px #55c8e0;
 }
 .popup .head p {margin:0;}
+
 .popup .entity {
-  padding: 41px 0px 30px 60px;
+  padding: 41px 0px 30px 40px;
   width: 485px;
+  float: left;
+  background: white;
 
 }
 .popup .group {padding:0 0 27px;}
@@ -3793,6 +3801,12 @@ margin:0px 0px 0px 18px;}
   background: url('/uploads/static/icon-prices.png') 0px 5px no-repeat;
 }
 
+#booking-reasons{
+  float: right;
+  background: #ede7db;
+  width: 223px;
+  padding: 10px;
+}
 
 .places-list-small {
     position: relative;
