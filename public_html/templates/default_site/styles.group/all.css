@@ -3438,7 +3438,9 @@ margin:0px 0px 0px 18px;}
 }
 .popup .head p {margin:0;}
 .popup .entity {
-  padding:41px 63px 30px;
+  padding: 41px 0px 30px 60px;
+  width: 485px;
+
 }
 .popup .group {padding:0 0 27px;}
 .popup .row {
@@ -3451,15 +3453,16 @@ margin:0px 0px 0px 18px;}
   display:block;
 }
 .popup .row label {
-  float:left;
-  width:90px;
+  float: left;
+  width: 90px;
   text-align:right;
-  padding:0 12px 0 0;
-  line-height:29px;
-  font-weight:400;
+  padding: 0 12px 0 0;
+  line-height: 1.5;
+  font-weight: 600;
+  margin-top: 3px;
 }
 .popup .ttl {
-  display:block;
+  display: none;
   position:relative;
   text-transform:uppercase;
   font-size:14px;
@@ -3491,7 +3494,7 @@ margin:0px 0px 0px 18px;}
 .popup textarea {
   float:left;
   width:84px;
-  height:17px;
+  height:19px;
   position:relative;
   border:1px solid #ddd;
   background:#fff;
@@ -3515,13 +3518,14 @@ margin:0px 0px 0px 18px;}
 .popup .cs-1 {width:51px;}
 .popup .sel-2 {width:155px;}
 .popup .textarea {
-  margin:0 0 12px;
+  margin: 0px;
+  padding:0px;
   position:relative;
-  padding:0 0 19px;
+  
 }
 .popup textarea {
-  height:69px;
-  width:367px;
+  height:45px;
+  width:261px;
   overflow:auto;
   padding-right:5px;
 }
@@ -4621,4 +4625,12 @@ a.external-link:hover{
   padding: 7px 10px 0px 10px;
   margin: 0px;
   color: #666;
+}
+
+#freeform-mobile-fieldset{
+  display: none;
+}
+
+#freeform-newsletter-fieldset{
+  display: none;
 }

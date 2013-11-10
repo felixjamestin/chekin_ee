@@ -276,7 +276,7 @@ jQuery(function(){
 					email: true
 				},
 				mobile: {
-					required: true,
+					required: false,
 					minlength: 10,
 					digits: true
 				}
