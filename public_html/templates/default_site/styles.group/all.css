@@ -2013,7 +2013,7 @@ animation-name: fadeInDown;
   -o-animation: fadeInDown .6s;
   animation: fadeInDown .6s;
   z-index: 999;
-  top: -186px;
+  top: -170px;
 }
 
 .box-heading .prices-dd-content h2 {
@@ -2801,7 +2801,7 @@ a.tag{
   -o-animation: fadeInDown .6s;
   animation: fadeInDown .6s;
   z-index: 999;
-  top: -182px;
+  top: -164px;
   right: 10px;
 }
 
@@ -3541,6 +3541,7 @@ margin:0px 0px 0px 18px;}
   height:45px;
   width: 260px;
   overflow:auto;
+  line-height: 1.4;
 }
 .popup em.error {
   position:absolute;
@@ -3809,7 +3810,7 @@ margin:0px 0px 0px 18px;}
 #booking-reasons{
   float: right;
   background: #ede7db;
-  width: 220px;
+  width: 215px;
   padding: 25px 25px 0px 25px;
   height: 458px;
   border-radius: 0px 0px 5px 0px;
@@ -3819,7 +3820,7 @@ margin:0px 0px 0px 18px;}
   font: 12px "kulturista-web", serif;
   font-weight: 600;
   display: inline;
-  margin-right: 5px;
+  margin-right: 2px;
 }
 
 #booking-reasons .quote {
@@ -3854,7 +3855,7 @@ margin:0px 0px 0px 18px;}
 }
 
 #booking-reasons li {
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 9px;
   line-height: 1.4;
 }
