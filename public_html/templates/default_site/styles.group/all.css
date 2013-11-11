@@ -3451,9 +3451,14 @@ margin:0px 0px 0px 18px;}
   border-radius: 0px 0px 5px 5px;
 
 }
-.popup .group {padding:0 0 27px;}
+.popup .group {padding:0 0 5px;}
+
+.popup .group.group-last{
+  margin-bottom: 40px;
+}
+
 .popup .row {
-  padding:0 104px 19px 0;
+  padding:0 105px 19px 0;
   position:relative;
 }
 .popup .row:after {
@@ -3534,9 +3539,8 @@ margin:0px 0px 0px 18px;}
 }
 .popup textarea {
   height:45px;
-  width:261px;
+  width: 260px;
   overflow:auto;
-  padding-right:5px;
 }
 .popup em.error {
   position:absolute;
@@ -3806,16 +3810,16 @@ margin:0px 0px 0px 18px;}
   float: right;
   background: #ede7db;
   width: 220px;
-  padding: 15px 25px 0px 20px;
-  height: 468px;
+  padding: 25px 25px 0px 25px;
+  height: 458px;
   border-radius: 0px 0px 5px 0px;
 }
 
 #booking-reasons h3 {
   font: 12px "kulturista-web", serif;
   font-weight: 600;
-  margin-top: 24px;
-  margin-bottom: 8px;
+  display: inline;
+  margin-right: 5px;
 }
 
 #booking-reasons .quote {
@@ -3823,8 +3827,10 @@ margin:0px 0px 0px 18px;}
   line-height: 1.4;
 }
 
-#booking-reasons .quote-mark {
-  margin: 2px;
+#booking-reasons p.quote-statement {
+  display: inline;
+  font-weight: 600;
+  font-size: 14px;
 }
 
 #booking-reasons p {
