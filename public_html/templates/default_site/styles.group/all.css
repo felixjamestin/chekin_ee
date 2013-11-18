@@ -3826,6 +3826,7 @@ margin:0px 0px 0px 18px;}
   font-weight: 600;
   display: inline;
   margin-right: 2px;
+  text-transform: uppercase;
 }
 
 #booking-reasons .quote {
@@ -3863,6 +3864,34 @@ margin:0px 0px 0px 18px;}
   font-weight: 400;
   margin-bottom: 9px;
   line-height: 1.4;
+}
+
+#booking-testimonial{
+  border-top: 1px dashed #C2BDAF;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+#booking-reasons #testimonial-photo-anokhi{
+  background-size: 36px;
+  margin: 0px;
+  padding: 0px;
+  vertical-align: top;
+  margin-top: -6px;
+}
+
+#booking-testimonial-author{
+  display: inline-block;
+  width: 165px;
+  font-size: 12px;
+  margin: 0px;
+  margin-top: -6px;
+}
+
+#booking-testimonial .quote-mark{
+  font-size: 16px;
+  font-family: arial, sans-serif;
+  font-weight: 600;
 }
 
 .places-list-small {
