@@ -1379,15 +1379,15 @@ animation-name: fadeInDown;
   content: '\201C';
   display: block;
   color: #11b6d2;
-  font-size: 92px;
   position: absolute;
-  top: -20px;
-  left: -3px;
+  top: -7px;
+  left: 3px;
+  font-size: 60px;
 }
 
 #testimonials h2{
   color: #454545;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 100;
   line-height: 1.4;
   text-align: center;
@@ -1410,29 +1410,42 @@ animation-name: fadeInDown;
 
 #testimonial-photo-neha{
   background: url('/uploads/static/neha.png')no-repeat 50%;
-  width: 43px;
-  height: 42px;
   display: inline-block;
   vertical-align: middle;
   margin-right: 2px;
+  width: 32px;
+  height: 33px;
+  background-size: 32px;
 }
 
 #testimonial-photo-priya{
   background: url('/uploads/static/priya.png')no-repeat 50%;
-  width: 43px;
-  height: 42px;
   display: inline-block;
   vertical-align: middle;
   margin-right: 2px;
+  width: 32px;
+  height: 33px;
+  background-size: 32px;
 }
 
 #testimonial-photo-anokhi{
   background: url('/uploads/static/anokhi.png')no-repeat 50%;
-  width: 43px;
-  height: 42px;
   display: inline-block;
   vertical-align: middle;
   margin-right: 2px;
+  width: 32px;
+  height: 33px;
+  background-size: 32px;
+}
+
+#testimonial-photo-dheepikaa{
+  background: url('/uploads/static/dheepikaa.png')no-repeat 50%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 2px;
+  width: 32px;
+  height: 33px;
+  background-size: 32px;
 }
 
 /* Footer */
@@ -3421,7 +3434,7 @@ margin:0px 0px 0px 18px;}
 .popup .head {
   position:relative;
   padding:0 43px 0 35px;
-  background:url('/uploads/static/bg-head.gif');
+  background:url('/uploads/static/bg-head.gif') #78d4ed;
   -webkit-border-radius:5px 5px 0 0;
   -moz-border-radius:5px 5px 0 0;
   border-radius:5px 5px 0 0;
@@ -3874,6 +3887,8 @@ margin:0px 0px 0px 18px;}
 
 #booking-reasons #testimonial-photo-anokhi{
   background-size: 36px;
+  width: 43px;
+  height: 42px;
   margin: 0px;
   padding: 0px;
   vertical-align: top;
