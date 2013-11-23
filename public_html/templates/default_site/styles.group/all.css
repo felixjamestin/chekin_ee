@@ -2788,7 +2788,7 @@ a.tag{
 
 .booking-box-price .prices-dropdown::after {
   left: 82%;
-  bottom: -5%;
+  top: -7%;
   content: " ";
   height: 0;
   width: 0;
@@ -2799,7 +2799,7 @@ a.tag{
   height: 0;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
-  border-top: 20px solid white;
+  border-bottom: 20px solid white;
 }
 
 .booking-box-price .prices-dd-content{
@@ -2814,7 +2814,7 @@ a.tag{
   -o-animation: fadeInDown .6s;
   animation: fadeInDown .6s;
   z-index: 999;
-  top: -164px;
+  top: 81px;
   right: 10px;
 }
 
@@ -4634,7 +4634,7 @@ a.external-link{
   background: url("/uploads/static/popup_icon.png") center no-repeat;
   position: absolute;
   top:40px;
-  z-index: 999;
+  z-index: 900;
   display: block;
   height: 27px;
   width: 31px;
