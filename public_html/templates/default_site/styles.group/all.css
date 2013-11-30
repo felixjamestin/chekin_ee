@@ -1448,6 +1448,16 @@ animation-name: fadeInDown;
   background-size: 32px;
 }
 
+#testimonial-photo-nishank{
+  background: url('/uploads/static/dheepikaa.png')no-repeat 50%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 2px;
+  width: 32px;
+  height: 33px;
+  background-size: 32px;
+}
+
 /* Footer */
 #footer-content{
   background-color: white;
