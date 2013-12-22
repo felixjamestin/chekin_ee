@@ -2024,6 +2024,12 @@ animation-name: fadeInDown;
   border-bottom: 20px solid white;
 }
 
+.lowest-prices .prices-dropdown:after{
+  border-top: 20px solid white;
+  border-bottom: none;
+  bottom: -6%;
+}
+
 .prices-dd-content{
   padding: 17px 19px 17px 19px;
 }
