@@ -11,18 +11,18 @@
   {!-- Commented this code in favor of SEO Lite
 	
 	{if segment_1 == ""}
-	<title>The most gorgeous getaways in India – Goa, Kerala and more | Chekin</title>
+	<title>The most gorgeous getaways in India – Goa, Kerala and more | Myoki</title>
 	{/if}
 
 	{if segment_1 != ""} 
 		
 		{if segment_1 == "plan"}
-			<title>The most gorgeous getaways in India – Goa, Kerala and more | Chekin</title>
+			<title>The most gorgeous getaways in India – Goa, Kerala and more | Myoki</title>
 		{if:elseif segment_2 == ""}
 			{exp:channel:entries dynamic="no" status="open|closed" url_title="{segment_1}" limit="1"}
-			                      	<title>The most gorgeous getaways in {title} | Chekin</title>
+			                      	<title>The most gorgeous getaways in {title} | Myoki</title>
 			                      	{if no_results}
-			                      	<title>The most gorgeous getaways in India – Goa, Kerala and more | Chekin</title>
+			                      	<title>The most gorgeous getaways in India – Goa, Kerala and more | Myoki</title>
 			                      	{/if}
 			{/exp:channel:entries}	
 		{/if}
@@ -31,19 +31,19 @@
 
 	{if segment_2 != ""}
 		{exp:channel:entries dynamic="no" status="open|closed|Featured" url_title="{segment_2}" limit="1"}
-		                      	<title>{title} ({hideaway_location}, {hideaway_state}{title}{/hideaway_state}) – Photos, map, activities, price  | Chekin</title>
+		                      	<title>{title} ({hideaway_location}, {hideaway_state}{title}{/hideaway_state}) – Photos, map, activities, price  | Myoki</title>
 		                      	{if no_results}
-		                      		<title>The most gorgeous getaways in India – Goa, Kerala and more | Chekin</title>
+		                      		<title>The most gorgeous getaways in India – Goa, Kerala and more | Myoki</title>
 		                      	{/if}
 		{/exp:channel:entries}	
 	{/if}
 
 	<meta name="description" content="Travel to the most gorgeous getaways in India – Charming villas, forest hideouts, and lovely stays by the beach. Perfect for weekends or short breaks. Book now." />
   --}
-	<meta property="og:site_name" content="Chekin"/>
-	<meta property="og:title" content="Chekin | Travel to the most gorgeous getaways in India – Goa, Kerala and more"/>
+	<meta property="og:site_name" content="Myoki"/>
+	<meta property="og:title" content="Myoki | Travel to the most gorgeous getaways in India – Goa, Kerala and more"/>
 	<meta property="og:description" content="Travel to the most gorgeous getaways in India – Charming villas, forest hideouts, and lovely stays by the beach. Perfect for weekends or short breaks. Book now."/>
-	<meta property="og:url" content="http://www.chekin.in"/>
+	<meta property="og:url" content="http://www.myoki.in"/>
 	
 
 	{exp:minimee:css}
