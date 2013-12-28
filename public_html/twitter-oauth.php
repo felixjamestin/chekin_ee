@@ -21,7 +21,7 @@ function buildAuthorizationHeader($oauth)
     return $r; 
 }
 
-$url = "https://api.twitter.com/1.1/statuses/user_timeline/ChekinTeam.json";
+$url = "https://api.twitter.com/1.1/statuses/user_timeline/myokiteam.json";
 
 $oauth_access_token = "534037133-BjVeJkrjNV3kl4L9wK6n6vxL1vRD1c9Hbf6WtFg";
 $oauth_access_token_secret = "6EZlEPmOLwVQPx0Ko8WbQtVT5RNcfTDryKzzg0aL3TU";
