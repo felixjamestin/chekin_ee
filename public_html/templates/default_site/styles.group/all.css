@@ -1223,7 +1223,7 @@ animation-name: fadeInDown;
   display:block;
   margin:0px;
   opacity: .9;
-  border-radius: 2px;
+  border-radius: 2px 2px 0px 0px;
 }
 
 .gallery .box img{
