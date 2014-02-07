@@ -4766,3 +4766,66 @@ a.external-link:hover{
 #freeform-newsletter-fieldset{
   display: none;
 }
+
+
+.sumome-popup .sumome-popup-content{
+  background-color: white;
+  font-family: "Proxima-nova", sans-serif;
+  width: 595px;
+  padding: 50px 40px 77px 50px;
+
+}
+
+.sumome-popup .sumome-popup-content .sumome-popup-form h2{
+  font-size: 20px;
+}
+
+.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]{
+  font-size: 18px;
+  padding: 23px 8px;
+  border-radius: 3px;
+  margin-top: 30px;
+  width: 490px;
+  margin-bottom: 7px;
+}
+
+.sumome-popup .sumome-popup-content .sumome-popup-form button{
+  background: #80d436 !important;
+  border-bottom: 2px solid #69B328 !important;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 18px;
+  text-transform: initial;
+  font-weight: 400;
+  width: 490px;
+  webkit-transition: background-color .25s;
+  -moz-transition: background-color .25s;
+  -o-transition: background-color .25s;
+  transition: background-color .25s;
+}
+
+.sumome-popup .sumome-popup-content .sumome-popup-form button:hover, .sumome-popup .sumome-popup-content .sumome-popup-form button:focus{
+  background: #76C531 !important;
+  border-bottom: 2px solid #69B328 !important;
+}
+
+.sumome-popup .sumome-popup-content .sumome-popup-form button:active, .sumome-popup .sumome-popup-content .sumome-popup-form button:active {
+  background: #69B328 !important;
+  border-bottom: 2px solid #69B328 !important;
+}
+
+.sumome-popup .sumome-popup-content .sumome-popup-form p {
+  margin: 0px;
+  position: absolute;
+  font-size: 12px;
+  top: 230px;
+  top: 260px;
+  color: #999999;
+}
+
+.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:focus{
+  background: #ffffff;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  border-color: rgb(204, 204, 204);
+}
+
