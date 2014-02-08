@@ -4768,64 +4768,71 @@ a.external-link:hover{
 }
 
 
-.sumome-popup .sumome-popup-content{
-  background-color: white;
-  font-family: "Proxima-nova", sans-serif;
-  width: 595px;
-  padding: 50px 40px 77px 50px;
+
+/* Override SumoMe email popup styles */
+
+div.sumome-popup .sumome-popup-content{
+  background-color: white !important;
+  font-family: "Proxima-nova", sans-serif !important;
+  width: 595px !important;
+  padding: 50px 40px 77px 50px !important;
 
 }
 
-.sumome-popup .sumome-popup-content .sumome-popup-form h2{
-  font-size: 20px;
+div.sumome-popup .sumome-popup-content .sumome-popup-form h2{
+  font-size: 20px !important;
+  text-align: left;
+  background: url('https://dl-web.dropbox.com/spa/evpiz4fy0sj5ara/myoki/public/mail_icon.png') no-repeat;
+  padding-left: 82px;
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 
-.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]{
-  font-size: 18px;
-  padding: 23px 8px;
-  border-radius: 3px;
-  margin-top: 30px;
-  width: 490px;
-  margin-bottom: 7px;
+div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]{
+  font-size: 18px !important;
+  padding: 23px 8px !important;
+  border-radius: 3px !important;
+  margin-top: 30px !important;
+  width: 490px !important;
+  margin-bottom: 7px !important;
 }
 
-.sumome-popup .sumome-popup-content .sumome-popup-form button{
+div.sumome-popup .sumome-popup-content .sumome-popup-form button{
   background: #80d436 !important;
   border-bottom: 2px solid #69B328 !important;
-  font-family: "proxima-nova", sans-serif;
-  font-size: 18px;
-  text-transform: initial;
-  font-weight: 400;
-  width: 490px;
-  webkit-transition: background-color .25s;
-  -moz-transition: background-color .25s;
-  -o-transition: background-color .25s;
-  transition: background-color .25s;
+  font-family: "proxima-nova", sans-serif !important;
+  font-size: 18px !important;
+  text-transform: initial !important;
+  font-weight: 400 !important;
+  width: 490px !important;
+  webkit-transition: background-color .25s !important;
+  -moz-transition: background-color .25s !important;
+  -o-transition: background-color .25s !important;
+  transition: background-color .25s !important;
 }
 
-.sumome-popup .sumome-popup-content .sumome-popup-form button:hover, .sumome-popup .sumome-popup-content .sumome-popup-form button:focus{
+div.sumome-popup .sumome-popup-content .sumome-popup-form button:hover, .sumome-popup .sumome-popup-content .sumome-popup-form button:focus{
   background: #76C531 !important;
   border-bottom: 2px solid #69B328 !important;
 }
 
-.sumome-popup .sumome-popup-content .sumome-popup-form button:active, .sumome-popup .sumome-popup-content .sumome-popup-form button:active {
+div.sumome-popup .sumome-popup-content .sumome-popup-form button:active, .sumome-popup .sumome-popup-content .sumome-popup-form button:active {
   background: #69B328 !important;
   border-bottom: 2px solid #69B328 !important;
 }
 
-.sumome-popup .sumome-popup-content .sumome-popup-form p {
-  margin: 0px;
-  position: absolute;
-  font-size: 12px;
-  top: 230px;
-  top: 260px;
-  color: #999999;
+div.sumome-popup .sumome-popup-content .sumome-popup-form p {
+  margin: 0px !important;
+  position: absolute !important;
+  font-size: 12px !important;
+  top: 230px !important;
+  top: 260px !important;
+  color: #999999 !important;
 }
 
-.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:focus{
-  background: #ffffff;
-  box-shadow: none;
-  -webkit-box-shadow: none;
-  border-color: rgb(204, 204, 204);
+div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:focus{
+  background: #ffffff !important;
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  border-color: rgb(204, 204, 204) !important;
 }
-
