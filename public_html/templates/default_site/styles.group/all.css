@@ -4775,7 +4775,7 @@ div.sumome-popup .sumome-popup-content{
   background-color: white !important;
   font-family: "Proxima-nova", sans-serif !important;
   width: 595px !important;
-  padding: 50px 40px 77px 50px !important;
+  padding: 50px 40px 50px 50px !important;
 
 }
 
@@ -4786,6 +4786,7 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form h2{
   padding-left: 82px;
   padding-top: 7px;
   padding-bottom: 7px;
+  font-family: "Proxima-nova", sans-serif !important;
 }
 
 div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]{
