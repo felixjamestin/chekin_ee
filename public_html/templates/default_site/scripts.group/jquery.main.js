@@ -80,35 +80,37 @@ jQuery(function(){
         })   
 	}
 	
-	// if ($('#rate-includes').exists()) {
+	if ($('#rate-includes').exists()) {
 	
-	//	$('#rate-includes div').hide();
-	  	
-	//	$('#rate-includes h3').click(function(){
-	  		
-	//		$(this).parent().find('div').slideFadeToggle('fast');
-	//		$(this).toggleClass('collapse');
-	  	
-	//		return false;
-	  	
-	//	});
+		// $('#rate-includes div').hide();
+		$('#rate-includes h3').addClass('collapse');
+		
+		$('#rate-includes h3').click(function(){
+			
+			$(this).parent().find('div').slideFadeToggle('fast');
+			$(this).toggleClass('collapse');
+		
+			return false;
+		
+		});
 	
-	// }
+	}
 	
-	// if ($('#additional-details').exists()) {
+	if ($('#additional-details').exists()) {
 	
-	//	$('#additional-details div').hide();
-	  	
-	//	$('#additional-details h3').click(function(){
-	  		
-	//		$(this).parent().find('div').slideFadeToggle('fast');
-	//		$(this).toggleClass('collapse');
-	  	
-	//		return false;
-	  	
-	//	});
+		// $('#additional-details div').hide();
+		$('#additional-details h3').addClass('collapse');
+		
+		$('#additional-details h3').click(function(){
+			
+			$(this).parent().find('div').slideFadeToggle('fast');
+			$(this).toggleClass('collapse');
+		
+			return false;
+		
+		});
 	
-	// }
+	}
 	
 	
 	if ($('#btn-1').exists()) {
