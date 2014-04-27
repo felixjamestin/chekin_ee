@@ -3453,7 +3453,7 @@ margin:0px 0px 0px 18px;}
 .popup .head {
   position:relative;
   padding:0 43px 0 35px;
-  background:url('/uploads/static/bg-head.gif') #78d4ed;
+  background-color: #09d1ea;
   -webkit-border-radius:5px 5px 0 0;
   -moz-border-radius:5px 5px 0 0;
   border-radius:5px 5px 0 0;
@@ -4775,21 +4775,31 @@ a.external-link:hover{
 /* Override SumoMe email popup styles */
 
 div.sumome-popup .sumome-popup-content{
-  background-color: white !important;
+  background-color: #11b6d2 !important;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.16) 25%, transparent 25%) -50px 0, linear-gradient(225deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%) -50px 0, linear-gradient(315deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%), linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%);
   font-family: "Proxima-nova", sans-serif !important;
-  width: 595px !important;
+  width: 625px !important;
   padding: 50px 40px 50px 50px !important;
 
 }
 
 div.sumome-popup .sumome-popup-content .sumome-popup-form h2{
-  font-size: 20px !important;
+  font-size: 32px !important;
   text-align: left;
-  background: url('https://dl-web.dropbox.com/spa/evpiz4fy0sj5ara/myoki/public/mail_icon.png') no-repeat;
-  padding-left: 82px;
+  /*background: url('https://dl-web.dropbox.com/spa/evpiz4fy0sj5ara/myoki/public/mail_icon.png') no-repeat;*/
   padding-top: 7px;
-  padding-bottom: 7px;
   font-family: "Proxima-nova", sans-serif !important;
+  line-height: 1.1;
+  text-shadow: 1px 1px 1px #0091AA;
+}
+
+div.sumome-popup .sumome-popup-content .sumome-popup-form .sumome-popup-text{
+  color: white !important;
+  font-size: 32px;
+  line-height: 1.1;
+  text-shadow: 1px 1px 1px #0091AA;
+  font-weight: 800;
+  text-align: center;
 }
 
 div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]{
