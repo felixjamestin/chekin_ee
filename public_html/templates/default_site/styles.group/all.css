@@ -4792,6 +4792,7 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form h2{
   font-family: "Proxima-nova", sans-serif !important;
   line-height: 1.1;
   text-shadow: 1px 1px 1px #0091AA;
+  margin-bottom: 0px;
 }
 
 div.sumome-popup div.sumome-popup-content div.sumome-popup-form div.sumome-popup-text{
