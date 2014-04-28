@@ -3202,6 +3202,7 @@ a.tag{
   text-shadow: none;
   font-size: 18px;
   margin-bottom: 4px;
+  text-align: center;
 }
 
 #places-list .places-dd-item {
