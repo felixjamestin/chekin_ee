@@ -3191,6 +3191,15 @@ a.tag{
     top: -10px;
     visibility: hidden;
 }
+
+#search-list.places-list-small .places-dropdown::before {
+  left: 10%;
+}
+
+#search-list.places-list-small .places-dropdown::after {
+  left: 10%;
+}
+
 #places-list .places-dd-content {
     background-color: white;
     border-radius: 2px 2px 2px 2px;
@@ -3202,7 +3211,6 @@ a.tag{
   text-shadow: none;
   font-size: 18px;
   margin-bottom: 4px;
-  text-align: center;
 }
 
 #places-list .places-dd-item {
