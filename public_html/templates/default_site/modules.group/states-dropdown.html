@@ -1,5 +1,8 @@
 <div class='places-dropdown'>
 	<div class='places-dd-content'>
+
+		<div class="places-dd-content-desc">Pick a place below</div>
+
 		{exp:channel:entries channel="state" status="{embed:preview}" orderby="date" sort="asc" dynamic="no"}
 			{exp:channel_images:images entry_id="{entry_id}" limit="1"}
 				<a href="{site_url}{url_title}/"><div style="background:url('{image:url:state_web}') repeat scroll 50% 50% #FFFFFF;" class="places-dd-item">
