@@ -3213,6 +3213,10 @@ a.tag{
   margin-bottom: 4px;
 }
 
+#search-list .places-dd-content-desc{
+  font-size: 16px;
+}
+
 #places-list .places-dd-item {
     border-bottom: 1px solid black;
     line-height: 1;
