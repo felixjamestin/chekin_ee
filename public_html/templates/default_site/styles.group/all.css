@@ -3198,7 +3198,7 @@ a.tag{
     width: 390px;
 }
 
-#places-list .places-dd-content-desc {
+.places-dd-content-desc {
   text-shadow: none;
   font-size: 18px;
   margin-bottom: 4px;
