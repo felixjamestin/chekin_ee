@@ -1929,9 +1929,9 @@ animation-name: fadeInDown;
   -webkit-border-radius:0 0 10px 10px;
   -moz-border-radius:0 0 10px 10px;
   border-radius:0 0 10px 10px;
-  padding:18px 15px 25px;
-  overflow:hidden;
-  width:891px;
+  padding: 17px 15px 32px;
+  overflow: hidden;
+  width: 891px;
   -webkit-transition-property: background;
   -moz-transition-property: background;
   -ms-transition-property: background;
@@ -1976,16 +1976,19 @@ animation-name: fadeInDown;
   font-weight: normal;
 }
 .box-heading .right{
-  display:block;
+  float: right;
   text-align:right;
-  position: relative;
-  top: 2px;
+}
+
+.box-heading .left: {
+  float: left;
+  text-align:left;
 }
 
 .lowest-prices {
   color: white;
   font-size: 13px;
-  margin-top: 12px;
+  margin-top: 4px;
   position: relative;
 }
 
@@ -1993,6 +1996,22 @@ animation-name: fadeInDown;
   font-size: 12px;
   margin-right: 1px;
   color: #86eb37;
+  /*display: none;*/
+}
+
+.box-view-details{
+  width: 168px;
+  height: 23px;
+  background: #5bdaf4;
+  position: absolute;
+  right: 0px;
+  bottom: 40px;
+  z-index: 999;
+  border-bottom-right-radius: 9px;
+  text-align: center;
+  font-size: 14px;
+  color: #0089A3;
+  font-family: "Proxima-nova-condensed";
 }
 
 .prices-dropdown{
@@ -3211,10 +3230,13 @@ a.tag{
   text-shadow: none;
   font-size: 18px;
   margin-bottom: 4px;
+  font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+  text-align: center;
 }
 
 #search-list .places-dd-content-desc{
   font-size: 16px;
+  font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 #places-list .places-dd-item {
@@ -4800,27 +4822,28 @@ div.sumome-popup .sumome-popup-content{
   background-size: 100px 100px;
   font-family: "Proxima-nova", sans-serif !important;
   width: 625px !important;
-  padding: 50px 40px 50px 50px !important;
+  padding: 50px 40px 40px 50px !important;
 
 }
 
 div.sumome-popup .sumome-popup-content .sumome-popup-form h2{
-  font-size: 32px !important;
+  font-size: 28px !important;
   text-align: center;
   /*background: url('https://dl-web.dropbox.com/spa/evpiz4fy0sj5ara/myoki/public/mail_icon.png') no-repeat;*/
   padding-top: 7px;
   font-family: "Proxima-nova", sans-serif !important;
+  font-weight: 600;
   line-height: 1.1;
   text-shadow: 1px 1px 1px #0091AA;
-  margin-bottom: 0px;
+  margin-bottom: 5px;
 }
 
 div.sumome-popup div.sumome-popup-content div.sumome-popup-form div.sumome-popup-text{
   color: white !important;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 1.1;
   text-shadow: 1px 1px 1px #0091AA;
-  font-weight: 800;
+  font-weight: 600;
   text-align: center;
 }
 
@@ -4828,9 +4851,8 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]{
   font-size: 18px !important;
   padding: 23px 8px !important;
   border-radius: 3px !important;
-  margin-top: 30px !important;
   width: 490px !important;
-  margin-bottom: 7px !important;
+  margin: 30px auto 10px auto !important;
 }
 
 div.sumome-popup .sumome-popup-content .sumome-popup-form button{
@@ -4845,6 +4867,8 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form button{
   -moz-transition: background-color .25s !important;
   -o-transition: background-color .25s !important;
   transition: background-color .25s !important;
+  display: block;
+  margin: auto;
 }
 
 div.sumome-popup .sumome-popup-content .sumome-popup-form button:hover, .sumome-popup .sumome-popup-content .sumome-popup-form button:focus{
