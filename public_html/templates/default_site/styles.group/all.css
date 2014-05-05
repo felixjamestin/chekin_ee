@@ -1959,8 +1959,8 @@ animation-name: fadeInDown;
 
 .box-heading .price{
   float:right;
-  margin:2px 10px 0 40px;
-  padding:0 0 5px 20px;
+  margin:-2px 8px 0 40px;
+  padding:0 0 5px 34px;
   color:#86eb37;
   font-size: 14px;
   font-weight: 100;
@@ -1972,8 +1972,9 @@ animation-name: fadeInDown;
   margin:0;
   letter-spacing:-1px;
   text-shadow:0 1px 2px #333;
-  font:600 28px/30px "kulturista-web";
+  font:600 24px/30px "kulturista-web";
   font-weight: normal;
+  letter-spacing: .1px;
 }
 .box-heading .right{
   float: right;
@@ -1996,7 +1997,7 @@ animation-name: fadeInDown;
   font-size: 12px;
   margin-right: 1px;
   color: #86eb37;
-  /*display: none;*/
+  display: none;
 }
 
 .box-view-details{
@@ -2012,6 +2013,28 @@ animation-name: fadeInDown;
   font-size: 14px;
   color: #0089A3;
   font-family: "Proxima-nova-condensed";
+}
+
+.box-view-details:hover {
+  background: #19CEF3;
+  -webkit-transition: .2s all ease-out;
+  -moz-transition: .2s all ease-out;
+  -ms-transition: .2s all ease-out;
+  -o-transition: .2s all ease-out;
+  transition: .2s all ease-out;
+
+}
+
+.box-view-details span {
+  position: relative;
+  top: 1px;
+  left: -3px;
+}
+
+.box-view-details p {
+  display: inline-block;
+  padding: 0px;
+  margin: 3px;
 }
 
 .prices-dropdown{
