@@ -1951,9 +1951,9 @@ animation-name: fadeInDown;
   overflow: visible;
   
 }
-.box-heading:hover{background: #474b4e;}
+.box-heading:hover{/*background: #474b4e;*/}
 .box-heading-hover{
-  background-color: #474b4e;
+  /*background-color: #474b4e;*/
   cursor: pointer;
 }
 
