@@ -4837,25 +4837,32 @@ a.external-link:hover{
 
 
 
-/* Override SumoMe email popup styles */
+/* Override SumoMe email slidein styles */
 
 .sumome-scrollbox-small{
   width: 35% !important;
 }
 
+.sumome-scrollbox-popup{
+  background-color: rgb(17, 182, 210) !important;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.16) 25%, transparent 25%) -50px 0, linear-gradient(225deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%) -50px 0, linear-gradient(315deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%), linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%) !important;
+  background-size: 100px 100px !important;
+  font-family: "Proxima-nova",sans-serif !important;
+}
+
 .sumome-scrollbox-popup .sumome-scrollbox-content{
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 30px !important;
+  padding-right: 30px !important;
 }
 
 .sumome-scrollbox-popup .sumome-scrollbox-content .sumome-scrollbox-form button{
-  text-transform: capitalize;
-  text-shadow: 1px 1px 0px rgba(0, 128, 0, 0.06);
+  text-transform: capitalize !important;
+  text-shadow: 1px 1px 0px rgba(0, 128, 0, 0.06) !important;
 }
 
 .sumome-scrollbox-popup .sumome-scrollbox-close{
   color: white !important;
-  text-shadow: 1px 1px 1px #0091AA;
+  text-shadow: 1px 1px 1px #0091AA !important;
 }
 
 a.sumome-scrollbox-link{
@@ -4867,6 +4874,8 @@ a.sumome-scrollbox-link{
   text-transform: lowercase;
 }
 
+
+/* SumoMe Popup */
 div.sumome-popup .sumome-popup-content{
   background-color: rgb(17, 182, 210) !important;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.16) 25%, transparent 25%) -50px 0, linear-gradient(225deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%) -50px 0, linear-gradient(315deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%), linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%);
@@ -4876,12 +4885,12 @@ div.sumome-popup .sumome-popup-content{
 
 .sumome-scrollbox-popup .sumome-scrollbox-content .sumome-scrollbox-form h2{
   font-size: 28px !important;
-  text-align: center;
-  padding-top: 7px;
+  text-align: center !important;
+  padding-top: 7px !important;
   font-family: "Proxima-nova",sans-serif !important;
-  font-weight: 600;
-  line-height: 1.1;
-  text-shadow: 1px 1px 1px #0091AA;
+  font-weight: 600 !important;
+  line-height: 1.1 !important;
+  text-shadow: 1px 1px 1px #0091AA !important;
 }
 
 .sumome-scrollbox-popup .sumome-scrollbox-content .sumome-scrollbox-form div.sumome-scrollbox-text{
