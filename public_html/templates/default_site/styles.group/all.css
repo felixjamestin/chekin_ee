@@ -1458,6 +1458,46 @@ animation-name: fadeInDown;
   background-size: 32px;
 }
 
+#testimonial-photo-anna{
+  background: url('/uploads/static/anna.png')no-repeat 50%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 2px;
+  width: 32px;
+  height: 33px;
+  background-size: 32px;
+}
+
+#testimonial-photo-parnil{
+  background: url('/uploads/static/parnil.png')no-repeat 50%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 2px;
+  width: 32px;
+  height: 33px;
+  background-size: 32px;
+}
+
+#testimonial-photo-male{
+  background: url('/uploads/static/testimonial_male.png')no-repeat 50%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 2px;
+  width: 32px;
+  height: 33px;
+  background-size: 32px;
+}
+
+#testimonial-photo-female{
+  background: url('/uploads/static/testimonial_female.png')no-repeat 50%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 2px;
+  width: 32px;
+  height: 33px;
+  background-size: 32px;
+}
+
 /* Footer */
 #footer-content{
   background-color: white;
