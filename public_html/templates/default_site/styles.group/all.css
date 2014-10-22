@@ -1478,6 +1478,36 @@ animation-name: fadeInDown;
   background-size: 32px;
 }
 
+#testimonial-photo-abhijitnath{
+  background: url('/uploads/static/abhijitnath.png')no-repeat 50%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 2px;
+  width: 32px;
+  height: 33px;
+  background-size: 32px;
+}
+
+#testimonial-photo-sampadageiji{
+  background: url('/uploads/static/sampadageiji.png')no-repeat 50%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 2px;
+  width: 32px;
+  height: 33px;
+  background-size: 32px;
+}
+
+#testimonial-photo-viharpatkar{
+  background: url('/uploads/static/viharpatkar.png')no-repeat 50%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 2px;
+  width: 32px;
+  height: 33px;
+  background-size: 32px;
+}
+
 #testimonial-photo-male{
   background: url('/uploads/static/testimonial_male.png')no-repeat 50%;
   display: inline-block;
@@ -1486,6 +1516,7 @@ animation-name: fadeInDown;
   width: 32px;
   height: 33px;
   background-size: 32px;
+  margin-top: -2px;
 }
 
 #testimonial-photo-female{
@@ -1496,6 +1527,7 @@ animation-name: fadeInDown;
   width: 32px;
   height: 33px;
   background-size: 32px;
+  margin-top: -2px;
 }
 
 /* Footer */
