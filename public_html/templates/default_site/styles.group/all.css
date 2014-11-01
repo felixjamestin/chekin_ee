@@ -2695,7 +2695,6 @@ animation-name: fadeInDown;
   text-align:center;
   background: #7DCE2A;
   border-radius: 50px;
-  font-weight: 300;
 }
 .inform .title{
   margin:0 -30px 10px 0px;
@@ -5052,4 +5051,12 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
   box-shadow: none !important;
   -webkit-box-shadow: none !important;
   border-color: rgb(204, 204, 204) !important;
+}
+
+.sumome-share-client-hide span{
+  display: none;
+}
+
+.sumome-share-client-share.sumome-share-client-share-share.sumome-share-client-count {
+  font-family: "proxima-nova",Arial,Helvetica,sans-serif;
 }
