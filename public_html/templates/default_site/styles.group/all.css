@@ -10,6 +10,7 @@ body{
   font:14px  "proxima-nova", Arial, Helvetica, sans-serif;
   background:#fff;
   min-width:1134px;
+  box-sizing: border-box;
 }
 
 img{border-style:none;}
@@ -4904,6 +4905,51 @@ a.external-link:hover{
 
 #freeform-newsletter-fieldset{
   display: none;
+}
+
+#about-wrapper-bg {
+  background: #0f2f42 url('/uploads/static/trip_plan.jpg') repeat-x 0 0;
+  background-size: contain;
+  text-align: center;
+  color: #222;
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 1.4;
+}
+
+#about-wrapper-content {
+  margin: 0px auto;
+  max-width: 1000px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 2px 12px rgba(0,0,0,.2);
+  position: relative;
+  top: 232px;
+  padding: 30px 100px;
+}
+
+#about-wrapper-bg h1{
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+#about-problems ul li{
+  margin-bottom: 50px;
+  list-style: none;
+  position: relative;
+}
+
+#about-problems ul li::before {
+  content: '\201C';
+  display: block;
+  color: #222;
+  position: absolute;
+  top: -14px;
+  left: -22px;
+  font-size: 60px;
+  font-family: proxima-nova;
+  font-weight: 400;
 }
 
 
