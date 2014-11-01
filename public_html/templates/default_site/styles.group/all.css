@@ -4926,6 +4926,7 @@ a.external-link:hover{
   position: relative;
   top: 232px;
   padding: 30px 100px;
+  box-sizing: border-box;
 }
 
 #about-wrapper-bg h1{
@@ -4934,8 +4935,26 @@ a.external-link:hover{
   line-height: 1.4;
 }
 
+#about-wrapper-bg h2{
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+#about-wrapper-bg p{
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 1.4em;
+}
+
+#about-problems {
+  padding: 30px 100px;
+  background: white;
+  background-clip: content-box;
+}
+
 #about-problems ul li{
-  margin-bottom: 50px;
+  margin-bottom: 60px;
   list-style: none;
   position: relative;
 }
@@ -4947,11 +4966,33 @@ a.external-link:hover{
   position: absolute;
   top: -14px;
   left: -22px;
-  font-size: 60px;
+  font-size: 52px;
   font-family: proxima-nova;
   font-weight: 400;
 }
 
+#about-problems ul li::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  background: url('/uploads/static/seperator_star.png') no-repeat 50% 23%;
+}
+
+#about-what h1::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 7px;
+  margin: auto;
+  background: url('/uploads/static/underline_rough.png') no-repeat 50% 6%;
+  margin-bottom: 40px;
+}
+
+#about-reasons {
+  padding: 80px 50px;
+}
 
 
 /* Override SumoMe email slidein styles */
