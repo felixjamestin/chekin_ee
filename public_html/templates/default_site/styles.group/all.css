@@ -4925,7 +4925,6 @@ a.external-link:hover{
   box-shadow: 0px 2px 12px rgba(0,0,0,.2);
   position: relative;
   top: 232px;
-  padding: 30px 100px;
   box-sizing: border-box;
 }
 
@@ -4964,7 +4963,7 @@ a.external-link:hover{
   display: block;
   color: #222;
   position: absolute;
-  top: -14px;
+  top: -9px;
   left: -22px;
   font-size: 52px;
   font-family: proxima-nova;
@@ -4980,6 +4979,11 @@ a.external-link:hover{
   background: url('/uploads/static/seperator_star.png') no-repeat 50% 23%;
 }
 
+#about-what {
+  padding: 30px 100px;
+  background: #fbd86b;
+}
+
 #about-what h1::after {
   content: "";
   display: block;
@@ -4991,6 +4995,170 @@ a.external-link:hover{
 }
 
 #about-reasons {
+  padding: 80px 50px;
+}
+
+#three {
+  font-size: 82px;
+  font-weight: 800;
+  font-family: proxima-nova;
+  color: #ff456e;
+}
+
+#reasons-title-text {
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1.1;
+  display: inline-block;
+  width: 225px;
+  text-align: left;
+  position: relative;
+  top: -2px;
+}
+
+#about-reasons h2 {
+  font: 18px "kulturista-web";
+  color: #00C2D9;
+  margin: 0px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+#about-reasons ol{
+  background: url('/uploads/static/grey_slab.png') no-repeat 50% 0%;
+  overflow: hidden;
+  height: 290px;
+  margin-top: 0px;
+  padding-top: 34px;
+  position: relative;
+  list-style-type: none;
+  list-style-type: decimal !ie;
+  counter-reset: li-counter;
+}
+
+#about-reasons ol::before {
+  content: "";
+  display: block;
+  width: 33px;
+  height: 50px;
+  position: absolute;
+  top: -7px;
+  left: -8px;
+  background: url('/uploads/static/magenta_star.png') no-repeat 50% 0%;
+}
+
+#about-reasons li {
+  width: 248px;
+  text-align: left;
+  float: left;
+  margin-right: 36px;
+  position: relative;
+}
+
+#about-reasons li::before {
+  position: absolute;
+  top: 2px;
+  left: -25px;
+  width: 20px;
+  height: 20px;
+  font-size: 14px;
+  text-align: center;
+  color: white;
+  border-radius: 50%;
+  background-color: #7DCE2A;
+  content: counter(li-counter);
+  counter-increment: li-counter;
+  font-weight: 400;
+}
+
+#about-reasons li p {
+  margin: 0px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-top: 10px;
+  color: #222;
+}
+
+#about-testimonials{
+  padding: 80px 50px;
+  background: #fbd86b;
+}
+
+#about-testimonials h1{
+  width: 80%;
+  margin: auto;
+}
+
+#about-testimonial-posters{
+  margin-top: 20px;
+}
+
+#poster-anna{
+  background: url(http://dev.chekin.in/uploads/static/poster_anna.png) 50% 0% no-repeat;
+  width: 430px;
+  height: 461px;
+  background-size: contain;
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+  margin-right: 5px;
+}
+
+#poster-shweta{
+  background: url(http://dev.chekin.in/uploads/static/poster_shweta.png) 50% 0% no-repeat;
+  width: 430px;
+  height: 461px;
+  background-size: contain;
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+}
+
+#about-testimonials ul li {
+  margin-bottom: 80px;
+  list-style: none;
+  position: relative;
+}
+
+#about-testimonials ul li h2 {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0px;
+  display: inline;
+}
+
+#about-testimonials ul li h2::before {
+  content: '\201C';
+  display: block;
+  color: #222;
+  position: absolute;
+  top: -11px;
+  left: -24px;
+  font-size: 52px;
+  font-family: proxima-nova;
+  font-weight: 400;
+}
+
+#about-testimonials ul li h3 {
+  font-size: 18px;
+  margin: 15px 0px 0px 0px;
+}
+
+#about-testimonials ul li::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  background: url('/uploads/static/seperator_star.png') no-repeat 50% 40%;
+}
+
+#about-testimonials .testimonial-author{
+  color: #222222;
+}
+
+#about-cta{
   padding: 80px 50px;
 }
 
