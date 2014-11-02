@@ -634,8 +634,12 @@ animation-name: fadeInDown;
 }
 .logo a:hover{text-decoration:none;}
 .logo a img{
-  float:left;
-  margin:0 1px 0 0;
+  /*float:left;
+  margin:0 1px 0 0;*/
+  float: left;
+  margin: 2px 3px 0 0;
+  width: 80px;
+  height: 80px;
 }
 .logo a img:hover{
   -webkit-animation:wiggle 1s 1 normal both ease-in;
