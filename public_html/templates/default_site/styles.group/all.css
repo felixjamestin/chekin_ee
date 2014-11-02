@@ -4909,8 +4909,8 @@ a.external-link:hover{
 
 #about-wrapper-bg {
   /*background: #0f2f42 url('/uploads/static/trip_plan.jpg') repeat 0 0;*/
+  /*background-size: contain;*/
   background: #1e1b16 url('/uploads/static/wood_tile.jpg') repeat 0 0;
-  background-size: contain;
   text-align: center;
   color: #222;
   font-size: 24px;
@@ -5083,17 +5083,6 @@ a.external-link:hover{
   margin-bottom: 0px;
 }
 
-#about-reasons ol::before {
-  content: "";
-  display: block;
-  width: 33px;
-  height: 50px;
-  position: absolute;
-  top: -7px;
-  left: -8px;
-  background: url('/uploads/static/magenta_star.png') no-repeat 50% 0%;
-}
-
 #about-reasons li {
   width: 240px;
   text-align: left;
@@ -5243,6 +5232,11 @@ a.external-link:hover{
   text-shadow: 0px 1px 1px rgba(0,0,0,.5);
 }
 
+#about-cta .place-inner h1 {
+  font-weight: 400;
+  font-size: 24px;
+}
+
 #about-cta .places-dd-item:before {
   content: "";
   background: rgba(0,0,0,.2);
@@ -5262,7 +5256,8 @@ a.external-link:hover{
 }
 
 #about-cta h1 span, #about-cta h2 span {
-  color: #ff456e;
+  /*color: #ff456e;*/
+  color: #222;
 }
 
 #about-cta h2 {
@@ -5311,6 +5306,52 @@ a.sumome-scrollbox-link{
   margin-top: 10px;
   text-transform: lowercase;
 }
+
+#header-links {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  margin-bottom: 2px;
+  color: #666;
+}
+
+#header-links a:hover {
+  color: #d8715a;
+  border-bottom: 1px #d8715a dotted;
+}
+
+#more-testimonials {
+  margin-top: -40px;
+  padding: 0px;
+  margin-bottom: 100px;
+}
+
+#more-testimonials a {
+  font-size: 18px;
+  color: rgb(0, 194, 217);
+  text-decoration: underline;
+  text-align: center;
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* SumoMe Popup */
