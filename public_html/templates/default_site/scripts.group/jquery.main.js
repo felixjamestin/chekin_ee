@@ -151,21 +151,21 @@ jQuery(function(){
 	})
 	
 	
-	if ($('#footer-hello').exists()) {
+	// if ($('#footer-hello').exists()) {
 	
-		$("#footer-hello").fancybox({
-			'titlePosition' 		: 'outside',
-			'overlayColor'  		: '#000000',
-			'overlayOpacity'	: 0.85,
-			'padding'       	 		: 0,
-			'transitionIn'  	:	'fade',
-			'transitionOut' 	:	'fade',
-			'speedIn'       	 	:	300, 
-			'speedOut'      	 	:	300,
-			'easingIn'      	 	:	'swing'
-		});
-		
-	}
+	//	$("#footer-hello").fancybox({
+	//		'titlePosition' 		: 'outside',
+	//		'overlayColor'  		: '#000000',
+	//		'overlayOpacity'	: 0.85,
+	//		'padding'       	 		: 0,
+	//		'transitionIn'  	:	'fade',
+	//		'transitionOut' 	:	'fade',
+	//		'speedIn'       	 	:	300, 
+	//		'speedOut'      	 	:	300,
+	//		'easingIn'      	 	:	'swing'
+	//	});
+	  	
+	// }
 	
 	if ($('#footer-aboutus').exists()) {
 	

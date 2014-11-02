@@ -5311,8 +5311,16 @@ a.sumome-scrollbox-link{
   position: absolute;
   bottom: 0px;
   right: 0px;
-  margin-bottom: 2px;
+  margin-bottom: 3px;
   color: #666;
+}
+
+#header-links a {
+  font-size: 18px;
+  font-family: "kulturista-web",serif;
+  font-style: normal;
+  color: #666;
+  text-transform: uppercase;
 }
 
 #header-links a:hover {
