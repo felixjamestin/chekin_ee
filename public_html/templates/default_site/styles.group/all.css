@@ -5273,6 +5273,12 @@ a.external-link:hover{
   text-decoration: underline;
 }
 
+#footer-content #footer-reasons {
+  margin: 0px;
+  padding: 0px 33px 0px 22px;
+  width: initial;
+}
+
 
 /* Override SumoMe email slidein styles */
 
