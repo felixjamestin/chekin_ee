@@ -5120,6 +5120,11 @@ a.external-link:hover{
   color: #222;
 }
 
+#about-reasons li p strong {
+  font-weight: 800;
+  text-decoration: underline;
+}
+
 #about-testimonials{
   padding: 80px 50px;
   background: #fbd86b;
