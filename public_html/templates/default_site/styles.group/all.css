@@ -1688,15 +1688,15 @@ animation-name: fadeInDown;
 
 #blog{
   width: 177px;
-  height: 109px;
-  margin-top: 18px;
-  background:#ADF06F url('/uploads/static/whats_new.jpg') no-repeat;
-  display: block;
-   -webkit-transition: opacity .5s ease;
-  -moz-transition: opacity .5s ease;
-  -ms-transition: opacity .5s ease;
-  -o-transition: opacity .5s ease;
-  transition: opacity .5s ease;
+    height: 109px;
+    margin-top: 18px;
+    background:#ADF06F url('/uploads/static/whats_new.jpg') no-repeat;
+    display: block;
+     -webkit-transition: opacity .5s ease;
+    -moz-transition: opacity .5s ease;
+    -ms-transition: opacity .5s ease;
+    -o-transition: opacity .5s ease;
+    transition: opacity .5s ease;
 }
 
 #blog:hover{
@@ -5275,8 +5275,22 @@ a.external-link:hover{
 
 #footer-content #footer-reasons {
   margin: 0px;
-  padding: 0px 33px 0px 22px;
+  padding: 0px 3px 0px 20px;
   width: initial;
+  height: initial;
+}
+
+#footer-content #footer-reasons a{
+  height: 158px;
+  margin-top: 4px;
+  background: url('/uploads/static/footer_reasons.png') no-repeat 100% 100%;
+  display: block;
+  -webkit-transition: opacity .5s ease;
+  -moz-transition: opacity .5s ease;
+  -ms-transition: opacity .5s ease;
+  -o-transition: opacity .5s ease;
+  transition: opacity .5s ease;
+  width: 195px;
 }
 
 
