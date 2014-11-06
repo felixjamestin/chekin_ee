@@ -789,14 +789,15 @@ animation-name: fadeInDown;
   position: relative;
   margin: 0px auto;
   padding: 77px 0;
-  width: 336px;
-  height: 334px;
   border-radius: 500px;
-  background: url('/uploads/static/pitch_bg.png') no-repeat 0px 0px;
+  background: url('/uploads/static/pitch_bg.png') no-repeat 50% 50%;
   color: #5f500c;
   position: relative;
-  top: 123px;
   z-index: 100;
+  background-color: white;
+  height: 172px;
+  width: 328px;
+  top: 127px;
 }
 
 
@@ -4913,8 +4914,7 @@ a.external-link:hover{
 
 #about-wrapper-bg {
   /*background: #0f2f42 url('/uploads/static/trip_plan.jpg') repeat 0 0;*/
-  /*background-size: contain;*/
-  background: #1e1b16 url('/uploads/static/wood_tile.jpg') repeat 0 0;
+  background: #1e1b16 url('/uploads/static/wood_tile_light.jpg') repeat 0 0;
   text-align: center;
   color: #222;
   font-size: 24px;
