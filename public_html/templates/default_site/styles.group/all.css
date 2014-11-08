@@ -1536,6 +1536,16 @@ animation-name: fadeInDown;
   margin-top: -2px;
 }
 
+#about-testimonials #testimonial-photo-female {
+  background: url('/uploads/static/testimonial_female_yellow.png')no-repeat 50%;
+  background-size: 32px;
+}
+
+#about-testimonials #testimonial-photo-male {
+  background: url('/uploads/static/testimonial_male_yellow.png')no-repeat 50%;
+  background-size: 32px;
+}
+
 /* Footer */
 #footer-content{
   background-color: white;
