@@ -790,14 +790,16 @@ animation-name: fadeInDown;
   margin: 0px auto;
   padding: 77px 0;
   border-radius: 500px;
-  background: url('/uploads/static/pitch_bg.png') no-repeat 50% 50%;
   color: #5f500c;
   position: relative;
   z-index: 100;
-  background-color: white;
   height: 172px;
   width: 328px;
   top: 127px;
+  background-image: linear-gradient(transparent 56%, white 50%);
+  background-size: 456px 345px;
+  background-color: #fff770;
+  background: url('/uploads/static/pitch_bg.png') no-repeat 50% 50%;
 }
 
 
@@ -830,42 +832,26 @@ animation-name: fadeInDown;
 }
 
 #pitch #places #pitch-arrow {
-  background: url('/uploads/static/pitch_arrow.png') no-repeat 50% -19px;
   position: absolute;
   top: 188px;
   left: 145px;
   height: 20px;
   width: 48px;
-  -webkit-transition-property: all;
-  -moz-transition-property: all;
-  -ms-transition-property: all;
-  -o-transition-property: all;
-  transition-property: all;
-  -webkit-transition-duration: 0.2s;
-  -moz-transition-duration: 0.2s;
-  -ms-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -webkit-transition-timing-function: linear;
-  -moz-transition-timing-function: linear;
-  -ms-transition-timing-function: linear;
-  -o-transition-timing-function: linear;
-  transition-timing-function: linear;
-/*  -webkit-animation: bounce_arrow 1.3s 0s infinite linear;
-  -moz-animation: bounce_arrow 1.3s 0s infinite linear;
-  -o-animation: bounce_arrow 1.3s 0s infinite linear;
-  animation: bounce_arrow 1.3s 0s infinite linear;*/
 }
 
-#pitch:hover #places #pitch-arrow{
-  /*top: 194px;*/
-}
-
-#pitch:hover #places:hover #pitch-arrow {
-  -webkit-animation: none;
-  -moz-animation: none;
-  -o-animation: none;
-  animation: none;
+#pitch-arrow::after{
+  top: -2px;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(255, 247, 112, 0);
+  border-top-color: #fff770;
+  border-width: 23px;
+  margin-left: -27px;
 }
 
 #pitch #places .primary-button {
