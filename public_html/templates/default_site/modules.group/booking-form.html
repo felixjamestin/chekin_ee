@@ -1,4 +1,4 @@
-<?
+<?php
   $hash = md5(strtotime("now").session_id());
 ?>
 {exp:freeform:form 
@@ -23,7 +23,7 @@
 			<strong class="ttl"><span class="num">1</span>YOUR BOOKING DETAILS</strong>
 			<div class="row">
 				<label for="lbl-01">Check-in</label>
-				<input class="text datepicker" type="text" id="freeform_checkin" readonly value="" name="checkin">
+				<input class="text datepicker" type="text" id="freeform_checkin" readonly value="" name="checkin" value="{checkin}">
 				<div class="alignright">
 					<label for="lbl-02">Adults</label>
 					<select id="freeform_adults" class="cs-1" name="adults">
@@ -54,7 +54,7 @@
 			</div>
 			<div class="row">
 				<label for="lbl-03">Check-out</label>
-				<input class="text datepicker" type="text" id="freeform_checkout" readonly value="" name="checkout" >
+				<input class="text datepicker" type="text" id="freeform_checkout" readonly value="{checkout}" name="checkout" >
 				<div class="alignright">
 					<label for="lbl-04">Children</label>
 					<select id="freeform_children" class="cs-1" name="children">
@@ -85,18 +85,18 @@
                <div class="row">
                     <strong class="ttl"><span class="num">3</span>ANY QUESTIONS/SPECIAL REQUESTS?</strong>
                     <label>Any questions or requests?</label>
-                    <div class="textarea"><textarea id="freeform_request-question" cols="30" rows="10" style="resize:none;" name="request-question" placeholder="e.g. Can an extra bed be provided?"></textarea></div>
+                    <div class="textarea"><textarea id="freeform_request-question" cols="30" rows="10" style="resize:none;" name="request-question" placeholder="e.g. Can an extra bed be provided?">{request-question}</textarea></div>
                </div>
 		</div>
 		<div class="group group-last">
 			<strong class="ttl"><span class="num">2</span>YOUR CONTACT DETAILS</strong>
 			<div class="row">
 				<label for="lbl-05">Name</label>
-				<input class="text text-2" type="text" id="freeform_name" name="name" >
+				<input class="text text-2" type="text" id="freeform_name" name="name" value="{name}" >
 			</div>
 			<div class="row">
 				<label for="lbl-06">& Email</label>
-				<input class="text text-2" type="text" id="freeform_email" name="email" >
+				<input class="text text-2" type="text" id="freeform_email" name="email" value="{email}">
 			</div>
 			<div class="row" id="freeform-mobile-fieldset">
 				<label for="lbl-07">Mobile No</label>
@@ -345,7 +345,7 @@
 					<option value="Zimbabwe (263)">Zimbabwe (263)</option>
 				</select>
 				<div class="alignright">
-					<input class="text text-3" type="text" id="freeform_mobile" name="mobile" value="1111111111">
+					<input class="text text-3" type="text" id="freeform_mobile" name="mobile" value="{mobile}">
 				</div>
 			</div>
 		</div>

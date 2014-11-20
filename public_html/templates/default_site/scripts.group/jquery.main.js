@@ -233,6 +233,13 @@ jQuery(function(){
 	
 	
 	if ($('#form-1').exists()) {
+                if($.cookie('name')) $('#freeform_name').val($.cookie('name'));
+                if($.cookie('email')) $('#freeform_email').val($.cookie('email'));
+                if($.cookie('checkin')) $('#freeform_checkin').val($.cookie('checkin'));
+                if($.cookie('checkout')) $('#freeform_checkout').val($.cookie('checkout'));
+                if($.cookie('adults')) $('#freeform_adults').val($.cookie('adults'));
+                if($.cookie('children')) $('#freeform_children').val($.cookie('children'));
+                if($.cookie('question')) $('#freeform_request-question').val($.cookie('question'));
 		var $form = $('#form-1');
 		$("#form-1").validate({
 			errorClass: "error",
@@ -254,6 +261,13 @@ jQuery(function(){
 				  			});
 				  		}
 				  		else if (data.success){
+                                                        $.cookie('name', $('#freeform_name').val());
+				  			$.cookie('email', $('#freeform_email').val());
+				  			$.cookie('checkin', $('#freeform_checkin').val());
+				  			$.cookie('checkout', $('#freeform_checkout').val());
+				  			$.cookie('adults', $('#freeform_adults').val());
+				  			$.cookie('children', $('#freeform_children').val());
+				  			$.cookie('question', $('#freeform_request-question').val());
 				  			$('.form-loading').hide();
 				  			$('#success-msg').trigger('click');
 				  		}
