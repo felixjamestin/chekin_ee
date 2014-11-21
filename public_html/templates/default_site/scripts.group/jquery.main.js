@@ -231,12 +231,11 @@ jQuery(function(){
 		
 	}
 	
-	
 	if ($('#form-1').exists()) {
                 if($.cookie('name')) $('#freeform_name').val($.cookie('name'));
                 if($.cookie('email')) $('#freeform_email').val($.cookie('email'));
-                if($.cookie('checkin')) $('#freeform_checkin').val($.cookie('checkin'));
-                if($.cookie('checkout')) $('#freeform_checkout').val($.cookie('checkout'));
+                if($.cookie('checkin')) $('#check-in').datepicker( 'setDate', new Date($.cookie('checkin')));
+                if($.cookie('checkout')) $('#check-out').datepicker( "setDate",new Date($.cookie('checkout')));
                 if($.cookie('adults')) $('#freeform_adults').val($.cookie('adults'));
                 if($.cookie('children')) $('#freeform_children').val($.cookie('children'));
                 if($.cookie('question')) $('#freeform_request-question').val($.cookie('question'));
@@ -261,13 +260,20 @@ jQuery(function(){
 				  			});
 				  		}
 				  		else if (data.success){
-                                                        $.cookie('name', $('#freeform_name').val());
-				  			$.cookie('email', $('#freeform_email').val());
-				  			$.cookie('checkin', $('#freeform_checkin').val());
-				  			$.cookie('checkout', $('#freeform_checkout').val());
-				  			$.cookie('adults', $('#freeform_adults').val());
-				  			$.cookie('children', $('#freeform_children').val());
-				  			$.cookie('question', $('#freeform_request-question').val());
+                                                        $.removeCookie('name', { path: '/' });
+				  			$.removeCookie('email', { path: '/' });
+				  			$.removeCookie('checkin', { path: '/' });
+				  			$.removeCookie('checkout', { path: '/' });
+				  			$.removeCookie('adults', { path: '/' });
+				  			$.removeCookie('children', { path: '/' });
+				  			$.removeCookie('question', { path: '/' });
+                                                        $.cookie('name', $('#freeform_name').val(), { path: '/' });
+				  			$.cookie('email', $('#freeform_email').val(), { path: '/' });
+				  			$.cookie('checkin', $('#freeform_checkin').val(), { path: '/' });
+				  			$.cookie('checkout', $('#freeform_checkout').val(), { path: '/' });
+				  			$.cookie('adults', $('#freeform_adults').val(), { path: '/' });
+				  			$.cookie('children', $('#freeform_children').val(), { path: '/' });
+				  			$.cookie('question', $('#freeform_request-question').val(), { path: '/' });
 				  			$('.form-loading').hide();
 				  			$('#success-msg').trigger('click');
 				  		}
