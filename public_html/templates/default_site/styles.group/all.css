@@ -1890,6 +1890,7 @@ animation-name: fadeInDown;
 .search-block .frame{
   width:1000px;
   margin:0 auto;  
+  overflow: hidden;
 }
 .search-block .hold{
   float:left;
@@ -5500,4 +5501,7 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
 
 .sumome-share-client-share.sumome-share-client-share-share.sumome-share-client-count {
   font-family: "proxima-nova",Arial,Helvetica,sans-serif;
+}
+.js_hide_next{
+    display: none;
 }

@@ -62,22 +62,26 @@ jQuery(function(){
 		});
 	}
 	if ($('.accordion-menu-wide').exists()) {
+            function doOnReady() {
 		$(".accordion-menu-wide").AccordionImageMenu({
-            closeDim: 229,
-            openDim: 500,
-            height: 350,
-            effect: "swing",
-            duration: 700,
-            openItem: 0,
-            border: 2,
-            color: "#FFFFFF",
-            position: "horizontal",
-            fadeInTitle: !0
-        }), $(".aim").hover(function () {
-            return $(this).parent().find(".box-heading").toggleClass("box-heading-hover")
-        }), $(".box-heading").hover(function () {
-            return $(this).toggleClass("box-heading-hover")
-        })   
+                    closeDim: 229,
+                    openDim: 500,
+                    height: 350,
+                    effect: "swing",
+                    duration: 700,
+                    openItem: 0,
+                    border: 2,
+                    color: "#FFFFFF",
+                    position: "horizontal",
+                    fadeInTitle: !0
+                }), $(".aim").hover(function () {
+                    return $(this).parent().find(".box-heading").toggleClass("box-heading-hover")
+                }), $(".box-heading").hover(function () {
+                    return $(this).toggleClass("box-heading-hover")
+                })   
+            }
+            $(document).ready(doOnReady);
+            $(document).ajaxComplete(doOnReady);
 	}
 	
 	if ($('#rate-includes').exists()) {
