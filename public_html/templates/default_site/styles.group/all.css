@@ -5505,5 +5505,7 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
   font-family: "proxima-nova",Arial,Helvetica,sans-serif;
 }
 .js_hide_next{
-    display: none;
+    color:#fff !important;
 }
+.ladda-button[data-color=myoki]{background:#11b6d2}.ladda-button[data-color=myoki]:hover{background-color:#11b6d2}
+.ladda-button,.all-msg{margin-left: 40px;}
