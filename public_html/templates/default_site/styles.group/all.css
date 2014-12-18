@@ -5504,8 +5504,25 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
 .sumome-share-client-share.sumome-share-client-share-share.sumome-share-client-count {
   font-family: "proxima-nova",Arial,Helvetica,sans-serif;
 }
+
 .js_hide_next{
     color:#fff !important;
 }
-.ladda-button[data-color=myoki]{background:#11b6d2}.ladda-button[data-color=myoki]:hover{background-color:#11b6d2}
-.ladda-button,.all-msg{margin-left: 40px;}
+
+.ladda-button[data-color=myoki]{
+  background:#11b6d2;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.ladda-button[data-color=myoki]:hover{
+  background-color:#11b6d2
+}
+
+.ladda-button,.all-msg{
+  margin-left: 40px;
+}
+
+.navigation.next {
+  text-align: center;
+}
