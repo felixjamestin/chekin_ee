@@ -5516,7 +5516,7 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
 }
 
 .ladda-button[data-size=l] .ladda-label{
-  font-size: 18px;
+  font-size: 18px !important;
 }
 
 .ladda-button[data-color=myoki]:hover{
