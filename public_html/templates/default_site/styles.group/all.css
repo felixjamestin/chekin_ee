@@ -5515,6 +5515,10 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
   font-size: 18px;
 }
 
+.ladda-button[data-size=l] .ladda-label{
+  font-size: 18px;
+}
+
 .ladda-button[data-color=myoki]:hover{
   background-color:#11b6d2
 }
@@ -5525,4 +5529,10 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
 
 .navigation.next {
   text-align: center;
+  margin-top: 50px;
 }
+
+.all-msg{
+  text-align: center;
+}
+
