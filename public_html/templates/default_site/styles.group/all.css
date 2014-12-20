@@ -5538,7 +5538,7 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
 
 
 .overlay {
-  /* background: rgba(0, 0, 0, 0.9); */
+  background: #11b6d2;
   position: absolute;
   left: 0;
   right: 0;
@@ -5556,7 +5556,8 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
 }
 .spinner.center {
   position: absolute;
-  right: 5px;
+  right: 0px;
+  left: 0px;
   top: 0;
   bottom: 0;
   margin: auto;
