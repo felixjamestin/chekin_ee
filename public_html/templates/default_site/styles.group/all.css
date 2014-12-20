@@ -5538,7 +5538,7 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
 
 
 .overlay {
-  background: rgba(0, 0, 0, 0.9);
+  /* background: rgba(0, 0, 0, 0.9); */
   position: absolute;
   left: 0;
   right: 0;
@@ -5548,7 +5548,7 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
 }
 
 .spinner {
-  font-size: 50px;
+  font-size: 24px;
   position: relative;
   display: inline-block;
   width: 1em;
@@ -5556,8 +5556,7 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
 }
 .spinner.center {
   position: absolute;
-  left: 0;
-  right: 0;
+  right: 5px;
   top: 0;
   bottom: 0;
   margin: auto;
@@ -5663,7 +5662,7 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
 
 @-webkit-keyframes spinner-fade {
   0% {
-    background-color: #69717d;
+    background-color: #ffffff;
   }
   100% {
     background-color: transparent;
@@ -5672,7 +5671,7 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
 
 @keyframes spinner-fade {
   0% {
-    background-color: #69717d;
+    background-color: #ffffff;
   }
   100% {
     background-color: transparent;
