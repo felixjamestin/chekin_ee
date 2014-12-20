@@ -5538,10 +5538,8 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
 
 
 .overlay {
-  background: #11b6d2;
   position: absolute;
-  left: 0;
-  right: 0;
+  right: 41px;
   top: 0;
   bottom: 0;
   margin: auto;
