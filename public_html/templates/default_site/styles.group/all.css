@@ -632,7 +632,7 @@ animation-name: fadeInDown;
 .logo a{
   display:block;
   height:100%;
-  color:#666;
+  color: #454545;
 }
 .logo a:hover{text-decoration:none;}
 .logo a img{
@@ -1070,7 +1070,7 @@ animation-name: fadeInDown;
   overflow:hidden;
   width:100%;
   text-align:center;
-  color:#666;
+  color: #454545;
   font:24px/46px "proxima-nova-condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight:300;
 }
@@ -1238,7 +1238,7 @@ animation-name: fadeInDown;
   font-weight: 200;
   padding:0 0 0 13px;
   background:url('/uploads/static/flag.gif') no-repeat 0 2px;
-  color:#999999;
+  color: #454545;
   margin-top: 5px;
   display: inline-block;
 }
@@ -1546,7 +1546,7 @@ animation-name: fadeInDown;
   position: relative;
   z-index: 999;
 }
-#footer-content a{color:#666666;}
+#footer-content a{color: #454545;}
 /* frame */
 #footer-content .frame{
   margin:0 0 40px;
@@ -1555,7 +1555,7 @@ animation-name: fadeInDown;
   width:101%;
   background:url('/uploads/static/bg-line.gif') repeat-y;
   font-weight: 100;
-  color: #666666;
+  color: #454545;
 }
 #footer-content .box{
   float:left;
@@ -2572,7 +2572,7 @@ animation-name: fadeInDown;
 }
 .tabset a{
   float:left;
-  color:#666;
+  color:#454545;
   padding:11px 11px 11px;
   position:relative;
   background:#fff;
@@ -2646,7 +2646,7 @@ animation-name: fadeInDown;
 .tab-content li{
   padding:0 0 20px 15px;
   background:url('/uploads/static/bullet3.gif') no-repeat 0 8px;
-  color:#666;
+  color:#454545;
   line-height: 25px;
   font-weight: 400;
   font-size: 16px;
@@ -2661,7 +2661,7 @@ animation-name: fadeInDown;
   font-weight: 600;
 }
 .inform h2{
-  color:#666;
+  color:#454545;
   text-transform:uppercase;
   font-size: 15px;
   font-weight: 300;
@@ -2680,7 +2680,7 @@ animation-name: fadeInDown;
   position:relative;
   font-size:16px;
   line-height:24px;
-  color:#666;
+  color:#454545;
   font-weight: 100;
   margin-bottom: 60px;
 }
@@ -2762,7 +2762,7 @@ a.tag{
   text-transform:uppercase;
   font:17px/20px "kulturista-web";
   word-spacing:2px;
-  color:#666;
+  color:#5E5442;  
   background:url('/uploads/static/sep-01.gif') repeat-x 0 100%;
   font-weight:600;
 }
@@ -2783,7 +2783,7 @@ a.tag{
   padding:0 0 20px;
   position:relative;
   text-align:center;
-  color:#6fd600;
+  color: #6fd600;
   font-weight:600;
 }
 
@@ -2791,7 +2791,7 @@ a.tag{
   position:absolute;
   bottom:1px;
   font:14px/17px "proxima-nova", Arial, Helvetica, sans-serif;
-  color:#666;
+  color: #5E5442;
   text-transform: lowercase;
 }
 
@@ -2803,12 +2803,12 @@ a.tag{
   text-align:right;
   padding:0 11px 0 0;
   font:16px/27px "proxima-nova", Arial, Helvetica, sans-serif;
-  color:#666;
+  color: #5E5442;
 }
 .booking-form .text{
   float:left;
   width:82px;
-  background:#fff;
+  background: #fff;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -2875,7 +2875,7 @@ a.tag{
 
 .booking-box-price{
   padding: 12px 10px 12px 13px;
-  color: #7E7159;
+  color: #5E5442;
   line-height: 1.4;
   font-weight: 600;
   border-radius: 0px 0px 3px 3px;
@@ -2983,7 +2983,7 @@ a.tag{
 /* location-box */
 .location-box h3,.location-box h4,
 .items-list h4{
-  color:#666;
+  color:#454545;
   font:300 15px/18px  "kulturista-web";
   word-spacing:3px;
   text-transform:uppercase;
@@ -3009,7 +3009,7 @@ a.tag{
   -moz-border-radius:4px;
   border-radius:4px;
   padding:29px 17px 30px;
-  color:#666;
+  color: #454545;
   font-size: 14px;
   line-height: 19px;
 }
@@ -3037,7 +3037,7 @@ a.tag{
   margin:0 0 7px -4px;
   padding:0;
   list-style:none;
-  color:#666;
+  color:#454545;
 }
 .items-list li{
   vertical-align:top;
@@ -3159,7 +3159,7 @@ a.tag{
     position: relative;
 }
 .inform article figure div:before {
-    background: url("/uploads/static/gloss.png") no-repeat scroll 30% 50% transparent;
+    /* background: url("/uploads/static/gloss.png") no-repeat scroll 30% 50% transparent; */
     content: "";
     display: block;
     height: 95%;
@@ -3327,7 +3327,7 @@ a.tag{
 
 .places-dd-content-desc {
   text-shadow: none;
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 4px;
   font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
   text-align: center;
@@ -3562,7 +3562,7 @@ margin:0px 0px 0px 18px;}
 /* popup */
 .popup {
   width:612px;
-  color:#4c4c4c;
+  color:#454545;
   font-size:14px;
   line-height:17px;
   padding:20px;
@@ -4111,7 +4111,7 @@ margin:0px 0px 0px 18px;}
     margin-left: -16px;
 }
 .places-list-small .places-dd-content {
-    color: #666;
+    color: #454545;
     background-color: white;
     border-radius: 2px;
     width: 464px;
@@ -4251,7 +4251,7 @@ margin:0px 0px 0px 18px;}
     opacity: .9;
 }
 .places-list-small span{
-  color:#666666;  
+  color: #454545;
   padding-bottom: 20px;
 }
 .places-list-small span:hover {
@@ -4561,7 +4561,7 @@ margin:0px 0px 0px 18px;}
 }
 
 .help-hover {
-  color: #666666 !important;
+  color: #454545 !important;
   background: url("/uploads/static/help-dropdown.png") no-repeat scroll 96% 55% transparent;
   padding-right: 15px !important;
   padding-left: 2px;
