@@ -829,42 +829,6 @@ animation-name: fadeInDown;
 
 }
 
-#pitch #places .places-list-small .place-inner:hover p{
-  top: 0px;
-  opacity: 1;
-}
-
-
-#pitch #places .places-list-small .places-dd-item p {
-  position: relative;
-  top: 15px;
-  opacity: 0;
-  font-size: 0.875em;
-  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  color: white;
-  text-align: center;
-  text-shadow: 0px 0px 5px black;
-  margin: 0px;
-  line-height: 1.4;
-  -webkit-transition-property: all;
-  -moz-transition-property: all;
-  -ms-transition-property: all;
-  -o-transition-property: all;
-  transition-property: all;
-  -webkit-transition-duration: 0.2s;
-  -moz-transition-duration: 0.2s;
-  -ms-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -webkit-transition-timing-function: linear;
-  -moz-transition-timing-function: linear;
-  -ms-transition-timing-function: linear;
-  -o-transition-timing-function: linear;
-  transition-timing-function: linear;
-}
-
-
 .visual{
   padding:0 0 6px;
   background: url('/uploads/static/bg-visual.gif') repeat-x 0 100%;
