@@ -744,121 +744,34 @@ animation-name: fadeInDown;
   animation: fadeInUp 1.5s 1;
 }
 
-#pitch-inner{
-
-  position: absolute;
+#pitch h1{
   margin: 0px auto;
-  width: 311px;
-  height: 300px;
-  background: #FFFFFF;
-  z-index: 4;
-  left: 50%;
-  margin-left: -154px;
-  margin-top: 30px;
-  border-radius:50%;
-  top: 123px;
-  display: none;
-  
-  -webkit-animation: round_squiggle 30s infinite linear;
-  -moz-animation: round_squiggle 30s infinite linear;
-  -o-animation: round_squiggle 30s infinite linear;
-  animation: round_squiggle 30s infinite linear;
-    
+  position: relative;
+  top: 185px;
+  z-index: 100;
+  color: white;
+  font-size: 48px;
+  font-weight: 800;
+  text-shadow: 0px 2px #174864;
+  width: 60rem;
 }
 
-#pitch-inner2{
-
-  position: absolute;
-  margin: 0px auto;
-  width: 334px;
-  height: 335px;
-  background: #56E8F3;
-  z-index: 3;
-  opacity: .6;
-  left: 50%;
-  margin-left: -168px;
-  border-radius:50%;
-  top: 123px;
-  
-  -webkit-animation: round_squiggle 20s infinite linear;
-  -moz-animation: round_squiggle 20s infinite linear;
-  -o-animation: round_squiggle 20s infinite linear;
-  animation: round_squiggle 20s infinite linear;
-
-}
-
-#pitch #places {
+#places {
   position: relative;
   margin: 0px auto;
-  padding: 77px 0;
+  padding: 52px 0;
   border-radius: 500px;
   color: #5f500c;
   position: relative;
   z-index: 100;
   height: 172px;
-  width: 328px;
   top: 127px;
-  background-image: linear-gradient(transparent 56%, white 50%);
-  background-size: 456px 345px;
-  background-color: #fff770;
-  background: url('/uploads/static/pitch_bg.png') no-repeat 50% 50%;
 }
 
-
-#pitch #places #pitch-line-1 {
-  font-size: 31px;
-  font-family: "Amatic SC", "kulturista-web", "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  display: block;
-  font-weight: 400;
-  line-height: 1;
-  margin-bottom: 5px;
-}
-
-#pitch #places #pitch-line-2 {
-  font-size: 50px;
-  font-family: "Amatic SC", "kulturista-web", "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  display: block;
-  font-weight: 400;
-  line-height: 1;
-  margin-bottom: 3px;
-}
-
-#pitch #places #pitch-line-3 {
-  font-size: 22px;
-  font-family: "Sue Ellen Francisco", "kulturista-web", "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  display: block;
-  font-weight: 400;
-  line-height: 1;
-  margin-bottom: 15px;
-  position: relative;
-}
-
-#pitch #places #pitch-arrow {
-  position: absolute;
-  top: 188px;
-  left: 145px;
-  height: 20px;
-  width: 48px;
-}
-
-#pitch-arrow::after{
-  top: -2px;
-  left: 50%;
-  border: solid transparent;
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-  border-color: rgba(255, 247, 112, 0);
-  border-top-color: #fff770;
-  border-width: 23px;
-  margin-left: -27px;
-}
 
 #pitch #places .primary-button {
   padding: 28px 32px;
-  font-size: 36px;
+  font-size: 24px;
   margin-left: 15px;
   vertical-align: middle;
   line-height: 0;
@@ -890,7 +803,7 @@ animation-name: fadeInDown;
   right: -23px;
   width: 50px;
   height: 50px;
-  background: url('/uploads/static/big_arrow.png') no-repeat right 17px;
+  background: url('/uploads/static/big_arrow.png') no-repeat right 9px;
 }
 
 #pitch #places .places-list-small{
@@ -904,7 +817,7 @@ animation-name: fadeInDown;
   opacity: 1;
   visibility: visible;
   top: 54px;
-  left: -165px;
+  left: -43%;
   -webkit-animation: fadeInDown .5s;
   -moz-animation: fadeInDown .5s;
   -o-animation: fadeInDown .5s;
