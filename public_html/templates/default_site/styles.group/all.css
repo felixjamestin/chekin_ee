@@ -9,7 +9,7 @@ figure{
 body{
   margin:0;
   color:#7f7f7f;
-  font:14px  "proxima-nova", Arial, Helvetica, sans-serif;
+  font: 14px  "proxima-nova", Arial, Helvetica, sans-serif;
   background:#fff;
   min-width:1134px;
   box-sizing: border-box;
@@ -800,10 +800,11 @@ animation-name: fadeInDown;
   display: block;
   position: absolute;
   top: 0px;
-  right: -23px;
+  right: -18px;
   width: 50px;
   height: 50px;
-  background: url('/uploads/static/big_arrow.png') no-repeat right 9px;
+  background: url('/uploads/static/big_arrow.png') no-repeat right 11px;
+  background-size: 16px;
 }
 
 #pitch #places .places-list-small{
@@ -4043,7 +4044,7 @@ margin:0px 0px 0px 18px;}
     width: 230px;
 }
 
-.places-list-small .places-dd-item h1 {
+.places-list-small .places-dd-item h1, .places-list-small .places-dd-item p {
     position: relative;
     top: 5px;
     font-size: 20px;
@@ -4072,38 +4073,7 @@ margin:0px 0px 0px 18px;}
     -o-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
 }
-.places-list-small .places-dd-item p {
-    position: relative;
-    top: 15px;
-    opacity: 0;
-    font-size: 1em;
-    font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 300;
-    color: white;
-    text-align: center;
-    text-shadow: 0px 1px rgba(0, 0, 0, 0.4);
-    margin: 0px;
-    line-height: 1.4;
-    -webkit-transition-property: all;
-    -moz-transition-property: all;
-    -ms-transition-property: all;
-    -o-transition-property: all;
-    transition-property: all;
-    -webkit-transition-duration: 0.2s;
-    -moz-transition-duration: 0.2s;
-    -ms-transition-duration: 0.2s;
-    -o-transition-duration: 0.2s;
-    transition-duration: 0.2s;
-    -webkit-transition-timing-function: linear;
-    -moz-transition-timing-function: linear;
-    -ms-transition-timing-function: linear;
-    -o-transition-timing-function: linear;
-    transition-timing-function: linear;
-}
-.places-list-small #place-goa {
-    background: #fff url("/uploads/static/thumb-goa.jpg") 50% 50%}
-.places-list-small #place-kerala {
-    background: #fff url("/uploads/static/thumb-kerala.jpg") 50% 50%}
+
 .places-list-small .place-inner {
     background-color: rgba(0, 0, 0, 0.45);
     padding: 30px 10px;
