@@ -944,7 +944,8 @@ animation-name: fadeInDown;
   padding:0 0 107px;
   position: relative;
 }
-.heading{
+
+/*.heading{
   margin:0 0 26px;
   overflow:hidden;
   width:100%;
@@ -952,17 +953,14 @@ animation-name: fadeInDown;
   color: #454545;
   font:24px/46px "proxima-nova-condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight:300;
+}*/
+
+.heading h2 {
+  width: 70rem;
+  text-align: center;
+  font: 100 24px/1.4 proxima-nova, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-.heading .txt{
-  display:inline-block;
-  padding:0 12px 0 47px;
-  background:url('/uploads/static/bg-txt.gif') no-repeat 0 50%;
-}
-.heading .txt2{
-  display:inline-block;
-  padding:0 46px 0 12px;
-  background:url('/uploads/static/bg-txt2.gif') no-repeat 100% 50%;
-}
+
 .compass{
   display:inline-block;
   width:44px;
