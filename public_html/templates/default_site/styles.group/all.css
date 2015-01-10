@@ -754,6 +754,7 @@ animation-name: fadeInDown;
   font-weight: 800;
   text-shadow: 0px 2px #174864;
   width: 60rem;
+  line-height: 140%;
 }
 
 #places {
@@ -818,7 +819,7 @@ animation-name: fadeInDown;
   opacity: 1;
   visibility: visible;
   top: 54px;
-  left: -43%;
+  left: -52%;
   -webkit-animation: fadeInDown .5s;
   -moz-animation: fadeInDown .5s;
   -o-animation: fadeInDown .5s;
