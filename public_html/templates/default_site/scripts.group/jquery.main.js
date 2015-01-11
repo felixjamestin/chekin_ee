@@ -439,39 +439,39 @@ function initTabs()
 	}
 }
 
-// Initialize home page getaways gallery
-function initCarousel() {
-	
-	if ($('#home-scroller .gallery').exists()) {
-		$("#home-scroller .gallery").carouFredSel({
-			width: "100%",
-			height: "auto",
-			items: 3,
-			auto: false,
-			swipe: {
-			onTouch: true,
-			onMouse: true
-		    },
-			scroll: {
-				items: 3,
-				easing: "swing",
-				duration: 620
-			},
-			auto: !1,
-			prev: {
-				button: ".btn-prev",
-				items: 3,
-				key: 'left'
-			},
-			next: {
-				button: ".btn-next",
-				items: 3,
-				key: 'right'
-			}
-		});
-	}
+// // Initialize home page getaways gallery
+// function initCarousel() {
+  	
+//	if ($('#home-scroller .gallery').exists()) {
+//		$("#home-scroller .gallery").carouFredSel({
+//			width: "100%",
+//			height: "auto",
+//			items: 3,
+//			auto: false,
+//			swipe: {
+//			onTouch: true,
+//			onMouse: true
+//		    },
+//			scroll: {
+//				items: 3,
+//				easing: "swing",
+//				duration: 620
+//			},
+//			auto: !1,
+//			prev: {
+//				button: ".btn-prev",
+//				items: 3,
+//				key: 'left'
+//			},
+//			next: {
+//				button: ".btn-next",
+//				items: 3,
+//				key: 'right'
+//			}
+//		});
+//	}
 
-}
+// }
 
 // Initialize home page testimonial gallery
 function initTestimonialCarousel() {
