@@ -988,24 +988,7 @@ animation-name: fadeInDown;
 .gallery-section{
   width:100%;
   position:relative;
-}
-.gallery-section .btn-prev,
-.gallery-section .btn-next{
-  position:absolute;
-  text-indent:-9999px;
-  overflow:hidden;
-  width:38px;
-  height:38px;
-  top: 105px;
-  outline:none;
-}
-.gallery-section .btn-prev{ 
-  left:-68px;
-  background:url('/uploads/static/buttons.gif') no-repeat;
-}
-.gallery-section .btn-next{ 
-  right:-68px;
-  background:url('/uploads/static/buttons.gif') no-repeat 0 -38px;
+  overflow: hidden;
 }
 
 #share-hook{
