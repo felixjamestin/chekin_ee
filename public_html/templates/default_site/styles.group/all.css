@@ -973,6 +973,7 @@ animation-name: fadeInDown;
   font-weight: 600;
   text-align: center;
   margin-top: 35px;
+  margin-bottom: 20px;
 }
 
 .compass{
@@ -1040,17 +1041,14 @@ animation-name: fadeInDown;
 }
 
 .gmask{
-  width:999px;
   margin:0 auto;
-  overflow:hidden;
 }
+
 .main-photo .gmask{
   width: 100%;
   margin: 0;
 }
 .gallery{
-  width:9999px;
-  overflow:hidden;
   margin:0;
   padding:0;
   list-style:none;
@@ -1059,8 +1057,11 @@ animation-name: fadeInDown;
 .gallery li{
   float:left;
   width: 300px;
-  min-height:320px;
-  padding: 0 17px;
+  min-height: 320px;
+  padding-left: 0px;
+  padding-right: 30px;
+  padding-top: 0px;
+  padding-bottom: 30px;
 }
 
 .gallery .box{
