@@ -1199,6 +1199,31 @@ animation-name: fadeInDown;
   background-color: #56B600;
 }
 
+
+#home-reasons {
+  width: 33%;
+}
+
+#home-reasons-three {
+  font-size: 56px;
+  font-weight: 800;
+  color: #11b6d2;
+}
+
+#home-reasons-desc {
+  font-size: 16px;
+  font-family: "kulturista-web",serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  display: inline-block;
+  width: 160px;
+  text-align: left;
+  margin-left: 3px;
+  position: relative;
+  top: -3px;
+}
+
+
 /* Testimonial section */
 #testimonials{
   background: url('/uploads/static/testimonials_seperator.png') repeat-x;
@@ -1269,7 +1294,6 @@ animation-name: fadeInDown;
 
 #testimonials h3{
   font-size: 18px;
-  color: #666;
   font-weight: 400;
   text-align: center;
   margin: 15px 0px 0px 0px;
