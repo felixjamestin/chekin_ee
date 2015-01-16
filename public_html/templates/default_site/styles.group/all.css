@@ -649,6 +649,7 @@ animation-name: fadeInDown;
   -o-animation:wiggle 1s 1 normal both ease-in;
   animation:wiggle 1s 1 normal both ease-in;
 }
+
 /* menu */
 .menu{
 /*  float:left;
@@ -677,23 +678,11 @@ animation-name: fadeInDown;
   border-bottom:1px #d8715a dotted;
 }
 
-
-/* nav */
-/*#nav{
-  float:right;
-  text-transform:uppercase;
-  padding:43px 0 0;
-  overflow:hidden;
+#seperator-line{
+  background: url('/uploads/static/testimonials_seperator.png') repeat-x;
+  padding-top: 10px;
+  margin-bottom: 40px;
 }
-#nav a{
-  float:left;
-  color:#787572;
-  margin:0 0 0 11px;
-}
-#nav a:hover{
-  color:#d8715a;
-  border-bottom:1px #d8715a dotted;
-}*/
 
 #header-badges {
   overflow: hidden;
@@ -760,7 +749,7 @@ animation-name: fadeInDown;
 #pitch h1 span {
   background: url('/uploads/static/blue_swish.png') no-repeat -1px bottom;
   padding-right: 5px;
-  padding-left: 3px;
+  padding-left: 4px;
 }
 
 #places {
@@ -1202,16 +1191,20 @@ animation-name: fadeInDown;
 
 #home-reasons {
   width: 30%;
+  display: inline-block;
+  vertical-align: top;
 }
 
 #home-reasons-three {
   font-size: 56px;
   font-weight: 800;
   color: #11b6d2;
+  line-height: 0px;
 }
 
 #home-reasons h3 {
   margin-bottom: 7px;
+  margin-top: 0px;
 }
 
 #home-reasons ul{
@@ -1259,12 +1252,29 @@ animation-name: fadeInDown;
   top: -2px;
 }
 
-
-/* Testimonial section */
-#testimonials{
-  background: url('/uploads/static/testimonials_seperator.png') repeat-x;
-  padding-top: 60px;
+#home-testimonials-title{
+  font-size: 16px;
+  font-family: "kulturista-web",serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: left;
   position: relative;
+}
+
+#home-testimonials-title::before{
+  content: "";
+  display: block;
+  width: 100px;
+  height: 102px;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  background: url('/uploads/static/blue_glitzy_heart.png') repeat-x 0 0;
+}
+
+#testimonials{
+  display: inline-block;
+  width: 68%;
 }
 
 #testimonials .caroufredsel_wrapper{
