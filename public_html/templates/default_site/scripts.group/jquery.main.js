@@ -476,9 +476,9 @@ function initCarousel() {
 // Initialize home page testimonial gallery
 function initTestimonialCarousel() {
 	
-	if ($('#testimonials ul').exists()) {
+	if ($('#home-testimonials ul').exists()) {
 		
-		$("#testimonials ul").carouFredSel({
+		$("#home-testimonials ul").carouFredSel({
 			width: "790",
 			height: "auto",
 			items: 1,
