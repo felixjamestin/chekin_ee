@@ -747,9 +747,8 @@ animation-name: fadeInDown;
 }
 
 #pitch h1 span {
-  background: url('/uploads/static/blue_swish.png') no-repeat -1px bottom;
+  /*background: url('/uploads/static/blue_swish.png') no-repeat -1px bottom;*/
   padding-right: 5px;
-  /*padding-left: 4px;*/
   letter-spacing: .06rem;
 }
 
@@ -870,6 +869,8 @@ xrotate-1
   -ms-transform: rotateX(180deg);
   -o-transform: rotateX(180deg);
   transform: rotateX(180deg);
+  background: url('/uploads/static/blue_swish.png') no-repeat -1px bottom;
+  background-size: contain;
 }
 .headline.rotate-1 b.is-visible {
   opacity: 1;
