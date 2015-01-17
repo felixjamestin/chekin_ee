@@ -1274,8 +1274,8 @@ animation-name: fadeInDown;
   width: 100px;
   height: 102px;
   position: absolute;
-  top: 0px;
-  bottom: 0px;
+  top: -9px;
+  left: 0px;
   background: url('/uploads/static/blue_glitzy_heart.png') no-repeat 0 0;
 }
 
@@ -1285,13 +1285,13 @@ animation-name: fadeInDown;
   padding-left: 30px;
 }
 
-#home-testimonials-title .caroufredsel_wrapper{
+#home-testimonials .caroufredsel_wrapper{
   float: none;
   background: none;
 }
 
 
-#home-testimonials-title h1{
+#home-testimonials h1{
   text-align: center;
   font-size: 18px;
   font-family: "proxima-nova-condensed", "Helvetica Neue", Helvetica, Arial, sans-serif-webkit-body;
@@ -1305,11 +1305,11 @@ animation-name: fadeInDown;
   top: -37px;
 }
 
-#home-testimonials-title h1 span{
+#home-testimonials h1 span{
   font-size: 16px;
 }
 
-#home-testimonials-title ul{
+#home-testimonials ul{
   list-style:none;
   margin-bottom: 70px;
   padding-left: 0px;
@@ -1317,7 +1317,7 @@ animation-name: fadeInDown;
   position: relative;
 }
 
-#home-testimonials-title li{
+#home-testimonials li{
   float: left;
   width: 670px;
   padding: 0px 0px 0px 3px;
@@ -1334,7 +1334,7 @@ animation-name: fadeInDown;
   font-size: 60px;
 }*/
 
-#home-testimonials-title h2{
+#home-testimonials h2{
   color: #454545;
   font-size: 24px;
   font-weight: 100;
@@ -1344,7 +1344,7 @@ animation-name: fadeInDown;
   padding-left: 3px;
 }
 
-#home-testimonials-title h3{
+#home-testimonials h3{
   font-size: 18px;
   font-weight: 400;
   margin: 7px 0px 0px 0px;
