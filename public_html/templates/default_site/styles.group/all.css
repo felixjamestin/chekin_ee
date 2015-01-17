@@ -1216,7 +1216,7 @@ animation-name: fadeInDown;
 }
 
 #home-reasons li {
-  font: 16px;
+  font-size: 16px;
   font-family: "proxima-nova", Arial, Helvetica, sans-serif;
   margin-bottom: .8rem;
   line-height: 140%;
@@ -1254,7 +1254,7 @@ animation-name: fadeInDown;
   top: -2px;
 }
 
-#home-testimonials-title{
+#home-testimonials #home-testimonials-title{
   font-size: 16px;
   font-family: "kulturista-web",serif;
   text-transform: uppercase;
@@ -1283,6 +1283,7 @@ animation-name: fadeInDown;
   display: inline-block;
   width: 65%;
   padding-left: 30px;
+  margin-bottom: 50px;
 }
 
 #home-testimonials .caroufredsel_wrapper{
@@ -5290,16 +5291,18 @@ a.sumome-scrollbox-link{
 }
 
 #more-testimonials {
-  margin-top: -60px;
   padding: 0px;
-  margin-bottom: 100px;
-  padding-left: 3px;
+  margin-left: 32px;
 }
 
 #more-testimonials a {
-  color: rgb(0, 194, 217);
   text-decoration: underline;
-  display: block;
+  color: #11b6d2;
+  font-size: 14px;
+  font-weight: 800;
+  display: inline-block;
+  width: 13rem;
+  line-height: 140%;
 }
 
 
