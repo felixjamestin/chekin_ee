@@ -727,10 +727,10 @@ animation-name: fadeInDown;
   z-index: 11;
   padding: 0px;
   text-align: center;
-  -webkit-animation: fadeInUp 1.5s 1;
+/*  -webkit-animation: fadeInUp 1.5s 1;
   -moz-animation: fadeInUp 1.5s 1;
   -o-animation: fadeInUp 1.5s 1;
-  animation: fadeInUp 1.5s 1;
+  animation: fadeInUp 1.5s 1;*/
 }
 
 #pitch h1{
@@ -1699,7 +1699,7 @@ xrotate-1
 /* Footer */
 #footer-content{
   background-color: white;
-  border-top:2px solid #87cfe1;
+  border-top:2px solid #11b6d2;
   padding:0 0 20px;
   width:100%;
   overflow:hidden;
