@@ -839,6 +839,7 @@ animation-name: fadeInDown;
 }
 .animate-words-wrapper b.is-visible {
   position: relative;
+  opacity: 1;
 }
 .no-js .animate-words-wrapper b {
   opacity: 0;

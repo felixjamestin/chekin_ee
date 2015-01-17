@@ -3,7 +3,25 @@
 <a id="footer-hello" href="{site_url}about"></a>
 
 <div id="footer-content">
+
 	<section class="frame">
+
+		<div class="box">
+			<h3>Browse getaways in </h3>
+			<div class="places-list-text">
+				<ul>
+			{exp:channel:entries channel="state" status="{embed:preview}" orderby="date" sort="asc" dynamic="no"}
+				{exp:channel_images:images entry_id="{entry_id}" limit="1"}
+					<li>
+						<a href="{site_url}{url_title}/">{title}</a>
+					</li>
+				{/exp:channel_images:images}
+			{/exp:channel:entries}
+		</ul>
+		</div>
+
+		</div><!-- box -->
+
 		<div class="box">
 			<h3>Speak to us</h3>
 			<ul class="socials">
@@ -32,18 +50,18 @@
 			</div>
 		</div><!-- box -->
 
-		<div class="box4">
-			<div id="newsletter-stamp"></div>
-			<h3>Newsletter</h3>
-			<p>Get new travel stories and vacation spots delivered right to your inbox!</p>
-			<form action="http://myoki.us5.list-manage1.com/subscribe/post?u=b5d379e7c492991cca0269739&amp;id=cd98445efe" class="form01" id='mc-embedded-subscribe-form' method='post' name='mc-embedded-subscribe-form' target='_blank'>
-				<fieldset>
-					<input  class="email" id='mce-EMAIL' name='EMAIL' type="email" required='required' value="" placeholder="Email address" />
-					<input type="submit" value="Join" class="submit" id='mc-embedded-subscribe' name='subscribe'/>
-				</fieldset>
-			</form>
-			
-		</div><!-- box -->
+<!--		<div class="box4">
+    			<div id="newsletter-stamp"></div>
+    			<h3>Newsletter</h3>
+    			<p>Get new travel stories and vacation spots delivered right to your inbox!</p>
+    			<form action="http://myoki.us5.list-manage1.com/subscribe/post?u=b5d379e7c492991cca0269739&amp;id=cd98445efe" class="form01" id='mc-embedded-subscribe-form' method='post' name='mc-embedded-subscribe-form' target='_blank'>
+    				<fieldset>
+    					<input  class="email" id='mce-EMAIL' name='EMAIL' type="email" required='required' value="" placeholder="Email address" />
+    					<input type="submit" value="Join" class="submit" id='mc-embedded-subscribe' name='subscribe'/>
+    				</fieldset>
+    			</form>
+    			
+    		</div><!-- box --> -->
 
 	</section><!-- frame -->
 
