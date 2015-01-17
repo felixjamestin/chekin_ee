@@ -3300,7 +3300,23 @@ a.tag{
 }
 
 .places-list-text{
-  
+  text-align: center;
+  font-size: 16px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.places-list-text a {
+  text-decoration: underline;
+  color: #11b6d2;
+  font-weight: 800;
+  display: inline-block;
+  line-height: 140%;
+  margin-right: 5px;
+}
+
+.places-list-text a:first-child {
+  margin-left: 5px;
 }
 
 #search-list .places-dd-content-desc{
