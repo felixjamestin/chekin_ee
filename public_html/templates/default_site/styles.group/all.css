@@ -879,9 +879,9 @@ xrotate-1
   -ms-transform: rotateX(0deg);
   -o-transform: rotateX(0deg);
   transform: rotateX(0deg);
-  -webkit-animation: cd-rotate-1-in 1.5s;
-  -moz-animation: cd-rotate-1-in 1.5s;
-  animation: cd-rotate-1-in 1.5s;
+  -webkit-animation: cd-rotate-1-in 1.2s;
+  -moz-animation: cd-rotate-1-in 1.2s;
+  animation: cd-rotate-1-in 1.2s;
 }
 .headline.rotate-1 b.is-hidden {
   -webkit-transform: rotateX(180deg);
