@@ -1709,7 +1709,10 @@ xrotate-1
   position: relative;
   z-index: 999;
 }
-#footer-content a{color: #454545;}
+
+#footer-content a{
+  color: #454545;
+}
 
 #footer-content .frame{
   margin: 0 0 40px;
@@ -1718,12 +1721,16 @@ xrotate-1
   font-weight: 100;
   color: #454545;
 }
+
 #footer-content .box{
   float: left;
   padding: 12px 13px;
-  width: 170px;
   height: 170px;
   border-right: 1px dashed #11b6d2;
+}
+
+#footer-content .box:last-child {
+  border: none;
 }
 
 #footer-getaways{
@@ -1737,7 +1744,7 @@ xrotate-1
 #footer-getaways li a{
   text-decoration: underline;
   color: #11b6d2;
-  font-weight: 800;
+  font-weight: 600;
   display: inline-block;
   line-height: 140%;
   margin-right: 5px;
@@ -1746,7 +1753,7 @@ xrotate-1
 
 
 
-#footer-content .box2,
+/*#footer-content .box2,
 #footer-content .box3{
   width:166px;
   padding:0 33px 0 36px;
@@ -1761,7 +1768,7 @@ xrotate-1
 #footer-content .box4 p{ 
   margin:0 0 14px;
   width: 165px;
-}
+}*/
 
 #footer-content h3{
   text-transform:uppercase;
@@ -1776,16 +1783,17 @@ xrotate-1
 }
 
 #footer-content .socials{
-  margin:0;
-  padding:5px 0 0 0px;
-  list-style:none;
-  line-height:24px;
-  overflow:hidden;
+  margin: 0;
+  padding: 5px 0 0 0px;
+  list-style: none;
+  line-height: 24px;
+  overflow: hidden;
+  width: 200px;
 }
 #footer-content .socials li{
   padding:0 0 10px;
   float:left;
-  width:101%;
+  width:100%;
 }
 #footer-content .socials a{
   float:left;
@@ -1794,6 +1802,7 @@ xrotate-1
   padding:0 0 0 33px;
   cursor:pointer;
 }
+
 #footer-content .socials a span{
   -webkit-transition-property:color;
   -moz-transition-property:color;
@@ -5539,7 +5548,7 @@ a.sumome-scrollbox-link{
   text-decoration: underline;
   color: #11b6d2;
   font-size: 14px;
-  font-weight: 800;
+  font-weight: 600;
   display: inline-block;
   width: 13rem;
   line-height: 140%;
