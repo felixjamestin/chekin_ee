@@ -7,46 +7,51 @@
 	<section class="frame">
 
 		<div class="box">
-			<h3>Browse getaways in </h3>
-			<div class="places-list-text">
-				<ul>
-			{exp:channel:entries channel="state" status="{embed:preview}" orderby="date" sort="asc" dynamic="no"}
-				{exp:channel_images:images entry_id="{entry_id}" limit="1"}
-					<li>
-						<a href="{site_url}{url_title}/">{title}</a>
-					</li>
-				{/exp:channel_images:images}
-			{/exp:channel:entries}
-		</ul>
-		</div>
-
+			<div class="box-inner">
+				<h3>Browse getaways in </h3>
+				<ul id="footer-getaways">
+				{exp:channel:entries channel="state" status="{embed:preview}" orderby="date" sort="asc" dynamic="no"}
+					{exp:channel_images:images entry_id="{entry_id}" limit="1"}
+						<li>
+							<a href="{site_url}{url_title}/">{title}</a>
+						</li>
+					{/exp:channel_images:images}
+				{/exp:channel:entries}
+				</ul>
+			</div>
 		</div><!-- box -->
 
 		<div class="box">
-			<h3>Speak to us</h3>
-			<ul class="socials">
-				<li class="phone">+91 9167041258</li>
-				<li class="email"><a href="mailto:team@myoki.in"><span>team@myoki.in</span></a></li>
-				<li>
-					<a href="http://www.facebook.com/myoki.in" target="_blank" class="facebook"><span>Facebook</span></a>
-				</li>
-				<li>
-					<a href="https://twitter.com/myokiteam" target="_blank" class="twitter"><span>Twitter</span></a>
-				</li>
-				<li>
-					<a href="http://pinterest.com/myokiteam" target="_blank" class="pinterest"><span>Pinterest</span></a>
-				</li>
-			</ul>
+			<div class="box-inner">
+				<h3>Speak to us</h3>
+				<ul class="socials">
+					<li class="phone">+91 9167041258</li>
+					<li class="email"><a href="mailto:team@myoki.in"><span>team@myoki.in</span></a></li>
+					<li>
+						<a href="http://www.facebook.com/myoki.in" target="_blank" class="facebook"><span>Facebook</span></a>
+					</li>
+					<li>
+						<a href="https://twitter.com/myokiteam" target="_blank" class="twitter"><span>Twitter</span></a>
+					</li>
+					<li>
+						<a href="http://pinterest.com/myokiteam" target="_blank" class="pinterest"><span>Pinterest</span></a>
+					</li>
+				</ul>
+			</div>
 		</div><!-- box -->
 
 		<div id="footer-reasons" class="box box2">
-			<a href="{site_url}about"></a>
+			<div class="box-inner">
+				<a href="{site_url}about"></a>
+			</div>
 		</div><!-- box -->
 
 		<div class="box box3">
-			<h3>Things we like to tweet : )</h3>
-			<div class="tweet-box">
-				<p id="twitter">Loading ...</p>
+			<div class="box-inner">
+				<h3>Things we like to tweet : )</h3>
+				<div class="tweet-box">
+					<p id="twitter">Loading ...</p>
+				</div>
 			</div>
 		</div><!-- box -->
 
@@ -61,7 +66,7 @@
     				</fieldset>
     			</form>
     			
-    		</div><!-- box --> -->
+    		</div> -->
 
 	</section><!-- frame -->
 
