@@ -663,6 +663,7 @@ animation-name: fadeInDown;
 
 
 }
+
 .menu li{
   float:left;
   padding:0 8px 0 11px;
@@ -671,11 +672,14 @@ animation-name: fadeInDown;
   font-style: normal;
   background:url('/uploads/static/separator.gif') no-repeat 0 50%;
 }
+
 .menu li:first-child{ background:none;}
+
 .menu a{color:#454545;}
+
 .menu a:hover{
-  color:#d8715a;
-  border-bottom:1px #d8715a dotted;
+  border-bottom: 1px #11b6d2 dotted;
+  color: #11b6d2;
 }
 
 #seperator-line{
@@ -1523,16 +1527,6 @@ xrotate-1
   position: relative;
 }
 
-/*#home-testimonials-title li::before {
-  content: '\201C';
-  display: block;
-  color: #11b6d2;
-  position: absolute;
-  top: -7px;
-  left: 3px;
-  font-size: 60px;
-}*/
-
 #home-testimonials h2{
   color: #454545;
   font-size: 24px;
@@ -1557,6 +1551,10 @@ xrotate-1
   width: 26px;
   height: 28px;
   margin-right: 3px;
+}
+
+#home-newsletter{
+  background: url('/uploads/static/newsletter_bg.jpg')no-repeat 50%;
 }
 
 
@@ -1715,11 +1713,12 @@ xrotate-1
 }
 
 #footer-content .frame{
-  margin: 0 0 40px;
   overflow: hidden;
   width: 101%;
   font-weight: 100;
   color: #454545;
+  width: 1000px;
+  margin: 0 auto 40px auto;
 }
 
 #footer-content .box{
