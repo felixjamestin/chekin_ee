@@ -877,6 +877,11 @@ xrotate-1
   background: url('/uploads/static/blue_swish.png') no-repeat -1px bottom;
   background-size: contain;
 }
+
+.headline.rotate-1 b .animate-words-wrapper .words-short{
+  background-position-y: 54px;
+}
+
 .headline.rotate-1 b.is-visible {
   opacity: 1;
   -webkit-transform: rotateX(0deg);
@@ -1553,10 +1558,56 @@ xrotate-1
   margin-right: 3px;
 }
 
-#home-newsletter{
-  background: url('/uploads/static/newsletter_bg.jpg')no-repeat 50%;
+#home-newsletter {
+  background: url('/uploads/static/newsletter_bg.jpg') no-repeat 50%;
+  text-align: center;
+  color: white;
+  padding: 70px 0px;
+  box-shadow: inset 0px 0px 100px rgba(0,0,0,1);
+  margin-bottom: 100px;
 }
 
+#home-newsletter h3 {
+  font-size: 24px;
+  line-height: 20px;
+  font-weight: 600;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  text-shadow: 0px 1px 1px rgba(0,0,0,.7);
+}
+
+#home-newsletter div {
+  font-size: 18px;
+  width: 49rem;
+  margin: 0 auto;
+  line-height: 145%;
+  margin-bottom: 10px;
+  text-shadow: 0px 1px 1px rgba(0,0,0,.7);
+  font-weight: 100;
+}
+
+#home-newsletter form {
+  margin: 0 auto;
+  width: initial;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+#home-newsletter form input {
+  padding: 12px;
+  font-size: 16px;
+}
+
+#home-newsletter form input[type="submit"] {
+  padding: 15px;
+  height: initial;
+}
+
+#home-newsletter form input[type="email"] {
+  width: 350px;
+  padding: 15px;
+  border: none;
+}
 
 .testimonial-author{
   font-weight: 800;
@@ -1816,6 +1867,7 @@ xrotate-1
   position: absolute;
   top: -14px;
   right: 3px;
+  display: none;
 }
 
 #footer-hello {
