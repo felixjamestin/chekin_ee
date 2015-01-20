@@ -878,7 +878,7 @@ xrotate-1
   background-size: contain;
 }
 
-.headline.rotate-1 b .animate-words-wrapper .words-short{
+.headline.rotate-1 .animate-words-wrapper .words-short{
   background-position-y: 54px;
 }
 
