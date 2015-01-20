@@ -1565,6 +1565,7 @@ xrotate-1
   padding: 70px 0px;
   box-shadow: inset 0px 0px 100px rgba(0,0,0,1);
   margin-bottom: 100px;
+  background-color: black;
 }
 
 #home-newsletter h3 {
@@ -1601,12 +1602,18 @@ xrotate-1
 #home-newsletter form input[type="submit"] {
   padding: 15px;
   height: initial;
+  width: initial;
 }
 
 #home-newsletter form input[type="email"] {
   width: 350px;
   padding: 15px;
   border: none;
+}
+
+#home-newsletter form input[type="email"]:focus {
+  width: 400px;
+  outline: none;
 }
 
 .testimonial-author{
