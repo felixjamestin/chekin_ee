@@ -5683,6 +5683,7 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
   background:#11b6d2;
   font-weight: 600;
   font-size: 18px;
+  border-radius: 3px;
 }
 
 .ladda-button[data-size=l] .ladda-label{
