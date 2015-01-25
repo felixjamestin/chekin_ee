@@ -72,7 +72,7 @@ require 'config.' . ENV . '.php';
 if(isset($config)) {
 
 	// General preferences
-	$config['is_system_on'] 				= 'y';
+	//$config['is_system_on'] 				= 'y';
 	$config['license_number'] 				= '3062-4966-5957-7147';
 	$config['site_index']	 				= '';
 	$config['admin_session_type']		 	= 'cs';
