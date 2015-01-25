@@ -1,12 +1,15 @@
 {embed="modules/header"}
+
 {if group_id == "1"}
   {embed="modules/listing-search" preview="open|Featured|closed"}
 {if:else}
   {embed="modules/listing-search" preview="open|Featured"}
 {/if}
+
 <section class="wrapper">
 	<section id="main">
 		{embed="modules/listings"}
 	</section><!-- main -->
-	{embed="modules/footer"}
 </section><!-- wrapper -->
+
+{embed="modules/footer"}

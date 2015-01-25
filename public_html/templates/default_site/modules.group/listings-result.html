@@ -1,4 +1,5 @@
-{exp:channel:entries channel="hideaway" dynamic="no" status="{embed:preview}" search:hideaway_state="{segment_1}" <?=$_SESSION['sort_string']?> limit="7" paginate="both" paginate_base="/{segment_1}/page/"}
+<div class="scroll-block">
+{exp:channel:entries channel="hideaway" dynamic="no" status="{embed:preview}" search:hideaway_state="{segment_1}" <?=$_SESSION['sort_string']?> limit="7" paginate="bottom" paginate_base="/{segment_1}/page/"}
 {if no_results}
 <section class="block">
 	<p>No results found!</p>
@@ -57,7 +58,7 @@
 
 </section><!-- block -->
 
-{paginate}
+{!-- paginate}
 	<div class="pagination">
     <span>Page</span>
     {pagination_links}
@@ -77,5 +78,23 @@
         </ul>
   {/pagination_links}
   </div>
+{/paginate --}
+
+{paginate}
+    {if next_page}
+    <div class="navigation next">
+        <a href="{auto_path}" class="ladda-button js_hide_next" data-color="myoki" data-size="l" data-style="expand-right">
+            <span class="ladda-label">See more getaways</span>
+            <span class="ladda-spinner"></span>
+            <div class="ladda-progress" style="width: 0px;"></div>
+        </a>
+    </div>
+    {/if}
+    {if "{current_page}" == "{total_pages}"  }
+    <p class="all-msg">-- Ay caramba! You've reached the end --</p>
+    {/if}
 {/paginate}
+
 {/exp:channel:entries}
+
+</div>

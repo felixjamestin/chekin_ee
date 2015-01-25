@@ -1,11 +1,11 @@
-// page init
+// Page init
 jQuery(function(){
 	
 	jQuery.fn.exists = function(){return this.length>0;}
 	
-	initCarousel();
+	// initCarousel();
 	initTestimonialCarousel();
-	
+
 	$(document).bind('contextmenu', function(e) {
 		return false;
 	});
@@ -14,7 +14,6 @@ jQuery(function(){
         return this.animate({opacity: 'toggle', height: 'toggle'}, speed, easing, callback);
     };
 	
-
 	if ($('.datepicker').exists()) {
 		$( "#check-in" ).datepicker({
 			dateFormat: 'd M yy',
@@ -62,27 +61,30 @@ jQuery(function(){
 		});
 	}
 	if ($('.accordion-menu-wide').exists()) {
+            function doOnReady() {
 		$(".accordion-menu-wide").AccordionImageMenu({
-            closeDim: 229,
-            openDim: 500,
-            height: 350,
-            effect: "swing",
-            duration: 700,
-            openItem: 0,
-            border: 2,
-            color: "#FFFFFF",
-            position: "horizontal",
-            fadeInTitle: !0
-        }), $(".aim").hover(function () {
-            return $(this).parent().find(".box-heading").toggleClass("box-heading-hover")
-        }), $(".box-heading").hover(function () {
-            return $(this).toggleClass("box-heading-hover")
-        })   
+                    closeDim: 229,
+                    openDim: 500,
+                    height: 350,
+                    effect: "swing",
+                    duration: 700,
+                    openItem: 0,
+                    border: 2,
+                    color: "#FFFFFF",
+                    position: "horizontal",
+                    fadeInTitle: !0
+                }), $(".aim").hover(function () {
+                    return $(this).parent().find(".box-heading").toggleClass("box-heading-hover")
+                }), $(".box-heading").hover(function () {
+                    return $(this).toggleClass("box-heading-hover")
+                })   
+            }
+            $(document).ready(doOnReady);
+            $(document).ajaxComplete(doOnReady);
 	}
 	
 	if ($('#rate-includes').exists()) {
 	
-		// $('#rate-includes div').hide();
 		$('#rate-includes h3').addClass('collapse');
 		
 		$('#rate-includes h3').click(function(){
@@ -98,7 +100,6 @@ jQuery(function(){
 	
 	if ($('#additional-details').exists()) {
 	
-		// $('#additional-details div').hide();
 		$('#additional-details h3').addClass('collapse');
 		
 		$('#additional-details h3').click(function(){
@@ -150,22 +151,6 @@ jQuery(function(){
 		return false;
 	})
 	
-	
-	// if ($('#footer-hello').exists()) {
-	
-	//	$("#footer-hello").fancybox({
-	//		'titlePosition' 		: 'outside',
-	//		'overlayColor'  		: '#000000',
-	//		'overlayOpacity'	: 0.85,
-	//		'padding'       	 		: 0,
-	//		'transitionIn'  	:	'fade',
-	//		'transitionOut' 	:	'fade',
-	//		'speedIn'       	 	:	300, 
-	//		'speedOut'      	 	:	300,
-	//		'easingIn'      	 	:	'swing'
-	//	});
-	  	
-	// }
 	
 	if ($('#footer-aboutus').exists()) {
 	
@@ -230,6 +215,7 @@ jQuery(function(){
 		});
 		
 	}
+
 	
 	if ($('#form-1').exists()) {
                 if($.cookie('name')) $('#freeform_name').val($.cookie('name'));
@@ -250,23 +236,23 @@ jQuery(function(){
 				$('#recipient_email').val(user_email);
 				$('.form-loading').show();
 				$.post(
-				  	$form.attr('action'),
-				  	$form.serialize(),
-				  	function(data){
-				  		if (data.success == false){
-				  			$.each(data.errors, function(i, item){
-				  				$('.form-loading').hide();
-				  				return false;
-				  			});
-				  		}
-				  		else if (data.success){
+					$form.attr('action'),
+					$form.serialize(),
+					function(data){
+						if (data.success == false){
+							$.each(data.errors, function(i, item){
+								$('.form-loading').hide();
+								return false;
+							});
+						}
+						else if (data.success){
                                                         $.removeCookie('name', { path: '/' });
-				  			$.removeCookie('email', { path: '/' });
-				  			$.removeCookie('checkin', { path: '/' });
-				  			$.removeCookie('checkout', { path: '/' });
-				  			$.removeCookie('adults', { path: '/' });
-				  			$.removeCookie('children', { path: '/' });
-				  			$.removeCookie('question', { path: '/' });
+							$.removeCookie('email', { path: '/' });
+							$.removeCookie('checkin', { path: '/' });
+							$.removeCookie('checkout', { path: '/' });
+							$.removeCookie('adults', { path: '/' });
+							$.removeCookie('children', { path: '/' });
+							$.removeCookie('question', { path: '/' });
                                                         $.cookie('name', $('#freeform_name').val(), { path: '/' });
 				  			$.cookie('email', $('#freeform_email').val(), { path: '/' });
 				  			$.cookie('checkin', $('#freeform_checkin').val(), { path: '/' });
@@ -333,7 +319,6 @@ jQuery(function(){
   	
 /*	Handle sticky bar */
   	$('#search-list').waypoint(function(event, direction){
-/*			$('#search-minibar').toggleClass('sticky', direction === "down"); */
   			$('#search-list').toggleClass('sticky', direction === "down");
   			event.stopPropagation();
   		}, 
@@ -364,6 +349,174 @@ jQuery(function(){
   
 });
 
+
+/* -------------------------------- 
+
+Header Animation Fuctions
+
+-------------------------------- */
+jQuery(document).ready(function($){
+	//set animation timing
+	var animationDelay = 3500, //2500
+	//loading bar effect
+	barAnimationDelay = 3800,
+	barWaiting = barAnimationDelay - 3000, //3000 is the duration of the transition on the loading bar - set in the scss/css file
+	//letters effect
+	lettersDelay = 50,
+	//type effect
+	typeLettersDelay = 150,
+	selectionDuration = 500,
+	typeAnimationDelay = selectionDuration + 800,
+	//clip effect 
+	revealDuration = 600,
+	revealAnimationDelay = 1500;
+	
+	initHeadline();
+	
+
+	function initHeadline() {
+		//insert <i> element for each letter of a changing word
+		singleLetters($('.headline.letters').find('b'));
+		//initialise headline animation
+		animateHeadline($('.headline'));
+	}
+
+	function singleLetters($words) {
+		$words.each(function(){
+			var word = $(this),
+				letters = word.text().split(''),
+				selected = word.hasClass('is-visible');
+			for (i in letters) {
+				if(word.parents('.rotate-2').length > 0) letters[i] = '<em>' + letters[i] + '</em>';
+				letters[i] = (selected) ? '<i class="in">' + letters[i] + '</i>': '<i>' + letters[i] + '</i>';
+			}
+		    var newLetters = letters.join('');
+		    word.html(newLetters).css('opacity', 1);
+		});
+	}
+
+	function animateHeadline($headlines) {
+		var duration = animationDelay;
+		$headlines.each(function(){
+			var headline = $(this);
+			
+			if(headline.hasClass('loading-bar')) {
+				duration = barAnimationDelay;
+				setTimeout(function(){ headline.find('.animate-words-wrapper').addClass('is-loading') }, barWaiting);
+			} else if (headline.hasClass('clip')){
+				var spanWrapper = headline.find('.animate-words-wrapper'),
+					newWidth = spanWrapper.width() + 10
+				spanWrapper.css('width', newWidth);
+			} else if (!headline.hasClass('type') ) {
+				//assign to .animate-words-wrapper the width of its longest word
+				var words = headline.find('.animate-words-wrapper b'),
+					width = 0;
+				words.each(function(){
+					var wordWidth = $(this).width();
+				    if (wordWidth > width) width = wordWidth;
+				});
+				headline.find('.animate-words-wrapper').css('width', width);
+			};
+
+			//trigger animation
+			setTimeout(function(){ hideWord( headline.find('.is-visible').eq(0) ) }, duration);
+		});
+	}
+
+	function hideWord($word) {
+		var nextWord = takeNext($word);
+		
+		if($word.parents('.headline').hasClass('type')) {
+			var parentSpan = $word.parent('.animate-words-wrapper');
+			parentSpan.addClass('selected').removeClass('waiting');	
+			setTimeout(function(){ 
+				parentSpan.removeClass('selected'); 
+				$word.removeClass('is-visible').addClass('is-hidden').children('i').removeClass('in').addClass('out');
+			}, selectionDuration);
+			setTimeout(function(){ showWord(nextWord, typeLettersDelay) }, typeAnimationDelay);
+		
+		} else if($word.parents('.headline').hasClass('letters')) {
+			var bool = ($word.children('i').length >= nextWord.children('i').length) ? true : false;
+			hideLetter($word.find('i').eq(0), $word, bool, lettersDelay);
+			showLetter(nextWord.find('i').eq(0), nextWord, bool, lettersDelay);
+
+		}  else if($word.parents('.headline').hasClass('clip')) {
+			$word.parents('.animate-words-wrapper').animate({ width : '2px' }, revealDuration, function(){
+				switchWord($word, nextWord);
+				showWord(nextWord);
+			});
+
+		} else if ($word.parents('.headline').hasClass('loading-bar')){
+			$word.parents('.animate-words-wrapper').removeClass('is-loading');
+			switchWord($word, nextWord);
+			setTimeout(function(){ hideWord(nextWord) }, barAnimationDelay);
+			setTimeout(function(){ $word.parents('.animate-words-wrapper').addClass('is-loading') }, barWaiting);
+
+		} else {
+			switchWord($word, nextWord);
+			setTimeout(function(){ hideWord(nextWord) }, animationDelay);
+		}
+	}
+
+	function showWord($word, $duration) {
+		if($word.parents('.headline').hasClass('type')) {
+			showLetter($word.find('i').eq(0), $word, false, $duration);
+			$word.addClass('is-visible').removeClass('is-hidden');
+
+		}  else if($word.parents('.headline').hasClass('clip')) {
+			$word.parents('.animate-words-wrapper').animate({ 'width' : $word.width() + 10 }, revealDuration, function(){ 
+				setTimeout(function(){ hideWord($word) }, revealAnimationDelay); 
+			});
+		}
+	}
+
+	function hideLetter($letter, $word, $bool, $duration) {
+		$letter.removeClass('in').addClass('out');
+		
+		if(!$letter.is(':last-child')) {
+		 	setTimeout(function(){ hideLetter($letter.next(), $word, $bool, $duration); }, $duration);  
+		} else if($bool) { 
+		 	setTimeout(function(){ hideWord(takeNext($word)) }, animationDelay);
+		}
+
+		if($letter.is(':last-child') && $('html').hasClass('no-csstransitions')) {
+			var nextWord = takeNext($word);
+			switchWord($word, nextWord);
+		} 
+	}
+
+	function showLetter($letter, $word, $bool, $duration) {
+		$letter.addClass('in').removeClass('out');
+		
+		if(!$letter.is(':last-child')) { 
+			setTimeout(function(){ showLetter($letter.next(), $word, $bool, $duration); }, $duration); 
+		} else { 
+			if($word.parents('.headline').hasClass('type')) { setTimeout(function(){ $word.parents('.animate-words-wrapper').addClass('waiting'); }, 200);}
+			if(!$bool) { setTimeout(function(){ hideWord($word) }, animationDelay) }
+		}
+	}
+
+	function takeNext($word) {
+		return (!$word.is(':last-child')) ? $word.next() : $word.parent().children().eq(0);
+	}
+
+	function takePrev($word) {
+		return (!$word.is(':first-child')) ? $word.prev() : $word.parent().children().last();
+	}
+
+	function switchWord($oldWord, $newWord) {
+		$oldWord.removeClass('is-visible').addClass('is-hidden');
+		$newWord.removeClass('is-hidden').addClass('is-visible');
+	}
+});
+
+
+
+/* -------------------------------- 
+
+Navigation Fuctions
+
+-------------------------------- */
 function initNav() {
 	var nav = document.getElementById("search-list");
 	if(nav) {		
@@ -376,7 +529,11 @@ function initNav() {
 	}
 }
 
-/* initTabs */
+/* -------------------------------- 
+
+Tab Fuctions
+
+-------------------------------- */
 function initTabs()
 {
 	var sets = document.getElementsByTagName("ul");
@@ -435,7 +592,11 @@ function initTabs()
 	}
 }
 
-// Initialize home page getaways gallery
+/* -------------------------------- 
+
+Initialize home page getaways gallery
+
+-------------------------------- */
 function initCarousel() {
 	
 	if ($('#home-scroller .gallery').exists()) {
@@ -469,12 +630,16 @@ function initCarousel() {
 
 }
 
-// Initialize home page testimonial gallery
+/* -------------------------------- 
+
+Initialize home page testimonial gallery
+
+-------------------------------- */
 function initTestimonialCarousel() {
 	
-	if ($('#testimonials ul').exists()) {
+	if ($('#home-testimonials ul').exists()) {
 		
-		$("#testimonials ul").carouFredSel({
+		$("#home-testimonials ul").carouFredSel({
 			width: "790",
 			height: "auto",
 			items: 1,
@@ -497,6 +662,7 @@ function initTestimonialCarousel() {
 	}
 
 }
+
 
 
 

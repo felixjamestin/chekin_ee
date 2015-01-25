@@ -8,15 +8,29 @@
 	<section id="main">
 		
 		<div class="heading">
-			<span class="txt">Don't know where to go?</span><span class="compass">Compass</span><span class="txt2">Here's a lil' inspiration.</span>
+
+			<h2>Discover & book incredible stays – from weekend getaways near Mumbai and Pune to incredible eco-resorts and beach-side getaways in Goa and Pondicherry.</h2>
+			<h3>Don't know where to go? Here's a lil' inspiration</h3>
+			
 		</div><!-- heading -->
 		
 		{embed="modules/home-gallery"}
+
+		<div class="places-list-text">
+			or browse all our getaways in 
+			{exp:channel:entries channel="state" status="{embed:preview}" orderby="date" sort="asc" dynamic="no"}
+				{exp:channel_images:images entry_id="{entry_id}" limit="1"}
+					<a href="{site_url}{url_title}/">{title}</a>
+				{/exp:channel_images:images}
+			{/exp:channel:entries}
+		</div>
 	
 	</section><!-- main -->
 	
 	{embed="modules/home-testimonials"}
-	
-	{embed="modules/footer"}
 
 </section><!-- wrapper -->
+
+{embed="modules/home-newsletter"}
+
+{embed="modules/footer"}
