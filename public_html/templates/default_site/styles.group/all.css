@@ -1242,13 +1242,16 @@ xrotate-1
 .gallery li{
   float:left;
   width: 300px;
-  min-height: 320px;
+  /*min-height: 320px;*/
   padding-left: 0px;
   padding-right: 30px;
   padding-top: 0px;
   padding-bottom: 30px;
 }
-
+#home-scroller .gallery li{
+  height:320px;
+  overflow: hidden;
+}
 .gallery .box{
   border:1px solid #dadada;
   border-radius: 4px;
