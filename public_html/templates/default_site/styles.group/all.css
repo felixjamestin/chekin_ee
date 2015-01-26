@@ -2641,7 +2641,7 @@ xrotate-1
   left:auto;
   right: 1030px;
   opacity: 1;
-  content: #454545;
+  color: #454545;
   position: absolute;
   z-index: 999;
   font-size: 16px;
@@ -2660,7 +2660,7 @@ xrotate-1
 
 .main-photo .gallery-section .btn-next{
   background-position: -10px 0;
-  right: 0px;
+  right: 7px;
   left: auto;
 }
 
@@ -5524,8 +5524,8 @@ a.sumome-scrollbox-link{
 }
 
 #header-links a:hover {
-  color: #d8715a;
-  border-bottom: 1px #d8715a dotted;
+  border-bottom: 1px #11b6d2 dotted;
+  color: #11b6d2;
 }
 
 #more-testimonials {
