@@ -759,7 +759,7 @@ class AmazonS3 extends CFRuntime
 		// @codeCoverageIgnoreEnd
 
 		// Return!
-		return $data;
+		print_r($data);//return $data;
 	}
 
 	/**
