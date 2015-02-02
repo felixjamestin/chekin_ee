@@ -656,7 +656,7 @@ animation-name: fadeInDown;
   padding: 37px 0 0;*/
   position: absolute;
   bottom: 6px;
-  left: 312px;
+  left: 230px;
   line-height: 1;
   margin:0;
   list-style:none;
@@ -1065,6 +1065,42 @@ xrotate-1
   border-bottom: 1px solid black;
   background-size: cover;
   box-shadow: 0px 0px 400px 200px rgba(0,0,0,.4) inset;
+}
+#gift-card-frame{
+  min-height: 618px;
+  background: #0f2f42 url('/uploads/static/gift_card.jpg') repeat-x 0 0;
+  border-bottom: 1px solid black;
+  background-size: cover;
+  box-shadow: 0px 0px 400px 200px rgba(0,0,0,.4) inset;
+  text-align: left;
+}
+#gift-cards-block{
+  padding-top: 130px;
+  padding-bottom: 150px;
+  text-align: left;
+  padding-left: 150px;
+}
+
+#gift-cards-block h1{
+  color:#FFFFFF;
+  font-size: 68px;
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 800;
+  width:660px;
+  margin-bottom: 15px;
+  line-height: 68px;
+}
+
+#gift-cards-block h2{
+  color:#FFFFFF;
+  width:460px;
+  font-size: 18px;
+  font-family: "kulturista-web","proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  margin-top: 25px;
+  line-height: 1.4;
+  text-shadow: 1px 1px 200px rgba(0,0,0,.6);
+
 }
 
 #plan-pitch{
@@ -5851,3 +5887,69 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
   }
 }
 
+#gift-reasons{
+    -webkit-box-shadow: 0px 5px 3px -3px rgba(0,0,0,.2);
+    -moz-box-shadow: 0px 5px 3px -3px rgba(0,0,0,.2);
+    box-shadow: 0px 5px 3px -3px rgba(0,0,0,.2);
+    margin: 40px 0 30px 0px;
+    padding-bottom: 30px;
+}
+#gift-reasons .inform .column-l{
+    width:320px;    
+    border: 1px dashed #d7d7d7;
+    border-width: 0px 1px 1px 0;
+    padding-left: 10px;
+}
+.second-column{
+    padding-top: 30px;
+}
+
+#gift-reasons .inform article{
+    min-height: 200px;
+    max-width: 280px;
+    margin-bottom:10px;
+}
+.noborder-right{
+    border-right:none !important;
+}
+.noborder-bottom{
+    border-bottom:none !important;
+}
+#gift-reasons .inform .number{
+    background: url('/uploads/static/tick.png') no-repeat; 
+}
+#customize-gift{
+    margin: 50px 0 30px 0;
+}
+#customize-gift h3{
+    font-size: 30px;
+    font-weight: bold;
+    color:#000;
+}
+#customize-gift .number{
+  position:absolute;
+  color:#fff;
+  top: -2px;
+  left:0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: bold;
+  width:20px;
+  height:20px;
+  text-align:center;
+  background: #7DCE2A;
+  border-radius: 50px;
+}
+#customize-gift .title{
+  margin:0 -30px 10px 0px;
+  font: 15px/18px "kulturista-web";
+  color: #00C2D9;
+  margin: 0 0 20px;
+  padding-left: 30px;
+}
+#customize-gift .title h4{
+  font-weight: 600;
+}
+.gift-steps .step{
+    position: relative;
+}

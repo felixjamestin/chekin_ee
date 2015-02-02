@@ -439,10 +439,10 @@ class Channel_images_model
 			$this->session->cache['channel_images']['locations'] = array();
 		}
 
-		$this->LOCS &= $this->session->cache['channel_images']['locations'];
+		//$this->LOCS &= $this->session->cache['channel_images']['locations'];
 
 		// Another Check, just to be sure
-		if (is_array($this->LOCS) == FALSE) $this->LOCS = array();
+		//if (is_array($this->LOCS) == FALSE) $this->LOCS = array();
 
 		$OUT = '';
 
