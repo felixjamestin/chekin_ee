@@ -91,7 +91,8 @@
                     </section>
                     
                     <section id="customize-gift">
-                        
+                        <form class="gift-customize-form popup">
+                                
                         <div class="gift-steps">
                             <h3>Customize your Gift Card</h3>
                             <div class="step-1 step">
@@ -99,6 +100,22 @@
                                 <div class="title">
                                     <h4>Pick a design</h4>
                                 </div><!-- title -->
+                                
+                                <ul>
+                                    {exp:channel:entries channel="gift_card_design" orderby="date" sort="asc" dynamic="no"}
+                                        <li {if count == "1"}class='selected'{/if}>
+                                        {exp:channel_images:images field="gift_card_design" entry_id="{entry_id}" limit="1"}
+                                             <img src="{image:url:untitled}" />       
+                                        {/exp:channel_images:images}
+                                        
+                                        {exp:channel_images:images field="gift_card_final_design" entry_id="{entry_id}" limit="1"}
+                                        <span data-url="{image:url}"><span>
+                                        {/exp:channel_images:images}
+                                        </li>
+                                    {/exp:channel:entries}
+                                    
+                                </ul>
+                                
                             </div>
                             
                             <div class="step-2 step">
@@ -106,6 +123,24 @@
                                 <div class="title">
                                     <h4>Choose your gift amount and delivery date</h4>
                                 </div><!-- title -->
+                                
+                                    <div class="group">
+                                        <div class="row">
+                                            <label for="lbl-02">Amount (in rupees)</label>
+                                            <select id="freeform_adults" class="cs-1" name="adults">
+                                                    <option value="500">500</option>
+                                                    <option value="1000">1000</option>
+                                                    <option value="2000">2000</option>
+                                                    <option value="5000">5000</option>
+                                                    <option value="15000">15000</option>
+                                                    <option value="25000">25000</option>
+                                            </select>
+                                        </div>
+                                        <div class="row">
+                                            <label for="lbl-02">Deliver email on</label>
+                                            <input type="text" class="text text-2" id="delivery-date" placeholder="pick a date" name="email-delivery-date" />
+                                        </div>
+                                    </div>
                             </div>
                             
                             <div class="step-3 step">
@@ -113,10 +148,47 @@
                                 <div class="title">
                                     <h4>Customize your gift card email</h4>
                                 </div><!-- title -->
+                                
+                                <div class="gift-email">
+                                    <div class="email-form">
+                                        <div class="row">
+                                                <label for="lbl-05">To</label>
+                                                <input class="text text-2" placeholder="Recepient's name" type="text" id="freeform_name" name="name" >
+                                                <input class="text text-2" placeholder="Recepient's email" type="text" id="freeform_email" name="email" >
+                                        </div>
+                                        
+                                        <div class="row">
+                                                <label for="lbl-05">From</label>
+                                                <input class="text text-2" placeholder="Your name" type="text" id="freeform_name" name="name" >
+                                                <input class="text text-2" placeholder="Your email" type="text" id="freeform_email" name="email" >
+                                        </div>
+                                        
+                                        <div class="row">
+                                                <label for="lbl-05">Subject</label>
+                                                <p>You've received a Myoki.in gift card for Rs. 10,000!</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="email-template">
+                                        <div class="inner-email-template">
+                                            <img src='http://placehold.it/727X302&text=Please%20select%20any%20design%20above' />
+                                        
+                                            <div class="gift-amount"> <img src="/uploads/static/star-gift.png" /> <strong>Your gift amount:</strong> Rs. 10,000 <img src="/uploads/static/star-gift.png" /></div>
+                                        
+                                            <div class="your-message">
+                                                <textarea placeholder="Enter your message here..." name="gift_message"></textarea>
+                                            </div>
+                                        </div>    
+                                    </div>
+                                    
+                                </div>
+                                
                             </div>
+                                <input type="submit" value="" />
                             
                         </div>
-                        
+                        </form>
+                            
                     </section>
                     
                 </section><!-- main -->
@@ -124,6 +196,23 @@
                 {embed="modules/footer"}
 
         </section><!-- wrapper -->	
-
+<script type="text/javascript">
+    $(function() {
+     $('.step-1 li').click(function(){
+        $('.step-1 li').removeClass('selected'); 
+        $(this).addClass('selected');
+        var finalgift = $(this).find('span').data('url');
+        $('.inner-email-template img').attr('src',finalgift);
+     });
+     
+     $( "#delivery-date" ).datepicker({
+            dateFormat: 'd M yy',
+            changeMonth: true,
+            changeYear: true,
+            yearRange:"0:+1",
+            minDate: 0
+        });
+    });
+</script> 
 </body>
 </html>
