@@ -137,13 +137,14 @@
                                     <div class="group">
                                         <div class="row">
                                             <label for="lbl-02">Amount (in rupees)</label>
-                                            <select id="freeform_adults" class="cs-1 sel-med" name="total_amount">
+                                            <select id="gift_amount" class="cs-1 sel-med" name="total_amount">
                                                     <option value="500">500</option>
-                                                    <option value="1000">1000</option>
-                                                    <option value="2000">2000</option>
-                                                    <option value="5000">5000</option>
-                                                    <option value="15000">15000</option>
-                                                    <option value="25000">25000</option>
+                                                    <option value="1000">1,000</option>
+                                                    <option value="2000">2,000</option>
+                                                    <option value="5000">5,000</option>
+                                                    <option value="10000" selected="">10,000</option>
+                                                    <option value="15000">15,000</option>
+                                                    <option value="25000">25,000</option>
                                             </select>
                                         </div>
                                         <div class="row">
@@ -175,7 +176,7 @@
                                         
                                         <div class="row">
                                                 <label for="lbl-05">Subject</label>
-                                                <p>You've received a Myoki.in gift card for Rs. 10,000!</p>
+                                                <p>You've received a Myoki.in gift card for Rs. <span class="sel-amount">10,000</span>!</p>
                                         </div>
                                     </div>
                                     
@@ -183,7 +184,7 @@
                                         <div class="inner-email-template">
                                             <img class="gift-after-design" src='http://placehold.it/727X302&text=Please%20select%20any%20design%20above' />
                                         
-                                            <div class="gift-amount"> <img src="/uploads/static/star-gift.png" /> <strong>Your gift amount:</strong> Rs. 10,000 <img src="/uploads/static/star-gift.png" /></div>
+                                            <div class="gift-amount"> <img src="/uploads/static/star-gift.png" /> <strong>Your gift amount:</strong> Rs. <span class="sel-amount">10,000</span> <img src="/uploads/static/star-gift.png" /></div>
                                         
                                             <div class="your-message">
                                                 <textarea placeholder="Enter your message here..." name="message"></textarea>
@@ -748,6 +749,10 @@
         $('.inner-email-template .gift-after-design').attr('src',finalgift);
      });
      
+     $('#gift_amount').change(function(){
+        var giftamt = $("#gift_amount option:selected").text();
+        $('.sel-amount').text(giftamt);
+     });
      $( "#delivery-date" ).datepicker({
             dateFormat: 'd M yy',
             changeMonth: true,
