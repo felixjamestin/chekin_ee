@@ -1,4 +1,4 @@
-<?
+<?php
 $secret_key = "e2163d7fc1fd1b6f2f73cad23ee9d663";	 // Your Secret Key
 if(isset($_GET['DR'])) {
 	 require($_SERVER['DOCUMENT_ROOT'].'/ee-framework/lib/Rc43.php');
@@ -35,12 +35,12 @@ if(isset($_GET['DR'])) {
     parse="inward"
   }
 
-  <?
+  <?php
     if(isset($response['PaymentID'])){ 
   ?>
-  <input type="hidden" name="ebs_payment_id" value="<?=$response['PaymentID']?>" />
-  <? } ?>
-  <input type="hidden" name="payment_status" value="<?=$response['ResponseMessage']?>" />
+  <input type="hidden" name="ebs_payment_id" value="<?php echo $response['PaymentID'];?>" />
+  <?php } ?>
+  <input type="hidden" name="payment_status" value="<?php echo $response['ResponseMessage'];?>" />
   
   {/exp:freeform:edit}
   {/exp:freeform:entries}
