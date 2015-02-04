@@ -44,7 +44,10 @@ if(!defined('ENV')) {
 			define('ENV', 'dev');
 			define('THIS_WEB_ROOT', 'public_dev_html');
 			break;
-
+                case 'chekin.btechmbbs.com' :
+			define('ENV', 'sdev');
+			define('THIS_WEB_ROOT', 'public_dev_html');
+			break;
 		default :
 			define('ENV', 'local');
 			define('THIS_WEB_ROOT', 'public_html');

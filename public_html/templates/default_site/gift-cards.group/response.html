@@ -1,0 +1,71 @@
+<?
+$secret_key = "e2163d7fc1fd1b6f2f73cad23ee9d663";	 // Your Secret Key
+if(isset($_GET['DR'])) {
+	 require($_SERVER['DOCUMENT_ROOT'].'/ee-framework/lib/Rc43.php');
+	 $DR = preg_replace("/\s/","+",$_GET['DR']);
+
+	 $rc4 = new Crypt_RC4($secret_key);
+ 	 $QueryString = base64_decode($DR);
+	 $rc4->decrypt($QueryString);
+	 $QueryString = split('&',$QueryString);
+
+	 $response = array();
+	 foreach($QueryString as $param){
+	 	$param = split('=',$param);
+		$response[$param[0]] = urldecode($param[1]);
+	 }
+}
+?>
+<html>
+  <body onload="document.frmUpdate.submit();">
+  {exp:freeform:entries
+    form_id="2"
+    search:secret_hash="={segment_3}"
+    limit="1"
+    dynamic="no"
+  }  
+  {exp:freeform:edit
+    form_id="2"
+    entry_id="{freeform:entry_id}"
+    form:name="frmUpdate"
+    restrict_edit_to_author="no"
+  <?
+    if(isset($response['PaymentID']) && $response['ResponseCode'] == 0){ 
+  ?>
+    notify_on_edit="yes"
+    notify_admin="yes"
+    admin_notification_template="payment_success"
+    notify_user="no"	
+    recipients="yes"
+    recipient_user_input="yes"
+    recipient_user_limit="1"
+    recipient_user_template="payment_success"
+  <? } ?>
+    return="/payment/result/{segment_3}"
+    parse="inward"
+  }
+
+  <?
+    if(isset($response['PaymentID'])){ 
+  ?>
+  <input type="hidden" name="ebs_payment_id" value="<?=$response['PaymentID']?>" />
+  <? } ?>
+  <input type="hidden" name="payment_status" value="<?=$response['ResponseMessage']?>" />
+  
+  <?
+    if(isset($response['PaymentID']) && $response['ResponseCode'] == 0){ 
+  ?>
+  <input type="hidden" name="recipient_email_user" value="{freeform:field:email}" id="recipient_email" />
+  <? } ?>
+  
+  {/exp:freeform:edit}
+  {/exp:freeform:entries}
+  <div>
+    <p style="margin:200px auto;width: 250px;"><strong>Waiting for response, please wait...</strong></p>
+  </div>
+
+{!-- Google Analytics --}
+{embed="modules/google-analytics"}
+
+  </body>
+</html>  

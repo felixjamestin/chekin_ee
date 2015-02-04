@@ -5992,15 +5992,25 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
     padding:5px 15px 0 0;
     
 }
-.gift-customize-form .row{
-    margin-bottom: 20px;
+.gift-customize-form input,.gift-customize-form textarea{
+    width:220px !important;
 }
-.gift-customize-form input{
-    width:120px !important;
+.step-3 textarea{
+    width:100% !important;
 }
 .gift-customize-form select{
-    width:130px !important;
+    width:230px !important;
     height:40px;    
+}
+.gift-customize-form select.sel-med{
+    width:130px !important;
+}
+.gift-customize-form input.input-small{
+    width: 135px !important;
+    margin-left: 5px;
+}
+.gift-customize-form select.sel-small{
+    width:80px !important;
 }
 .step-3 .gift-email{
     background:#f7f7fa;
@@ -6064,7 +6074,10 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
     background: url('/uploads/static/proceed-to-payment.png') no-repeat;    
     width:242px !important;
     height:59px;
-    margin:50px auto 80px auto;
+    margin:50px 0 80px 150px;
     display: block;
     border:none;
+}
+.countrycode{
+    margin-right: 10px;
 }
