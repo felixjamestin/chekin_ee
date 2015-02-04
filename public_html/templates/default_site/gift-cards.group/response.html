@@ -19,29 +19,19 @@ if(isset($_GET['DR'])) {
 <html>
   <body onload="document.frmUpdate.submit();">
   {exp:freeform:entries
-    form_id="2"
+    form_name="gift_cards"
     search:secret_hash="={segment_3}"
     limit="1"
     dynamic="no"
+    status="pending|open|closed"
   }  
   {exp:freeform:edit
-    form_id="2"
+    form_name="gift_cards"
     entry_id="{freeform:entry_id}"
+    status="pending|open|closed"
     form:name="frmUpdate"
     restrict_edit_to_author="no"
-  <?
-    if(isset($response['PaymentID']) && $response['ResponseCode'] == 0){ 
-  ?>
-    notify_on_edit="yes"
-    notify_admin="yes"
-    admin_notification_template="payment_success"
-    notify_user="no"	
-    recipients="yes"
-    recipient_user_input="yes"
-    recipient_user_limit="1"
-    recipient_user_template="payment_success"
-  <? } ?>
-    return="/payment/result/{segment_3}"
+    return="/gift-cards/thank-you/{segment_3}"
     parse="inward"
   }
 
@@ -51,12 +41,6 @@ if(isset($_GET['DR'])) {
   <input type="hidden" name="ebs_payment_id" value="<?=$response['PaymentID']?>" />
   <? } ?>
   <input type="hidden" name="payment_status" value="<?=$response['ResponseMessage']?>" />
-  
-  <?
-    if(isset($response['PaymentID']) && $response['ResponseCode'] == 0){ 
-  ?>
-  <input type="hidden" name="recipient_email_user" value="{freeform:field:email}" id="recipient_email" />
-  <? } ?>
   
   {/exp:freeform:edit}
   {/exp:freeform:entries}
