@@ -36,9 +36,22 @@ if(isset($_GET['DR'])) {
   }
 
   <?php
-    if(isset($response['PaymentID'])){ 
+    if(isset($response['PaymentID'])){
+    $code = randomCode();
+    $code = "GC".$code;
+    function randomCode() {
+        $alphabet = "abcdefghijklmnopqrstuwxyzABCDEFGHIJKLMNOPQRSTUWXYZ0123456789";
+        $pass = array(); //remember to declare $pass as an array
+        $alphaLength = strlen($alphabet) - 1; //put the length -1 in cache
+        for ($i = 0; $i < 6; $i++) {
+            $n = rand(0, $alphaLength);
+            $pass[] = $alphabet[$n];
+        }
+        return implode($pass); //turn the array into a string
+    }
   ?>
   <input type="hidden" name="ebs_payment_id" value="<?php echo $response['PaymentID'];?>" />
+  <input type="hidden" name="gift_code" value="<?php echo strtoupper($code);?>" />
   <?php } ?>
   <input type="hidden" name="payment_status" value="<?php echo $response['ResponseMessage'];?>" />
   
