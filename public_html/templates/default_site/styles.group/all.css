@@ -1868,6 +1868,7 @@ xrotate-1
   border-bottom:1px #454545 dotted;
 }
 #footer-content .facebook{background:url('/uploads/static/socials.gif') no-repeat;}
+#footer-content .instagram{background:url('/uploads/static/socials.gif') no-repeat 0 -34px;}
 #footer-content .twitter{background:url('/uploads/static/socials.gif') no-repeat 0 -34px;}
 #footer-content .pinterest{background:url('/uploads/static/socials.gif') no-repeat 0 -67px;}
 
