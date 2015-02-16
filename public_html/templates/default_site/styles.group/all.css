@@ -11,7 +11,6 @@ body{
   color: #454545;
   font: 14px "proxima-nova", Arial, Helvetica, sans-serif;
   background:#fff;
-  min-width:1134px;
   box-sizing: border-box;
 }
 
@@ -607,11 +606,12 @@ animation-name: fadeInDown;
 
 
 #header{
-  padding:15px 0 0 3px;
-  width:1080px;
-  margin:0 auto;
-  position:relative;
   z-index:99;
+  margin: 0 auto;
+  position: relative;
+  z-index: 99;
+  max-width: 77.143em;
+  padding: 1.388% 2.314% 0 2.314%;
 }
 #header:after{
   clear:both;
@@ -619,15 +619,14 @@ animation-name: fadeInDown;
   content:'';
 }
 .logo{
-  margin:0 110px -25px 0;
-  width:202px;
-  height:88px;
-  float:left;
-  color:#666;
+  height: 88px;
+  float: left;
+  color: #666;
   font-family: "myriad-pro","proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-weight:700;
-  font-size:32px;
-  line-height:88px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 88px;
+  margin-bottom: -24px;
 }
 .logo a{
   display:block;
@@ -650,22 +649,18 @@ animation-name: fadeInDown;
   animation:wiggle 1s 1 normal both ease-in;
 }
 
-/* menu */
 .menu{
-/*  float:left;
-  padding: 37px 0 0;*/
-  position: absolute;
-  bottom: 6px;
-  left: 312px;
-  line-height: 1;
-  margin:0;
-  list-style:none;
-
-
+  list-style: none;
+  width: 60%;
+  float: left;
+  -webkit-padding-start: 0;
+  position: relative;
+  bottom: -22px;
+  text-align: center;
+  display: inline-block;
 }
 
 .menu li{
-  float:left;
   padding:0 8px 0 11px;
   font-size: 18px;
   font-family: "kulturista-web",serif;
@@ -5512,11 +5507,10 @@ a.sumome-scrollbox-link{
 }
 
 #header-links {
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-  margin-bottom: 3px;
-  color: #666;
+  float: right;
+  position: relative;
+  bottom: -37px;
+  text-align: right;
 }
 
 #header-links a {
@@ -5549,25 +5543,11 @@ a.sumome-scrollbox-link{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* -------------------------------------------------------------------------------------------------------- */
 
 /* SumoMe Popup */
+
+/* -------------------------------------------------------------------------------------------------------- */
 div.sumome-popup .sumome-popup-content{
   background-color: rgb(17, 182, 210) !important;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.16) 25%, transparent 25%) -50px 0, linear-gradient(225deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%) -50px 0, linear-gradient(315deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%), linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%);
@@ -5853,5 +5833,33 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
   100% {
     background-color: transparent;
   }
+}
+
+
+/* -------------------------------------------------------------------------------------------------------- */
+
+/* Responsive styles below */
+
+/* -------------------------------------------------------------------------------------------------------- */
+
+ @media screen and (max-width: 1200px) {
+
+
+}
+
+@media screen and (max-width: 640px) {
+
+
+}
+
+@media screen and (max-width: 480px) {
+
+
+}
+
+@media screen and (max-width: 360px) {
+  
+
+
 }
 
