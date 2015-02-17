@@ -606,34 +606,39 @@ animation-name: fadeInDown;
 
 
 #header{
-  z-index:99;
   margin: 0 auto;
   position: relative;
   z-index: 99;
   max-width: 77.143em;
-  padding: 1.388% 2.314% 0 2.314%;
+  padding: .5rem 2.31rem 1rem 2.31rem;
 }
+
 #header:after{
   clear:both;
   display:block;
   content:'';
 }
+
 .logo{
   height: 88px;
   float: left;
   color: #666;
   font-family: "myriad-pro","proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 700;
-  font-size: 32px;
-  line-height: 88px;
-  margin-bottom: -24px;
+  line-height: 5.9rem;
+  margin-bottom: -1.5rem;
+  position: absolute;
+  font-size: 2rem;
 }
+
 .logo a{
   display:block;
   height:100%;
   color: #454545;
 }
+
 .logo a:hover{text-decoration:none;}
+
 .logo a img{
   /*float:left;
   margin:0 1px 0 0;*/
@@ -642,6 +647,7 @@ animation-name: fadeInDown;
   width: 80px;
   height: 80px;
 }
+
 .logo a img:hover{
   -webkit-animation:wiggle 1s 1 normal both ease-in;
   -moz-animation:wiggle 1s 1 normal both ease-in;
@@ -651,21 +657,19 @@ animation-name: fadeInDown;
 
 .menu{
   list-style: none;
-  width: 60%;
-  float: left;
-  -webkit-padding-start: 0;
   position: relative;
-  bottom: -22px;
   text-align: center;
-  display: inline-block;
+  bottom: -1.55rem;
+  margin-left: 5rem;
 }
 
 .menu li{
-  padding:0 8px 0 11px;
-  font-size: 18px;
+  padding: 0 .5rem 0 .69rem;
+  font-size: 1.125rem;
   font-family: "kulturista-web",serif;
   font-style: normal;
-  background:url('/uploads/static/separator.gif') no-repeat 0 50%;
+  background: url('/uploads/static/separator.gif') no-repeat 0 50%;
+  display: inline-block;
 }
 
 .menu li:first-child{ background:none;}
@@ -5508,9 +5512,11 @@ a.sumome-scrollbox-link{
 
 #header-links {
   float: right;
-  position: relative;
-  bottom: -37px;
   text-align: right;
+  position: absolute;
+  right: 2.31rem;
+  bottom: .25rem;
+  z-index: 999;
 }
 
 #header-links a {
