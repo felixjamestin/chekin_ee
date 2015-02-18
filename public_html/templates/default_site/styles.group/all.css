@@ -745,13 +745,12 @@ animation-name: fadeInDown;
   font-size: 48px;
   font-weight: 800;
   text-shadow: 0px 2px #174864;
-  width: 60rem;
+  max-width: 60rem;
   line-height: 140%;
 }
 
 #pitch h1 span {
   /*background: url('/uploads/static/blue_swish.png') no-repeat -1px bottom;*/
-  padding-right: 5px;
   letter-spacing: .06rem;
 }
 
@@ -1032,9 +1031,9 @@ xrotate-1
 
 
 .visual{
-  padding:0 0 6px;
+  padding: 0 0 .375rem;
   background: url('/uploads/static/bg-visual.gif') repeat-x 0 100%;
-  margin:0 auto 67px;
+  margin: 0 auto 4.19rem;
 }
 
 .visual .frame{
@@ -1137,23 +1136,24 @@ xrotate-1
 
 /* wrapper */
 .wrapper{
-  width:1000px;
-  margin:0 auto;
+  margin: 0 auto;
+  max-width: 77.143rem;
+  padding: 0 2.31rem 0 2.31rem;
 }
 
 /* Main */
 #main{
-  padding:0 0 107px;
+  padding:0 0 6.69rem;
   position: relative;
 }
 
 .heading h2 {
-  width: 47rem;
+  max-width: 47rem;
   text-align: center;
   font: 100 24px/1.4 proxima-nova, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   line-height: 1.5;
   margin: 0px auto;
-  padding-bottom: 50px;
+  padding-bottom: 3.13rem;
   position: relative;
 }
 
@@ -5515,7 +5515,7 @@ a.sumome-scrollbox-link{
   text-align: right;
   position: absolute;
   right: 2.31rem;
-  bottom: .25rem;
+  bottom: .3rem;
   z-index: 999;
 }
 
