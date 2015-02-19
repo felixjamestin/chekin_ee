@@ -1240,9 +1240,11 @@ xrotate-1
   padding:0;
   list-style:none;
   line-height:18px;
+  text-align: center;
 }
+
 .gallery li{
-  float:left;
+  display: inline-block;
   width: 300px;
   /*min-height: 320px;*/
   padding-left: 0px;
@@ -1315,7 +1317,9 @@ xrotate-1
   line-height: 20px;
   font-weight: 600;
   padding: 20px;
+  text-align: left;
 }
+
 .gallery h2 .location{
   font-size: 13px;
   font-weight: 200;
