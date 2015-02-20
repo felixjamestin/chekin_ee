@@ -5854,8 +5854,32 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
 
 /* -------------------------------------------------------------------------------------------------------- */
 
- @media screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
 
+
+}
+
+@media screen and (max-width: 1050px) {
+  /* Adjustments:: Homepage: 3 Reasons, Testimonials  */
+
+  #home-testimonials li{
+    width: 40rem;
+  }
+
+}
+
+@media screen and (max-width: 875px) {
+  /* Adjustments:: Homepage: Pitch */
+
+  #pitch h1{
+    max-width: 30rem;
+    top: 7.5rem;
+    left: .94rem;
+  }
+
+  #places{
+    top: 4.06rem;
+  }
 
 }
 
