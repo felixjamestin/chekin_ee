@@ -1050,8 +1050,9 @@ xrotate-1
   -o-animation: scroll 300s infinite linear;
   animation: scroll 300s infinite linear;
   
-  border-top: 6px solid #07263b;
-  border-bottom: 6px solid #07263b;
+  border-top: 6px solid black;  
+  border-bottom: 6px solid black;
+  /* #07263b; */
 }
 
 #plan-visual{
@@ -5876,38 +5877,16 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
   #pitch h1{
     top: 8.5rem;
     left: .94rem;
-    font-size: 2.625rem;
-    max-width: 52rem;
+    max-width: 30rem;
   }
 
   #places{
     top: 4.5rem;
   }
 
-  .visual .frame{
-    min-height: 30rem;
-  }
-
-  #pitch #places .primary-button{
-    padding: 28px 32px;
-  }
-
 }
 
-@media screen and (max-width: 790px) {
-
-  #pitch h1{
-    max-width: 26rem;
-    top: 6.5rem;
-  }
-
- #places{
-    top: 2.7rem;
-  }
-
-}
-
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 500px) {
 
   #pitch h1{
     font-size: 30px;
@@ -5931,8 +5910,8 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
 @media screen and (max-width: 360px) {
   
   #pitch h1{
-    font-size: 32px;
-    max-width: 20rem;
+/*    font-size: 32px;
+    max-width: 20rem;*/
     left: 0;
   }
 
@@ -5940,12 +5919,20 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
     left: -8px;
   }
 
-  .visual .frame{
-    min-height: 30rem;
-  }
-
   .heading h2{
     display: none;
+  }
+
+  .logo a{
+    line-height: 4.5rem;
+  }
+
+  .menu, #header-links{
+    display: none;
+  }
+
+  #heading{
+    height: 2.5rem;
   }
 
 }
