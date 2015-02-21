@@ -1,6 +1,7 @@
 /* General settings */
 html{
   font-size: 100%;
+  overflow-x: hidden;
 }
 
 header, footer, article, section, hgroup, nav, figure, aside {display:block;}
@@ -16,6 +17,7 @@ body{
   font: 14px "proxima-nova", Arial, Helvetica, sans-serif;
   background:#fff;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 img{border-style:none;}
@@ -5872,30 +5874,79 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
   /* Adjustments:: Homepage: Pitch */
 
   #pitch h1{
-    max-width: 30rem;
-    top: 7.5rem;
+    top: 8.5rem;
     left: .94rem;
+    font-size: 2.625rem;
+    max-width: 52rem;
   }
 
   #places{
-    top: 4.06rem;
+    top: 4.5rem;
+  }
+
+  .visual .frame{
+    min-height: 30rem;
+  }
+
+  #pitch #places .primary-button{
+    padding: 28px 32px;
   }
 
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 790px) {
 
+  #pitch h1{
+    max-width: 26rem;
+    top: 6.5rem;
+  }
+
+ #places{
+    top: 2.7rem;
+  }
 
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 430px) {
 
+  #pitch h1{
+    font-size: 30px;
+    max-width: 19rem;
+  }
+
+  .visual .frame{
+    min-height: 20rem;
+  }
+
+  #pitch #places .primary-button{
+    font-size: 20px;
+  }
+
+  #pitch #places .primary-button span::before{
+    background-position-y: 6px;
+  }
 
 }
 
 @media screen and (max-width: 360px) {
   
+  #pitch h1{
+    font-size: 32px;
+    max-width: 20rem;
+    left: 0;
+  }
 
+  #places{
+    left: -8px;
+  }
+
+  .visual .frame{
+    min-height: 30rem;
+  }
+
+  .heading h2{
+    display: none;
+  }
 
 }
 
