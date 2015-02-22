@@ -5863,16 +5863,18 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
 }
 
 @media screen and (max-width: 1050px) {
-  /* Adjustments:: Homepage: 3 Reasons, Testimonials  */
 
   #home-testimonials li{
     width: 40rem;
   }
 
+  #main .gallery-section .gallery li:nth-child(9) {
+    display: none;
+  }
+
 }
 
 @media screen and (max-width: 875px) {
-  /* Adjustments:: Homepage: Pitch */
 
   #pitch h1{
     top: 8.5rem;
@@ -5882,6 +5884,93 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
 
   #places{
     top: 4.5rem;
+  }
+
+  #home-testimonials, #home-reasons{
+    display: none;
+  }
+
+  #seperator-line, #footer-reasons{
+    display: none;
+  }
+
+  #footer-content .box:nth-child(4) {
+    display: none;
+  }
+
+  #footer-content .box:nth-child(3){
+    border-right: none;
+  }
+
+  #footer-content .box{
+    display: inline-block;
+    vertical-align: top;
+    float: none;
+    text-align: left;
+    border-right: none;
+  }
+
+  #footer-content .frame{
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 697px) {
+
+  #footer-content .box:first-child, #footer-content .box:nth-child(3){
+    display: none;
+  }
+
+  #footer-content{
+    border-top: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  #footer-hello{
+    display: none;
+  }
+
+  .copy{
+    background: black;
+    color: white;
+    padding: 20px;
+  }
+
+  #footer-content .frame{
+    margin-bottom: 0;
+  }
+
+  #footer-content .box:nth-child(2){
+    width: 100%;
+    padding-left: 0px;
+    height: initial;
+    text-align: left;
+  }
+
+  #footer-content .box:nth-child(2) h3{
+    padding-left: 1rem;
+  }
+
+  #footer-content .socials{
+    width: initial; 
+  }
+
+  #footer-content .socials li{
+    border-top: 1px solid #dadada;
+    padding: 0;
+  }
+
+  #footer-content .socials a{
+    padding: 10px 0px 10px 25px;
+    display: block;
+    width: 100%;
+    background-color: #dadada;
+  }
+
+  #footer-content .socials a:hover span{
+    border-bottom: none;
   }
 
 }
@@ -5907,11 +5996,9 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
 
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 380px) {
   
   #pitch h1{
-/*    font-size: 32px;
-    max-width: 20rem;*/
     left: 0;
   }
 
