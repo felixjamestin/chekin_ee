@@ -762,6 +762,8 @@
      
      //select default first image
      $('.step-1 li:first-child').addClass('selected');
+     var designId = $('.step-1 li:first-child').data('design');
+     $('#gift_design_id').val(designId);
      var finalgift = $('.step-1 li:first-child').find('span').data('url');
      $('.inner-email-template .gift-after-design').attr('src',finalgift);
      
