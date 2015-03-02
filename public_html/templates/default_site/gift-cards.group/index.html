@@ -137,7 +137,9 @@
                                     <div class="group">
                                         <div class="row">
                                             <label for="lbl-02">Amount (in rupees)</label>
-                                            <select id="gift_amount" class="cs-1 sel-med" name="total_amount">
+                                            <input type="hidden" id="total_amount" name="total_amount" value="10000" />
+                           
+                                            <select id="gift_amount" class="cs-1 sel-med" name="gift_amount">
                                                     <option value="500">500</option>
                                                     <option value="1000">1,000</option>
                                                     <option value="2000">2,000</option>
@@ -145,11 +147,20 @@
                                                     <option value="10000" selected="">10,000</option>
                                                     <option value="15000">15,000</option>
                                                     <option value="25000">25,000</option>
+                                                    <option value="0">Select your own</option>
                                             </select>
                                         </div>
                                         <div class="row">
+                                            <label for="lbl-02"></label>
+                                            <div class="for-error">
+                                                <input type="number" class="text text-2" id="own_amount" placeholder="Enter your own amount" name="own_amount" />
+                                            </div>    
+                                        </div>
+                                        <div class="row">
                                             <label for="lbl-02">Deliver email on</label>
-                                            <input type="text" class="text text-2" id="delivery-date" placeholder="pick a date" name="email_delivery_date" />
+                                            <div class="for-error">
+                                                <input type="text" class="text text-2" id="delivery-date" placeholder="pick a date" name="email_delivery_date" />
+                                            </div>    
                                         </div>
                                     </div>
                             </div>
@@ -164,14 +175,14 @@
                                     <div class="email-form">
                                         <div class="row">
                                                 <label for="lbl-05">To</label>
-                                                <input class="text text-2" placeholder="Recepient's name" type="text" id="freeform_name" name="receiver_name" >
-                                                <input class="text text-2" placeholder="Recepient's email" type="text" id="freeform_email" name="receiver_email" >
+                                                <div class="for-error"><input class="text text-2" placeholder="Recepient's name" type="text" id="freeform_name" name="receiver_name" ></div>
+                                                <div class="for-error"><input class="text text-2" placeholder="Recepient's email" type="text" id="freeform_email" name="receiver_email" ></div>
                                         </div>
                                         
                                         <div class="row">
                                                 <label for="lbl-05">From</label>
-                                                <input class="text text-2" placeholder="Your name" type="text" id="freeform_name" name="name" >
-                                                <input class="text text-2" placeholder="Your email" type="text" id="freeform_email" name="email" >
+                                                <div class="for-error"><input class="text text-2" placeholder="Your name" type="text" id="freeform_name" name="name" ></div>
+                                                <div class="for-error"><input class="text text-2" placeholder="Your email" type="text" id="freeform_email" name="email" ></div>
                                         </div>
                                         
                                         <div class="row">
@@ -187,7 +198,7 @@
                                             <div class="gift-amount"> <img src="/uploads/static/star-gift.png" /> <strong>Your gift amount:</strong> Rs. <span class="sel-amount">10,000</span> <img src="/uploads/static/star-gift.png" /></div>
                                         
                                             <div class="your-message">
-                                                <textarea placeholder="Enter your message here..." name="message"></textarea>
+                                                <div class="for-error" style="width:100%;"><textarea placeholder="Enter your message here..." name="message"></textarea></div>
                                             </div>
                                         </div>    
                                     </div>
@@ -203,7 +214,7 @@
                                     <div class="group">
                                         <div class="row">
                                             <label for="lbl-02">Full Name</label>
-                                            <input type="text" class="text text-2" id="billing_name" placeholder="full name" name="billing_name" />
+                                            <div class="for-error"><input type="div clastext" class="text text-2" id="billing_name" placeholder="full name" name="billing_name" /></div>
                                         </div>
                                         <div class="row">
                                             <label for="lbl-07">Mobile No</label>
@@ -451,25 +462,25 @@
                                                     <option value="Zambia (260)">Zambia (260)</option>
                                                     <option value="Zimbabwe (263)">Zimbabwe (263)</option>
                                             </select>
-                                            <div>
-                                                    &nbsp;<input class="text text-3 input-small" type="text" id="freeform_mobile" name="mobile" value="1111111111">
+                                            <div class="for-error">
+                                                    &nbsp;<input class="text text-3 input-small" type="text" id="freeform_mobile" name="mobile" value="">
                                             </div>
                                     </div>
                                         <div class="row">
                                             <label for="lbl-02">Address</label>
-                                            <textarea id="address" placeholder="" name="address" ></textarea>
+                                            <div class="for-error"><textarea id="address" placeholder="" name="address" ></textarea></div>
                                         </div>
                                         <div class="row">
                                             <label for="lbl-02">City</label>
-                                            <input type="text" class="text text-2" id="city" placeholder="" name="city" />
+                                            <div class="for-error"><input type="text" class="text text-2" id="city" placeholder="" name="city" /></div>
                                         </div>
                                         <div class="row">
                                             <label for="lbl-02">State</label>
-                                            <input type="text" class="text text-2" id="state" placeholder="" name="state" />
+                                            <div class="for-error"><input type="text" class="text text-2" id="state" placeholder="" name="state" /></div>
                                         </div>
                                         <div class="row">
                                             <label for="lbl-02">ZIP</label>
-                                            <input type="text" class="text text-2" id="zip" placeholder="" name="zip" />
+                                            <div class="for-error"><input type="text" class="text text-2" id="zip" placeholder="" name="zip" /></div>
                                         </div>
                                         <div class="row">
                                             <label for="lbl-02">Country</label>
@@ -725,7 +736,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            
+                                <div class="form-errors"></div>
                                 <input type="submit" value="" />
                             
                         </div>
@@ -749,10 +760,33 @@
         $('.inner-email-template .gift-after-design').attr('src',finalgift);
      });
      
+     //select default first image
+     $('.step-1 li:first-child').addClass('selected');
+     var finalgift = $('.step-1 li:first-child').find('span').data('url');
+     $('.inner-email-template .gift-after-design').attr('src',finalgift);
+     
      $('#gift_amount').change(function(){
         var giftamt = $("#gift_amount option:selected").text();
+        var numgiftamt = $("#gift_amount option:selected").val();
+        if(numgiftamt === "0" || numgiftamt === "") {
+            $('#own_amount').fadeIn('slow');
+        } else {
+            $('#own_amount').val('');
+            $('#own_amount').fadeOut();
+            $('#total_amount').val(numgiftamt);
+        }
         $('.sel-amount').text(giftamt);
+        
+        
      });
+      $('#own_amount').blur(function() {
+         var giftamt = $('#own_amount').val();
+         $('#gift_amount').val(giftamt);
+         $('.sel-amount').text(giftamt);
+         if($.isNumeric(giftamt)) {
+             $('#total_amount').val(giftamt);
+         }
+      });
      $( "#delivery-date" ).datepicker({
             dateFormat: 'd MM, yy',
             changeMonth: true,

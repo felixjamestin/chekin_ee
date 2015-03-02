@@ -291,6 +291,80 @@ jQuery(function(){
 			}
 		});
 	}
+        
+        
+        if ($('.gift-customize-form').exists()) {
+                var $form = $('.gift-customize-form');
+		$(".gift-customize-form").validate({
+			errorClass: "error",
+			errorElement: "em",
+			onkeyup: false,
+			onblur: false,
+                        rules: {
+				gift_amount: {
+					required: true
+				},
+                                /*own_amount: {
+                                    required: true,
+                                    min: {
+                                        param: 500,
+                                        depends: function(element) {
+                                            if ($("#gift_amount option:selected").val() === "0" || $("#gift_amount option:selected").val() === ""){
+                                                return false;
+                                            } else {
+                                                return true;
+                                            }
+                                        }
+                                    }
+                                },*/
+				email_delivery_date: {
+					required: true,
+					date: true
+				},
+				receiver_name: {
+					required: true,
+					minlength: 2
+				},
+				receiver_email: {
+					required: true,
+					email: true
+				},
+                                name: {
+					required: true,
+					minlength: 2
+				},
+				email: {
+					required: true,
+					email: true
+				},
+				message: {
+					required: true
+				},
+                                billing_name: {
+					required: true,
+					minlength: 2
+				},
+				mobile: {
+					required: true,
+					digits: true
+				},
+				address: {
+					required: true
+				},
+                                city: {
+					required: true
+				},
+                                state: {
+					required: true
+				},
+                                zip: {
+					required: true
+				}
+			}
+                        
+		});
+	}
+        
 
   	jcf.customForms.replaceAll();
   	setTimeout(function(){

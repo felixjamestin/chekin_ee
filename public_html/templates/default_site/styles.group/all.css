@@ -656,7 +656,7 @@ animation-name: fadeInDown;
   padding: 37px 0 0;*/
   position: absolute;
   bottom: 6px;
-  left: 230px;
+  left: 300px;
   line-height: 1;
   margin:0;
   list-style:none;
@@ -6109,4 +6109,16 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
     color:#000;
     font-family: "kulturista-web",serif;
     font-weight: 600;
+}
+#own_amount{
+    display: none;
+}
+.for-error{
+    position: relative;
+    float:left;
+}
+.gift-customize-form.popup em.error {
+    left:0;
+    top:-12px;
+    right:auto;
 }
