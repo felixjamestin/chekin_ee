@@ -757,7 +757,7 @@
         var finalgift = $(this).find('span').data('url');
         var designId = $(this).data('design');
         $('#gift_design_id').val(designId);
-        $('.inner-email-template .gift-after-design').attr('src',finalgift);
+        $('.inner-email-template .gift-after-design').fadeOut().attr('src',finalgift).fadeIn();
      });
      
      //select default first image
