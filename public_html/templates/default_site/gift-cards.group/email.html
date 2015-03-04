@@ -1,6 +1,6 @@
 {exp:freeform:entries
     form_name="gift_cards"
-    entry_id="11"
+    entry_id="3"
     limit="1"
     dynamic="no"
     status="pending|open|closed"
@@ -89,8 +89,8 @@
 								
 								<td style="padding: 0; font-size: 16px; line-height: 1.6; font-weight: normal;" align="left">
 		
-                                                                    <p style="padding:80px 40px;"><img src="/uploads/static/quotes.jpg" /> 
-                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris bibendum enim eu massa commodo, quis gravida ante placerat. Quisque tempor vel tortor sed feugiat. Aliquam ac mauris suscipit, maximus ligula at, dignissim lectus. Nulla sed lacinia quam. Vestibulum egestas leo sit amet purus vestibulum elementum et at purus.
+                                                                    <p style="padding:80px 40px;font-size:19px;"><img src="/uploads/static/quotes.jpg" /> 
+                                                                        {freeform:field:message}
                                                                         -- {freeform:field:name}
                                                                     </p>
 
@@ -99,8 +99,8 @@
 										
 										<tr>
 										    <td>
-                                                                                        <p style="margin-bottom:0;font-weight: bold;text-transform: uppercase;">Gift valid until</p>
-                                                                                        <p style="margin-top: 0;">Your gift card is valid until 15 November 2015 (1 year from the date of purchase)</p>
+                                                                                        <p style="margin-bottom:0;font-weight: bold;text-transform: uppercase;">Gift valid until</p><p style="display:none;">{freeform:entry_date format="%Y-%m-%d %H:%i"}</p>
+                                                                                        <p style="margin-top: 0;">Your gift card is valid until {exp:dt:wrap set='{freeform:entry_date format="%Y-%m-%d %H:%i"}' year='1'}{dt format='%d %F %Y'}{/exp:dt:wrap} (1 year from the date of purchase)</p>
                                                                                     
                                                                                         <p style="margin-bottom:0;font-weight: bold;text-transform: uppercase;">How to use your e-gift card</p>
                                                                                         <ul style="margin-top:0;padding-left: 17px;list-style-type: square;line-height: 17px;">
