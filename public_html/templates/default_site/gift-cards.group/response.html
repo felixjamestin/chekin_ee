@@ -42,7 +42,7 @@ $code = "GC".$code;
     form:name="frmUpdate"
     restrict_edit_to_author="no"
     <?php
-    if(isset($response['PaymentID'])){
+    if(isset($response['ResponseCode']) && $response['ResponseCode'] == 0){
     ?>
     return="/gift-cards/thank-you/{segment_3}"
     notify_user="yes" 
@@ -58,6 +58,10 @@ $code = "GC".$code;
     if(isset($response['PaymentID'])){
   ?>
   <input type="hidden" name="ebs_payment_id" value="<?php echo $response['PaymentID'];?>" />
+  <?php } ?>
+  <?php
+    if(isset($response['ResponseCode']) && $response['ResponseCode'] == 0){
+  ?>
   <input type="hidden" name="gift_code" value="<?php echo strtoupper($code);?>" />
   <input type="hidden" name="status" value="open" />
   <?php } ?>
