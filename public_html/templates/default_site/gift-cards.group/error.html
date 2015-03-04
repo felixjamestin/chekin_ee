@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+
+	{embed="modules/head"}
+<body>
+
+	{embed="modules/header"}
+
+        <section id="plan-visual">
+            {exp:freeform:entries
+                form_name="gift_cards"
+                search:secret_hash="={segment_3}"
+                limit="1"
+                dynamic="no"
+                status="pending|open|closed"    
+              } 
+            <div id="gift-card-thanks">
+                <div class="thanks-note">
+                    <img src="/uploads/static/error.png" />
+                    <h1>Payment was not successful</h1>
+                    <p>Your transaction failed because of the following reason.<br>
+                    {freeform:field:payment_status}</p>
+                </div>
+
+            </div>
+            {/exp:freeform:entries}
+        </section>
+
+        <section class="wrapper">
+
+                <section id="main">
+                    
+                    
+                    
+                </section><!-- main -->
+
+                {embed="modules/footer"}
+
+        </section><!-- wrapper -->	
+<script type="text/javascript">
+    $(function() {
+     $('.step-1 li').click(function(){
+        $('.step-1 li').removeClass('selected'); 
+        $(this).addClass('selected');
+        var finalgift = $(this).find('span').data('url');
+        var designId = $(this).data('design');
+        $('#gift_design_id').val(designId);
+        $('.inner-email-template img').attr('src',finalgift);
+     });
+     
+     $( "#delivery-date" ).datepicker({
+            dateFormat: 'd M yy',
+            changeMonth: true,
+            changeYear: true,
+            yearRange:"0:+1",
+            minDate: 0
+        });
+    });
+</script> 
+</body>
+</html>

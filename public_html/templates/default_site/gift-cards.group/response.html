@@ -41,7 +41,16 @@ $code = "GC".$code;
     status="pending|open|closed"
     form:name="frmUpdate"
     restrict_edit_to_author="no"
+    <?php
+    if(isset($response['PaymentID'])){
+    ?>
     return="/gift-cards/thank-you/{segment_3}"
+    notify_user="yes" 
+    user_email_field="email" 
+    user_notification_template="gift-cards/email" 
+    <?php } else { ?>
+    return="/gift-cards/error/{segment_3}"
+    <?php } ?>
     parse="inward"
   }
 
