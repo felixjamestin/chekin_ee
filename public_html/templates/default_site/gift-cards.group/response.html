@@ -45,9 +45,10 @@ $code = "GC".$code;
     if(isset($response['ResponseCode']) && $response['ResponseCode'] == 0){
     ?>
     return="/gift-cards/thank-you/{segment_3}"
-    notify_user="yes" 
-    user_email_field="email" 
-    user_notification_template="gift_purchase" 
+    recipients="yes"
+    recipient_user_input="yes"
+    recipient_user_limit="1"
+    recipient_user_template="gift_purchase"  
     <?php } else { ?>
     return="/gift-cards/error/{segment_3}"
     <?php } ?>
