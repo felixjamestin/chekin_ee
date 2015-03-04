@@ -1,6 +1,6 @@
 {exp:freeform:entries
     form_name="gift_cards"
-    entry_id="{freeform_entry_id}"
+    entry_id="11"
     parse="inward"
     limit="1"
     dynamic="no"
@@ -71,7 +71,7 @@
                                                             </td>
 
                                                             <td width="200" style="padding: 15px 0px 10px 20px;" align="left" valign="middle">
-                                                                <a href="http://myoki.in/"><img src="/uploads/static/claim-your-gift-btn.jpg" /></a>
+                                                                <a href="http://myoki.in/"><img src="http://chekin.btechmbbs.com/uploads/static/claim-your-gift-btn.jpg" /></a>
                                                             </td>
                                                         </tr>
                                                 </table>
@@ -90,7 +90,7 @@
 								
 								<td style="padding: 0; font-size: 16px; line-height: 1.6; font-weight: normal;" align="left">
 		
-                                                                    <p style="padding:80px 40px;font-size:19px;"><img src="/uploads/static/quotes.jpg" /> 
+                                                                    <p style="padding:80px 40px;font-size:19px;"><img src="http://chekin.btechmbbs.com/uploads/static/quotes.jpg" /> 
                                                                         {freeform:field:message}
                                                                         -- {freeform:field:name}
                                                                     </p>
@@ -100,7 +100,7 @@
 										
 										<tr>
 										    <td>
-                                                                                        <p style="margin-bottom:0;font-weight: bold;text-transform: uppercase;">Gift valid until</p><p style="display:none;">{freeform:entry_date format="%Y-%m-%d %H:%i"}</p>
+                                                                                        <p style="margin-bottom:0;font-weight: bold;text-transform: uppercase;">Gift valid until</p><p style="display:none !important;">{freeform:entry_date format="%Y-%m-%d %H:%i"}</p>
                                                                                         <p style="margin-top: 0;">Your gift card is valid until {exp:dt:wrap set='{freeform:entry_date format="%Y-%m-%d %H:%i"}' year='1'}{dt format='%d %F %Y'}{/exp:dt:wrap} (1 year from the date of purchase)</p>
                                                                                     
                                                                                         <p style="margin-bottom:0;font-weight: bold;text-transform: uppercase;">How to use your e-gift card</p>
