@@ -1,6 +1,6 @@
 {exp:freeform:entries
     form_name="gift_cards"
-    entry_id="3"
+    entry_id="11"
     limit="1"
     dynamic="no"
     status="pending|open|closed"
@@ -79,49 +79,41 @@
 				<!-- Content -->
 				<tr>
 					
-					<td width="580" align="left" style="padding-top: 10px; line-height: 0;" colspan="1">
+					<td width="580" align="left" style="line-height: 0;" colspan="1">
 							
-						<table cellpadding="0" cellspacing="0" border="0" style="font-family: Helvetica, Arial, sans-serif; font-size: 14px; color: #555555; padding: 20px 0px 0px 0px; line-height: 22px;" width="580">
+						<table cellpadding="0" cellspacing="0" border="0" style="font-family: Helvetica, Arial, sans-serif; font-size: 14px; color: #555555; padding:0 0 20px 0px 0px 0px; line-height: 22px;" width="580">
 								
 
 							<tr>
 	
 								
-								<td style="padding: 20px 0 0; font-size: 16px; line-height: 1.6; font-weight: normal;" align="left">
+								<td style="padding: 0; font-size: 16px; line-height: 1.6; font-weight: normal;" align="left">
 		
-									<p>Just a heads up that your payment of <strong>Rs. {total_amount}/-</strong> was received by us. As a final step, you'll receive a booking confirmation email from us within the next 2 hours.</p>
+                                                                    <p style="padding:80px 40px;"><img src="/uploads/static/quotes.jpg" /> 
+                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris bibendum enim eu massa commodo, quis gravida ante placerat. Quisque tempor vel tortor sed feugiat. Aliquam ac mauris suscipit, maximus ligula at, dignissim lectus. Nulla sed lacinia quam. Vestibulum egestas leo sit amet purus vestibulum elementum et at purus.
+                                                                        -- {freeform:field:name}
+                                                                    </p>
 
 
 									<table cellpadding="5px" cellspacing="0" border="0" style="font-family: Helvetica, Arial, sans-serif; font-size: 14px; background-color:#f5f5f5; color: #444444; padding: 2px 20px; line-height: 22px; margin-bottom: 0px; margin-top: 20px; padding: 15px 20px;" width="580">
 										
 										<tr>
-											<td align="right" style="width: 150px;" width="150px"><strong>Property:</strong></td>
-											<td align="left" style="padding-left: 8px;">
-											{exp:channel:entries channel="hideaway" entry_id="{hideaway-id}" parse="inward" limit="1" status="open|closed|Featured"}
-											<a href="{site_url}{hideaway_state}{url_title}{/hideaway_state}/{url_title}/">
-											{title} 
-											({hideaway_location}, {hideaway_state}{title}{/hideaway_state})
-											</a>
-											{/exp:channel:entries}
-											</td>
-										</tr>
-
-										<tr>
-											<td align="right"><strong>Duration of stay:</strong></td>
-											<td align="left" style="padding-left: 8px;">{checkin} to {checkout}</td>
-										</tr>
-
-										<tr>
-											<td align="right"><strong>Number of travellers:</strong></td>
-											<td align="left" style="padding-left: 8px;">Adults: {adults}, Children: {children}</td>
-										</tr>
-										{if request-question}
-										<tr>
-											<td align="right" style="vertical-align: top;"><strong>Special requests:</strong></td>
-											<td align="left" style="padding-left: 8px;">{request-question}</td>
-										</tr>
-										{/if}
-
+										    <td>
+                                                                                        <p style="margin-bottom:0;font-weight: bold;text-transform: uppercase;">Gift valid until</p>
+                                                                                        <p style="margin-top: 0;">Your gift card is valid until 15 November 2015 (1 year from the date of purchase)</p>
+                                                                                    
+                                                                                        <p style="margin-bottom:0;font-weight: bold;text-transform: uppercase;">How to use your e-gift card</p>
+                                                                                        <ul style="margin-top:0;padding-left: 17px;list-style-type: square;line-height: 17px;">
+                                                                                            <li style="padding-bottom:10px; padding-top: 5px;">Click the <i>Redeem now</i> button to open the Myoki.in website</li>
+                                                                                            <li style="padding-bottom:10px;">Pick a getaway of your choice</li>
+                                                                                            <li style="padding-bottom:10px;">Click <i>Book now</i> and enter your booking details. Also, enter your Gift card claim code</li>
+                                                                                            <li style="padding-bottom:10px;">Upon confirmation of your booking, the gift amount will be deducted from your booking cost.</li>
+                                                                                            <li style="padding-bottom:10px;">Alternatively, you can email us at <a href="mailto:team@myoki.in">team@myoki.in</a> and we'll help you out.</li>
+                                                                                            <li style="padding-bottom:5px;">If required, you can redeem your gift card amount over multiple bookings until the total amount is exhausted.</li>
+                                                                                        </ul>
+                                                                                    </td>
+                                                                                </tr>
+										
 
 									</table>
 
