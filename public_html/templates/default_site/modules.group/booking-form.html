@@ -98,6 +98,14 @@
 				<label for="lbl-06">& Email</label>
 				<input class="text text-2" type="text" id="freeform_email" name="email" >
 			</div>
+                        <!--<div class="row giftcode">
+				<label for="gift_code_chk"><input class="chk" type="checkbox" id="gift_code_chk" name="gift_code_chk" ></label>
+                                <p>I've a gift code</p>
+			</div>-->
+                        <div class="row giftcodeinput">
+				<label for="gift_code">Gift Coupon Code (if any)</label>
+				<input class="text text-2" type="text" id="gift_code" name="gift_code" >
+			</div>
 			<div class="row" id="freeform-mobile-fieldset">
 				<label for="lbl-07">Mobile No</label>
 				<select id="freeform_countrycode" class="cs-1 sel-2" name="countrycode">
@@ -371,3 +379,15 @@
 </fieldset>
 
 {/exp:freeform:form}	
+<script>
+$(document).ready(function(){
+    $('.giftcode .jcf-class-chk').toggle(function() {
+        $('.giftcodeinput').fadeIn('slow');
+        return false;
+      },
+    function() {
+        $('.giftcodeinput').fadeOut('slow');
+        return false;
+      });
+});
+</script>

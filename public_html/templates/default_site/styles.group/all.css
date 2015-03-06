@@ -3878,7 +3878,7 @@ margin:0px 0px 0px 18px;}
   width: 485px;
   float: left;
   background: white;
-  border-radius: 0px 0px 5px 5px;
+  border-radius: 0px 0px 0px 5px;
 
 }
 
@@ -4247,7 +4247,7 @@ margin:0px 0px 0px 18px;}
   background: #ede7db;
   width: 215px;
   padding: 25px 25px 0px 25px;
-  height: 458px;
+  height: 504px;
   border-radius: 0px 0px 5px 0px;
 }
 
@@ -6121,4 +6121,14 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
     left:0;
     top:-12px;
     right:auto;
+}
+.giftcode .chk-area{
+    float:right;
+}
+.giftcode p{
+    padding-top: 5px;
+}
+.giftcodeinput label{
+    line-height: 1 !important;
+    margin-top: 0px !important;
 }
