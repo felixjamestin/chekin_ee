@@ -36,7 +36,7 @@ class email_trigger extends Freeform
                 $data = ee()->freeform_entry_model->get_entry_data($entry_id, $form_id);
                 print_r($data);
                 
-                if($data['form_field_33'] == "no") {
+                if($data['form_field_34'] == "no") {
                     $send_date = $data['form_field_31'];
                     $send_date_format = date('Ymd',strtotime($send_date));
                     $today = date('Ymd',time());
