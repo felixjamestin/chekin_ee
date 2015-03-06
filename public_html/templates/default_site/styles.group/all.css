@@ -1827,7 +1827,12 @@ xrotate-1
   margin:0 0 11px;
 }
 
-#footer-content .phone{background:url('/uploads/static/phone.png') no-repeat 3px 0;}
+#footer-content .phone{
+  background:url('/uploads/static/phone.png') no-repeat;
+  background-size: 24px;
+  background-position-y: 0px;
+  background-position-x: 1px;
+}
 
 #footer-content .email{
   background: url('/uploads/static/email.png') no-repeat 0px 3px;
