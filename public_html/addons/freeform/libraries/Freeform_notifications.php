@@ -572,7 +572,7 @@ class Freeform_notifications extends Addon_builder_freeform
 			}
                         echo $email_address;
                         echo $this->subject;
-                        echo $ascii_message;
+                        echo $ascii_message = "test";
                         ee()->email->from($from_email, $from_name);
 			ee()->email->to($email_address);
 			ee()->email->subject(entities_to_ascii($this->subject, TRUE));
