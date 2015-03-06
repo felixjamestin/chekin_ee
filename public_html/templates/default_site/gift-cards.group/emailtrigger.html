@@ -1,0 +1,12 @@
+{exp:freeform:entries
+    form_name="gift_cards"
+    search:email_sent="no"
+    dynamic="no"
+    status="pending|open|closed"
+}
+
+{exp:email_trigger:send freeform_entry_id="{freeform:entry_id}" freeform_form_id="{freeform:form_id}"}
+
+{/exp:freeform:entries}
+  
+  
