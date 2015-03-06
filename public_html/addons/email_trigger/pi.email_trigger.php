@@ -40,9 +40,15 @@ class email_trigger extends Freeform
                     $send_date_format = date('Ymd',strtotime($send_date));
                     $today = date('Ymd',time());
                     if($send_date_format == $today) {
+                        
+                        $field_input_data = array('entry_id' => $entry_id);
+                        
                         ee()->freeform_notifications->send_notification(array(
                                 'form_id'			=> $form_id,
                                 'entry_id'			=> $entry_id,
+                                'notification_type'	=> true,
+                                'recipients'		=> $this->param('admin_notify'),
+                                'form_input_data'	=> $field_input_data,
                                 'recipients'		=> $data['form_field_24'],
                                 'template'			=> 'gift_purchase'
                         ));
