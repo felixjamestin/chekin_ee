@@ -65,7 +65,7 @@ $code = "GC".$code;
     if(isset($response['ResponseCode']) && $response['ResponseCode'] == 0){
   ?>
   <input type="hidden" name="gift_code" value="<?php echo strtoupper($code);?>" />
-  <input type="hidden" name="status" value="Open" />
+  <input type="hidden" name="status" value="open" />
   <?php } ?>
   <input type="hidden" name="payment_status" value="<?php echo $response['ResponseMessage'];?>" />
   
