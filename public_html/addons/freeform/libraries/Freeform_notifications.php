@@ -463,10 +463,10 @@ class Freeform_notifications extends Addon_builder_freeform
 		//	parse standard template data
 		// -------------------------------------
 
-		$this->message = $this->actions()->template()
+		/*$this->message = $this->actions()->template()
 							  ->process_string_as_template(
 								  $this->message
-							  );
+							  );*/
 
 		// -------------------------------------
 		//	hook prep
