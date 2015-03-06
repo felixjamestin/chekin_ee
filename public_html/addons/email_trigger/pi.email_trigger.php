@@ -22,6 +22,7 @@ class email_trigger extends Freeform
 	public function __construct ()
 	{
 		parent::__construct();
+                ee()->load->library('template');
                 
         }
         
@@ -47,7 +48,6 @@ class email_trigger extends Freeform
                                 'form_id'			=> $form_id,
                                 'entry_id'			=> $entry_id,
                                 'notification_type'	=> true,
-                                'recipients'		=> $this->param('admin_notify'),
                                 'form_input_data'	=> $field_input_data,
                                 'recipients'		=> $data['form_field_24'],
                                 'template'			=> 'gift_purchase'
