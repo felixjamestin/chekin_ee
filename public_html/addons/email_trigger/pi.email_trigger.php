@@ -35,7 +35,8 @@ class email_trigger extends Freeform
 		$form_id = (ee()->TMPL->fetch_param('freeform_form_id'))? ee()->TMPL->fetch_param('freeform_form_id') : "" ;
 		
                 $data = ee()->freeform_entry_model->get_entry_data($entry_id, $form_id);
-                print_r($data);
+                
+                $status = false;
                 
                 if($data['form_field_34'] == "no") {
                     $send_date = $data['form_field_31'];
@@ -44,26 +45,29 @@ class email_trigger extends Freeform
                     if($send_date_format == $today) {
                         
                         $field_input_data = array('entry_id' => $entry_id);
-                        
-                        ee()->freeform_notifications->send_notification(array(
+                       
+                        $email = array(
                                 'form_id'			=> $form_id,
                                 'entry_id'			=> $entry_id,
                                 'notification_type'	=> true,
                                 'form_input_data'	=> $field_input_data,
                                 'recipients'		=> $data['form_field_24'],
                                 'template'			=> 'gift_purchase'
-                        ));
+                        );
+                        $field_input_data = array();
+                        if(ee()->freeform_notifications->send_notification($email)) {
+                           $field_input_data['email_sent'] = "yes";
+                            ee()->freeform_forms->update_entry(
+				$form_id,
+				$entry_id,
+				$field_input_data
+                            ); 
+                            $status = true;
+                        }
+                        
                     }
                 }
-
-		if ($data === FALSE)
-		{
-			$this->return_data = lang('invalid_date');
-		}
-		else
-		{
-			$this->return_data = $data;
-		}
+                 return $status;		
 	}
 	
 
@@ -75,17 +79,7 @@ class email_trigger extends Freeform
 
 function usage()
 {
-ob_start(); 
-?>
 
-
-
-<?php
-$buffer = ob_get_contents();
-	
-ob_end_clean(); 
-
-return $buffer;
 }
 /* END */
 
