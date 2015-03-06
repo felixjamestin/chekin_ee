@@ -15,6 +15,9 @@ $plugin_info = array(
 	'pi_usage'			=> email_trigger::usage(),
 );
 
+
+$__parent_folder = rtrim(realpath(rtrim(dirname(__FILE__), "/") . '/../'), '/') . '/freeform/';
+
 class email_trigger extends Freeform
 {
 	public $return_data = "";
@@ -22,8 +25,6 @@ class email_trigger extends Freeform
 	public function __construct ()
 	{
 		parent::__construct();
-                ee()->load->library('template');
-                
         }
         
         public function send() {
