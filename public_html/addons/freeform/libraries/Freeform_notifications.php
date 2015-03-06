@@ -570,7 +570,9 @@ class Freeform_notifications extends Addon_builder_freeform
 			{
 				ee()->email->reply_to($reply_to_email, $reply_to_name);
 			}
-                        
+                        echo $email_address;
+                        echo $this->subject;
+                        echo $ascii_message;
                         ee()->email->from($from_email, $from_name);
 			ee()->email->to($email_address);
 			ee()->email->subject(entities_to_ascii($this->subject, TRUE));
