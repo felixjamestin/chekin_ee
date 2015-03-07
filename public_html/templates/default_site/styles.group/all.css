@@ -5950,6 +5950,10 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
     margin-bottom: 0;
   }
 
+  #footer-content h3{
+    font-weight: 600;
+  }
+
   #footer-content .box:nth-child(2){
     width: 100%;
     padding-left: 0px;
@@ -6027,6 +6031,35 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
     background-position-y: -53px;
   }
 
+  .wrapper{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .places-list-text{
+      margin-left: 0;
+  }
+
+  .places-list-text span {
+    text-transform: uppercase;
+    font: 14px/16px "kulturista-web";
+    font-weight: 600;
+    display: block;
+    text-align: left;
+    margin-bottom: 15px;
+  }
+
+  .places-list-text a{
+    padding: 14px 0px 14px 11px;
+    transition: .2s ease-in background;
+    border-top: 1px solid #dadada;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  .places-list-text a:last-child {
+    border-bottom: 1px solid #dadada;
+  }
 
 }
 
@@ -6085,10 +6118,6 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
   .menu, #header-links{
     display: none;
   }
-
-/*  #heading{
-    height: 2.5rem;
-  }*/
 
   .gallery li{
     width: 100%;

@@ -5,11 +5,13 @@
 
 		{exp:channel:entries channel="state" status="{embed:preview}" orderby="date" sort="asc" dynamic="no"}
 			{exp:channel_images:images entry_id="{entry_id}" limit="1"}
-				<a href="{site_url}{url_title}/"><div style="background:url('{image:url:state_web}') repeat scroll 50% 50% #FFFFFF;" class="places-dd-item">
-					<div class="place-inner">
-						<p>{title}</p>
+				<a href="{site_url}{url_title}/">
+					<div style="background:url('{image:url:state_web}') repeat scroll 50% 50% #FFFFFF;" class="places-dd-item">
+						<div class="place-inner">
+							<p>{title}</p>
+						</div>
 					</div>
-				</div></a>
+				</a>
 			{/exp:channel_images:images}
 		{/exp:channel:entries}
 		<div class='places-dd-footer'>

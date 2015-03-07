@@ -4,32 +4,43 @@
 {embed="modules/home-visual"}
 
 <section class="wrapper">
-	
-	<section id="main">
-		
-		<div class="heading">
+    	
+<!--	<section id="main"> -->
+    		
+    		<div class="heading">
 
 			<h2>Discover & book incredible stays – from weekend getaways near Mumbai and Pune to incredible eco-resorts and beach-side getaways in Goa and Pondicherry. Pack your bags already!</h2>
 			<h3>Don't know where to go? Here's a lil' inspiration</h3>
 			
 		</div><!-- heading -->
 		
-		{embed="modules/home-gallery"}
+		
 
-		<div class="places-list-text">
-			or browse all our getaways in 
-			{exp:channel:entries channel="state" status="{embed:preview}" orderby="date" sort="asc" dynamic="no"}
-				{exp:channel_images:images entry_id="{entry_id}" limit="1"}
-					<a href="{site_url}{url_title}/">{title}</a>
-				{/exp:channel_images:images}
-			{/exp:channel:entries}
-		</div>
-	
-	</section><!-- main -->
-	
-	{embed="modules/home-testimonials"}
+	<!-- </section><!-- main --> -->
 
 </section><!-- wrapper -->
+
+{embed="modules/home-gallery"}
+
+<div class="places-list-text">
+	<span>or browse all our getaways in </span>
+	{exp:channel:entries channel="state" status="{embed:preview}" orderby="date" sort="asc" dynamic="no"}
+		{exp:channel_images:images entry_id="{entry_id}" limit="1"}
+			
+			<a href="{site_url}{url_title}/">
+				<div style="background:url('{image:url:state_web}') repeat scroll 50% 50% #FFFFFF;" class="places-dd-item">
+				<span>{title}</span>
+			</a>
+
+		{/exp:channel_images:images}
+	{/exp:channel:entries}
+</div>
+
+<section class="wrapper">
+
+	{embed="modules/home-testimonials"}
+
+</section>
 
 {embed="modules/home-newsletter"}
 
