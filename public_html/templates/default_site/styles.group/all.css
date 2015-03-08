@@ -3539,14 +3539,14 @@ a.tag{
   text-align: center;
 }
 
-.places-list-text{
+.wrapper-places-list{
   text-align: center;
   font-size: 16px;
   width: 90%;
   margin: 15px auto 0px auto;
 }
 
-.places-list-text a {
+.wrapper-places-list a {
   text-decoration: underline;
   color: #11b6d2;
   font-weight: 600;
@@ -3555,7 +3555,7 @@ a.tag{
   margin-right: 5px;
 }
 
-.places-list-text a:first-child {
+.wrapper-places-list a:first-child {
   margin-left: 5px;
 }
 
@@ -6036,29 +6036,51 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
     padding-right: 1rem;
   }
 
-  .places-list-text{
-      margin-left: 0;
+  .wrapper-places-list{
+    margin-left: 0;
+    width: 100%;
+    margin-right: 0px;
+    padding-right: 0px;
+    margin-bottom: 4rem;
   }
 
-  .places-list-text span {
+  .wrapper-places-list span {
     text-transform: uppercase;
     font: 14px/16px "kulturista-web";
     font-weight: 600;
     display: block;
     text-align: left;
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
   }
 
-  .places-list-text a{
-    padding: 14px 0px 14px 11px;
+  .wrapper-places-list a{
     transition: .2s ease-in background;
     border-top: 1px solid #dadada;
     text-transform: uppercase;
     text-decoration: none;
+    display: block;
+    text-align: left;
+    padding: 0px;
+    position: relative;
+    margin-right: 0px;
   }
 
-  .places-list-text a:last-child {
+  .wrapper-places-list a:last-child {
     border-bottom: 1px solid #dadada;
+  }
+
+  .wrapper-places-list a .places-dd-item{
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    background-size: cover !important;
+  }
+
+  .wrapper-places-list a span{
+    position: absolute;
+    top: 35%;
+    margin-left: 1rem;
   }
 
 }
