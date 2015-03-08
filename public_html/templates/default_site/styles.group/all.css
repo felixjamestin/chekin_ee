@@ -6064,6 +6064,7 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
     padding: 0px;
     position: relative;
     margin-right: 0px;
+    height: 4rem;
   }
 
   .wrapper-places-list a:last-child {
@@ -6081,6 +6082,11 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
     position: absolute;
     top: 35%;
     margin-left: 1rem;
+    display: inline-block;
+  }
+
+  .wrapper-places-list a:hover, .wrapper-places-list a:active{
+    background: #f9f9f9;
   }
 
 }

@@ -11,7 +11,7 @@
 	{embed="modules/home-gallery"}
 </section>
 
-<div class="places-list-text">
+<section class="wrapper-places-list">
 	<span>or browse all our getaways in </span>
 	{exp:channel:entries channel="state" status="{embed:preview}" orderby="date" sort="asc" dynamic="no"}
 		{exp:channel_images:images entry_id="{entry_id}" limit="1"}
@@ -23,7 +23,7 @@
 
 		{/exp:channel_images:images}
 	{/exp:channel:entries}
-</div>
+</section>
 
 <section class="wrapper">
 	{embed="modules/home-testimonials"}
