@@ -6089,6 +6089,20 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
     background: #f9f9f9;
   }
 
+  .wrapper-places-list a::before {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 36%;
+    margin-right: 1rem;
+    width: 0;
+    height: 0;
+    border-top: .45rem solid transparent;
+    border-bottom: .45rem solid transparent;
+    border-left: 0.65rem solid #11b6d2;
+    content: "";
+  }
+
 }
 
 @media screen and (max-width: 500px) {
