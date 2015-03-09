@@ -1827,18 +1827,6 @@ xrotate-1
   margin:0 0 11px;
 }
 
-#footer-content .phone{
-  background:url('/uploads/static/phone.png') no-repeat;
-  background-size: 24px;
-  background-position-y: 0px;
-  background-position-x: 1px;
-}
-
-#footer-content .email{
-  background: url('/uploads/static/email.png') no-repeat 0px 3px;
-  padding-bottom: 6px;
-}
-
 #footer-content .socials{
   margin: 0;
   padding: 5px 0 0 0px;
@@ -1856,8 +1844,6 @@ xrotate-1
   float:left;
   height: 24px;
   cursor:pointer;
-  /*overflow: hidden;
-  padding: 0 0 0 33px;*/
 }
 
 #footer-content .socials a span{
@@ -1880,10 +1866,43 @@ xrotate-1
 #footer-content .socials a:hover span{
   border-bottom:1px #454545 dotted;
 }
-#footer-content .facebook{background:url('/uploads/static/socials.gif') no-repeat;}
-#footer-content .instagram{background:url('/uploads/static/socials.gif') no-repeat 0 -101px;}
-#footer-content .twitter{background:url('/uploads/static/socials.gif') no-repeat 0 -34px;}
-#footer-content .pinterest{background:url('/uploads/static/socials.gif') no-repeat 0 -67px;}
+
+#footer-content .facebook .fa-circle{
+  color: #436eac;
+}
+
+#footer-content .email fa-circle{
+  color: #999;
+}
+
+#footer-content .email fa-envelope-o{
+  color: white;
+  font-size: 14px;
+}
+
+#footer-content .phone fa-circle{
+  color: #11b6d2;
+}
+
+#footer-content .instagram .fa-circle{
+  color: #91634c;
+}
+
+#footer-content .twitter .fa-circle{
+  color: #11b6d2;
+}
+
+#footer-content .pinterest .fa-pinterest{
+  color: #C81800;
+}
+
+#footer-content .socials a span:first-child{
+  font-style: 14px;
+}
+
+#footer-content .socials a span:second-child{
+  margin-left: .2rem;
+}
 
 #newsletter-stamp{
   background: url("/uploads/static/newsletter_stamp.png") no-repeat;
@@ -3543,7 +3562,7 @@ a.tag{
   text-align: center;
   font-size: 16px;
   width: 90%;
-  margin: 15px auto 0px auto;
+  margin: 1rem auto 4rem auto;
 }
 
 .wrapper-places-list a {
@@ -5984,7 +6003,6 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
   }
 
   #footer-content .socials a:hover, #footer-content .socials a:active{
-    /*background-color: #dadada;*/
     color: #11b6d2;
   } 
 
@@ -5997,39 +6015,42 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
     margin-left: 31px;
   }
 
-  #footer-content .facebook{
-    background-clip: content-box;
-    background-position-x: 11px;
-    background-position-y: 14px;
+  /*#footer-content .facebook .fa-circle{
+    color: #436eac;
   }
 
-  #footer-content .email{
-    background-position-x: 11px;
-    background-position-y: 18px;
+  #footer-content .email fa-circle{
+    color: #999;
   }
 
-  #footer-content .phone{
-    background-position-x: 12px;
-    background-position-y: 14px;
+  #footer-content .email fa-envelope-o{
+    color: white;
+    font-size: 14px;
   }
 
-  #footer-content .instagram{
-    background-clip: content-box;
-    background-position-x: 11px;
-    background-position-y: -87px;
+  #footer-content .phone fa-circle{
+    color: #11b6d2;
   }
 
-  #footer-content .twitter{
-    background-clip: content-box;
-    background-position-x: 11px;
-    background-position-y: -20px;
+  #footer-content .instagram .fa-circle{
+    color: #91634c;
   }
 
-  #footer-content .pinterest{
-    background-clip: content-box;
-    background-position-x: 11px;
-    background-position-y: -53px;
+  #footer-content .twitter .fa-circle{
+    color: #11b6d2;
   }
+
+  #footer-content .pinterest .fa-pinterest{
+    color: #C81800;
+  }
+
+  #footer-content .socials a span:first-child{
+    font-style: 14px;
+  }
+
+  #footer-content .socials a span:second-child{
+    margin-left: .2rem;
+  }*/
 
   .wrapper{
     padding-left: 1rem;
