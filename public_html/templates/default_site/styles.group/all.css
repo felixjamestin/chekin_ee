@@ -1854,10 +1854,10 @@ xrotate-1
 }
 #footer-content .socials a{
   float:left;
-  height:24px;
-  overflow:hidden;
-  padding:0 0 0 33px;
+  height: 24px;
   cursor:pointer;
+  /*overflow: hidden;
+  padding: 0 0 0 33px;*/
 }
 
 #footer-content .socials a span{
