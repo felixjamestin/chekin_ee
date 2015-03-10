@@ -1864,7 +1864,7 @@ xrotate-1
   transition-timing-function:ease-in;
 }
 #footer-content .socials a:hover span{
-  border-bottom:1px #454545 dotted;
+  color: #11b6d2;
 }
 
 #footer-content .facebook .fa-circle{
@@ -1895,6 +1895,7 @@ xrotate-1
 #footer-content .pinterest .fa-pinterest{
   color: #C81800;
   margin-left: 2px;
+  font-size: 1.625rem;
 }
 
 span.fa-stack.fa-lg {
@@ -6026,43 +6027,6 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
   #footer-content .socials a span{
     margin-left: 31px;
   }
-
-  /*#footer-content .facebook .fa-circle{
-    color: #436eac;
-  }
-
-  #footer-content .email fa-circle{
-    color: #999;
-  }
-
-  #footer-content .email fa-envelope-o{
-    color: white;
-    font-size: 14px;
-  }
-
-  #footer-content .phone fa-circle{
-    color: #11b6d2;
-  }
-
-  #footer-content .instagram .fa-circle{
-    color: #91634c;
-  }
-
-  #footer-content .twitter .fa-circle{
-    color: #11b6d2;
-  }
-
-  #footer-content .pinterest .fa-pinterest{
-    color: #C81800;
-  }
-
-  #footer-content .socials a span:first-child{
-    font-style: 14px;
-  }
-
-  #footer-content .socials a span:second-child{
-    margin-left: .2rem;
-  }*/
 
   .wrapper{
     padding-left: 1rem;
