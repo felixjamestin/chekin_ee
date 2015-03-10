@@ -1864,11 +1864,11 @@ xrotate-1
   transition-timing-function:ease-in;
 }
 
-#footer-content .socials a:hover span,
-#footer-content .socials a.facebook:hover span .fa-circle, 
-#footer-content .socials a.instagram:hover span .fa-circle, 
-#footer-content .socials a.twitter:hover span .fa-circle,
-#footer-content .socials a.pinterest:hover span .fa-circle{
+#footer-content .socials a:hover span, #footer-content .socials a:active span,
+#footer-content .socials a.facebook:hover span .fa-circle, #footer-content .socials a.facebook:active span .fa-circle, 
+#footer-content .socials a.instagram:hover span .fa-circle, #footer-content .socials a.instagram:active span .fa-circle, 
+#footer-content .socials a.twitter:hover span .fa-circle, #footer-content .socials a.twitter:active span .fa-circle,
+#footer-content .socials a.pinterest:hover span.fa-pinterest, #footer-content .socials a.pinterest:active span.fa-pinterest{
   color: #11b6d2;
 }
 
@@ -1894,7 +1894,7 @@ xrotate-1
 }
 
 #footer-content .twitter .fa-circle{
-  color: #11b6d2;
+  color: #55acee;
 }
 
 #footer-content .socials .pinterest .fa-pinterest{
@@ -6024,17 +6024,18 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
     font-weight: 400;
   }
 
-  #footer-content .socials a:hover, #footer-content .socials a:active{
-    color: #11b6d2;
-  } 
-
-
-  #footer-content .socials a:hover span{
-    border-bottom: none;
+  #footer-content .socials a span:first-child{
+    font-size: 1rem;
+    position: relative;
+    top: -2px;
   }
 
-  #footer-content .socials a span{
-    margin-left: 31px;
+  #footer-content .socials .pinterest .fa-pinterest{
+    font-size: 1.9rem;
+  }
+
+  #footer-content .socials a.pinterest span:nth-child(2){
+    vertical-align: text-bottom;
   }
 
   .wrapper{
