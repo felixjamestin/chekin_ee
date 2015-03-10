@@ -1894,14 +1894,20 @@ xrotate-1
 
 #footer-content .pinterest .fa-pinterest{
   color: #C81800;
+  margin-left: 2px;
+}
+
+span.fa-stack.fa-lg {
+  font-size: 15px;
 }
 
 #footer-content .socials a span:first-child{
-  font-style: 14px;
+  font-size: .875rem;
 }
 
-#footer-content .socials a span:second-child{
+#footer-content .socials a span:nth-child(2){
   margin-left: .2rem;
+  vertical-align: text-bottom;
 }
 
 #newsletter-stamp{
@@ -3563,6 +3569,12 @@ a.tag{
   font-size: 16px;
   width: 90%;
   margin: 1rem auto 4rem auto;
+}
+
+.wrapper-testimonials{
+  margin: 0 auto;
+  max-width: 62.5rem;
+  padding: 0 2.31rem 4rem 2.31rem
 }
 
 .wrapper-places-list a {
