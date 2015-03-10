@@ -6038,6 +6038,10 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
     vertical-align: text-bottom;
   }
 
+  #footer-content .socials a:hover {
+    background: #f9f9f9;
+  }
+
   .wrapper{
     padding-left: 1rem;
     padding-right: 1rem;
@@ -6049,6 +6053,7 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
     margin-right: 0px;
     padding-right: 0px;
     margin-bottom: 4rem;
+    margin-top: 4rem;
   }
 
   .wrapper-places-list span {
