@@ -298,9 +298,7 @@ AddCharset utf-8 .css .js .xml .json .rss .atom
 </IfModule>
 
 <IfModule mod_rewrite.c>
-RewriteBase /
-RewriteCond %{HTTP_HOST} !myoki.in$ [NC]
-RewriteRule ^(.*)$ http://myoki.in/$1 [L,R=301]
+RewriteRule (.*) http://myoki.in/$1 [R=301,L]
 </IfModule>
 
 <IfModule mod_rewrite.c>
