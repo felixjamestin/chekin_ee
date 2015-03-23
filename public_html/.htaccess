@@ -302,7 +302,7 @@ RewriteRule (.*) http://myoki.in/$1 [R=301,L]
 </IfModule>
 
 <IfModule mod_rewrite.c>
-RewriteCond %{HTTP_HOST} ^myoki.in$ [NC]
+RewriteCond %{HTTP_HOST} ^www.myoki.in$ [NC]
 RewriteRule ^(.*)$ http://myoki.in/$1 [R=301,L]
 </IfModule>
 
