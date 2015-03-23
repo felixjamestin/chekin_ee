@@ -308,7 +308,6 @@ RewriteCond %{HTTP_HOST} ^www.myoki.in$ [NC]
 RewriteRule ^(.*)$ http://myoki.in/$1 [R=301,L]
 </IfModule>
 
-
 # ------------------------------------------------------------
 # Remove index.php from the URL
 # using "File and Directory Check" Method and a bit more
