@@ -44,6 +44,11 @@ if(!defined('ENV')) {
 			define('ENV', 'dev');
 			define('THIS_WEB_ROOT', 'public_dev_html');
 			break;
+                    
+                case 'dev.myoki.in' :
+			define('ENV', 'dev');
+			define('THIS_WEB_ROOT', 'public_dev_html');
+			break;
 
 		default :
 			define('ENV', 'local');
