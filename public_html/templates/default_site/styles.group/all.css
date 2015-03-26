@@ -674,6 +674,7 @@ animation-name: fadeInDown;
   font-style: normal;
   background: url('/uploads/static/separator.gif') no-repeat 0 50%;
   display: inline-block;
+  vertical-align: middle;
 }
 
 .menu li:first-child{ background:none;}
