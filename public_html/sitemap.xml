@@ -1,74 +1,831 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<url><loc>http://www.myoki.in/</loc><lastmod>2014-02-16T22:03:57+00:00</lastmod><changefreq>weekly</changefreq><priority>1.00</priority></url>
-<url><loc>http://myoki.in</loc><lastmod>2014-02-16T22:03:57+00:00</lastmod><changefreq>weekly</changefreq><priority>1.00</priority></url>
-<url><loc>http://myoki.in/kerala</loc><lastmod>2014-02-16T22:03:59+00:00</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-<url><loc>http://myoki.in/goa</loc><lastmod>2014-02-16T22:03:59+00:00</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-<url><loc>http://myoki.in/pondicherry</loc><lastmod>2014-02-16T22:04:01+00:00</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-<url><loc>http://myoki.in/rajasthan</loc><lastmod>2014-02-16T22:04:01+00:00</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-<url><loc>http://myoki.in/plan</loc><lastmod>2014-02-16T22:04:02+00:00</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-<url><loc>http://myoki.in/rajasthan/palace-hotel-udaipur</loc><lastmod>2014-02-16T22:04:03+00:00</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-<url><loc>http://myoki.in/rajasthan/romantic-boutique-hotel</loc><lastmod>2014-02-16T22:04:03+00:00</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-<url><loc>http://myoki.in/kerala/palace-hotel-kerala</loc><lastmod>2014-02-16T22:04:04+00:00</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-<url><loc>http://myoki.in/rajasthan/royal-mansion-pink-city</loc><lastmod>2014-02-16T22:04:05+00:00</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-<url><loc>http://myoki.in/goa/Beach-cottages-trendy-northgoa</loc><lastmod>2014-02-16T22:04:06+00:00</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-<url><loc>http://myoki.in/pondicherry/Traditional-tamil-house-pondicherry</loc><lastmod>2014-02-16T22:04:06+00:00</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-<url><loc>http://myoki.in/kerala/beachside-cottages-north-kerala</loc><lastmod>2014-02-16T22:04:07+00:00</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-<url><loc>http://myoki.in/kerala/houseboat-backwater-cruise-kerala</loc><lastmod>2014-02-16T22:04:08+00:00</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-<url><loc>http://myoki.in/goa/casa-riverside</loc><lastmod>2014-02-16T22:04:09+00:00</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
-<url><loc>http://myoki.in/kerala/page/P7</loc><lastmod>2014-02-16T22:04:09+00:00</lastmod><changefreq>weekly</changefreq><priority>0.69</priority></url>
-<url><loc>http://myoki.in/kerala/page/P14</loc><lastmod>2014-02-16T22:04:10+00:00</lastmod><changefreq>weekly</changefreq><priority>0.69</priority></url>
-<url><loc>http://myoki.in/kerala/kalari-kovilakom</loc><lastmod>2014-02-16T22:04:11+00:00</lastmod><changefreq>weekly</changefreq><priority>0.69</priority></url>
-<url><loc>http://myoki.in/kerala/villa-varkala-kerala</loc><lastmod>2014-02-16T22:04:11+00:00</lastmod><changefreq>weekly</changefreq><priority>0.69</priority></url>
-<url><loc>http://myoki.in/kerala/Plantation-Stay-Hills-Kerala</loc><lastmod>2014-02-16T22:04:12+00:00</lastmod><changefreq>weekly</changefreq><priority>0.69</priority></url>
-<url><loc>http://myoki.in/kerala/beach-resort-kerala</loc><lastmod>2014-02-16T22:04:13+00:00</lastmod><changefreq>weekly</changefreq><priority>0.69</priority></url>
-<url><loc>http://myoki.in/kerala/kumarakom-lake-resort</loc><lastmod>2014-02-16T22:04:14+00:00</lastmod><changefreq>weekly</changefreq><priority>0.69</priority></url>
-<url><loc>http://myoki.in/kerala/vanilla-county</loc><lastmod>2014-02-16T22:04:14+00:00</lastmod><changefreq>weekly</changefreq><priority>0.69</priority></url>
-<url><loc>http://myoki.in/kerala/brunton-boatyard</loc><lastmod>2014-02-16T22:04:16+00:00</lastmod><changefreq>weekly</changefreq><priority>0.69</priority></url>
-<url><loc>http://myoki.in/goa/page/P7</loc><lastmod>2014-02-16T22:04:16+00:00</lastmod><changefreq>weekly</changefreq><priority>0.69</priority></url>
-<url><loc>http://myoki.in/goa/page/P14</loc><lastmod>2014-02-16T22:04:17+00:00</lastmod><changefreq>weekly</changefreq><priority>0.69</priority></url>
-<url><loc>http://myoki.in/goa/wildernest</loc><lastmod>2014-02-16T22:04:17+00:00</lastmod><changefreq>weekly</changefreq><priority>0.69</priority></url>
-<url><loc>http://myoki.in/goa/Candolim-villa-goa</loc><lastmod>2014-02-16T22:04:23+00:00</lastmod><changefreq>weekly</changefreq><priority>0.69</priority></url>
-<url><loc>http://myoki.in/goa/Beach-tent-north-goa</loc><lastmod>2014-02-16T22:04:26+00:00</lastmod><changefreq>weekly</changefreq><priority>0.69</priority></url>
-<url><loc>http://myoki.in/goa/Beachside-cottages-south-goa</loc><lastmod>2014-02-16T22:04:33+00:00</lastmod><changefreq>weekly</changefreq><priority>0.69</priority></url>
-<url><loc>http://myoki.in/goa/Indo-Portuguese-Mansion-Siolim</loc><lastmod>2014-02-16T22:04:38+00:00</lastmod><changefreq>weekly</changefreq><priority>0.69</priority></url>
-<url><loc>http://myoki.in/goa/vivenda-dos-palhacos</loc><lastmod>2014-02-16T22:04:46+00:00</lastmod><changefreq>weekly</changefreq><priority>0.69</priority></url>
-<url><loc>http://myoki.in/pondicherry/boutique-noble-mansion-pondicherry</loc><lastmod>2014-02-16T22:04:52+00:00</lastmod><changefreq>weekly</changefreq><priority>0.69</priority></url>
-<url><loc>http://myoki.in/pondicherry/beachside-eco-resort-pondicherry</loc><lastmod>2014-02-16T22:05:08+00:00</lastmod><changefreq>weekly</changefreq><priority>0.69</priority></url>
-<url><loc>http://myoki.in/pondicherry/le-pondy</loc><lastmod>2014-02-16T22:05:12+00:00</lastmod><changefreq>weekly</changefreq><priority>0.69</priority></url>
-<url><loc>http://myoki.in/pondicherry/Modern-hotel-pondicherry</loc><lastmod>2014-02-16T22:05:23+00:00</lastmod><changefreq>weekly</changefreq><priority>0.69</priority></url>
-<url><loc>http://myoki.in/pondicherry/Quaint-Quarters-Pondicherry</loc><lastmod>2014-02-16T22:05:26+00:00</lastmod><changefreq>weekly</changefreq><priority>0.69</priority></url>
-<url><loc>http://myoki.in/rajasthan/page/P7</loc><lastmod>2014-02-16T22:05:36+00:00</lastmod><changefreq>weekly</changefreq><priority>0.69</priority></url>
-<url><loc>http://myoki.in/rajasthan/boutique-Haveli-Udaipur</loc><lastmod>2014-02-16T22:05:39+00:00</lastmod><changefreq>weekly</changefreq><priority>0.69</priority></url>
-<url><loc>http://myoki.in/rajasthan/fort-palace-hotel-udaipur</loc><lastmod>2014-02-16T22:05:48+00:00</lastmod><changefreq>weekly</changefreq><priority>0.69</priority></url>
-<url><loc>http://myoki.in/rajasthan/luxury-tents-jaipur</loc><lastmod>2014-02-16T22:05:50+00:00</lastmod><changefreq>weekly</changefreq><priority>0.69</priority></url>
-<url><loc>http://myoki.in/rajasthan/romantic-palace-hotel-rural-rajasthan</loc><lastmod>2014-02-16T22:05:57+00:00</lastmod><changefreq>weekly</changefreq><priority>0.69</priority></url>
-<url><loc>http://myoki.in/rajasthan/water-villas-jaipur</loc><lastmod>2014-02-16T22:05:59+00:00</lastmod><changefreq>weekly</changefreq><priority>0.69</priority></url>
-<url><loc>http://myoki.in/rajasthan/fort-palace-rajasthan</loc><lastmod>2014-02-16T22:06:09+00:00</lastmod><changefreq>weekly</changefreq><priority>0.69</priority></url>
-<url><loc>http://myoki.in/kerala/cottages-thekkady</loc><lastmod>2014-02-16T22:06:12+00:00</lastmod><changefreq>weekly</changefreq><priority>0.56</priority></url>
-<url><loc>http://myoki.in/kerala/Heritage-mansion-alleppey-beach</loc><lastmod>2014-02-16T22:06:27+00:00</lastmod><changefreq>weekly</changefreq><priority>0.56</priority></url>
-<url><loc>http://myoki.in/kerala/emerald-isle</loc><lastmod>2014-02-16T22:06:34+00:00</lastmod><changefreq>weekly</changefreq><priority>0.56</priority></url>
-<url><loc>http://myoki.in/kerala/backwater-paradise-hotel-kerala</loc><lastmod>2014-02-16T22:06:56+00:00</lastmod><changefreq>weekly</changefreq><priority>0.56</priority></url>
-<url><loc>http://myoki.in/kerala/the-tower-house</loc><lastmod>2014-02-16T22:07:04+00:00</lastmod><changefreq>weekly</changefreq><priority>0.56</priority></url>
-<url><loc>http://myoki.in/goa/page/P21</loc><lastmod>2014-02-16T22:07:12+00:00</lastmod><changefreq>weekly</changefreq><priority>0.56</priority></url>
-<url><loc>http://myoki.in/goa/Earthy-domes-on-the-beach</loc><lastmod>2014-02-16T22:07:18+00:00</lastmod><changefreq>weekly</changefreq><priority>0.56</priority></url>
-<url><loc>http://myoki.in/goa/Villa-Candolim-3-Bedrooms</loc><lastmod>2014-02-16T22:07:21+00:00</lastmod><changefreq>weekly</changefreq><priority>0.56</priority></url>
-<url><loc>http://myoki.in/goa/alila-diwa</loc><lastmod>2014-02-16T22:07:30+00:00</lastmod><changefreq>weekly</changefreq><priority>0.56</priority></url>
-<url><loc>http://myoki.in/goa/nilaya-hermitage</loc><lastmod>2014-02-16T22:07:31+00:00</lastmod><changefreq>weekly</changefreq><priority>0.56</priority></url>
-<url><loc>http://myoki.in/goa/luxurious-5-bedroom-villa</loc><lastmod>2014-02-16T22:07:39+00:00</lastmod><changefreq>weekly</changefreq><priority>0.56</priority></url>
-<url><loc>http://myoki.in/goa/Portuguese-Colonial-Villa</loc><lastmod>2014-02-16T22:07:40+00:00</lastmod><changefreq>weekly</changefreq><priority>0.56</priority></url>
-<url><loc>http://myoki.in/goa/Villa-SouthGoa</loc><lastmod>2014-02-16T22:07:41+00:00</lastmod><changefreq>weekly</changefreq><priority>0.56</priority></url>
-<url><loc>http://myoki.in/goa/beachside-cottages-goa</loc><lastmod>2014-02-16T22:07:42+00:00</lastmod><changefreq>weekly</changefreq><priority>0.56</priority></url>
-<url><loc>http://myoki.in/goa/Portuguese-Villa-Near-Candolim</loc><lastmod>2014-02-16T22:07:43+00:00</lastmod><changefreq>weekly</changefreq><priority>0.56</priority></url>
-<url><loc>http://myoki.in/goa/Hilltop-Casa-Seafacing</loc><lastmod>2014-02-16T22:07:43+00:00</lastmod><changefreq>weekly</changefreq><priority>0.56</priority></url>
-<url><loc>http://myoki.in/goa/Anjuna-tents-cottages</loc><lastmod>2014-02-16T22:07:45+00:00</lastmod><changefreq>weekly</changefreq><priority>0.56</priority></url>
-<url><loc>http://myoki.in/goa/luxury-villa-goa</loc><lastmod>2014-02-16T22:07:45+00:00</lastmod><changefreq>weekly</changefreq><priority>0.56</priority></url>
-<url><loc>http://myoki.in/goa/luxurious-2-bedroom-villa</loc><lastmod>2014-02-16T22:07:47+00:00</lastmod><changefreq>weekly</changefreq><priority>0.56</priority></url>
-<url><loc>http://myoki.in/rajasthan/Secluded-Chalets-Jaipur</loc><lastmod>2014-02-16T22:07:47+00:00</lastmod><changefreq>weekly</changefreq><priority>0.56</priority></url>
-<url><loc>http://myoki.in/rajasthan/Treetop-Lodges-Jaipur</loc><lastmod>2014-02-16T22:07:48+00:00</lastmod><changefreq>weekly</changefreq><priority>0.56</priority></url>
-<url><loc>http://myoki.in/goa/Boutique-hotel-stylish</loc><lastmod>2014-02-16T22:07:48+00:00</lastmod><changefreq>weekly</changefreq><priority>0.46</priority></url>
-<url><loc>http://myoki.in/goa/Casa-2-Bedroom</loc><lastmod>2014-02-16T22:07:50+00:00</lastmod><changefreq>weekly</changefreq><priority>0.46</priority></url>
-<url><loc>http://myoki.in/goa/frangipani-villas</loc><lastmod>2014-02-16T22:07:50+00:00</lastmod><changefreq>weekly</changefreq><priority>0.46</priority></url>
-<!-- Generated by www.web-site-map.com -->
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://myoki.in/</loc>
+  <lastmod>2015-03-26T04:08:29+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://myoki.in/about</loc>
+  <lastmod>2015-03-26T04:08:30+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://myoki.in/goa</loc>
+  <lastmod>2015-03-26T04:08:32+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://myoki.in/kerala</loc>
+  <lastmod>2015-03-26T04:08:33+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://myoki.in/maharashtra</loc>
+  <lastmod>2015-03-26T04:08:35+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://myoki.in/pondicherry</loc>
+  <lastmod>2015-03-26T04:08:37+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://myoki.in/rajasthan</loc>
+  <lastmod>2015-03-26T04:08:38+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://myoki.in/madhya-pradesh</loc>
+  <lastmod>2015-03-26T04:08:40+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://myoki.in/uttarakhand</loc>
+  <lastmod>2015-03-26T04:08:42+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://myoki.in/west-bengal</loc>
+  <lastmod>2015-03-26T04:08:43+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://myoki.in/plan</loc>
+  <lastmod>2015-03-26T04:08:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://myoki.in/rajasthan/romantic-palace-hotel-rural-rajasthan</loc>
+  <lastmod>2015-03-26T04:08:45+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://myoki.in/pondicherry/boutique-noble-mansion-pondicherry</loc>
+  <lastmod>2015-03-26T04:08:47+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://myoki.in/kerala/luxury-hotel-fort-chochin</loc>
+  <lastmod>2015-03-26T04:08:48+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://myoki.in/goa/beach-resort-goa</loc>
+  <lastmod>2015-03-26T04:08:50+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://myoki.in/goa/Boutique-hotel-anjuna</loc>
+  <lastmod>2015-03-26T04:08:51+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://myoki.in/madhya-pradesh/kanha-bougainvillea-hideaway</loc>
+  <lastmod>2015-03-26T04:08:52+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://myoki.in/kerala/paradise-thekkady-kerala</loc>
+  <lastmod>2015-03-26T04:08:54+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://myoki.in/uttarakhand/lodge-nainital</loc>
+  <lastmod>2015-03-26T04:08:55+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://myoki.in/rajasthan/boutique-haveli-udaipur</loc>
+  <lastmod>2015-03-26T04:08:57+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://myoki.in/goa/goa-heritage-portuguese-villa</loc>
+  <lastmod>2015-03-26T04:08:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://myoki.in/goa/cottages-wild-goa</loc>
+  <lastmod>2015-03-26T04:09:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://myoki.in/goa/villa-by-the-beach-in-south-goa</loc>
+  <lastmod>2015-03-26T04:09:01+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://myoki.in/goa/candolim-villa-goa</loc>
+  <lastmod>2015-03-26T04:09:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://myoki.in/goa/casa-riverside</loc>
+  <lastmod>2015-03-26T04:09:04+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://myoki.in/goa/indo-portuguese-mansion-siolim</loc>
+  <lastmod>2015-03-26T04:09:06+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://myoki.in/goa/5-bedroom-villa-north-goa</loc>
+  <lastmod>2015-03-26T04:09:07+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://myoki.in/goa/page/P7</loc>
+  <lastmod>2015-03-26T04:09:08+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://myoki.in/kerala/houseboat-backwater-cruise-kerala</loc>
+  <lastmod>2015-03-26T04:09:39+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://myoki.in/kerala/beach-resort-kerala-india</loc>
+  <lastmod>2015-03-26T04:09:41+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://myoki.in/kerala/backwater-alleppey</loc>
+  <lastmod>2015-03-26T04:09:42+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://myoki.in/kerala/a-backwater-escape</loc>
+  <lastmod>2015-03-26T04:09:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://myoki.in/kerala/alleppey-beach-resort</loc>
+  <lastmod>2015-03-26T04:09:45+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://myoki.in/kerala/palace-hotel-kerala</loc>
+  <lastmod>2015-03-26T04:09:46+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://myoki.in/kerala/page/P7</loc>
+  <lastmod>2015-03-26T04:09:48+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://myoki.in/maharashtra/lavasa-resorts</loc>
+  <lastmod>2015-03-26T04:09:49+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://myoki.in/maharashtra/alibaug-resorts</loc>
+  <lastmod>2015-03-26T04:09:51+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://myoki.in/maharashtra/farm-cottages-maharashtra</loc>
+  <lastmod>2015-03-26T04:09:52+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://myoki.in/maharashtra/lonavla-cottages-tree</loc>
+  <lastmod>2015-03-26T04:09:54+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://myoki.in/maharashtra/matheran-hotels</loc>
+  <lastmod>2015-03-26T04:09:55+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://myoki.in/maharashtra/kashid-villa</loc>
+  <lastmod>2015-03-26T04:09:57+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://myoki.in/maharashtra/villas-in-alibaug</loc>
+  <lastmod>2015-03-26T04:09:58+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://myoki.in/maharashtra/page/P7</loc>
+  <lastmod>2015-03-26T04:09:59+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://myoki.in/pondicherry/beach-resort-pondicherry</loc>
+  <lastmod>2015-03-26T04:10:01+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://myoki.in/pondicherry/luxury-hotel-pondicherry</loc>
+  <lastmod>2015-03-26T04:10:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://myoki.in/pondicherry/quaint-quarters-pondicherry</loc>
+  <lastmod>2015-03-26T04:10:04+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://myoki.in/pondicherry/traditional-tamil-house-pondicherry</loc>
+  <lastmod>2015-03-26T04:10:05+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://myoki.in/pondicherry/beachside-eco-resort-pondicherry</loc>
+  <lastmod>2015-03-26T04:10:07+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://myoki.in/rajasthan/fort-palace-rajasthan</loc>
+  <lastmod>2015-03-26T04:10:08+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://myoki.in/rajasthan/jaipur-resort-chalet</loc>
+  <lastmod>2015-03-26T04:10:10+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://myoki.in/rajasthan/water-villas-jaipur</loc>
+  <lastmod>2015-03-26T04:10:11+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://myoki.in/rajasthan/guesthouse-luxury-jaipur</loc>
+  <lastmod>2015-03-26T04:10:13+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://myoki.in/rajasthan/white-house-jaipur</loc>
+  <lastmod>2015-03-26T04:10:14+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://myoki.in/rajasthan/Rural-Rajasthan-Luxury-Experience</loc>
+  <lastmod>2015-03-26T04:10:16+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://myoki.in/rajasthan/fort-palace-hotel-udaipur</loc>
+  <lastmod>2015-03-26T04:10:17+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://myoki.in/rajasthan/page/P7</loc>
+  <lastmod>2015-03-26T04:10:19+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://myoki.in/madhya-pradesh/rustic-jungle-lodges-kanha</loc>
+  <lastmod>2015-03-26T04:10:20+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://myoki.in/madhya-pradesh/kanha-boutique-hotel</loc>
+  <lastmod>2015-03-26T04:10:21+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://myoki.in/madhya-pradesh/luxury-safari-lodge</loc>
+  <lastmod>2015-03-26T04:10:23+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://myoki.in/madhya-pradesh/earthy-jungle-cottages-bandhavgarh</loc>
+  <lastmod>2015-03-26T04:10:24+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://myoki.in/madhya-pradesh/luxurious-cottages-kanha</loc>
+  <lastmod>2015-03-26T04:10:26+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://myoki.in/madhya-pradesh/jungle-lodge-bandhavgarh</loc>
+  <lastmod>2015-03-26T04:10:27+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://myoki.in/madhya-pradesh/kanha-luxury-hotel</loc>
+  <lastmod>2015-03-26T04:10:28+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://myoki.in/madhya-pradesh/page/P7</loc>
+  <lastmod>2015-03-26T04:10:30+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://myoki.in/uttarakhand/boutique-resort-rishikesh</loc>
+  <lastmod>2015-03-26T04:10:31+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://myoki.in/uttarakhand/homestay-near-nainital</loc>
+  <lastmod>2015-03-26T04:10:33+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://myoki.in/uttarakhand/Almora-Resorts</loc>
+  <lastmod>2015-03-26T04:10:34+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://myoki.in/uttarakhand/dehradun-boutique-hotel</loc>
+  <lastmod>2015-03-26T04:10:35+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://myoki.in/uttarakhand/villa-nainital</loc>
+  <lastmod>2015-03-26T04:10:37+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://myoki.in/uttarakhand/Hotel-Binsar-Sanctuary</loc>
+  <lastmod>2015-03-26T04:10:38+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://myoki.in/uttarakhand/page/P7</loc>
+  <lastmod>2015-03-26T04:10:39+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://myoki.in/west-bengal/Darjeeling-Resorts</loc>
+  <lastmod>2015-03-26T04:10:41+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://myoki.in/west-bengal/resorts-in-darjeeling</loc>
+  <lastmod>2015-03-26T04:10:43+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://myoki.in/west-bengal/heritage-hotel-darjeeling</loc>
+  <lastmod>2015-03-26T04:10:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://myoki.in/west-bengal/heritage-hotels-darjeeling</loc>
+  <lastmod>2015-03-26T04:10:45+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://myoki.in/goa/beachside-cottages-goa</loc>
+  <lastmod>2015-03-26T04:10:47+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://myoki.in/goa/boutique-hotel-stylish</loc>
+  <lastmod>2015-03-26T04:10:48+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://myoki.in/goa/goa-beach-villa-greek</loc>
+  <lastmod>2015-03-26T04:10:50+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://myoki.in/goa/villa-southgoa</loc>
+  <lastmod>2015-03-26T04:10:51+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://myoki.in/goa/portuguese-mansion-north-goa</loc>
+  <lastmod>2015-03-26T04:10:53+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://myoki.in/goa/earthy-domes-on-the-beach</loc>
+  <lastmod>2015-03-26T04:10:54+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://myoki.in/goa/page/P14</loc>
+  <lastmod>2015-03-26T04:10:56+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://myoki.in/kerala/beach-resort-kerala</loc>
+  <lastmod>2015-03-26T04:11:27+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://myoki.in/kerala/kovalam-beach-resort-heritage</loc>
+  <lastmod>2015-03-26T04:11:28+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://myoki.in/kerala/plantation-stay-hills-kerala</loc>
+  <lastmod>2015-03-26T04:11:30+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://myoki.in/kerala/cardamom-plantation-stay-kerala</loc>
+  <lastmod>2015-03-26T04:11:31+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://myoki.in/kerala/beachside-cottages-north-kerala</loc>
+  <lastmod>2015-03-26T04:11:33+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://myoki.in/kerala/backwater-lake-resort</loc>
+  <lastmod>2015-03-26T04:11:34+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://myoki.in/kerala/kovalam-beach-resort</loc>
+  <lastmod>2015-03-26T04:11:36+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://myoki.in/kerala/page/P14</loc>
+  <lastmod>2015-03-26T04:11:37+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://myoki.in/maharashtra/Villa-Alibaug</loc>
+  <lastmod>2015-03-26T04:12:08+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://myoki.in/maharashtra/villas-in-alibaug-family</loc>
+  <lastmod>2015-03-26T04:12:09+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://myoki.in/rajasthan/jodhpur-hotels-luxury</loc>
+  <lastmod>2015-03-26T04:12:40+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://myoki.in/rajasthan/luxury-tents-jaipur</loc>
+  <lastmod>2015-03-26T04:12:42+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://myoki.in/rajasthan/boutique-hotel-jodhpur</loc>
+  <lastmod>2015-03-26T04:12:43+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://myoki.in/rajasthan/treetop-lodges-jaipur</loc>
+  <lastmod>2015-03-26T04:12:45+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://myoki.in/rajasthan/fort-hotel-jodhpur</loc>
+  <lastmod>2015-03-26T04:12:46+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://myoki.in/rajasthan/jaisalmer-resorts</loc>
+  <lastmod>2015-03-26T04:12:47+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://myoki.in/rajasthan/palace-hotel-udaipur</loc>
+  <lastmod>2015-03-26T04:12:49+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://myoki.in/rajasthan/page/P14</loc>
+  <lastmod>2015-03-26T04:12:50+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://myoki.in/madhya-pradesh/tree-cottages-bandhavgarh</loc>
+  <lastmod>2015-03-26T04:13:21+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://myoki.in/madhya-pradesh/kanha-jungle-stay</loc>
+  <lastmod>2015-03-26T04:13:23+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://myoki.in/uttarakhand/cottages-rishikesh</loc>
+  <lastmod>2015-03-26T04:13:54+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://myoki.in/goa/beach-cottages-trendy-northgoa</loc>
+  <lastmod>2015-03-26T04:14:25+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://myoki.in/goa/luxury-resorts-goa</loc>
+  <lastmod>2015-03-26T04:14:26+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://myoki.in/goa/anjuna-tents-cottages</loc>
+  <lastmod>2015-03-26T04:14:28+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://myoki.in/goa/Hilltop-Casa-Seafacing</loc>
+  <lastmod>2015-03-26T04:14:29+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://myoki.in/goa/goa-villa</loc>
+  <lastmod>2015-03-26T04:14:30+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://myoki.in/goa/luxurious-2-bedroom-villa</loc>
+  <lastmod>2015-03-26T04:14:32+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://myoki.in/goa/page/P21</loc>
+  <lastmod>2015-03-26T04:14:33+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://myoki.in/kerala/guesthouse-fort-cochin</loc>
+  <lastmod>2015-03-26T04:14:35+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://myoki.in/kerala/fort-cochin-lighthouse</loc>
+  <lastmod>2015-03-26T04:14:36+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://myoki.in/kerala/villa-varkala-kerala</loc>
+  <lastmod>2015-03-26T04:14:38+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://myoki.in/kerala/backwater-paradise-hotel-kerala</loc>
+  <lastmod>2015-03-26T04:14:39+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://myoki.in/kerala/cottages-thekkady</loc>
+  <lastmod>2015-03-26T04:14:40+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://myoki.in/kerala/backwaters-of-kerala-villa</loc>
+  <lastmod>2015-03-26T04:14:42+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://myoki.in/kerala/page/P21</loc>
+  <lastmod>2015-03-26T04:14:43+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://myoki.in/rajasthan/hotels-in-jodhpur-luxury</loc>
+  <lastmod>2015-03-26T04:14:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://myoki.in/rajasthan/jaipur-luxury-resort-spa</loc>
+  <lastmod>2015-03-26T04:14:46+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://myoki.in/rajasthan/Jaisalmer-Desert-Camp-Luxury</loc>
+  <lastmod>2015-03-26T04:14:47+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://myoki.in/rajasthan/romantic-boutique-hotel</loc>
+  <lastmod>2015-03-26T04:14:49+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://myoki.in/rajasthan/royal-mansion-pink-city</loc>
+  <lastmod>2015-03-26T04:14:50+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://myoki.in/rajasthan/page/P21</loc>
+  <lastmod>2015-03-26T04:14:52+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://myoki.in/goa/Goan-Portuguese-Boutique-Hotel-Goa</loc>
+  <lastmod>2015-03-26T04:14:53+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://myoki.in/goa/villa-south-goa</loc>
+  <lastmod>2015-03-26T04:14:54+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://myoki.in/goa/virgin-island-karnataka</loc>
+  <lastmod>2015-03-26T04:14:56+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://myoki.in/goa/luxury-villa-goa</loc>
+  <lastmod>2015-03-26T04:14:57+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://myoki.in/goa/villa-candolim-3-bedrooms</loc>
+  <lastmod>2015-03-26T04:14:59+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://myoki.in/goa/portuguese-villa-near-candolim</loc>
+  <lastmod>2015-03-26T04:15:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://myoki.in/goa/private-luxury-villa-goa</loc>
+  <lastmod>2015-03-26T04:15:01+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://myoki.in/goa/page/P28</loc>
+  <lastmod>2015-03-26T04:15:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://myoki.in/kerala/munnar-hideaway</loc>
+  <lastmod>2015-03-26T04:15:04+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://myoki.in/kerala/plantation-retreat-munnar</loc>
+  <lastmod>2015-03-26T04:15:05+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://myoki.in/rajasthan/Home-stay-jaipur</loc>
+  <lastmod>2015-03-26T04:15:07+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://myoki.in/rajasthan/resorts-in-jaipur-boutique</loc>
+  <lastmod>2015-03-26T04:15:08+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://myoki.in/goa/alila-diwa</loc>
+  <lastmod>2015-03-26T04:15:10+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>http://myoki.in/goa/Portuguese-Colonial-Villa</loc>
+  <lastmod>2015-03-26T04:15:11+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.26</priority>
+</url>
 </urlset>
- 
