@@ -1,7 +1,8 @@
 User-Agent: *
-Disallow: /twitter-oauth.php
-Disallow: /deploy.php
 
 Allow: /
 
-Sitemap: http://chekin.in/sitemap.xml
+Disallow: /twitter-oauth.php
+Disallow: /deploy.php
+
+Sitemap: http://myoki.in/sitemap.xml
