@@ -151,10 +151,9 @@ jQuery(function(){
 		return false;
 	})
 	
+	if ($('#header-speaktous').exists()) {
 	
-	if ($('#footer-aboutus').exists()) {
-	
-		$("#footer-aboutus").fancybox({
+		$("#header-speaktous").fancybox({
 			'titlePosition' 		: 'outside',
 			'overlayColor'  		: '#000000',
 			'overlayOpacity'		: 0.85,
@@ -165,57 +164,8 @@ jQuery(function(){
 			'speedOut'      		:	300,
 			'easingIn'      		:	'swing'
 		});
-		
-	}
-	
-	// if ($('#header-aboutus').exists()) {
-	
-	//	$("#header-aboutus").fancybox({
-	//		'titlePosition' 		: 'outside',
-	//		'overlayColor'  		: '#000000',
-	//		'overlayOpacity'		: 0.85,
-	//		'padding'       		: 0,
-	//		'transitionIn'  		:	'fade',
-	//		'transitionOut' 		:	'fade',
-	//		'speedIn'       		:	300, 
-	//		'speedOut'      		:	300,
-	//		'easingIn'      		:	'swing'
-	//	});
 	  	
-	// }
-
-	if ($('#badge-price').exists()) {
-	
-		$("#badge-price").fancybox({
-			'titlePosition' 		: 'outside',
-			'overlayColor'  		: '#000000',
-			'overlayOpacity'		: 0.85,
-			'padding'       		: 0,
-			'transitionIn'  		:	'fade',
-			'transitionOut' 		:	'fade',
-			'speedIn'       		:	300, 
-			'speedOut'      		:	300,
-			'easingIn'      		:	'swing'
-		});
-		
 	}
-
-	if ($('#badge-personalized').exists()) {
-	
-		$("#badge-personalized").fancybox({
-			'titlePosition' 		: 'outside',
-			'overlayColor'  		: '#000000',
-			'overlayOpacity'		: 0.85,
-			'padding'       		: 0,
-			'transitionIn'  		:	'fade',
-			'transitionOut' 		:	'fade',
-			'speedIn'       		:	300, 
-			'speedOut'      		:	300,
-			'easingIn'      		:	'swing'
-		});
-		
-	}
-
 	
 	if ($('#form-1').exists()) {
                 if($.cookie('name')) $('#freeform_name').val($.cookie('name'));

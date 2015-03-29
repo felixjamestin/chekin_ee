@@ -3949,6 +3949,98 @@ margin:0px 0px 0px 18px;}
   font-weight: 400;
 }
 
+#popup-speaktous .popup-holder{
+  overflow: hidden;
+}
+
+#popup-speaktous-details{
+  float: left;
+  width: 60%;
+  padding: 40px 16px 30px 40px;
+  box-sizing: border-box;
+}
+
+#popup-speaktous-reasons{
+  float: right;
+  width: 40%;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.16) 25%, transparent 25%) -50px 0, linear-gradient(225deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%) -50px 0, linear-gradient(315deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%), linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%) !important;
+  background-color: rgb(17, 182, 210) !important;
+  background-size: 100px 100px !important;
+  background-size: 95px 85px !important;
+  padding: 41px 16px 30px 16px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+#popup-speaktous-reasons::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 42%;
+  width: 0;
+  height: 0;
+  border-bottom: 12px solid transparent;
+  border-top: 12px solid transparent;
+  border-right: 15px solid #11B6D2;
+  left: -10px;
+}
+
+#popup-speaktous-details h3{
+  font-size: 30px;
+  font-weight: 400;
+}
+
+#popup-speaktous-details h4{
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+#popup-speaktous-details div a {
+  display: block;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  font-size: 1.125rem;
+  color: #11b6d2;
+  max-width: 80%;
+}
+
+#popup-speaktous-details .fa-stack{
+  position: relative;
+  top: -2px;
+  font-size: 1.125rem;
+  left: -2px;
+}
+
+#popup-speaktous-details div a:first-child{
+  border-bottom: none;
+}
+
+#popup-speaktous-details div a:hover, .popup-speaktous-details div a:active{
+  background-color: #f9f9f9;
+  transition: .2s background ease-out;
+}
+
+#popup-speaktous-reasons ul{
+  padding-left: 0;
+  background-color: rgb(17, 182, 210);
+  padding: .1rem .75rem .2rem .75rem;
+}
+
+#popup-speaktous-reasons li{
+  list-style: none;
+  color: #01282F;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+#popup-speaktous-reasons ul li p:first-child{
+  font-family: "kulturista-web",serif;
+  color: white;
+  text-shadow: 1px 1px 1px #0091AA !important;
+  margin-bottom: -.7rem;
+}
+
 .alignright {float:right !important;}
 .popup .text,
 .popup textarea {
@@ -4162,14 +4254,13 @@ margin:0px 0px 0px 18px;}
   width: 490px;
 }
 
-#popup-aboutus{
-  
-  width: 710px;
-  overflow:hidden;
+#popup-speaktous{
   -webkit-animation: fadeInDown .6s;
   -moz-animation: fadeInDown .6s;
   -o-animation: fadeInDown .6s;
   animation: fadeInDown .6s;
+  padding: 0;
+  width: 900px; 
 
 }
 
@@ -5588,6 +5679,19 @@ a.sumome-scrollbox-link{
   color: #11b6d2;
 }
 
+#header-speaktous{
+  margin-left: 2rem;
+  position: relative;
+}
+
+#header-speaktous .fa-stack{
+  font-size: 10px;
+  color: #11b6d2;
+  position: absolute;
+  left: -1.4rem;
+  top: 3px;
+}
+
 #more-testimonials {
   padding: 0px;
   margin-left: 32px;
@@ -5964,6 +6068,22 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
     display: none;
   }
 
+<<<<<<< HEAD
+=======
+  #popup-speaktous{
+    width: 700px;
+  }
+
+  #popup-speaktous-reasons::before{
+    left: -15px;
+  }
+
+  #fancybox-close{
+    right: 215px;
+    top: 13px;
+  }
+
+>>>>>>> dev
 }
 
 @media screen and (max-width: 697px) {
@@ -6148,6 +6268,24 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
 
   #home-newsletter form input[type="submit"]{
     width: 100%;
+  }
+
+  #popup-speaktous{
+    width: 400px;
+  }
+
+  #popup-speaktous-details{
+    width: 100%;
+    padding: 40px 40px 50px 40px;
+  }
+
+  #popup-speaktous-reasons{
+    display: none;
+  }
+
+  #fancybox-close{
+    right: 515px;
+    top: 18px;
   }
 
 }

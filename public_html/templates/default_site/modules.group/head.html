@@ -74,7 +74,6 @@
 		<link type="text/css" media="all" rel="stylesheet" href="{stylesheet=styles/all}" />
 		<link type="text/css" rel="stylesheet" href="{stylesheet=styles/forms}" media="all" />
 		<link type="text/css" rel="stylesheet" href="{stylesheet=styles/fancybox}" media="all" />
-		<link type="text/css" rel="stylesheet" href="{stylesheet=styles/share}" media="all" />
 		<link type="text/css" rel="stylesheet" href="{stylesheet=styles/ladda.min}" media="all" />
 	{/exp:minimee:css}
 
@@ -98,28 +97,6 @@
 		<script type="text/javascript" src="{path=scripts/spin.min}"></script>
 		<script type="text/javascript" src="{path=scripts/ladda.min}"></script>
 	{/exp:minimee:js}
-
-	<script type="text/javascript" src="{path=scripts/shareplus}"></script>
-	<script type="text/javascript"> 
-		$(document).ready(function(){
-		    $('#share-hook').shareplus({
-
-				displayTitle: true, // true or false
-				title: "Share this destination!", // shareplus box title
-				sharedesc: "Check it out! - ",
-				icons: "facebook,twitter,google,email",
-				targetBlank: true, // open link in new tab? true or false
-				fbLikebox: false,
-				fbAction: "recommend",
-				tweets: false,
-				pin: false,
-				gplus: false, // display Google Plus one button? true or false
-				ga:  true,
-				sticker: false,
-
-		    });
-		});
-	</script>
 
 	<!-- FB Conversion Pixel -->
 	<script>
