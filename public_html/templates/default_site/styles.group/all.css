@@ -4239,6 +4239,9 @@ margin:0px 0px 0px 18px;}
   animation: fadeInDown .6s;
   padding: 0;
 
+  max-width: 900px;
+  /* width: 900px; */
+
 }
 
 #aboutus-intro{

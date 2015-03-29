@@ -166,39 +166,6 @@ jQuery(function(){
 		});
 	  	
 	}
-
-	if ($('#badge-price').exists()) {
-	
-		$("#badge-price").fancybox({
-			'titlePosition' 		: 'outside',
-			'overlayColor'  		: '#000000',
-			'overlayOpacity'		: 0.85,
-			'padding'       		: 0,
-			'transitionIn'  		:	'fade',
-			'transitionOut' 		:	'fade',
-			'speedIn'       		:	300, 
-			'speedOut'      		:	300,
-			'easingIn'      		:	'swing'
-		});
-		
-	}
-
-	if ($('#badge-personalized').exists()) {
-	
-		$("#badge-personalized").fancybox({
-			'titlePosition' 		: 'outside',
-			'overlayColor'  		: '#000000',
-			'overlayOpacity'		: 0.85,
-			'padding'       		: 0,
-			'transitionIn'  		:	'fade',
-			'transitionOut' 		:	'fade',
-			'speedIn'       		:	300, 
-			'speedOut'      		:	300,
-			'easingIn'      		:	'swing'
-		});
-		
-	}
-
 	
 	if ($('#form-1').exists()) {
                 if($.cookie('name')) $('#freeform_name').val($.cookie('name'));
