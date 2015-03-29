@@ -151,23 +151,6 @@ jQuery(function(){
 		return false;
 	})
 	
-	
-	// if ($('#footer-aboutus').exists()) {
-	
-	// 	$("#footer-aboutus").fancybox({
-	// 		'titlePosition' 		: 'outside',
-	// 		'overlayColor'  		: '#000000',
-	// 		'overlayOpacity'		: 0.85,
-	// 		'padding'       		: 0,
-	// 		'transitionIn'  		:	'fade',
-	// 		'transitionOut' 		:	'fade',
-	// 		'speedIn'       		:	300, 
-	// 		'speedOut'      		:	300,
-	// 		'easingIn'      		:	'swing'
-	// 	});
-		
-	// }
-	
 	if ($('#header-speaktous').exists()) {
 	
 		$("#header-speaktous").fancybox({
