@@ -298,24 +298,18 @@ AddCharset utf-8 .css .js .xml .json .rss .atom
 </IfModule>
 
 <IfModule mod_rewrite.c>
-<<<<<<< HEAD
 RewriteCond %{HTTP_HOST} ^chekin.in [OR]
-=======
 RewriteCond %{HTTP_HOST} ^chekin.in$ [OR]
->>>>>>> dev
 RewriteCond %{HTTP_HOST} ^www.chekin.in$ [NC]
 RewriteRule ^(.*)$ http://myoki.in/$1 [R=301,L]
 </IfModule>
 
 <IfModule mod_rewrite.c>
-<<<<<<< HEAD
-=======
 RewriteCond %{HTTP_HOST} ^dev.chekin.in$ [NC]
 RewriteRule ^(.*)$ http://dev.myoki.in/$1 [R=301,L]
 </IfModule>
 
 <IfModule mod_rewrite.c>
->>>>>>> dev
 RewriteCond %{HTTP_HOST} ^www.myoki.in$ [NC]
 RewriteRule ^(.*)$ http://myoki.in/$1 [R=301,L]
 </IfModule>
