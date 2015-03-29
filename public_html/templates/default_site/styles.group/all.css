@@ -3978,7 +3978,7 @@ margin:0px 0px 0px 18px;}
   line-height: 1.5;
 }
 
-.popup-speaktous-details div a {
+#popup-speaktous-details div a {
   display: block;
   padding: 1.5rem;
   border: 1px solid #ddd;
