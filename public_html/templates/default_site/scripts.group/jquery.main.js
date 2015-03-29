@@ -152,9 +152,25 @@ jQuery(function(){
 	})
 	
 	
-	if ($('#footer-aboutus').exists()) {
+	// if ($('#footer-aboutus').exists()) {
 	
-		$("#footer-aboutus").fancybox({
+	// 	$("#footer-aboutus").fancybox({
+	// 		'titlePosition' 		: 'outside',
+	// 		'overlayColor'  		: '#000000',
+	// 		'overlayOpacity'		: 0.85,
+	// 		'padding'       		: 0,
+	// 		'transitionIn'  		:	'fade',
+	// 		'transitionOut' 		:	'fade',
+	// 		'speedIn'       		:	300, 
+	// 		'speedOut'      		:	300,
+	// 		'easingIn'      		:	'swing'
+	// 	});
+		
+	// }
+	
+	if ($('#header-speaktous').exists()) {
+	
+		$("#header-speaktous").fancybox({
 			'titlePosition' 		: 'outside',
 			'overlayColor'  		: '#000000',
 			'overlayOpacity'		: 0.85,
@@ -165,24 +181,8 @@ jQuery(function(){
 			'speedOut'      		:	300,
 			'easingIn'      		:	'swing'
 		});
-		
-	}
-	
-	// if ($('#header-aboutus').exists()) {
-	
-	//	$("#header-aboutus").fancybox({
-	//		'titlePosition' 		: 'outside',
-	//		'overlayColor'  		: '#000000',
-	//		'overlayOpacity'		: 0.85,
-	//		'padding'       		: 0,
-	//		'transitionIn'  		:	'fade',
-	//		'transitionOut' 		:	'fade',
-	//		'speedIn'       		:	300, 
-	//		'speedOut'      		:	300,
-	//		'easingIn'      		:	'swing'
-	//	});
 	  	
-	// }
+	}
 
 	if ($('#badge-price').exists()) {
 	

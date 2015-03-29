@@ -5,7 +5,16 @@
 <header id="header">
 	
 	<div id="header-links">
-	  <a href="{site_url}about">About Us</a>
+		<a href="{site_url}about">About Us</a>
+		<a href="#popup-speaktous" id="header-speaktous">
+			<span class="fa-stack fa-lg">
+				<i class="fa fa-circle fa-stack-2x"></i>
+				<i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+			</span>
+			<span>Speak to us</span>
+		</a>
+
+
 	</div>
 
 	<div class="logo"><a href="{site_url}"><img src="{site_url}uploads/static/logo.png" width="87" height="87" alt="Myoki logo" />Myoki</a></div>
@@ -26,3 +35,32 @@
 	</ul><!-- menu -->
 
 </header><!-- header -->
+
+<div class="hidden">
+
+		<div class="popup" id="popup-speaktous">
+			<div class="popup-holder">
+				<div class="head">
+					<div class="in">
+						<h3>{title}</h3>
+						<p><strong>{hideaway_location}, {hideaway_state}{title}{/hideaway_state}</strong></p>
+					</div>
+				</div>
+				<div class="entity">
+					{embed="modules/booking-form"}
+				</div>
+				<div id="booking-reasons">
+					<h3>3 REASONS TO BOOK WITH US :)</h3>
+					<ul>
+						<li><span class="tick">✔</span>We check each place out personally</li>
+						<li><span class="tick">✔</span>Which means you get the best inside tips when you book with us</li>
+						<li><span class="tick">✔</span>Which also means lower rates than other general-purpose travel websites, since we handle each booking individually.</li>
+					</ul>
+					<p id="booking-testimonial"><span class="quote-mark">&ldquo;</span>Myoki planned our trip to Kovalam. Their prompt booking and service was a great start to a very special girls trip!</p>
+					<p id="testimonial-photo-anokhi"></p>
+					<p id="booking-testimonial-author">Anokhi Parekh, Program Director at The Foundation, Mumbai</p>
+				</div>
+			</div>
+		</div><!-- popup -->
+
+	</div><!-- hidden -->
