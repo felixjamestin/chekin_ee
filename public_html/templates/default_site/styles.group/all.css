@@ -3976,7 +3976,7 @@ margin:0px 0px 0px 18px;}
   content: "";
   display: block;
   position: absolute;
-  top: 42%;
+  top: 40%;
   width: 0;
   height: 0;
   border-bottom: 12px solid transparent;
@@ -4262,6 +4262,10 @@ margin:0px 0px 0px 18px;}
   padding: 0;
   width: 900px; 
 
+}
+
+.hidden{
+  display: none;
 }
 
 #aboutus-intro{
