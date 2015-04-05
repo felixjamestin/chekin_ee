@@ -37,10 +37,18 @@
 		                      		<title>The most gorgeous getaways in India – Goa, Kerala and more | Myoki</title>
 		                      	{/if}
 		{/exp:channel:entries}	
-	{/if}
+	{/if}	
 
 	<meta name="description" content="Travel to the most gorgeous getaways in India – Charming villas, forest hideouts, and lovely stays by the beach. Perfect for weekends or short breaks. Book now." />
   --}
+
+
+	<!-- Temporary: Make only the homepage responsive until the other pages are done -->
+  	{if segment_1 == ""}
+		
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	{/if}
 
 	<meta property="og:site_name" content="Myoki"/>
 	<meta property="og:title" content="Myoki | Travel to the most gorgeous getaways in India – Goa, Kerala and more"/>
@@ -65,9 +73,6 @@
 	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
 
     <meta name="apple-mobile-web-app-capable" content="yes">
-
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	
 	<!-- Minified CSS -->
 	{exp:minimee:css}
