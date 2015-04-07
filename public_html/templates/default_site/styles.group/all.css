@@ -1070,6 +1070,54 @@ xrotate-1
   background-size: cover;
   box-shadow: 0px 0px 400px 200px rgba(0,0,0,.4) inset;
 }
+#gift-card-frame{
+  min-height: 618px;
+  background: #0f2f42 url('/uploads/static/gift_card.jpg') repeat-x 0 0;
+  border-bottom: 1px solid black;
+  background-size: cover;
+  box-shadow: 0px 0px 400px 200px rgba(0,0,0,.4) inset;
+  text-align: left;
+}
+#gift-card-thanks{
+  min-height: 548px;
+  background-size: cover;
+  -moz-box-shadow:  inset  0  2px 2px -2px rgba(0,0,0,.4), 
+                    inset  0 -2px 2px -2px rgba(0,0,0,.4);
+    -webkit-box-shadow: inset  0  2px 2px -2px rgba(0,0,0,.4), 
+                    inset  0 -2px 2px -2px rgba(0,0,0,.4);
+    box-shadow:     inset  0  2px 2px -2px rgba(0,0,0,.4), 
+                    inset  0 -2px 2px -2px rgba(0,0,0,.4);
+  text-align: center;
+}
+
+#gift-cards-block{
+  padding-top: 130px;
+  padding-bottom: 150px;
+  text-align: left;
+  padding-left: 150px;
+}
+
+#gift-cards-block h1{
+  color:#FFFFFF;
+  font-size: 68px;
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 800;
+  width:660px;
+  margin-bottom: 15px;
+  line-height: 68px;
+}
+
+#gift-cards-block h2{
+  color:#FFFFFF;
+  width:460px;
+  font-size: 18px;
+  font-family: "kulturista-web","proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  margin-top: 25px;
+  line-height: 1.4;
+  text-shadow: 1px 1px 200px rgba(0,0,0,.6);
+
+}
 
 #plan-pitch{
   padding-top: 230px;
@@ -3889,7 +3937,7 @@ margin:0px 0px 0px 18px;}
   width: 485px;
   float: left;
   background: white;
-  border-radius: 0px 0px 5px 5px;
+  border-radius: 0px 0px 0px 5px;
 
 }
 
@@ -4353,7 +4401,7 @@ margin:0px 0px 0px 18px;}
   background: #ede7db;
   width: 215px;
   padding: 25px 25px 0px 25px;
-  height: 458px;
+  height: 504px;
   border-radius: 0px 0px 5px 0px;
 }
 
@@ -6005,7 +6053,6 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
   }
 }
 
-
 /* -------------------------------------------------------------------------------------------------------- */
 
 /* Responsive styles below */
@@ -6325,3 +6372,236 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
 
 }
 
+#gift-reasons{
+    -webkit-box-shadow: 0px 5px 3px -3px rgba(0,0,0,.2);
+    -moz-box-shadow: 0px 5px 3px -3px rgba(0,0,0,.2);
+    box-shadow: 0px 5px 3px -3px rgba(0,0,0,.2);
+    margin: 40px 0 30px 0px;
+    padding-bottom: 30px;
+}
+#gift-reasons .inform .column-l{
+    width:320px;    
+    border: 1px dashed #d7d7d7;
+    border-width: 0px 1px 1px 0;
+    padding-left: 10px;
+}
+.second-column{
+    padding-top: 30px;
+}
+
+#gift-reasons .inform article{
+    min-height: 200px;
+    max-width: 280px;
+    margin-bottom:10px;
+}
+.noborder-right{
+    border-right:none !important;
+}
+.noborder-bottom{
+    border-bottom:none !important;
+}
+#gift-reasons .inform .number{
+    background: url('/uploads/static/tick.png') no-repeat; 
+}
+#customize-gift{
+    margin: 50px 0 30px 0;
+}
+#customize-gift h3{
+    font-size: 30px;
+    font-weight: bold;
+    color:#000;
+}
+#customize-gift .number{
+  position:absolute;
+  color:#fff;
+  top: -2px;
+  left:0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: bold;
+  width:20px;
+  height:20px;
+  text-align:center;
+  background: #7DCE2A;
+  border-radius: 50px;
+}
+#customize-gift .title{
+  margin:0 -30px 10px 0px;
+  font: 15px/18px "kulturista-web";
+  color: #00C2D9;
+  margin: 0 0 20px;
+  padding-left: 30px;
+}
+#customize-gift .title h4{
+  font-weight: 600;
+}
+.gift-steps .step{
+    position: relative;
+    clear:both;
+}
+.step-1 ul{
+    float:left;
+    margin:0;
+    padding: 0 0 0 30px;
+}
+.step-1 li{
+    list-style:none;
+    float:left;
+    margin: 0 15px 15px 0;
+    border-radius: 5px;
+    cursor:pointer;
+}
+.step-1 li img{
+    border-radius: 5px;
+    max-height: 135px;
+}
+.step-1 li.selected{
+    background: url('/uploads/static/gift-selected.png') 50% 50% no-repeat;    
+    border:5px solid #00badb;
+    max-height: 129px;
+    overflow: hidden;
+    max-width: 280px;
+}
+.step-1 li.selected img{
+    opacity:0.4;
+    border-radius: 0px;
+}
+.gift-customize-form {
+    color:#000;
+    padding: 20px 0 0;
+}
+.gift-customize-form label{
+    float:left;
+    width:200px !important;
+    text-align: right;
+    padding:5px 15px 0 0;
+    
+}
+.gift-customize-form input,.gift-customize-form textarea{
+    width:220px !important;
+}
+.step-3 textarea{
+    width:100% !important;
+}
+.gift-customize-form select{
+    width:230px !important;
+    height:40px;    
+}
+.gift-customize-form select.sel-med{
+    width:130px !important;
+}
+.gift-customize-form input.input-small{
+    width: 135px !important;
+    margin-left: 5px;
+}
+.gift-customize-form select.sel-small{
+    width:80px !important;
+}
+.step-3 .gift-email{
+    background:#f7f7fa;
+    border:1px solid #e5e6ef;
+    border-radius: 3px;
+}
+.step-3 .email-form{
+    background:#ecedf3;
+    border-bottom:1px solid #e5e6ef;
+    padding-top: 10px;
+}
+#customize-gift .popup{
+    width:100%;
+}
+.step-3 .gift-email label{
+    width:120px !important;
+}
+.step-3 .gift-email input{
+    width:230px !important;
+    margin-right: 10px;
+}
+.step-3 .gift-email .row{
+    margin:20px 0;
+    padding-bottom: 0;
+}
+.email-form p{
+    padding-top: 5px;
+}
+#customize-gift .inner-email-template{
+    width:727px;
+    margin: 50px auto;
+    background: #fff;
+    border-radius: 5px;
+    border:1px solid #e5e5e5;
+}
+#customize-gift .inner-email-template img{
+    border-radius:5px 5px 0 0;
+}
+.gift-amount{
+    text-align: center;
+    padding: 30px 0;
+    font-size:20px;
+    color:#000;
+    -webkit-box-shadow: 0px 5px 3px -3px rgba(0,0,0,.2);
+    -moz-box-shadow: 0px 5px 3px -3px rgba(0,0,0,.2);
+    box-shadow: 0px 5px 3px -3px rgba(0,0,0,.2);
+}
+.gift-amount strong{
+    font-weight:700;
+}
+.your-message{
+    width:627px;
+    margin:40px auto 30px auto;
+    height:200px;
+}
+.your-message textarea{
+    width: 610px;
+    height: 180px;
+}
+.gift-steps input[type="submit"] {
+    background: url('/uploads/static/proceed-to-payment.png') no-repeat;    
+    width:242px !important;
+    height:59px;
+    margin:50px 0 80px 150px;
+    display: block;
+    border:none;
+}
+.countrycode{
+    margin-right: 10px;
+}
+.thanks-note{
+    padding: 120px 0 0;
+    width: 700px;
+    margin: 0 auto;
+}
+.thanks-note h1{
+    font-family: "proxima-nova",Arial,Helvetica,sans-serif;
+    font-size: 60px;
+    color:#000;
+    margin:0;
+}
+.thanks-note p{
+    font-size: 18px;
+    color:#000;
+    font-family: "kulturista-web",serif;
+    font-weight: 600;
+}
+#own_amount{
+    display: none;
+}
+.for-error{
+    position: relative;
+    float:left;
+}
+.gift-customize-form.popup em.error {
+    left:0;
+    top:-12px;
+    right:auto;
+}
+.giftcode .chk-area{
+    float:right;
+}
+.giftcode p{
+    padding-top: 5px;
+}
+.giftcodeinput label{
+    line-height: 1 !important;
+    margin-top: 0px !important;
+}
