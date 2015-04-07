@@ -1,40 +1,5 @@
 <?php
-$status=$_POST["status"];
-$firstname=$_POST["firstname"];
-$amount=$_POST["amount"];
-$txnid=$_POST["txnid"];
-$posted_hash=$_POST["hash"];
-$key=$_POST["key"];
-$productinfo=$_POST["productinfo"];
-$email=$_POST["email"];
-$salt="GQs7yium";
-$payuId = $_POST["payuMoneyId"];
-
-If (isset($_POST["additionalCharges"])) {
-       $additionalCharges=$_POST["additionalCharges"];
-        $retHashSeq = $additionalCharges.'|'.$salt.'|'.$status.'|||||||||||'.$email.'|'.$firstname.'|'.$productinfo.'|'.$amount.'|'.$txnid.'|'.$key;
-        
-                  }
-	else {	  
-
-        $retHashSeq = $salt.'|'.$status.'|||||||||||'.$email.'|'.$firstname.'|'.$productinfo.'|'.$amount.'|'.$txnid.'|'.$key;
-
-         }
-		 $hash = hash("sha512", $retHashSeq);
-		 
-       if ($hash != $posted_hash) {
-	       echo "Invalid Transaction. Please try again";
-		   }
-	   else {
-           	   
-          echo "<h3>Thank You. Your order status is ". $status .".</h3>";
-          echo "<h4>Your Transaction ID for this transaction is ".$txnid.".</h4>";
-          echo "<h4>We have received a payment of Rs. " . $amount . ". Your order will soon be shipped.</h4>";
-           
-		   }         
-?>	
-<?php
-/*$secret_key = "e2163d7fc1fd1b6f2f73cad23ee9d663";	 // Your Secret Key
+$secret_key = "e2163d7fc1fd1b6f2f73cad23ee9d663";	 // Your Secret Key
 if(isset($_GET['DR'])) {
 	 require($_SERVER['DOCUMENT_ROOT'].'/ee-framework/lib/Rc43.php');
 	 $DR = preg_replace("/\s/","+",$_GET['DR']);
@@ -49,7 +14,7 @@ if(isset($_GET['DR'])) {
 	 	$param = explode('=',$param);
 		$response[$param[0]] = urldecode($param[1]);
 	 }
-}*/
+}
 
 $alphabet = "abcdefghijklmnopqrstuwxyzABCDEFGHIJKLMNOPQRSTUWXYZ0123456789";
 $pass = array(); //remember to declare $pass as an array
@@ -77,7 +42,7 @@ $code = "GC".$code;
     form:name="frmUpdate"
     restrict_edit_to_author="no"
     <?php
-    if($hash == $posted_hash){
+    if(isset($response['ResponseCode']) && $response['ResponseCode'] == 0){
     ?>
     return="/gift-cards/thank-you/{segment_3}"
     notify_on_edit="yes"
@@ -94,7 +59,7 @@ $code = "GC".$code;
   <?php
     if(isset($response['PaymentID'])){
   ?>
-  <input type="hidden" name="ebs_payment_id" value="<?php echo $payuId;?>" />
+  <input type="hidden" name="ebs_payment_id" value="<?php echo $response['PaymentID'];?>" />
   <?php } ?>
   <?php
     if(isset($response['ResponseCode']) && $response['ResponseCode'] == 0){
@@ -102,7 +67,7 @@ $code = "GC".$code;
   <input type="hidden" name="gift_code" value="<?php echo strtoupper($code);?>" />
   <input type="hidden" name="status" value="open" />
   <?php } ?>
-  <input type="hidden" name="payment_status" value="<?php echo $status;?>" />
+  <input type="hidden" name="payment_status" value="<?php echo $response['ResponseMessage'];?>" />
   
   {/exp:freeform:edit}
   {/exp:freeform:entries}
