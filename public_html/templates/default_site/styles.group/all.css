@@ -634,6 +634,7 @@ animation-name: fadeInDown;
   line-height: 5.9rem;
   margin-bottom: -1.5rem;
   position: absolute;
+  z-index: 999;
   font-size: 2rem;
 }
 
@@ -664,7 +665,7 @@ animation-name: fadeInDown;
   position: relative;
   text-align: center;
   bottom: -1.55rem;
-  margin-left: 2rem;
+  margin-left: -7rem;
 }
 
 .menu li{
@@ -1075,7 +1076,7 @@ xrotate-1
   background: #0f2f42 url('/uploads/static/gift_card.jpg') repeat-x 0 0;
   border-bottom: 1px solid black;
   background-size: cover;
-  box-shadow: 0px 0px 400px 200px rgba(0,0,0,.4) inset;
+  box-shadow: 0px 0px 200px 60px rgba(0,0,0,.2) inset;
   text-align: left;
 }
 #gift-card-thanks{
@@ -1094,7 +1095,7 @@ xrotate-1
   padding-top: 130px;
   padding-bottom: 150px;
   text-align: left;
-  padding-left: 150px;
+  padding-left: 210px;
 }
 
 #gift-cards-block h1{
@@ -1104,12 +1105,12 @@ xrotate-1
   font-weight: 800;
   width:660px;
   margin-bottom: 15px;
-  line-height: 68px;
+  line-height: 4.5rem;
 }
 
 #gift-cards-block h2{
   color:#FFFFFF;
-  width:460px;
+  width: 30.625rem;
   font-size: 18px;
   font-family: "kulturista-web","proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
@@ -2944,8 +2945,8 @@ span.fa-stack.fa-lg {
 /* inform */
 .inform h2,
 .inform h3{
-  font:15px/18px "kulturista-web";
-  color:#00C2D9;
+  font:16px/18px "kulturista-web";
+  color: #454545;
   margin:0 0 35px;
   font-weight: 600;
 }
@@ -2975,7 +2976,7 @@ span.fa-stack.fa-lg {
 }
 .inform .column-r article{padding:0; margin-bottom: 45px;}
 .inform article figure{margin-bottom: 20px;}
-/*.inform article p{ margin:0 0 52px;}*/
+
 .inform .number{
   position:absolute;
   color:#fff;
@@ -3009,8 +3010,7 @@ span.fa-stack.fa-lg {
 }
 
 .inform h3{
-  float:left;
-  margin:0 10px 0 0;
+  margin: 0 1rem .5rem 0;
 }
 a.tag{
   float:left;
@@ -6376,8 +6376,8 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
     -webkit-box-shadow: 0px 5px 3px -3px rgba(0,0,0,.2);
     -moz-box-shadow: 0px 5px 3px -3px rgba(0,0,0,.2);
     box-shadow: 0px 5px 3px -3px rgba(0,0,0,.2);
-    margin: 40px 0 30px 0px;
-    padding-bottom: 30px;
+    margin: 40px 0 0px -12px;
+    padding-bottom: 25px;
 }
 #gift-reasons .inform .column-l{
     width:320px;    
@@ -6400,49 +6400,61 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
 .noborder-bottom{
     border-bottom:none !important;
 }
-#gift-reasons .inform .number{
-    background: url('/uploads/static/tick.png') no-repeat; 
+
+#gift-reasons .fa{
+  color: #7DCE2A;
+  position: absolute;
+  left: .5rem;
+  top: .1rem;
 }
+
 #customize-gift{
     margin: 50px 0 30px 0;
 }
+
 #customize-gift h3{
     font-size: 30px;
     font-weight: bold;
-    color:#000;
+    color: #454545;
 }
+
 #customize-gift .number{
   position:absolute;
   color:#fff;
   top: -2px;
   left:0;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: bold;
-  width:20px;
-  height:20px;
+  font-size: 16px;
+  line-height: 1.5;
+  width: 23px;
+  height: 23px;
   text-align:center;
   background: #7DCE2A;
   border-radius: 50px;
 }
+
 #customize-gift .title{
-  margin:0 -30px 10px 0px;
-  font: 15px/18px "kulturista-web";
+  font: 16px/18px "kulturista-web";
   color: #00C2D9;
-  margin: 0 0 20px;
+  margin: .1rem 0 1.5rem;
   padding-left: 30px;
 }
+
 #customize-gift .title h4{
   font-weight: 600;
+  margin: 0px;
 }
+
 .gift-steps .step{
     position: relative;
     clear:both;
+    margin-top: 3rem;
+    overflow: hidden;
 }
+
 .step-1 ul{
     float:left;
     margin:0;
-    padding: 0 0 0 30px;
+    padding: 0 0 0 1.9rem;
 }
 .step-1 li{
     list-style:none;
@@ -6467,8 +6479,9 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
     border-radius: 0px;
 }
 .gift-customize-form {
-    color:#000;
+    color: #454545;
     padding: 20px 0 0;
+    font-size: 1rem;
 }
 .gift-customize-form label{
     float:left;
@@ -6497,11 +6510,15 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
 .gift-customize-form select.sel-small{
     width:80px !important;
 }
+
 .step-3 .gift-email{
     background:#f7f7fa;
     border:1px solid #e5e6ef;
-    border-radius: 3px;
+    border-radius: 5px;
+    margin: 0 0 0 1.9rem;
+    max-width: 56.125rem;
 }
+
 .step-3 .email-form{
     background:#ecedf3;
     border-bottom:1px solid #e5e6ef;
@@ -6539,12 +6556,10 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
     padding: 30px 0;
     font-size:20px;
     color:#000;
-    -webkit-box-shadow: 0px 5px 3px -3px rgba(0,0,0,.2);
-    -moz-box-shadow: 0px 5px 3px -3px rgba(0,0,0,.2);
-    box-shadow: 0px 5px 3px -3px rgba(0,0,0,.2);
+    box-shadow: 0px 1px 2px rgba(0,0,0,.15);
 }
 .gift-amount strong{
-    font-weight:700;
+    font-weight: 600;
 }
 .your-message{
     width:627px;
