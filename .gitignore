@@ -14,7 +14,7 @@ thumbs/
 _thumbs/
 */expressionengine/cache/*
 
-## local config settings
+## Local config settings
 /public_html/config/config.local.php
 
 ## Cache folders
@@ -26,3 +26,8 @@ _thumbs/
 /public_html/uploads/*
 
 /public_html/deploy.php
+
+## Ignore sublime text projects
+myoki.sublime-project
+myoki.sublime-workspace
+/public_html/templates/default_site/modules.group/booking-form.sublime-workspace
