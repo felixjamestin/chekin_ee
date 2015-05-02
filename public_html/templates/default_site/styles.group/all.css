@@ -6467,6 +6467,7 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
     padding: 0 2.31rem 2rem 2.31rem;
     position: relative;
     left: -.75rem;
+    overflow: hidden;
 }
 #gift-reasons .inform .column-l{
     width:320px;    
@@ -6582,12 +6583,7 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
     border-radius: 5px;
     background: url('/uploads/static/gift-selected.png') 50% 50% no-repeat;
     top: 0px;
-    animation: wiggle .5s 1 normal both ease-in;
-}
-
-.step-1 li.selected img{
-    opacity:0.4;
-    border-radius: 0px;
+    animation: bounceIn .25s 1 normal both ease-in;
 }
 
 .step-2 .select-cs-1.select-sel-med.select-area {
