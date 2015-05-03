@@ -112,7 +112,7 @@
                                 </div><!-- title -->
                                 
                                 <ul>
-                                    {exp:channel:entries channel="gift_card_design" orderby="date" sort="asc" dynamic="no"}
+                                    {exp:channel:entries channel="gift_card_design" orderby="title" sort="asc" dynamic="no"}
                                         <li data-design="{entry_id}">
                                         {exp:channel_images:images field="gift_card_design" entry_id="{entry_id}" limit="1"}
                                              <img src="{image:url:untitled}" />       

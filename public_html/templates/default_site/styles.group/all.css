@@ -6658,9 +6658,9 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
 .step-3 .gift-email{
     margin: 0 0 0 1.9rem;
     max-width: 56.125rem;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.16) 25%, transparent 25%) -50px 0, linear-gradient(225deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%) -50px 0, linear-gradient(315deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%), linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%) !important;
-    background-color: #111213 !important;
-    background-color: #000000 !important;
+    /*background: linear-gradient(135deg, rgba(255, 255, 255, 0.16) 25%, transparent 25%) -50px 0, linear-gradient(225deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%) -50px 0, linear-gradient(315deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%), linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%) !important;*/
+    background-color: #232429 !important;
+    box-shadow: 0px 0px 450px black inset;
     background-size: 85px 285px !important;
     border-radius: 15px 15px 5px 5px;
     border: 1px solid white;
