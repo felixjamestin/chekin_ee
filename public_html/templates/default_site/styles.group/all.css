@@ -6857,3 +6857,19 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
     line-height: 1 !important;
     margin-top: 0px !important;
 }
+.special-note{
+    display: block;
+    clear: left;
+    padding: 10px 15px;
+    font-size: 13px;
+    padding-left: 60px;
+}
+#total_payment_after_fee {
+    font-size: 40px;
+    padding: 6px 0px;
+    display: block;
+}
+#total_payment_after_fee em{
+    font-size:18px;
+    font-style:inherit;
+}

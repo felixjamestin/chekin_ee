@@ -136,9 +136,9 @@
                                 
                                     <div class="group">
                                         <div class="row">
-                                            <label for="lbl-02">Amount (in rupees)</label>
+                                            <label for="lbl-02">Amount (in rupees)*</label>
                                             <input type="hidden" id="total_amount" name="total_amount" value="10000" />
-                           
+                                            <input type="hidden" id="gift_amount_paid" name="gift_amount_paid" value="10000" />
                                             <select id="gift_amount" class="cs-1 sel-med" name="gift_amount">
                                                     <option value="500">500</option>
                                                     <option value="1000">1,000</option>
@@ -149,6 +149,8 @@
                                                     <option value="25000">25,000</option>
                                                     <option value="0">Select your own</option>
                                             </select>
+                                            <span class="special-note">* On every purchase a convenience fee of 2.9% will be applied.</span>
+                                            
                                         </div>
                                         <div class="row">
                                             <label for="lbl-02"></label>
@@ -213,8 +215,12 @@
 
                                     <div class="group">
                                         <div class="row">
+                                            <label for="lbl-02">Total Payment</label>
+                                            <div class="for-error"><div id="total_payment_after_fee"><em>Rs.</em> <span class="total_pmt">10,029</span></div></div>
+                                        </div>
+                                        <div class="row">
                                             <label for="lbl-02">Full Name</label>
-                                            <div class="for-error"><input type="div clastext" class="text text-2" id="billing_name" placeholder="" name="billing_name" /></div>
+                                            <div class="for-error"><input type="text" class="text text-2" id="billing_name" placeholder="" name="billing_name" /></div>
                                         </div>
                                         <div class="row">
                                             <label for="lbl-07">Mobile No</label>
@@ -781,7 +787,11 @@
                 } else {
                     $('#own_amount').val('');
                     $('#own_amount').fadeOut();
-                    $('#total_amount').val(numgiftamt);
+                    var withAddfee = parseInt(numgiftamt)+parseInt((numgiftamt*2.9)/100);
+                    $('#total_amount').val(withAddfee);
+                    $('#gift_amount_paid').val(numgiftamt);
+                    var formatted = withAddfee.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                    $('.total_pmt').text(formatted);
                 }
                 $('.sel-amount').text(giftamt);
                 
@@ -792,7 +802,11 @@
                  $('#gift_amount').val(giftamt);
                  $('.sel-amount').text(giftamt);
                  if($.isNumeric(giftamt)) {
-                     $('#total_amount').val(giftamt);
+                     var withAddfee = parseInt(giftamt)+parseInt((giftamt*2.9)/100);
+                     $('#total_amount').val(withAddfee);
+                     $('#gift_amount_paid').val(giftamt);
+                     var formatted = withAddfee.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                     $('.total_pmt').text(formatted);
                  }
               });
              $( "#delivery-date" ).datepicker({
