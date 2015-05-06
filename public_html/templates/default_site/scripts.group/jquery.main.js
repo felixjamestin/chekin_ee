@@ -254,19 +254,18 @@ jQuery(function(){
 				gift_amount: {
 					required: true
 				},
-                                /*own_amount: {
-                                    required: true,
-                                    min: {
-                                        param: 500,
-                                        depends: function(element) {
-                                            if ($("#gift_amount option:selected").val() === "0" || $("#gift_amount option:selected").val() === ""){
-                                                return false;
-                                            } else {
-                                                return true;
-                                            }
+                                own_amount: {
+                                    required: function() {
+                                        if ($("#gift_amount option:selected").val() === "0" || $("#gift_amount option:selected").val() === ""){
+                                            return true;
+                                        } else {
+                                            return false;
                                         }
+                                    },
+                                    min: {
+                                        param: 500
                                     }
-                                },*/
+                                },
 				email_delivery_date: {
 					required: true,
 					date: true

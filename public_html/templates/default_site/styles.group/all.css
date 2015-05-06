@@ -6835,6 +6835,7 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
 }
 #own_amount{
     display: none;
+    margin-bottom:15px;
 }
 .for-error{
     position: relative;
