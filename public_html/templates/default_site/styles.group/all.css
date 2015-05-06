@@ -7292,7 +7292,7 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
     clear: left;
     padding: 10px 15px;
     font-size: 13px;
-    padding-left: 60px;
+    margin-left: 12.25rem;
 }
 #total_payment_after_fee {
     font-size: 40px;
