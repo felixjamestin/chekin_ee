@@ -1169,7 +1169,6 @@ xrotate-1
 }
 
 #gift-card-thanks{
-  min-height: 548px;
   background-size: cover;
   text-align: center;
 }
@@ -1186,7 +1185,7 @@ xrotate-1
   font-size: 68px;
   font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 800;
-  width:660px;
+  max-width: 41.25rem;
   margin-bottom: 15px;
   line-height: 4.5rem;
 }
@@ -6137,6 +6136,408 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
   }
 }
 
+#wrapper-gift-reasons{
+    box-shadow: 0px 5px 3px -3px rgba(0,0,0,.1);
+}
+
+#gift-reasons{
+    margin: 2.5rem auto 0px auto;
+    padding-bottom: .0625rem;
+    max-width: 62.5rem;
+    padding: 0 2.31rem 2rem 2.31rem;
+    position: relative;
+    left: -.75rem;
+    overflow: hidden;
+}
+#gift-reasons .inform .column-l{
+    width:320px;    
+    border: 1px dashed #d7d7d7;
+    border-width: 0px 1px 1px 0;
+    padding-left: 10px;
+}
+.second-column{
+    padding-top: 30px;
+}
+
+#gift-reasons .inform article{
+    min-height: 200px;
+    max-width: 280px;
+    margin-bottom:10px;
+}
+.noborder-right{
+    border-right:none !important;
+}
+.noborder-bottom{
+    border-bottom:none !important;
+}
+
+#gift-reasons .fa{
+  color: #7DCE2A;
+  position: absolute;
+  left: .5rem;
+  top: .1rem;
+}
+
+#customize-gift{
+    margin: 50px 0 30px 0;
+}
+
+#customize-gift h3{
+    font-size: 30px;
+    font-weight: bold;
+    color: #454545;
+}
+
+#customize-gift .number{
+  position:absolute;
+  color:#fff;
+  top: 0px;
+  left:0;
+  font-size: 16px;
+  line-height: 1.5;
+  width: 23px;
+  height: 23px;
+  text-align:center;
+  background: #7DCE2A;
+  border-radius: 50px;
+}
+
+#customize-gift .title{
+  font: 16px/18px "kulturista-web";
+  color: #00C2D9;
+  margin: .1rem 0 1.5rem;
+  padding-left: 30px;
+}
+
+#customize-gift .title h4{
+  font-weight: 600;
+  margin: 0px;
+}
+
+.gift-steps .step{
+    position: relative;
+    clear:both;
+    margin-top: 3rem;
+    overflow: hidden;
+}
+
+.step-1 ul{
+    float:left;
+    margin:0;
+    padding: 0 0 0 1.9rem;
+}
+.step-1 li{
+    list-style:none;
+    float:left;
+    margin: 0 2.5rem 2.5rem 0;
+    border-radius: 5px;
+    cursor:pointer;
+}
+.step-1 li img{
+    border-radius: 5px;
+    max-height: 115px;
+}
+
+.step-1 li.selected{
+  position: relative;
+}
+
+.step-1 li.selected::before{
+    content: "";
+    display: block;
+    width: 237px;
+    height: 105px;
+    position: absolute;
+    border-radius: 5px;
+    background: rgba(0, 186, 219, 0.36);
+    border: 5px solid #00badb;
+    box-shadow: 0px 0px 105px rgba(0, 14, 16, 0.35) inset;
+}
+
+.step-1 li.selected::after {
+    content: "";
+    display: block;
+    width: 255px;
+    height: 110px;
+    position: absolute;
+    border-radius: 5px;
+    background: url('/uploads/static/gift-selected.png') 50% 50% no-repeat;
+    top: 0px;
+    animation: bounceIn .25s 1 normal both ease-in;
+}
+
+.step-2 .select-cs-1.select-sel-med.select-area {
+    padding: .3rem;
+    font-size: 1rem;
+    position: relative;
+    top: -.2rem;
+    width: 8.4rem !important;
+}
+
+.step-2 input {
+    padding: .5rem !important;
+    font-size: 1rem !important;
+    position: relative;
+    top: -.2rem;
+    width: 8rem !important;
+}
+
+.step-2.step .group {
+    margin-top: 3rem;
+}
+
+.step-2 .select-cs-1 .select-opener {
+    background-position-y: 1rem !important;
+    background-position-x: 95%;
+}
+
+.gift-customize-form {
+    color: #454545;
+    padding: 20px 0 0;
+    font-size: 1rem;
+}
+.gift-customize-form label{
+    float:left;
+    width:200px !important;
+    text-align: right;
+    padding:5px 15px 0 0;
+    
+}
+.gift-customize-form input,.gift-customize-form textarea{
+    width:229px !important;
+}
+.step-3 textarea{
+    width:100% !important;
+}
+.step-4 .select-cs-1 .select-opener {
+    background-position-x: 95%;
+    background-position-y: 70%;
+}
+.step-4 .row {
+    margin-bottom: 1rem;
+}
+.gift-customize-form select{
+    width:230px !important;
+    height:40px;    
+}
+.gift-customize-form select.sel-med{
+    width:130px !important;
+}
+.gift-customize-form input.input-small{
+    width: 177px !important;
+    margin-left: 5px;
+}
+.gift-customize-form select.sel-small{
+    width:80px !important;
+}
+
+.gift-steps .step-3{
+  margin-bottom: 4rem;
+}
+
+.step-3 .gift-email{
+    margin: 0 0 0 1.9rem;
+    max-width: 56.125rem;
+    /*background: linear-gradient(135deg, rgba(255, 255, 255, 0.16) 25%, transparent 25%) -50px 0, linear-gradient(225deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%) -50px 0, linear-gradient(315deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%), linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%) !important;*/
+    background-color: #232429 !important;
+    box-shadow: 0px 0px 450px black inset;
+    background-size: 85px 285px !important;
+    border-radius: 15px 15px 5px 5px;
+    border: 1px solid white;
+}
+
+.step-3 .email-form{
+    background: #ecedf3;
+    padding-top: 1.3rem;
+    padding-bottom: 1rem;
+    border-radius: 5px 5px 0px 0px;
+}
+
+#customize-gift .popup{
+    width:100%;
+}
+.step-3 .gift-email label{
+    width:120px !important;
+}
+.step-3 .gift-email input{
+    width:230px !important;
+    margin-right: 10px;
+    padding: .6rem;
+    font-size: 1rem;
+    font-weight: 100;
+    position: relative;
+    top: -.2rem;
+    border: 1px solid #D9DBE4;
+}
+.step-3 .gift-email .row{
+    margin:20px 0;
+    padding-bottom: 0;
+}
+
+.step-4 .group {
+    margin-top: 3rem;
+}
+
+.step-4 .group input{
+  padding: 0.5rem;
+  font-size: 1rem;
+  position: relative;
+  top: -0.2rem;
+  font-weight: 100;
+}
+.step-4 .group .select-cs-1 {
+  padding: .2rem;
+  font-size: 1rem;
+  position: relative;
+  top: -0.2rem;
+  font-weight: 100;
+  width: 10rem !important;
+}
+
+#customize-gift .select-options{
+  padding: 4px;
+}
+
+.email-form p{
+    padding-top: 5px;
+}
+#customize-gift .inner-email-template{
+    width: 727px;
+    margin: 50px auto 70px auto;
+    background: #fff;
+    border-radius: 15px 15px 5px 5px;
+}
+#customize-gift .inner-email-template img{
+    border-radius:5px 5px 0 0;
+}
+.gift-amount{
+    text-align: center;
+    padding: 30px 0;
+    font-size:20px;
+    color:#000;
+    box-shadow: 0px 1px 2px rgba(0,0,0,.15);
+}
+.gift-amount strong{
+    font-weight: 600;
+}
+.your-message{
+    width:627px;
+    margin:40px auto 30px auto;
+    height:235px;
+}
+.your-message textarea{
+    padding: 2rem;
+    width: 90% !important;
+    height: 125px !important;
+    font-size: 1rem;
+}
+.gift-steps input[type="submit"] {
+    width: 368px !important;
+    height: 59px;
+    display: block;
+    color: white;
+    background-color: #80D436;
+    font-size: 1.125rem;
+    text-shadow: 0px 1px 1px #73BF30;
+    border-radius: 4px;
+    border: 1px solid #4da720;
+    -webkit-box-shadow: inset 0 1px 0 #99dd5e;
+    -moz-box-shadow: inset 0 1px 0 #99dd5e;
+    box-shadow: inset 0 1px 0 #99dd5e;
+    text-shadow: 0 -1px 1px #73be30;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    user-drag: none;
+    -webkit-user-drag: none;
+    -webkit-transition-property: background-color;
+    -moz-transition-property: background-color;
+    -ms-transition-property: background-color;
+    -o-transition-property: background-color;
+    transition-property: background-color;
+    -webkit-transition-duration: 0.14s;
+    -moz-transition-duration: 0.14s;
+    -ms-transition-duration: 0.14s;
+    -o-transition-duration: 0.14s;
+    transition-duration: 0.14s;
+    -webkit-transition-timing-function: ease-in;
+    -moz-transition-timing-function: ease-in;
+    -ms-transition-timing-function: ease-in;
+    -o-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+    outline: none;
+    cursor: pointer;
+}
+.gift-steps input[type="submit"]:hover {
+    background-color: #73c62a;
+}
+.gift-steps input[type="submit"]:active {
+    background-color: #65AD25;
+    box-shadow: none;
+}
+
+.gift-customize-form .step-5 {
+    position: relative;
+    margin: 50px 0 80px 210px;
+}
+
+.gift-customize-form .step-5 .fa{
+    position: absolute;
+    top: 1.35rem;
+    left: 17.15rem;
+    color: white;
+    text-shadow: 0 -1px 1px #73be30;
+}
+
+.countrycode{
+    margin-right: 10px;
+}
+.thanks-note{
+    width: 50rem;
+    margin: 10rem auto 8rem auto;
+}
+.thanks-note h1{
+    font-family: "proxima-nova",Arial,Helvetica,sans-serif;
+    font-size: 60px;
+    color:#000;
+    margin: .5rem 0 0 0;
+}
+.thanks-note p{
+    font-size: 18px;
+    color: #454545;
+    font-family: "kulturista-web",serif;
+    font-weight: 400;
+    line-height: 1.7;
+    margin-top: .5rem;
+}
+#own_amount{
+    display: none;
+}
+.for-error{
+    position: relative;
+    float:left;
+}
+.gift-customize-form.popup em.error {
+    right: auto;
+    top: -1.15rem;
+    left: .5rem;
+    font-size: .875rem;
+    height: 1rem;
+}
+.giftcode .chk-area{
+    float:right;
+}
+.giftcode p{
+    padding-top: 5px;
+}
+.giftcodeinput label{
+    line-height: 1 !important;
+    margin-top: 0px !important;
+}
+
+
 /* -------------------------------------------------------------------------------------------------------- */
 
 /* Responsive styles below */
@@ -6366,6 +6767,35 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
     border-bottom: .45rem solid transparent;
     border-left: 0.65rem solid #11b6d2;
     content: "";
+  }
+
+
+  .step-2.step .row{
+    padding: 0 2rem;
+  }
+
+  #customize-gift .gift-steps .step-2 label{
+    display: block;
+    width: 100% !important;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1rem; 
+    margin-top: 1rem;
+  }
+
+  #customize-gift .gift-steps .step-2 .select-cs-1{
+    width: 100% !important; 
+    text-align: center;
+  }
+
+  #customize-gift .gift-steps .step-2 .for-error {
+    width: 100%;
+  }
+
+  #customize-gift .gift-steps .step-2 .for-error input{
+    width: 100% !important;
+    text-align: center;
   }
 
 }
