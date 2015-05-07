@@ -1,0 +1,82 @@
+<?php
+$secret_key = "e2163d7fc1fd1b6f2f73cad23ee9d663";	 // Your Secret Key
+if(isset($_GET['DR'])) {
+	 require($_SERVER['DOCUMENT_ROOT'].'/ee-framework/lib/Rc43.php');
+	 $DR = preg_replace("/\s/","+",$_GET['DR']);
+
+	 $rc4 = new Crypt_RC4($secret_key);
+ 	 $QueryString = base64_decode($DR);
+	 $rc4->decrypt($QueryString);
+	 $QueryString = explode('&',$QueryString);
+
+	 $response = array();
+	 foreach($QueryString as $param){
+	 	$param = explode('=',$param);
+		$response[$param[0]] = urldecode($param[1]);
+	 }
+}
+
+$alphabet = "abcdefghijklmnopqrstuwxyzABCDEFGHIJKLMNOPQRSTUWXYZ0123456789";
+$pass = array(); //remember to declare $pass as an array
+$alphaLength = strlen($alphabet) - 1; //put the length -1 in cache
+for ($i = 0; $i < 6; $i++) {
+    $n = rand(0, $alphaLength);
+    $pass[] = $alphabet[$n];
+}
+$code = implode($pass); //turn the array into a string
+$code = "GC".$code;
+?>
+<html>
+  <body onload="document.frmUpdate.submit();">
+  {exp:freeform:entries
+    form_name="gift_cards"
+    search:secret_hash="={segment_3}"
+    limit="1"
+    dynamic="no"
+    status="pending|open|closed"
+  }  
+  {exp:freeform:edit
+    form_name="gift_cards"
+    entry_id="{freeform:entry_id}"
+    status="pending|open|closed"
+    form:name="frmUpdate"
+    restrict_edit_to_author="no"
+    <?php
+    if(isset($response['ResponseCode']) && $response['ResponseCode'] == 0){
+    ?>
+    return="/gift-cards/thank-you/{segment_3}"
+    notify_on_edit="yes"
+    notify_user="yes" 
+    user_email_field="email" 
+    user_notification_template="gift_purchase" 
+    <?php } else { ?>
+    return="/gift-cards/error/{segment_3}"
+    <?php } ?>
+    parse="inward"
+    allow_status_edit="yes"
+  }
+  <input type="hidden" name="email" value="{freeform:field:email}" />
+  <?php
+    if(isset($response['PaymentID'])){
+  ?>
+  <input type="hidden" name="ebs_payment_id" value="<?php echo $response['PaymentID'];?>" />
+  <?php } ?>
+  <?php
+    if(isset($response['ResponseCode']) && $response['ResponseCode'] == 0){
+  ?>
+  <input type="hidden" name="gift_code" value="<?php echo strtoupper($code);?>" />
+  <input type="hidden" name="status" value="open" />
+  <?php } ?>
+  <input type="hidden" name="payment_status" value="<?php echo $response['ResponseMessage'];?>" />
+  
+  {/exp:freeform:edit}
+  {/exp:freeform:entries}
+  <div>
+    <p style="margin:200px auto;width: 250px;"><strong>Waiting for response, please wait...</strong></p>
+  </div>
+
+{!-- Google Analytics --}
+{embed="modules/google-analytics"}
+
+  </body>
+</html>  

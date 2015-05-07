@@ -1,0 +1,113 @@
+<?php
+$status=$_POST["status"];
+$firstname=$_POST["firstname"];
+$amount=$_POST["amount"];
+$txnid=$_POST["txnid"];
+$posted_hash=$_POST["hash"];
+$key=$_POST["key"];
+$productinfo=$_POST["productinfo"];
+$email=$_POST["email"];
+$salt="GQs7yium";
+$payuId = $_POST["payuMoneyId"];
+
+If (isset($_POST["additionalCharges"])) {
+       $additionalCharges=$_POST["additionalCharges"];
+        $retHashSeq = $additionalCharges.'|'.$salt.'|'.$status.'|||||||||||'.$email.'|'.$firstname.'|'.$productinfo.'|'.$amount.'|'.$txnid.'|'.$key;
+        
+                  }
+	else {	  
+
+        $retHashSeq = $salt.'|'.$status.'|||||||||||'.$email.'|'.$firstname.'|'.$productinfo.'|'.$amount.'|'.$txnid.'|'.$key;
+
+         }
+		 $hash = hash("sha512", $retHashSeq);
+		 
+       if ($hash != $posted_hash) {
+	       echo "Invalid Transaction. Please try again";
+		   }
+	   else {
+           	   
+                //do nothing
+		   }         
+?>	
+<?php
+/*$secret_key = "e2163d7fc1fd1b6f2f73cad23ee9d663";	 // Your Secret Key
+if(isset($_GET['DR'])) {
+	 require($_SERVER['DOCUMENT_ROOT'].'/ee-framework/lib/Rc43.php');
+	 $DR = preg_replace("/\s/","+",$_GET['DR']);
+
+	 $rc4 = new Crypt_RC4($secret_key);
+ 	 $QueryString = base64_decode($DR);
+	 $rc4->decrypt($QueryString);
+	 $QueryString = explode('&',$QueryString);
+
+	 $response = array();
+	 foreach($QueryString as $param){
+	 	$param = explode('=',$param);
+		$response[$param[0]] = urldecode($param[1]);
+	 }
+}*/
+
+$alphabet = "abcdefghijklmnopqrstuwxyzABCDEFGHIJKLMNOPQRSTUWXYZ0123456789";
+$pass = array(); //remember to declare $pass as an array
+$alphaLength = strlen($alphabet) - 1; //put the length -1 in cache
+for ($i = 0; $i < 6; $i++) {
+    $n = rand(0, $alphaLength);
+    $pass[] = $alphabet[$n];
+}
+$code = implode($pass); //turn the array into a string
+$code = "GC".$code;
+?>
+<html>
+  <body onload="document.frmUpdate.submit();">
+  {exp:freeform:entries
+    form_name="gift_cards"
+    search:secret_hash="={segment_3}"
+    limit="1"
+    dynamic="no"
+    status="pending|open|closed"
+  }  
+  {exp:freeform:edit
+    form_name="gift_cards"
+    entry_id="{freeform:entry_id}"
+    status="pending|open|closed"
+    form:name="frmUpdate"
+    restrict_edit_to_author="no"
+    <?php
+    if($hash == $posted_hash){
+    ?>
+    return="/gift-cards/thank-you/{segment_3}"
+    notify_on_edit="yes"
+    notify_user="yes" 
+    user_email_field="email" 
+    user_notification_template="gift_purchase_notification" 
+    notify_admin="yes"
+    admin_notify="team@myoki.in"
+    admin_notification_template="gift_purchase_notification"
+    <?php } else { ?>
+    return="/gift-cards/error/{segment_3}"
+    <?php } ?>
+    parse="inward"
+    allow_status_edit="yes"
+  }
+  <input type="hidden" name="email" value="{freeform:field:email}" />
+  <input type="hidden" name="ebs_payment_id" value="<?php echo $payuId;?>" />
+  <?php
+    if($hash == $posted_hash){
+  ?>
+  <input type="hidden" name="gift_code" value="<?php echo strtoupper($code);?>" />
+  <input type="hidden" name="status" value="open" />
+  <?php } ?>
+  <input type="hidden" name="payment_status" value="<?php echo $status;?>" />
+  
+  {/exp:freeform:edit}
+  {/exp:freeform:entries}
+  <div>
+    <p style="margin:200px auto;width: 250px;"><strong>Waiting for response, please wait...</strong></p>
+  </div>
+
+{!-- Google Analytics --}
+{embed="modules/google-analytics"}
+
+  </body>
+</html>  

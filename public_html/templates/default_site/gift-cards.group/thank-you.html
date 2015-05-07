@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+
+	{embed="modules/head"}
+<body>
+
+	{embed="modules/header"}
+
+        <section id="plan-visual">
+            {exp:freeform:entries
+                form_name="gift_cards"
+                search:secret_hash="={segment_3}"
+                limit="1"
+                dynamic="no"
+                status="pending|open|closed"    
+              } 
+            <div id="gift-card-thanks">
+                <div class="thanks-note">   
+                    <img src="/uploads/static/gift-box.png" />
+                    <h1>Thanks, you're all done!</h1>
+                    <p>We'll email your gift card of Rs. {freeform:field:gift_amount_paid} to {freeform:field:receiver_email} on {freeform:field:email_delivery_date}. We'll also send you a confirmation email of your gift card purchase for reference.</p>
+                </div>
+
+            </div>
+            {/exp:freeform:entries}
+        </section>
+
+        {embed="modules/footer"}
+
+</body>
+
+</html>

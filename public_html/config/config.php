@@ -22,19 +22,19 @@ if(!defined('ENV')) {
 			// define('SITE_SHORT_NAME', 'default');
 			break;
 
-    case 'www.chekin.in' :
+                case 'www.chekin.in' :
 			define('ENV', 'live');
 			define('THIS_WEB_ROOT', 'public_html');
 			// define('SITE_SHORT_NAME', 'default');
 			break;
     
-    case 'www.myoki.in' :
+                case 'www.myoki.in' :
 			define('ENV', 'live');
 			define('THIS_WEB_ROOT', 'public_html');
 			// define('SITE_SHORT_NAME', 'default');
 			break;
     
-    case 'myoki.in' :
+                case 'myoki.in' :
 			define('ENV', 'live');
 			define('THIS_WEB_ROOT', 'public_html');
 			// define('SITE_SHORT_NAME', 'default');
@@ -44,7 +44,7 @@ if(!defined('ENV')) {
 			define('ENV', 'dev');
 			define('THIS_WEB_ROOT', 'public_dev_html');
 			break;
-                    
+
                 case 'dev.myoki.in' :
 			define('ENV', 'dev');
 			define('THIS_WEB_ROOT', 'public_dev_html');

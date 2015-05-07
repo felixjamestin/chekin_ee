@@ -3955,6 +3955,314 @@ class EE_Template {
 
 	// --------------------------------------------------------------------
 	
+        public function process_string_as_template($str)
+	{
+		// standardize newlines
+		$str	= preg_replace("/(\015\012)|(\015)|(\012)/", "\n", $str);
+
+		ee()->load->helper('text');
+
+		// convert high ascii
+		$str	= (
+			ee()->config->item('auto_convert_high_ascii') == 'y'
+		) ? ascii_to_entities($str): $str;
+
+		// -------------------------------------
+		//  Prepare for Processing
+		// -------------------------------------
+
+		$this->template_type	= 'webpage';
+
+		$this->template			= $this->convert_xml_declaration(
+			$this->remove_ee_comments($str)
+		);
+
+		$this->log_item("Template Type: ".$this->template_type);
+
+		// --------------------------------------------------
+		//  Parse 'Site' variables
+		// --------------------------------------------------
+
+		$this->log_item("Parsing Site Variables");
+
+		foreach (array('site_id', 'site_label', 'site_short_name') as $site_var)
+		{
+			$this->global_vars[$site_var] = stripslashes(
+				ee()->config->item($site_var)
+			);
+		}
+
+		// Parse {last_segment} variable
+		$seg_array = ee()->uri->segment_array();
+
+		ee()->config->_global_vars['last_segment'] = end($seg_array);;
+
+		// --------------------------------------------
+		//  Parse Global Vars - EE 2.x
+		// --------------------------------------------
+
+		$this->log_item(
+			"Snippets (Keys): " .
+			implode('|', array_keys(ee()->config->_global_vars))
+		);
+		$this->log_item(
+			"Snippets (Values): " .
+			trim(implode('|', ee()->config->_global_vars))
+		);
+
+		foreach (ee()->config->_global_vars as $key => $val)
+		{
+			$this->template = str_replace(LD.$key.RD, $val, $this->template);
+		}
+
+		// in case any of these variables have EE comments of their own
+		$this->template = $this->remove_ee_comments($this->template);
+
+		// -------------------------------------
+		//  Parse Global Vars - Solspace Modules
+		//  (which use this for setting own globals)
+		// -------------------------------------
+
+		if (count($this->global_vars) > 0)
+		{
+			$this->log_item(
+				"Global Path.php Variables (Keys): " .
+				implode('|', array_keys($this->global_vars))
+			);
+			$this->log_item(
+				"Global Path.php Variables (Values): " .
+				trim(implode('|', $this->global_vars))
+			);
+
+			foreach ($this->global_vars as $key => $val)
+			{
+				$this->template = str_replace(LD.$key.RD, $val, $this->template);
+			}
+		}
+
+		// -------------------------------------
+		//  Parse URI segments
+		// -------------------------------------
+
+		for ($i = 1; $i < 10; $i++)
+		{
+			$this->template = str_replace(
+				LD.'segment_'.$i.RD,
+				ee()->uri->segment($i),
+				$this->template
+			);
+			$this->segment_vars['segment_'.$i] = ee()->uri->segment($i);
+		}
+
+		/** -------------------------------------
+		/**  Parse date format string "constants"
+		/** -------------------------------------*/
+
+		$date_constants	= array(
+			'DATE_ATOM'		=>	'%Y-%m-%dT%H:%i:%s%Q',
+			'DATE_COOKIE'	=>	'%l, %d-%M-%y %H:%i:%s UTC',
+			'DATE_ISO8601'	=>	'%Y-%m-%dT%H:%i:%s%O',
+			'DATE_RFC822'	=>	'%D, %d %M %y %H:%i:%s %O',
+			'DATE_RFC850'	=>	'%l, %d-%M-%y %H:%m:%i UTC',
+			'DATE_RFC1036'	=>	'%D, %d %M %y %H:%i:%s %O',
+			'DATE_RFC1123'	=>	'%D, %d %M %Y %H:%i:%s %O',
+			'DATE_RFC2822'	=>	'%D, %d %M %Y %H:%i:%s %O',
+			'DATE_RSS'		=>	'%D, %d %M %Y %H:%i:%s %O',
+			'DATE_W3C'		=>	'%Y-%m-%dT%H:%i:%s%Q'
+		);
+
+		$this->log_item("Parse Date Format String Constants");
+
+		foreach ($date_constants as $key => $val)
+		{
+			$this->template = str_replace(LD.$key.RD, $val, $this->template);
+		}
+
+		// --------------------------------------------------
+		//  Current time {current_time format="%Y %m %d %H:%i:%s"}
+		// --------------------------------------------------
+
+		$this->log_item("Parse Current Time Variables");
+
+		$this->template = str_replace(
+			LD.'current_time'.RD,
+			ee()->localize->now,
+			$this->template
+		);
+
+		if (strpos($this->template, LD.'current_time') !== FALSE AND
+			preg_match_all(
+				"/".LD."current_time\s+format=([\"\'])([^\\1]*?)\\1".RD."/",
+				$this->template,
+				$matches
+			))
+		{
+			for ($j = 0; $j < count($matches['0']); $j++)
+			{
+				//EE2.6+ support
+				$func = (is_callable(array(ee()->localize, 'format_date'))) ?
+							'format_date' :
+							'decode_date';
+
+				$this->template = preg_replace(
+					"/".preg_quote($matches['0'][$j], '/')."/",
+					ee()->localize->$func(
+						$matches['2'][$j],
+						ee()->localize->now
+					),
+					$this->template,
+					1
+				);
+			}
+		}
+
+		// --------------------------------------------
+		//  Remove White Space from Variables
+		//		- Prevents errors apparently,
+		//		particularly when PHP is used in a template.
+		// --------------------------------------------
+
+		$this->template = preg_replace(
+			"/".LD."\s*(\S+)\s*".RD."/U",
+			LD."\\1".RD,
+			$this->template
+		);
+
+		// -------------------------------------
+		//  Parse Input Stage PHP
+		// -------------------------------------
+
+		if ($this->parse_php == TRUE AND $this->php_parse_location == 'input')
+		{
+			$this->log_item("Parsing PHP on Input");
+			$this->template = $this->parse_template_php($this->template);
+		}
+
+		// -------------------------------------
+		//  Smite Our Enemies:  Conditionals
+		// -------------------------------------
+
+		$this->log_item("Parsing Segment, Embed, and Global Vars Conditionals");
+
+		$this->template = $this->parse_simple_segment_conditionals($this->template);
+		$this->template = $this->simple_conditionals($this->template, $this->embed_vars);
+		$this->template = $this->simple_conditionals($this->template, ee()->config->_global_vars);
+
+		// -------------------------------------
+		//  Set global variable assignment
+		// -------------------------------------
+
+		if (strpos($this->template, LD.'assign_variable:') !== FALSE AND
+			preg_match_all("/".LD."assign_variable:(.+?)=([\"\'])([^\\2]*?)\\2".RD."/i", $this->template, $matches))
+		{
+			$this->log_item("Processing Assigned Variables: ".trim(implode('|', $matches['1'])));
+
+			for ($j = 0; $j < count($matches['0']); $j++)
+			{
+				$this->template = str_replace($matches['0'][$j], "", $this->template);
+				$this->template = str_replace(LD.$matches['1'][$j].RD, $matches['3'][$j], $this->template);
+			}
+		}
+
+		// -------------------------------------
+		//  Replace Forward Slashes with Entity
+		//  because of silliness about pre_replace errors.
+		// -------------------------------------
+
+		if (strpos($str, '{&#47;exp:') !== FALSE)
+		{
+			$this->template = str_replace('&#47;', '/', $this->template);
+		}
+
+		// --------------------------------------------
+		//  Fetch Installed Modules and Plugins
+		// --------------------------------------------
+
+		$this->fetch_addons();
+
+		// --------------------------------------------
+		//  Parse Template's Tags!
+		// --------------------------------------------
+
+		$this->log_item(" - Beginning Tag Processing - ");
+
+		while (is_int(strpos($this->template, LD.'exp:')))
+		{
+			// Initialize values between loops
+			$this->tag_data 	= array();
+			$this->var_single	= array();
+			$this->var_cond		= array();
+			$this->var_pair		= array();
+			$this->loop_count 	= 0;
+
+			$this->log_item("Parsing Tags in Template");
+
+			// Run the template parser
+			$this->parse_tags();
+
+			$this->log_item("Processing Tags");
+
+			// Run the class/method handler
+			$this->process_tags();
+
+			if ($this->cease_processing === TRUE)
+			{
+				return;
+			}
+		}
+
+		$this->log_item(" - End Tag Processing - ");
+
+		// --------------------------------------------
+		//  Convert Slash Entity Back
+		// --------------------------------------------
+
+		$this->template = str_replace(SLASH, '/', $this->template);
+
+		// -------------------------------------
+		//  Parse Output Stage PHP
+		// -------------------------------------
+
+		if ($this->parse_php == TRUE AND $this->php_parse_location == 'output')
+		{
+			$this->log_item("Parsing PHP on Output");
+			$this->template = $this->parse_template_php($this->template);
+		}
+
+		// -------------------------------------
+		//  Parse Our Uncacheable Forms
+		// -------------------------------------
+
+		$this->template = $this->parse_nocache($this->template);
+
+		// -------------------------------------
+		//  Smite Our Enemies:  Advanced Conditionals
+		// -------------------------------------
+
+		if (stristr($this->template, LD.'if'))
+		{
+			$this->log_item("Processing Advanced Conditionals");
+			$this->template = $this->advanced_conditionals($this->template);
+		}
+
+		// -------------------------------------
+		//  Build finalized template
+		// -------------------------------------
+
+		// The sub-template routine will insert embedded
+		// templates into the master template
+
+		$this->final_template = $this->template;
+		$this->process_sub_templates($this->template);
+
+		// --------------------------------------------
+		//  Finish with Global Vars and Return!
+		// --------------------------------------------
+
+		return $this->parse_globals($this->final_template);
+	 }
+	// END process_string_as_template
+
 }
 // END CLASS
 

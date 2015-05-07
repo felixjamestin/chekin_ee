@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+
+	{embed="modules/head"}
+<body>
+
+	{embed="modules/header"}
+
+        <section id="plan-visual">
+
+            {exp:freeform:entries
+                form_name="gift_cards"
+                search:secret_hash="={segment_3}"
+                limit="1"
+                dynamic="no"
+                status="pending|open|closed"    
+              } 
+
+            <div id="gift-card-thanks">
+                <div class="thanks-note">
+                    <img src="/uploads/static/error.png" />
+                    <h1>The payment was not successful</h1>
+                    <p>Sorry about this. Please email us at team@myoki.in if this keeps happening.</p> 
+                    <p>
+                        Response from the payment gateway:
+                        <br>
+                        {freeform:field:payment_status}
+                    </p>
+                </div>
+
+            </div>
+
+            {/exp:freeform:entries}
+
+        </section>
+
+        {embed="modules/footer"}
+
+</body>
+</html>

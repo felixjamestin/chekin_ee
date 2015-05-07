@@ -1,0 +1,93 @@
+{exp:freeform:entries
+    form_name="gift_cards"
+    search:secret_hash="={segment_3}"
+    limit="1"
+    dynamic="no"
+    status="pending|open|closed"
+    }
+    <?php 
+        $amount = "{freeform:field:total_amount}";
+        $reference_no = "{freeform:entry_id}";
+        $url_hash = "{freeform:field:secret_hash}";
+        $description = "Payment for Gift Card Entry {freeform:entry_id}";
+        $name = "{freeform:field:total_amount}";
+        $address = "{freeform:field:address}";
+        $city = "{freeform:field:city}";
+        $state = "{freeform:field:state}";
+        $postal_code = "{freeform:field:zip}";
+        $country = "{freeform:field:country}";
+        $phone = "{freeform:field:mobile}";
+        $email = "{freeform:field:email}";
+    ?>
+{/exp:freeform:entries}
+<?php
+// Merchant key here as provided by Payu
+$MERCHANT_KEY = "LRKTqE";//"JBZaLc";
+
+// Merchant Salt as provided by Payu
+$SALT = "ISW74DG1";//"GQs7yium";
+
+// End point - change to https://secure.payu.in for LIVE mode
+$PAYU_BASE_URL = "https://secure.payu.in";//"https://test.payu.in";
+
+$return_url = '{site_url}gift-cards/response/'.$url_hash;
+$failure_url = '{site_url}gift-cards/error/'.$url_hash;
+
+$posted = array();
+$posted['key'] = $MERCHANT_KEY;
+$posted['txnid'] = $reference_no;
+$posted['amount'] = $amount;
+$posted['firstname'] = $name;
+$posted['email'] = $email;
+$posted['phone'] = $phone;
+$posted['productinfo'] = $description;
+$posted['surl'] = $return_url;
+$posted['furl'] = $failure_url;
+$posted['service_provider'] = "payu_paisa";
+
+$hash = '';
+// Hash Sequence
+$hashSequence = "key|txnid|amount|productinfo|firstname|email|udf1|udf2|udf3|udf4|udf5|udf6|udf7|udf8|udf9|udf10";
+$hashVarsSeq = explode('|', $hashSequence);
+$hash_string = '';	
+    foreach($hashVarsSeq as $hash_var) {
+        $hash_string .= isset($posted[$hash_var]) ? $posted[$hash_var] : '';
+        $hash_string .= '|';
+    }
+$hash_string .= $SALT;
+$hash = strtolower(hash('sha512', $hash_string));
+$action = $PAYU_BASE_URL . '/_payment';
+?>
+<html>
+  <body onload="document.frmTransaction.submit();">
+    <form  method="post" action="<?php echo $action; ?>" name="frmTransaction" id="frmTransaction" onSubmit="return validate()">
+
+     <input type="hidden" name="key" value="<?php echo $MERCHANT_KEY ?>" />
+     <input type="hidden" name="hash" value="<?php echo $hash ?>"/>
+     <input name="surl" type="hidden" size="60" value="<?php echo $return_url; ?>" />
+     <input name="furl" type="hidden" size="60" value="<?php echo $failure_url; ?>" />
+     <input type="hidden" name="service_provider" value="payu_paisa" size="64" />
+     
+     <input name="txnid" type="hidden" value="<?php echo  $reference_no; ?>" />
+     <input name="amount" type="hidden" value="<?php echo $amount;?>"/>
+     <input name="productinfo" type="hidden" value="<?php echo $description; ?>" /> 
+     <input name="firstname" type="hidden" maxlength="255" value="<?php echo $name; ?>" />
+     <input name="address1" type="hidden" maxlength="255" value="<?php echo $address; ?>" />
+     <input name="city" type="hidden" maxlength="255" value="<?php echo $city; ?>" />
+     <input name="state" type="hidden" maxlength="255" value="<?php echo $state; ?>" />
+     <input name="zipcode" type="hidden" maxlength="255" value="<?php echo $postal_code; ?>" />
+     <input name="country" type="hidden" maxlength="255" value="<?php echo $country; ?>" />
+     <input name="phone" type="hidden" maxlength="255" value="<?php echo $phone; ?>" />
+     <input name="email" type="hidden" size="60" value="<?php echo $email;?>" />
+     <!--<input name="submitted" value="Submit" type="submit" />-->
+
+    </form>
+    <div>
+      <p style="margin:200px auto;width: 250px;"><strong>Processing request, please wait...</strong></p>
+    </div>
+
+{!-- Google Analytics --}
+{embed="modules/google-analytics"}
+
+  </body>
+</html>
