@@ -8,11 +8,11 @@
 # 0 = no errors 
 # 1 = errors for Super Admins 
 # 2 = errors shown to everyone in the world
-$debug 				= '1'; 
-$show_profiler 		= 'y'; # y/n
-$template_debugging = 'y'; # y/n
+$debug 				= '0'; 
+$show_profiler 		= 'n'; # y/n
+$template_debugging = 'n'; # y/n
 $email_debug 		= 'n'; # y/n
-$db_debug 			= 'y'; # y/n
+$db_debug 			= 'n'; # y/n
 
 
 ## ------------------------------------------------------------
