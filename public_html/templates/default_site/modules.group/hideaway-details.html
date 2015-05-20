@@ -120,7 +120,12 @@
 					{if hideaway_season3}<th class="vtop">{hideaway_season3}</th>{/if}
 					{if hideaway_season4}<th class="vtop">{hideaway_season4}</th>{/if}
 					{if hideaway_season5}<th class="vtop">{hideaway_season5}</th>{/if}
-				{/hideaway_seasons}	
+				{/hideaway_seasons}
+                                
+                                {seasons_new}	
+                                <th class="vtop">{if season_name}<strong>{season_name}</strong>{/if}{season_start_date format="%j %M"} - {season_end_date format="%j %M"}</th>
+				{/seasons_new}
+                                
 				{if "{hideaway_seasons:total_rows}" == 0}
 					<th>Rates</th>
 				{/if}
