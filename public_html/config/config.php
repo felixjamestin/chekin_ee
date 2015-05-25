@@ -31,14 +31,14 @@ if(!defined('ENV')) {
                 case 'www.myoki.in' :
 			define('ENV', 'live');
 			define('THIS_WEB_ROOT', 'public_html');
-                        define('THIS_SITE_URL', 'https://' . THIS_SERVER_NAME);
+                        //define('THIS_SITE_URL', 'https://' . THIS_SERVER_NAME);
 			// define('SITE_SHORT_NAME', 'default');
 			break;
     
                 case 'myoki.in' :
 			define('ENV', 'live');
 			define('THIS_WEB_ROOT', 'public_html');
-                        define('THIS_SITE_URL', 'https://' . THIS_SERVER_NAME);
+                        //define('THIS_SITE_URL', 'https://' . THIS_SERVER_NAME);
 			// define('SITE_SHORT_NAME', 'default');
 			break;
     
