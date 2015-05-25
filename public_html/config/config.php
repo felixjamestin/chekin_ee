@@ -7,7 +7,11 @@
 if(!defined('ENV')) {
 
 	define('THIS_SERVER_NAME', 	$_SERVER['SERVER_NAME']);
-	define('THIS_SITE_URL', 	'http://' . THIS_SERVER_NAME);
+        if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') {
+            define('THIS_SITE_URL', 	'https://' . THIS_SERVER_NAME);
+        } else {
+            define('THIS_SITE_URL', 	'http://' . THIS_SERVER_NAME);
+        }
         define('THIS_BASEPATH', 	realpath(dirname(__FILE__) . '/../'));
 
 	/**************************************************
