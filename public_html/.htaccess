@@ -320,6 +320,14 @@ RewriteRule ^(.*)$ https://myoki.in/$1 [R=301,L]
 # http://bit.ly/avy6iZ , http://bit.ly/lDLTQv
 # ------------------------------------------------------------
 
+<IfModule mod_rewrite.c>
+ RewriteCond %{HTTP_HOST} !^local
+ RewriteCond %{HTTP_HOST} !^dev
+ RewriteCond %{HTTP_HOST} !\.dev$
+ RewriteCond %{HTTPS} !=on
+ RewriteRule ^.*$ https://%{SERVER_NAME}%{REQUEST_URI} [R,L]
+</IfModule>
+
 # Redirect index.php Requests 
 <IfModule mod_rewrite.c>
   RewriteCond %{THE_REQUEST} ^[^/]*/index\.php [NC] 
@@ -334,3 +342,4 @@ RewriteRule ^(.*)$ https://myoki.in/$1 [R=301,L]
   RewriteCond %{REQUEST_FILENAME} !-d 
   RewriteRule ^(.*)$ /index.php/$1 [L]
 </IfModule>
+
