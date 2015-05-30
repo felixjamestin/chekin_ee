@@ -298,9 +298,10 @@ AddCharset utf-8 .css .js .xml .json .rss .atom
 </IfModule>
 
 <IfModule mod_rewrite.c>
+RewriteCond %{HTTP_HOST} ^chekin.in [OR]
 RewriteCond %{HTTP_HOST} ^chekin.in$ [OR]
 RewriteCond %{HTTP_HOST} ^www.chekin.in$ [NC]
-RewriteRule ^(.*)$ http://myoki.in/$1 [R=301,L]
+RewriteRule ^(.*)$ https://myoki.in/$1 [R=301,L]
 </IfModule>
 
 <IfModule mod_rewrite.c>
@@ -310,7 +311,7 @@ RewriteRule ^(.*)$ http://dev.myoki.in/$1 [R=301,L]
 
 <IfModule mod_rewrite.c>
 RewriteCond %{HTTP_HOST} ^www.myoki.in$ [NC]
-RewriteRule ^(.*)$ http://myoki.in/$1 [R=301,L]
+RewriteRule ^(.*)$ https://myoki.in/$1 [R=301,L]
 </IfModule>
 
 # ------------------------------------------------------------
@@ -318,6 +319,14 @@ RewriteRule ^(.*)$ http://myoki.in/$1 [R=301,L]
 # using "File and Directory Check" Method and a bit more
 # http://bit.ly/avy6iZ , http://bit.ly/lDLTQv
 # ------------------------------------------------------------
+
+<IfModule mod_rewrite.c>
+ RewriteCond %{HTTP_HOST} !^local
+ RewriteCond %{HTTP_HOST} !^dev
+ RewriteCond %{HTTP_HOST} !\.dev$
+ RewriteCond %{HTTPS} !=on
+ RewriteRule ^.*$ https://%{SERVER_NAME}%{REQUEST_URI} [R,L]
+</IfModule>
 
 # Redirect index.php Requests 
 <IfModule mod_rewrite.c>
@@ -333,3 +342,4 @@ RewriteRule ^(.*)$ http://myoki.in/$1 [R=301,L]
   RewriteCond %{REQUEST_FILENAME} !-d 
   RewriteRule ^(.*)$ /index.php/$1 [L]
 </IfModule>
+

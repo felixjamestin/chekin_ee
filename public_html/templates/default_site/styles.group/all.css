@@ -5850,7 +5850,6 @@ div.sumome-popup .sumome-popup-content{
 div.sumome-popup .sumome-popup-content .sumome-popup-form h2{
   font-size: 28px !important;
   text-align: center;
-  /*background: url('https://dl-web.dropbox.com/spa/evpiz4fy0sj5ara/myoki/public/mail_icon.png') no-repeat;*/
   padding-top: 7px;
   font-family: "Proxima-nova", sans-serif !important;
   font-weight: 600;
@@ -5924,7 +5923,7 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
 
 .sumome-share-client-share.sumome-share-client-share-share.sumome-share-client-count {
   font-family: "proxima-nova",Arial,Helvetica,sans-serif;
-}*/
+} */
 
 /* Override SumoMe email slidein styles */
 

@@ -107,7 +107,7 @@
 
 
 <script>
-$.getJSON("{site_url}twitter-oauth.php")
+$.getJSON("/twitter-oauth.php")
   .done(function(data) {
      if(!data.errors) {
        $("#twitter").html(data[0].text);
