@@ -16,7 +16,7 @@
         <section class="wrapper">
 
                 <section id="main">
-                    
+                    {if segment_2 == ""}
                     <div class="blog-listing">
                     {exp:channel:entries
                         channel="blog"
@@ -96,7 +96,11 @@
                     <div class="blog-sidebar">
                         
                     </div>
+                    {/if}
                     
+                    {if segment_2 != ""}
+                        {embed="blog/_entry"}
+                    {/if}
                     <div style="clear:both;"></div>
                 </section><!-- main -->
 
