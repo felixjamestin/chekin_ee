@@ -7306,3 +7306,151 @@ a.sumome-scrollbox-link{
     font-size:18px;
     font-style:inherit;
 }
+/* Blog styles */
+.blog-listing{
+    width:70%;
+    float:left;
+    overflow:hidden;
+}
+.blog-sidebar{
+    padding-left:2%;
+    width:28%;
+    float:left;
+    padding-top:30px;
+}
+.blog-item{
+    padding:30px 0px 25px 0;
+}
+.date {
+  float: left;
+  font-size: 13px;
+  text-align: center;
+  margin: 0 5px;
+  padding: 10px 10px 0 0;
+  background: url('/uploads/static/calendar-icon.png') no-repeat;
+  height:64px;
+  width:64px;
+  line-height:17px;
+}
+.date .post-day {
+  display: block;
+  font-size:18px;
+  font-weight:bold;
+}
+.post-title {
+  font-size: 27px;
+  font-weight: bold;
+  display: table-cell;
+  vertical-align: middle;
+  height: 64px;
+}
+.post-title a{
+  color: #515559;
+  font: 30px/26px "proxima-nova-condensed";
+  font-weight: 300;
+}
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.blog-content{
+    padding:20px 10px;
+    font-size:16px;
+}
+.blog-content .blog-promo{
+    max-height:200px;
+    overflow:hidden;
+}
+.share-blog {
+    text-align: center;
+    position: relative;
+    margin:10px 15px 30px;
+    clear:both;
+}
+.share-blog div {
+    display: inline-block;    
+}
+.share-blog div:before,
+.share-blog div:after {
+    background:url('/uploads/static/separator-blue.png') repeat-x 0 100%;
+    display: block;
+    height: 20px;
+    content: " ";
+    width: 40%;
+    position: absolute;
+    left: 0;
+    top:0.3em;
+}
+.share-blog div:after {
+   right: 0;  
+   left: auto; 
+}
+.share-blog .socials{
+    margin:0;
+    padding:0;
+}
+.share-blog .socials li{
+    float:left;
+    list-style:none;
+}
+.share-blog .socials a{
+  float:left;
+  height: 24px;
+  cursor:pointer;
+}
+
+.share-blog .socials a span{
+  -webkit-transition-property:color;
+  -moz-transition-property:color;
+  -ms-transition-property:color;
+  -o-transition-property:color;
+  transition-property:color;
+  -webkit-transition-duration:0.2s;
+  -moz-transition-duration:0.2s;
+  -ms-transition-duration:0.2s;
+  -o-transition-duration:0.2s;
+  transition-duration:0.2s;
+  -webkit-transition-timing-function:ease-in;
+  -moz-transition-timing-function:ease-in;
+  -ms-transition-timing-function:ease-in;
+  -o-transition-timing-function:ease-in;
+  transition-timing-function:ease-in;
+}
+
+.share-blog .socials a:hover span, .share-blog .socials a:active span,
+.share-blog .socials a.facebook:hover span .fa-circle, .share-blog .socials a.facebook:active span .fa-circle, 
+.share-blog .socials a.instagram:hover span .fa-circle, .share-blog .socials a.instagram:active span .fa-circle, 
+.share-blog .socials a.twitter:hover span .fa-circle, .share-blog .socials a.twitter:active span .fa-circle,
+.share-blog .socials a.pinterest:hover span.fa-pinterest, .share-blog .socials a.pinterest:active span.fa-pinterest{
+  color: #11b6d2;
+}
+
+.share-blog .facebook .fa-circle{
+  color: #436eac;
+}
+
+.share-blog .email fa-circle{
+  color: #999;
+}
+
+.share-blog .instagram .fa-circle{
+  color: #91634c;
+}
+
+.share-blog .twitter .fa-circle{
+  color: #55acee;
+}
+
+.share-blog .socials .pinterest .fa-pinterest{
+  color: #C81800;
+  margin-left: 2px;
+  vertical-align: bottom;
+}
+.blog-content a.ladda-button{
+    float:right;
+    padding:3px 5px;
+    margin:10px 0 15px 0;
+}
