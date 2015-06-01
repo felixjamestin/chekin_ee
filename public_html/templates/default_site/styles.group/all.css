@@ -7454,3 +7454,12 @@ a.sumome-scrollbox-link{
     padding:3px 5px;
     margin:10px 0 15px 0;
 }
+@media screen and (max-width: 697px) {
+    .blog-listing{
+        width:100%;
+    }
+    .blog-sidebar{
+        width:100%;
+        padding-left:0;
+    }
+}
