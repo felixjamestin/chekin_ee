@@ -1166,6 +1166,7 @@ xrotate-1
   box-shadow: 0px 0px 200px 60px rgba(0,0,0,.2) inset;
   text-align: left;
   background-color: #0f2f42;
+  box-shadow: 0px 0px 800px 0px rgba(0, 0, 0, 1) inset;
 }
 
 #gift-card-thanks{
@@ -5754,44 +5755,6 @@ a.external-link:hover{
   width: 195px;
 }
 
-
-/* Override SumoMe email slidein styles */
-
-.sumome-scrollbox-small{
-  width: 35% !important;
-}
-
-.sumome-scrollbox-popup{
-  background-color: rgb(17, 182, 210) !important;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.16) 25%, transparent 25%) -50px 0, linear-gradient(225deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%) -50px 0, linear-gradient(315deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%), linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%) !important;
-  background-size: 100px 100px !important;
-  font-family: "Proxima-nova",sans-serif !important;
-}
-
-.sumome-scrollbox-popup .sumome-scrollbox-content{
-  padding-left: 30px !important;
-  padding-right: 30px !important;
-}
-
-.sumome-scrollbox-popup .sumome-scrollbox-content .sumome-scrollbox-form button{
-  text-transform: capitalize !important;
-  text-shadow: 1px 1px 0px rgba(0, 128, 0, 0.06) !important;
-}
-
-.sumome-scrollbox-popup .sumome-scrollbox-close{
-  color: white !important;
-  text-shadow: 1px 1px 1px #0091AA !important;
-}
-
-a.sumome-scrollbox-link{
-  display: none;
-  left: 50%;
-  position: relative;
-  margin-left: -58px;
-  margin-top: 10px;
-  text-transform: lowercase;
-}
-
 #header-links {
   float: right;
   text-align: right;
@@ -5849,7 +5812,7 @@ a.sumome-scrollbox-link{
 /* SumoMe Popup */
 
 /* -------------------------------------------------------------------------------------------------------- */
-div.sumome-popup .sumome-popup-content{
+/*div.sumome-popup .sumome-popup-content{
   background-color: rgb(17, 182, 210) !important;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.16) 25%, transparent 25%) -50px 0, linear-gradient(225deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%) -50px 0, linear-gradient(315deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%), linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%);
   background-size: 100px 100px;
@@ -5887,7 +5850,6 @@ div.sumome-popup .sumome-popup-content{
 div.sumome-popup .sumome-popup-content .sumome-popup-form h2{
   font-size: 28px !important;
   text-align: center;
-  /*background: url('https://dl-web.dropbox.com/spa/evpiz4fy0sj5ara/myoki/public/mail_icon.png') no-repeat;*/
   padding-top: 7px;
   font-family: "Proxima-nova", sans-serif !important;
   font-weight: 600;
@@ -5961,7 +5923,47 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
 
 .sumome-share-client-share.sumome-share-client-share-share.sumome-share-client-count {
   font-family: "proxima-nova",Arial,Helvetica,sans-serif;
+} */
+
+/* Override SumoMe email slidein styles */
+
+/*.sumome-scrollbox-small{
+  width: 35% !important;
 }
+
+.sumome-scrollbox-popup{
+  background-color: rgb(17, 182, 210) !important;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.16) 25%, transparent 25%) -50px 0, linear-gradient(225deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%) -50px 0, linear-gradient(315deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%), linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%) !important;
+  background-size: 100px 100px !important;
+  font-family: "Proxima-nova",sans-serif !important;
+}
+
+.sumome-scrollbox-popup .sumome-scrollbox-content{
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+}
+
+.sumome-scrollbox-popup .sumome-scrollbox-content .sumome-scrollbox-form button{
+  text-transform: capitalize !important;
+  text-shadow: 1px 1px 0px rgba(0, 128, 0, 0.06) !important;
+}
+
+.sumome-scrollbox-popup .sumome-scrollbox-close{
+  color: white !important;
+  text-shadow: 1px 1px 1px #0091AA !important;
+}
+
+a.sumome-scrollbox-link{
+  display: none;
+  left: 50%;
+  position: relative;
+  margin-left: -58px;
+  margin-top: 10px;
+  text-transform: lowercase;
+}*/
+
+
+
 
 .js_hide_next{
     color:#fff !important;
@@ -7245,7 +7247,7 @@ div.sumome-popup .sumome-popup-content .sumome-popup-form input[type="text"]:foc
     margin-right: 10px;
 }
 .thanks-note{
-    padding: 12rem 0 0;
+    padding: 12rem 0 10rem;
     width: 50rem;
     margin: 0 auto;
 }

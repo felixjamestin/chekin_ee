@@ -11,7 +11,7 @@
     		{exp:channel_images:images category="Listings page|Home page" limit="4" entry_id="{entry_id}"}
     			{if image:no_images}{/if}
     			<li>
-    				<a href="{site_url}{hideaway_state}{url_title}{/hideaway_state}/{url_title}/">
+    				<a href="{site_url}{hideaway_state}{url_title}{/hideaway_state}/{url_title}/" target="_blank">
     					{if image:description}
     						<span>{image:description}</span>
     					{/if}
@@ -22,37 +22,37 @@
     		{/exp:channel_images:images}
     	</ul><!-- accordion -->
 
-	<a href="{site_url}{hideaway_state}{url_title}{/hideaway_state}/{url_title}/">
+	<a href="{site_url}{hideaway_state}{url_title}{/hideaway_state}/{url_title}/" target="_blank">
 	
-    <div class="box-heading noise">
- 
-        {embed="modules/price" entryid="{entry_id}"}
+        <div class="box-heading noise">
+     
+            {embed="modules/price" entryid="{entry_id}"}
 
-		<div class="hold">
-			<h2>{title}<span class="location">{hideaway_location}, {hideaway_state}{title}{/hideaway_state}</span></h2>
-			<p>{hideaway_one_line}</p>
-		</div>
+    		<div class="hold">
+    			<h2>{title}<span class="location">{hideaway_location}, {hideaway_state}{title}{/hideaway_state}</span></h2>
+    			<p>{hideaway_one_line}</p>
+    		</div>
 
-        <!--    {if hideaway_freebies}
-            <div class="freebie">
-              <span>Free gift included
-              <div class="freebie-dropdown">
-                <div class="freebie-dd-content">
-                {hideaway_freebies}
-                  <p>{hideaway_freebie_text}</p>
-                {/hideaway_freebies}
+            <!--    {if hideaway_freebies}
+                <div class="freebie">
+                  <span>Free gift included
+                  <div class="freebie-dropdown">
+                    <div class="freebie-dd-content">
+                    {hideaway_freebies}
+                      <p>{hideaway_freebie_text}</p>
+                    {/hideaway_freebies}
+                    </div>
+                  </div>
+                  </span>
                 </div>
-              </div>
-              </span>
-            </div>
-            {/if} -->
+                {/if} -->
 
-	</div>
+    	</div>
 
-    <div class="box-view-details">
-        <p>View details</p> 
-        <span>&gt;</span>
-    </div>
+        <div class="box-view-details">
+            <p>View details</p> 
+            <span>&gt;</span>
+        </div>
 
     </a><!-- box-heading -->
 

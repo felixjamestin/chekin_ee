@@ -7,8 +7,12 @@
 if(!defined('ENV')) {
 
 	define('THIS_SERVER_NAME', 	$_SERVER['SERVER_NAME']);
-	define('THIS_SITE_URL', 	'http://' . THIS_SERVER_NAME);
-  define('THIS_BASEPATH', 	realpath(dirname(__FILE__) . '/../'));
+        if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') {
+            define('THIS_SITE_URL', 	'https://' . THIS_SERVER_NAME);
+        } else {
+            define('THIS_SITE_URL', 	'http://' . THIS_SERVER_NAME);
+        }
+        define('THIS_BASEPATH', 	realpath(dirname(__FILE__) . '/../'));
 
 	/**************************************************
  	Customize these environments to fit your needs
@@ -31,12 +35,14 @@ if(!defined('ENV')) {
                 case 'www.myoki.in' :
 			define('ENV', 'live');
 			define('THIS_WEB_ROOT', 'public_html');
+                        //define('THIS_SITE_URL', 'https://' . THIS_SERVER_NAME);
 			// define('SITE_SHORT_NAME', 'default');
 			break;
     
                 case 'myoki.in' :
 			define('ENV', 'live');
 			define('THIS_WEB_ROOT', 'public_html');
+                        //define('THIS_SITE_URL', 'https://' . THIS_SERVER_NAME);
 			// define('SITE_SHORT_NAME', 'default');
 			break;
     
