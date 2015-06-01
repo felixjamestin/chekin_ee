@@ -32,12 +32,7 @@
                                 <h2 class="post-title clearfix"><a href="/blog/{url_title}" title="" rel="bookmark">{title}</a></h2>
                             </div>
                             <div class="blog-content">
-                                <div class="blog-promo"> 
-                                    {exp:channel_images:images field="blog_promo" entry_id="{entry_id}" limit="1"}
-                                        <img src="{image:url:blog_large}" />       
-                                    {/exp:channel_images:images}
-                                </div>
-                                <p>{blog_short_story}</p>
+                                {blog_body}
                             </div>
                             
                             <div class="share-blog">

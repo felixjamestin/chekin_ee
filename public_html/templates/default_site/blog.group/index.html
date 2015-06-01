@@ -35,9 +35,12 @@
                             </div>
                             <div class="blog-content">
                                 <div class="blog-promo"> 
-                                    <img src="http://chekin.s3.amazonaws.com/photos/52/beach_sit-out_%282%29__details_page_1.jpg" />
+                                    {exp:channel_images:images field="blog_promo" entry_id="{entry_id}" limit="1"}
+                                        <img src="{image:url:blog_large}" />       
+                                    {/exp:channel_images:images}
                                 </div>
-                                <p>We personally visit each getaway. This means whether you’re looking for a place your kids will love or the perfect romantic getaway, we can help since we’ve actually been there :)</p>
+                                <p>{blog_short_story}</p>
+                                
                                 <a href="/blog/{url_title}" class="ladda-button js_hide_next" data-color="myoki" data-size="l" data-style="expand-right">
                                     <span class="ladda-label">read more</span>
                                     <span class="ladda-spinner"></span>
