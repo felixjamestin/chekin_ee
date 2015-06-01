@@ -39,7 +39,15 @@
                                         <img src="{image:url:blog_large}" />       
                                     {/exp:channel_images:images}
                                 </div>
-                                <p>{blog_short_story}</p>
+                                <p>
+                                    {if blog_short_story}
+                                        {blog_short_story}
+                                    {if:else}
+                                        {exp:eehive_hacksaw words="80"}
+                                            {blog_body}
+                                        {/exp:eehive_hacksaw}
+                                    {/if}
+                                </p>
                                 
                                 <a href="/blog/{url_title}" class="ladda-button js_hide_next" data-color="myoki" data-size="l" data-style="expand-right">
                                     <span class="ladda-label">read more</span>
