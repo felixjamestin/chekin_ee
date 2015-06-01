@@ -49,7 +49,7 @@
                                 <div>
                                     <ul class="socials">
 					<li>
-						<a href="http://www.facebook.com/myoki.in" target="_blank" class="facebook">
+						<a class="fb-share-button facebook" data-href="{site_url}/blog/{url_title}" href="#">
 							<span class="fa-stack fa-lg">
 							  <i class="fa fa-circle fa-stack-2x"></i>
 							  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
@@ -100,7 +100,14 @@
         </section><!-- wrapper -->	
 
         {embed="modules/footer"}
-
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=210983115615752";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 </body>
 
 </html>
