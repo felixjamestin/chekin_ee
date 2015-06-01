@@ -102,7 +102,9 @@
                     </div>
                     
                     <div class="blog-sidebar">
-                        
+                        {exp:tagger:cloud limit="100" backspace="1"}
+                            <a href="/tag/{tagger:urlsafe_tagname}/" title="{tagger:tag_name}" style="font-size:{tagger:size}px">{tagger:tag_name}</a>,
+                        {/exp:tagger:cloud}
                     </div>
                     {/if}
                     
