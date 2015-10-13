@@ -4,17 +4,10 @@
 
 <header id="header">
 	
-	<div id="header-links">
-		<a href="{site_url}about">About Us</a>
-		<a href="#popup-speaktous" id="header-speaktous">
-			<span class="fa-stack fa-lg">
-				<i class="fa fa-circle fa-stack-2x"></i>
-				<i class="fa fa-phone fa-stack-1x fa-inverse"></i>
-			</span>
-			<span>Speak to us</span>
-		</a>
+        <div id="header-links" style="display:none;">
+                    
 
-	</div>
+        </div>
 
 	<div class="logo"><a href="{site_url}"><img src="{site_url}uploads/static/logo.png" width="87" height="87" alt="Myoki logo" />Myoki</a></div>
 	
@@ -31,7 +24,16 @@
 		</li>
                 <li><a href="{site_url}gift-cards">GIFT A VACATION</a></li>
 		{!-- <li><a href="{site_url}plan">PLAN YOUR TRIP</a></li> --}
-
+                <li class="right-links">
+                    <a href="{site_url}about">About Us</a>
+                    <a href="#popup-speaktous" id="header-speaktous">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <span>Speak to us</span>
+                    </a>
+                </li>
 	</ul><!-- menu -->
 
 </header><!-- header -->

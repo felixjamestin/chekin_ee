@@ -751,7 +751,8 @@ animation-name: fadeInDown;
   position: relative;
   text-align: center;
   bottom: -1.55rem;
-  margin-left: -7rem;
+  margin-left: 10.7rem;
+  
 }
 
 .menu li{
@@ -762,6 +763,9 @@ animation-name: fadeInDown;
   background: url('/uploads/static/separator.gif') no-repeat 0 50%;
   display: inline-block;
   vertical-align: middle;
+  margin:0;
+  border-bottom:0;
+  width:auto;
 }
 
 .menu li:first-child{ background:none;}
@@ -1276,7 +1280,13 @@ xrotate-1
 .wrapper{
   margin: 0 auto;
   max-width: 62.5rem;
+  //max-width: 100%;
   padding: 0 2.31rem 0 2.31rem;
+}
+
+.step-3 .gift-email label{
+    width: 120px !important;
+    //width: 120px ;
 }
 
 /* Main */
@@ -2262,17 +2272,20 @@ span.fa-stack.fa-lg {
   content:'';
 }
 .search-block .frame{
-  width:1000px;
+  //width:1000px;
+  width:76%;
   margin:0 auto;  
 }
 .search-block .hold{
   float:left;
   margin:0 0 -31px;
   padding:0 210px 103px 3px;
-  width:1030px;
+  //width:1030px;
+  width: 100%;
   background:url('/uploads/static/bg-frame.png') no-repeat 0 100%;
   z-index: 999;
   position: relative;
+  //background-size: 79% 80px;
 }
 
 /* info */
@@ -2566,6 +2579,8 @@ span.fa-stack.fa-lg {
   color:#eeeeef;
   margin-left: 8px;
   min-height: 78px;
+  border-right:0px;
+  padding-right:0px;
 }
 .box-heading .hold p{ margin:0;font-weight:100; margin-top: 5px;}
 .box-heading h2{
@@ -6358,9 +6373,7 @@ a.sumome-scrollbox-link{
 #customize-gift .popup{
     width:100%;
 }
-.step-3 .gift-email label{
-    width:120px !important;
-}
+
 .step-3 .gift-email input{
     width:230px !important;
     margin-right: 10px;
@@ -6428,8 +6441,8 @@ a.sumome-scrollbox-link{
     height:235px;
 }
 .your-message textarea{
-    padding: 2rem;
-    width: 90% !important;
+    padding: 2rem 5%;
+    width: 89% !important;
     height: 125px !important;
     font-size: 1rem;
 }
@@ -6539,6 +6552,30 @@ a.sumome-scrollbox-link{
     margin-top: 0px !important;
 }
 
+.right-links{float: right; text-transform: uppercase; list-style-type: none; background: none!important; margin-right: 0.7rem;}
+.right-links a:first-child{width:auto; display:inline; padding:0; padding-bottom:0; border-bottom:0; margin-bottom:0;}
+.menuNew{padding:8px 0px; background:none; border-radius:5px; color:#fff; font-size:15px; float:right; position:relative; z-index:1004;}
+.menuNew a{color:#fff; text-decoration:none;}
+.plus{margin:4px 0px 0px 0px; background:url("/uploads/static/menu.png") no-repeat; width:24px; height:24px; display:inline-block;}
+.menu li.right-links{display:inline;}
+
+#main .block{width:921%!important; padding-left:40px!important;}
+.aim{width:934%!important;}
+.aim li{width:auto;}
+.aim li:first-child a{width:500px!important;}
+.aim li a{width:139px!important;}
+
+#customize-gift .inner-email-template{
+    width: 727px;
+    margin: 50px auto 70px auto;
+    background: #fff;
+    border-radius: 15px 15px 5px 5px;
+}
+#customize-gift .inner-email-template img{
+    border-radius:5px 5px 0 0;
+    max-width:100%;
+    height:auto;
+}
 
 /* -------------------------------------------------------------------------------------------------------- */
 
@@ -6560,6 +6597,27 @@ a.sumome-scrollbox-link{
   #main .gallery-section .gallery li:nth-child(9) {
     display: none;
   }
+  .search-block .hold{
+      background-size: 79% 80px;
+  }
+  #search-block h1 {
+      font-size: 60px;
+  }
+  
+  .menu{position:relative; background:none; border:0;}
+  .menu li{display:inline-block;}
+  .right-links a:first-child{width:auto; display:inline; padding:0; padding-bottom:0; border-bottom:0;}
+  
+  
+  #main .block{width:100%!important; padding-left:0px!important;}
+    .aim{width:100%!important;}
+    .aim li{width:25%;}
+    .aim li a{width:99%!important;}
+    
+    .box-heading{width:100%; padding-right:0; padding-left:0;}
+    .box-heading .hold{border-right:1px dashed #777; padding-right:5px;}
+    .box-heading .price{border-left:0px;}
+  
 
 }
 
@@ -6587,8 +6645,33 @@ a.sumome-scrollbox-link{
   #footer-content .frame{
     text-align: center;
   }
+  
+  
+  .menu{position:absolute; top:0px; right:0rem; width:100%; bottom:auto; background:rgba(255,255,255,1); z-index:1003; border-top:1px dotted #00DAF3; height:auto; margin:0;}
+  .menu li{display:block; width:90%; text-align:left; background:none; padding:0.6rem 0; margin:0; border-bottom:1px dotted; margin:0 5%; border-bottom:1px dotted #00DAF3;}
+  .right-links a:first-child{width:100%; display:inline-block; padding:0; padding-bottom:0.6rem; border-bottom:1px dotted #00DAF3; margin-bottom:10px;}
+  #header-speaktous{margin-left:1.2rem; position:relative; margin-top:10px;}
+  
+  .menu li.right-links{display:inline-block; float:none;}
+  
+   .places-list-small .places-dropdown{
+        left:0px;
+    }
+    
+    #main .block{width:100%!important; padding-left:0px!important;}
+    .aim{width:100%!important;}
+    .aim li{width:25%;}
+    .aim li a{width:99%!important;}
+    
+    .box-heading{width:100%; padding-right:0; padding-left:0;}
+    .box-heading .hold{border-right:1px dashed #777; padding-right:5px;}
+    .box-heading .price{border-left:0px;}
 
 }
+
+
+
+
 
 @media screen and (max-width: 875px) {
 
@@ -6606,7 +6689,7 @@ a.sumome-scrollbox-link{
     display: none;
   }
 
-  #popup-speaktous{
+    #popup-speaktous{
     width: 700px;
   }
 
@@ -6618,8 +6701,106 @@ a.sumome-scrollbox-link{
     right: 215px;
     top: 13px;
   }
+  
+  .search-block .hold {
+      width: 96%;
+      padding-right: 2%;
+      padding-left: 2%;
+      background-size: 92% 80px;
+      background-position-x: 30px;
+  }
+  
+    #search-list.places-list-small {
+      width: 100%;
+    }
+    #search-list.places-list-small h1 {
+      font-size: 50px;
+    }
+    .search-block .text {
+      width: 100%;
+      padding-top: 20px;
+    }
+    .search-block .frame {
+       width: 100%;
+    }
+    #search-block h1 {
+        background: url("/uploads/static/dropdown.png") no-repeat scroll 100% 23px transparent;
+    }
+    
+    #gift-reasons .inform .column-l {
+        margin-left: 45px;
+        border: none !important;
+    }
+    
+    #gift-reasons {
+       max-width: 100% !important;
+    }
+    #gift-cards-block {
+        padding-left: 10px;
+    }
+    
+    .for-error {
+        width: 25%;
+    }
+    
+    #customize-gift .inner-email-template{width:100%;}
+    
+    
+    .step-4 .row {
+        margin-bottom: 0rem;
+    }
+    
+    .popup .row label {width:100%!important; text-align:left;}
+    .step-3 .gift-email .email-form .row label{text-align:right;width: 10% !important;}
+    
+    .gift-customize-form .step-5 {
+        position: relative;
+        margin: 0px;
+    }
+    
+    
+    .step-4 .group .select-cs-1 {width:94%!important;}
+    
+    .gift-customize-form input,.gift-customize-form textarea{
+        width:200px !important;
+    }
+    
+    .gift-steps input[type="submit"] {
+        width: 275px !important;
+    }
+    
+    .gift-customize-form .step-5 .fa{
+      
+        left: 14.15rem;
+       
+    }
 
+    
+    .step-3 .gift-email{
+        background-color: transparent !important;
+        box-shadow: 0px 0px 0px black inset;
+       
+    }
+    
+    .special-note {
+        margin-left: 0px !important;
+    }
+    
+    .gift-customize-form input.input-small {
+        margin-left: 0px !important;
+        //margin-top: 7px;
+    }
+    
+    
+} //max-width: 875px
+
+@media screen and (max-width: 700px) {
+    
+    .places-list-small .places-dropdown{
+        left:0px;
+    }
 }
+
 
 @media screen and (max-width: 697px) {
 
@@ -6799,6 +6980,38 @@ a.sumome-scrollbox-link{
     width: 100% !important;
     text-align: center;
   }
+    .search-block .hold {
+       background-size: 87% 80px;
+       background-position-x: 32px;
+    }
+    
+    
+    
+    .places-list-small .places-dropdown{
+        left:-15px;
+    }
+    
+    .places-list-small .places-dd-content {
+        width: 290px;
+    }
+    
+    .places-list-small .places-dd-item{
+        width:140px;
+    }
+    
+    .places-list-small .places-dd-item h1, .places-list-small .places-dd-item p{
+        font-size:12px;
+    }
+    
+    #gift-cards-block h2 {
+         width: 96%;
+         padding-left: 2%;
+         padding-right: 2%;
+    }
+    .step-3 .gift-email label{width:100px!important;}
+    
+    .your-message{width:100%;}
+    .email-form  .popup .row label{text-align:right;}
 
 }
 
@@ -6851,6 +7064,16 @@ a.sumome-scrollbox-link{
     right: 515px;
     top: 18px;
   }
+  .search-block .hold {
+       background-size: 87% 80px;
+       background-position-x: 30px;
+    }
+    #search-block h1 {
+        background: url("/uploads/static/dropdown.png") no-repeat scroll 100% 23px transparent;
+    }
+    
+     .step-3 .gift-email label{width:65px!important;}
+    .step-3 .gift-email input{width:76%!Important;}
 
 }
 
@@ -6885,7 +7108,147 @@ a.sumome-scrollbox-link{
     width: 100%;
     max-width: none;
   }
-
+  
+  .search-block .hold {
+      width: 96%;
+      padding-right: 2%;
+      padding-left: 2%;
+      background-size: 80% 80px;
+      background-position-x: 30px;
+  }
+  
+    #search-list.places-list-small {
+      width: 100%;
+    }
+    #search-list.places-list-small h1 {
+      font-size: 40px;
+    }
+    .search-block .text {
+      width: 100%;
+      padding-top: 20px;
+      font-size: 14px;
+    }
+    .search-block .frame {
+       width: 100%;
+       padding-top: 40px;
+    }
+    #search-block h1 {
+        background: url("/uploads/static/dropdown.png") no-repeat scroll 100% 14px transparent;
+    }
+    #plan-visual {
+        width: 100%;
+    }
+    
+    #gift-card-frame {
+        width: 100%;
+        min-height: 375px;
+    }
+    #gift-cards-block {
+        padding-top: 70px;
+        padding-bottom: 0px;
+        width: 96%;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    #gift-reasons {
+        max-width: 100% !important;
+        padding: 0 2.31rem 0rem 2.31rem !important;
+    }
+    
+    #gift-cards-block h1 {
+        font-size: 30px;
+        max-width: 100%;
+        line-height: 2.5rem;
+    }
+    #customize-gift {
+        margin: 0px 0 30px 0 !important;
+    }
+    
+     #gift-cards-block h2 {
+         width: 96%;
+         padding-left: 2%;
+         padding-right: 2%;
+    }
+    #gift-reasons .inform .column-l {
+        width: 100% !important;
+        border: none !important;
+    }
+    .second-column {
+        padding-top: 0px !important;
+    }
+    #customize-gift h3 {
+        font-size: 20px !important;
+    }
+    
+    .step-1 ul {
+        width: 100%;
+        padding: 0px 0px 0px 25px !important;
+    }
+    
+    .step-1 li.selected::before {
+        width: 97% !important;
+        height: 91% !important;
+    }
+    .step-1 li.selected::after {
+        width: 100% !important;
+        height: 100% !important;
+    }
+    .step-1 li {
+        margin: 0 0rem 2rem 0 ;
+    }
+    .step-1 li img {
+        width: 100% !important;
+    }
+    
+    .special-note {
+        margin-left: 16px !important;
+        padding: 0px !important;
+    }
+    .gift-customize-form label {
+        text-align: none !important;
+        float: none !important;
+    }
+    .popup .row {
+        padding: 0 0 19px 40px;
+    }
+    
+    .gift-customize-form input {
+        width: 47% !important;
+    }
+    .step-2 .select-cs-1.select-sel-med.select-area {
+        width: 100% !important;
+    }
+    
+    .for-error {
+        width: 100%;
+        padding: 3px;
+    }
+    
+    .step-3 .gift-email input {
+        wdith: 70% !important;
+    }
+    
+    .step-3 .gift-email label {
+        width: 20% !important;
+    }
+    .step-3 .gift-email .row {
+        padding-left: 10px;
+    }
+    .for-error {
+        width: 95% !important;
+    }
+    .gift-customize-form {
+        font-size: 14px !important;
+    }
+    
+    .email-form  .popup .row label{text-align:right!important;}
+    
+    .box-heading .price{
+       
+        margin:-2px 8px 0 5px;
+        padding:0 0 5px 4px;
+      }
+ 
 }
 
 #wrapper-gift-reasons{
@@ -7055,9 +7418,7 @@ a.sumome-scrollbox-link{
     padding:5px 15px 0 0;
     
 }
-.gift-customize-form input,.gift-customize-form textarea{
-    width:229px !important;
-}
+
 .step-3 textarea{
     width:100% !important;
 }
@@ -7065,9 +7426,7 @@ a.sumome-scrollbox-link{
     background-position-x: 95%;
     background-position-y: 70%;
 }
-.step-4 .row {
-    margin-bottom: 1rem;
-}
+
 .gift-customize-form select{
     width:230px !important;
     height:40px;    
@@ -7087,16 +7446,7 @@ a.sumome-scrollbox-link{
   margin-bottom: 4rem;
 }
 
-.step-3 .gift-email{
-    margin: 0 0 0 1.9rem;
-    max-width: 56.125rem;
-    /*background: linear-gradient(135deg, rgba(255, 255, 255, 0.16) 25%, transparent 25%) -50px 0, linear-gradient(225deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%) -50px 0, linear-gradient(315deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%), linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%) !important;*/
-    background-color: #232429 !important;
-    box-shadow: 0px 0px 450px black inset;
-    background-size: 85px 285px !important;
-    border-radius: 15px 15px 5px 5px;
-    border: 1px solid white;
-}
+
 
 .step-3 .email-form{
     background: #ecedf3;
@@ -7108,11 +7458,10 @@ a.sumome-scrollbox-link{
 #customize-gift .popup{
     width:100%;
 }
-.step-3 .gift-email label{
-    width:120px !important;
-}
+
 .step-3 .gift-email input{
-    width:230px !important;
+    //width:230px !important;
+    width: 85% !important;
     margin-right: 10px;
     padding: .6rem;
     font-size: 1rem;
@@ -7124,6 +7473,7 @@ a.sumome-scrollbox-link{
 .step-3 .gift-email .row{
     margin:20px 0;
     padding-bottom: 0;
+    width: 100%;
 }
 
 .step-4 .group {
@@ -7137,14 +7487,7 @@ a.sumome-scrollbox-link{
   top: -0.2rem;
   font-weight: 100;
 }
-.step-4 .group .select-cs-1 {
-  padding: .2rem;
-  font-size: 1rem;
-  position: relative;
-  top: -0.2rem;
-  font-weight: 100;
-  width: 10rem !important;
-}
+
 
 #customize-gift .select-options{
   padding: 4px;
@@ -7153,15 +7496,7 @@ a.sumome-scrollbox-link{
 .email-form p{
     padding-top: 5px;
 }
-#customize-gift .inner-email-template{
-    width: 727px;
-    margin: 50px auto 70px auto;
-    background: #fff;
-    border-radius: 15px 15px 5px 5px;
-}
-#customize-gift .inner-email-template img{
-    border-radius:5px 5px 0 0;
-}
+
 .gift-amount{
     text-align: center;
     padding: 30px 0;
@@ -7172,56 +7507,14 @@ a.sumome-scrollbox-link{
 .gift-amount strong{
     font-weight: 600;
 }
-.your-message{
-    width:627px;
-    margin:40px auto 30px auto;
-    height:235px;
-}
+
 .your-message textarea{
-    padding: 2rem;
-    width: 90% !important;
+    padding: 2rem 5%;
+    width: 89% !important;
     height: 125px !important;
     font-size: 1rem;
 }
-.gift-steps input[type="submit"] {
-    width: 368px !important;
-    height: 59px;
-    display: block;
-    color: white;
-    background-color: #80D436;
-    font-size: 1.125rem;
-    text-shadow: 0px 1px 1px #73BF30;
-    border-radius: 4px;
-    border: 1px solid #4da720;
-    -webkit-box-shadow: inset 0 1px 0 #99dd5e;
-    -moz-box-shadow: inset 0 1px 0 #99dd5e;
-    box-shadow: inset 0 1px 0 #99dd5e;
-    text-shadow: 0 -1px 1px #73be30;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    user-drag: none;
-    -webkit-user-drag: none;
-    -webkit-transition-property: background-color;
-    -moz-transition-property: background-color;
-    -ms-transition-property: background-color;
-    -o-transition-property: background-color;
-    transition-property: background-color;
-    -webkit-transition-duration: 0.14s;
-    -moz-transition-duration: 0.14s;
-    -ms-transition-duration: 0.14s;
-    -o-transition-duration: 0.14s;
-    transition-duration: 0.14s;
-    -webkit-transition-timing-function: ease-in;
-    -moz-transition-timing-function: ease-in;
-    -ms-transition-timing-function: ease-in;
-    -o-transition-timing-function: ease-in;
-    transition-timing-function: ease-in;
-    outline: none;
-    cursor: pointer;
-}
+
 .gift-steps input[type="submit"]:hover {
     background-color: #73c62a;
 }
@@ -7230,18 +7523,9 @@ a.sumome-scrollbox-link{
     box-shadow: none;
 }
 
-.gift-customize-form .step-5 {
-    position: relative;
-    margin: 50px 0 80px 210px;
-}
 
-.gift-customize-form .step-5 .fa{
-    position: absolute;
-    top: 1.35rem;
-    left: 17.15rem;
-    color: white;
-    text-shadow: 0 -1px 1px #73be30;
-}
+
+
 
 .countrycode{
     margin-right: 10px;
@@ -7271,7 +7555,8 @@ a.sumome-scrollbox-link{
 }
 .for-error{
     position: relative;
-    float:left;
+    float: left;
+    width: 35%;
 }
 .gift-customize-form.popup em.error {
     right: auto;
@@ -7306,160 +7591,14 @@ a.sumome-scrollbox-link{
     font-size:18px;
     font-style:inherit;
 }
-/* Blog styles */
-.blog-listing{
-    width:70%;
-    float:left;
-    overflow:hidden;
-}
-.blog-sidebar{
-    padding-left:2%;
-    width:28%;
-    float:left;
-    padding-top:30px;
-}
-.blog-item{
-    padding:30px 0px 25px 0;
-}
-.date {
-  float: left;
-  font-size: 13px;
-  text-align: center;
-  margin: 0 5px;
-  padding: 10px 10px 0 0;
-  background: url('/uploads/static/calendar-icon.png') no-repeat;
-  height:64px;
-  width:64px;
-  line-height:17px;
-}
-.date .post-day {
-  display: block;
-  font-size:18px;
-  font-weight:bold;
-}
-.post-title {
-  font-size: 27px;
-  font-weight: bold;
-  display: table-cell;
-  vertical-align: middle;
-  height: 64px;
-}
-.post-title a{
-  color: #515559;
-  font: 30px/26px "proxima-nova-condensed";
-  font-weight: 300;
-}
-.clearfix:before, .clearfix:after {
-  content: " ";
-  display: table;
-}
-.clearfix:after {
-  clear: both;
-}
-.blog-content{
-    padding:20px 10px;
-    font-size:16px;
-}
-.blog-content .blog-promo{
-    max-height:200px;
-    overflow:hidden;
-}
-.share-blog {
-    text-align: center;
-    position: relative;
-    margin:10px 15px 30px;
-    clear:both;
-}
-.share-blog div {
-    display: inline-block;    
-}
-.share-blog div:before,
-.share-blog div:after {
-    background:url('/uploads/static/separator-blue.png') repeat-x 0 100%;
-    display: block;
-    height: 20px;
-    content: " ";
-    width: 40%;
-    position: absolute;
-    left: 0;
-    top:0.3em;
-}
-.share-blog div:after {
-   right: 0;  
-   left: auto; 
-}
-.share-blog .socials{
-    margin:0;
-    padding:0;
-}
-.share-blog .socials li{
-    float:left;
-    list-style:none;
-}
-.share-blog .socials a{
-  float:left;
-  height: 24px;
-  cursor:pointer;
-}
 
-.share-blog .socials a span{
-  -webkit-transition-property:color;
-  -moz-transition-property:color;
-  -ms-transition-property:color;
-  -o-transition-property:color;
-  transition-property:color;
-  -webkit-transition-duration:0.2s;
-  -moz-transition-duration:0.2s;
-  -ms-transition-duration:0.2s;
-  -o-transition-duration:0.2s;
-  transition-duration:0.2s;
-  -webkit-transition-timing-function:ease-in;
-  -moz-transition-timing-function:ease-in;
-  -ms-transition-timing-function:ease-in;
-  -o-transition-timing-function:ease-in;
-  transition-timing-function:ease-in;
-}
 
-.share-blog .socials a:hover span, .share-blog .socials a:active span,
-.share-blog .socials a.facebook:hover span .fa-circle, .share-blog .socials a.facebook:active span .fa-circle, 
-.share-blog .socials a.instagram:hover span .fa-circle, .share-blog .socials a.instagram:active span .fa-circle, 
-.share-blog .socials a.twitter:hover span .fa-circle, .share-blog .socials a.twitter:active span .fa-circle,
-.share-blog .socials a.pinterest:hover span.fa-pinterest, .share-blog .socials a.pinterest:active span.fa-pinterest{
-  color: #11b6d2;
-}
-
-.share-blog .facebook .fa-circle{
-  color: #436eac;
-}
-
-.share-blog .email fa-circle{
-  color: #999;
-}
-
-.share-blog .instagram .fa-circle{
-  color: #91634c;
-}
-
-.share-blog .twitter .fa-circle{
-  color: #55acee;
-}
-
-.share-blog .socials .pinterest .fa-pinterest{
-  color: #C81800;
-  margin-left: 2px;
-  vertical-align: bottom;
-}
-.blog-content a.ladda-button{
-    float:right;
-    padding:3px 5px;
-    margin:10px 0 15px 0;
-}
-@media screen and (max-width: 697px) {
-    .blog-listing{
-        width:100%;
+@media screen and (max-width: 480px) {
+    .gift-customize-form input {
+        width: 167px !important;
     }
-    .blog-sidebar{
-        width:100%;
-        padding-left:0;
-    }
+    .step-3 .gift-email label{width:65px!important;}
+    .step-3 .gift-email input{width:79%!Important;}
+    .your-message{width:100%;}
+    
 }

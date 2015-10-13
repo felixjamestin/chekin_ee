@@ -142,5 +142,83 @@
 
 	<!-- Hotjar Analytics -->
 	{embed="modules/hotjar-analytics"}
+        
+        
+ <script type="text/javascript">
+
+        $(document).ready(function(e) {
+               var topmenuW = $(window).width();
+                //alert(topmenuW);
+                if(topmenuW <= 975) {
+
+                  // alert(123);
+                  $(".menu").hide();
+                  $(".menuNew").remove();
+
+                  $("<div class='menuNew'><a href='javascript:void(0);' class='short-menu'><span class='plus'></span></a></div>").insertBefore(".menu");
+                  $(".short-menu").click(function(e) {
+                      
+                 if( $(".menu").is(":visible")) {  
+                  $(".menu").hide();
+                 }
+                else 
+                    {
+                        $(".menu").show();
+                    }
+
+               });
+              }else {
+                $(".menu").show();
+                $(".menuNew").remove();
+               }
+               
+           });
+           
+        
+    $(window).load(function(){
+        
+        var boxH = $(".box-heading").height();
+        //alert(boxH);
+        var prcH = $(".price").height();
+       // alert(prcH);
+        var acH = (boxH-prcH)/2;
+       // alert(acH);
+        $(".price").css({"margin-top":acH});
+        
+    });
+        
+
+        $( window ).resize(function() {
+           var topmenuW = $(window).width();
+
+            if(topmenuW <= 975) {
+              $(".menu").hide();
+              $(".menuNew").remove();
+
+              $("<div class='menuNew'><a href='javascript:void(0);' class='short-menu'><span class='plus'></span></a></div>").insertBefore(".menu");
+              $(".short-menu").click(function(e) {
+             if( $(".menu").is(":visible")) {  
+              $(".menu").hide();
+             }else {
+               $(".menu").show();
+                }
+
+
+           });
+          }else {
+            $(".menu").show();
+             $(".menuNew").remove();
+           }
+                 var boxH = $(".box-heading").height();
+                //alert(boxH);
+                var prcH = $(".price").height();
+               // alert(prcH);
+                var acH = (boxH-prcH)/2;
+                //alert(acH);
+                $(".price").css({"margin-top":acH});
+                
+        });
+ 
+</script>
 
 </head>
